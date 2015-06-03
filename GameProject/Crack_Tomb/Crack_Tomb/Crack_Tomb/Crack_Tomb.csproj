@@ -107,6 +107,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Barriere.cs" />
+    <Compile Include="Boden.cs" />
+    <Compile Include="Level_Objekt.cs" />
+    <Compile Include="Level.cs" />
+    <Compile Include="Spieler_Obejkte.cs" />
+    <Compile Include="Säule.cs" />
+    <Compile Include="Test_Kamera.cs" />
+    <Compile Include="Tür.cs" />
+    <Compile Include="Schalter.cs" />
+    <Compile Include="Truhe.cs" />
+    <Compile Include="Level_Loader.cs" />
+    <Compile Include="Wand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />

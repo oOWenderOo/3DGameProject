@@ -19,6 +19,15 @@ namespace Crack_Tomb
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        BasicEffect effect;
+        
+        VertexPositionColor[] vert = new VertexPositionColor[36];
+
+        Test_Kamera camera;
+
+        Level level;
+        Level_Loader Levelloader;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -47,6 +56,18 @@ namespace Crack_Tomb
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            camera = new Test_Kamera(new Vector3(0, 3, 5), 0.05f, 0.01f, GraphicsDevice);
+
+            Wand Wand_1 = new Wand(0, 0, 0);
+            vert = Wand_1.ver;
+
+
+            effect = new BasicEffect(GraphicsDevice);
+
+            level = new Level();
+            Levelloader= new Level_Loader(new Level());
+            Levelloader.Array_Loader(level);
+
             // TODO: use this.Content to load your game content here
         }
 
@@ -72,6 +93,8 @@ namespace Crack_Tomb
 
             // TODO: Add your update logic here
 
+            camera.Update();
+
             base.Update(gameTime);
         }
 
@@ -84,6 +107,55 @@ namespace Crack_Tomb
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+
+            effect.VertexColorEnabled = true;
+
+            effect.CurrentTechnique.Passes[0].Apply();
+
+            int n = 0;
+
+            while (Levelloader.Wand_List[n] != null && n < 41*41) {
+
+                vert = Levelloader.Wand_List[n].ver;
+                GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
+                n++;
+            
+            }
+
+            n = 0;
+
+            while (Levelloader.Wand_Loch_List[n] != null && n < 41 * 41){
+
+                vert = Levelloader.Wand_Loch_List[n].ver;
+                GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
+                n++;
+
+            }
+
+            n = 0;
+
+            while (Levelloader.Säule_List[n] != null && n < 41 * 41){
+
+                vert = Levelloader.Säule_List[n].ver;
+                GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
+                n++;
+
+            }
+
+            while (Levelloader.boden[n] != null ){
+
+                vert = Levelloader.boden[n].ver;
+                GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 2);
+                n++;
+
+            }
+            
+            
+
+
+            effect.View = camera.view;
+            effect.Projection = camera.projection;
+
 
             base.Draw(gameTime);
         }
