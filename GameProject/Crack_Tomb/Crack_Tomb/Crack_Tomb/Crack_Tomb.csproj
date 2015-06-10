@@ -16,8 +16,8 @@
     <XnaProfile>HiDef</XnaProfile>
     <XnaCrossPlatformGroupID>c5c548e5-eea7-41c3-84fc-dda7865bb73a</XnaCrossPlatformGroupID>
     <XnaOutputType>Game</XnaOutputType>
-    <ApplicationIcon>Game.ico</ApplicationIcon>
-    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <ApplicationIcon>Levelloader\Game.ico</ApplicationIcon>
+    <Thumbnail>Levelloader\GameThumbnail.png</Thumbnail>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -107,25 +107,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Barriere.cs" />
-    <Compile Include="Boden.cs" />
-    <Compile Include="Level_Objekt.cs" />
-    <Compile Include="Level.cs" />
-    <Compile Include="Spieler_Obejkte.cs" />
-    <Compile Include="Säule.cs" />
-    <Compile Include="Test_Kamera.cs" />
-    <Compile Include="Tür.cs" />
-    <Compile Include="Schalter.cs" />
-    <Compile Include="Truhe.cs" />
-    <Compile Include="Level_Loader.cs" />
-    <Compile Include="Wand.cs" />
+    <Compile Include="Levelloader\Barriere.cs" />
+    <Compile Include="Levelloader\Boden.cs" />
+    <Compile Include="Levelloader\Level_Objekt.cs" />
+    <Compile Include="Levelloader\Level.cs" />
+    <Compile Include="Levelloader\Spieler_Obejkte.cs" />
+    <Compile Include="Levelloader\Säule.cs" />
+    <Compile Include="Levelloader\Test_Kamera.cs" />
+    <Compile Include="Levelloader\Tür.cs" />
+    <Compile Include="Levelloader\Schalter.cs" />
+    <Compile Include="Levelloader\Truhe.cs" />
+    <Compile Include="Levelloader\Level_Loader.cs" />
+    <Compile Include="Levelloader\Wand.cs" />
+    <Compile Include="Lichtquelle\Lichtquelle.cs" />
+    <Compile Include="Lichtquelle\Lichtquelle_Partikel.cs" />
+    <Compile Include="Menuestruktur\Button.cs" />
+    <Compile Include="Menuestruktur\Credits.cs" />
+    <Compile Include="Menuestruktur\GameState.cs" />
+    <Compile Include="Menuestruktur\InGame.cs" />
+    <Compile Include="Menuestruktur\Levelauswahl.cs" />
+    <Compile Include="Menuestruktur\MainMenu.cs" />
+    <Compile Include="Menuestruktur\Rangliste.cs" />
+    <Compile Include="Menuestruktur\Titlescreen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Game1.cs" />
+    <Compile Include="Levelloader\Program.cs" />
+    <Compile Include="Levelloader\Game1.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Game.ico" />
-    <Content Include="GameThumbnail.png" />
+    <Content Include="Levelloader\Game.ico" />
+    <Content Include="Levelloader\GameThumbnail.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Crack_TombContent\Crack_TombContent.contentproj">

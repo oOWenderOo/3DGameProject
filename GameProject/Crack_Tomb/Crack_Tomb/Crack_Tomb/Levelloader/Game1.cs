@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using MainMenuCo;
 
 namespace Crack_Tomb
 {
@@ -19,14 +20,8 @@ namespace Crack_Tomb
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        BasicEffect effect;
-        
-        VertexPositionColor[] vert = new VertexPositionColor[36];
-
-        Test_Kamera camera;
-
-        Level level;
-        Level_Loader Levelloader;
+        GameState oldstate = null;
+        GameState state = new Titlescreen();
 
         public Game1()
         {
@@ -54,19 +49,9 @@ namespace Crack_Tomb
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
+
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            camera = new Test_Kamera(new Vector3(0, 3, 5), 0.05f, 0.01f, GraphicsDevice);
-
-            Wand Wand_1 = new Wand(0, 0, 0);
-            vert = Wand_1.ver;
-
-
-            effect = new BasicEffect(GraphicsDevice);
-
-            level = new Level();
-            Levelloader= new Level_Loader(new Level());
-            Levelloader.Array_Loader(level);
+            state.LoadContent(Content, graphics);
 
             // TODO: use this.Content to load your game content here
         }
@@ -91,9 +76,13 @@ namespace Crack_Tomb
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
-            // TODO: Add your update logic here
+            state = state.Update(gameTime);
 
-            camera.Update();
+            if (oldstate != state)
+            {
+                oldstate = state;
+                state.LoadContent(Content, graphics);
+            }
 
             base.Update(gameTime);
         }
@@ -106,56 +95,7 @@ namespace Crack_Tomb
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
-
-            effect.VertexColorEnabled = true;
-
-            effect.CurrentTechnique.Passes[0].Apply();
-
-            int n = 0;
-
-            while (Levelloader.Wand_List[n] != null && n < 41*41) {
-
-                vert = Levelloader.Wand_List[n].ver;
-                GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
-                n++;
-            
-            }
-
-            n = 0;
-
-            while (Levelloader.Wand_Loch_List[n] != null && n < 41 * 41){
-
-                vert = Levelloader.Wand_Loch_List[n].ver;
-                GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
-                n++;
-
-            }
-
-            n = 0;
-
-            while (Levelloader.Säule_List[n] != null && n < 41 * 41){
-
-                vert = Levelloader.Säule_List[n].ver;
-                GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
-                n++;
-
-            }
-
-            while (Levelloader.boden[n] != null ){
-
-                vert = Levelloader.boden[n].ver;
-                GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 2);
-                n++;
-
-            }
-            
-            
-
-
-            effect.View = camera.view;
-            effect.Projection = camera.projection;
-
+            state.Draw(gameTime, graphics, spriteBatch);
 
             base.Draw(gameTime);
         }

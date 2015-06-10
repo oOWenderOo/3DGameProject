@@ -10,3 +10,6 @@ C:\Users\Jannick\Desktop\Crack_Tomb\Crack_Tomb\Crack_Tomb\obj\x86\Debug\Crack_To
 C:\Users\Jannick\Desktop\Crack_Tomb\Crack_Tomb\Crack_Tomb\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Jannick\Desktop\Crack_Tomb\Crack_Tomb\Crack_Tomb\obj\x86\Debug\Crack_Tomb.exe
 C:\Users\Jannick\Desktop\Crack_Tomb\Crack_Tomb\Crack_Tomb\obj\x86\Debug\Crack_Tomb.pdb
+C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\MouseZeiger.xnb
+C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\button.xnb
+C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Normal.xnb

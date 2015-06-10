@@ -23,7 +23,7 @@ namespace Crack_Tomb{
         
         Wenn wir später mehrere Ebenen pro Level machen wollen, wird das ganze einfach um eine Y-Achse erweitert, was aber nicht wirklich was ändert.
         
-        Anschauliche erklärung folgt dann später Anhand von der Minecraft Weld wo die Level "gebaut" werden.
+        Anschauliche erklärung folgt dann später Anhand von der Minecraft Welt wo die Level "gebaut" werden.
         Ein "gebautes" Level wird dann MANUELL in die untenfolgden Daten übertragen. Die einfach Listen[] werden einfach mit Objekten befüllt.
         Die Wände und Säulen werden in eine 41x41 Matrix übertragen und automatisch erzeugt. Die Anderen Objekte kommen da zur Übersicht mit hinnein, werden aber nicht ausgewertet.
         Die Vector3-Teile sind einfach die Positionen der EINMALIGEN Objekte.
