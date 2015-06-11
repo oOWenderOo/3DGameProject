@@ -26,10 +26,7 @@ namespace MainMenuCo
             level = new Level();
             levelloader = new Level_Loader(level);
 
-            Wand Wand_1 = new Wand(0, 0, 0);
-            vert = Wand_1.ver;
-
-            levelloader.Array_Loader(level);
+            //levelloader.Array_Loader(level);
         }
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics)
@@ -37,6 +34,7 @@ namespace MainMenuCo
             graphicdevice = Graphics.GraphicsDevice;
             //Jannicks-Teil
             effect = new BasicEffect(graphicdevice);
+            levelloader.Array_Loader(level);
             camera = new Test_Kamera(new Vector3(0, 3, 5), 0.05f, 0.01f, graphicdevice);
         }
 
@@ -53,12 +51,22 @@ namespace MainMenuCo
 
         public override void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)
         {
+            //Graphics.GraphicsDevice.Clear(Color.CornflowerBlue);
             //Jannicks-Teil
             effect.VertexColorEnabled = true;
 
             effect.CurrentTechnique.Passes[0].Apply();
 
             int n = 0;
+
+            while (levelloader.boden[n] != null)
+            {
+                vert = levelloader.boden[n].ver;
+                graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 2);
+                n++;
+            }
+
+            n = 0;
 
             while (levelloader.Wand_List[n] != null && n < 41 * 41)
             {
@@ -85,12 +93,7 @@ namespace MainMenuCo
                 n++;
             }
 
-            while (levelloader.boden[n] != null)
-            {
-                vert = levelloader.boden[n].ver;
-                graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 2);
-                n++;
-            }
+
 
             effect.View = camera.view;
             effect.Projection = camera.projection;
