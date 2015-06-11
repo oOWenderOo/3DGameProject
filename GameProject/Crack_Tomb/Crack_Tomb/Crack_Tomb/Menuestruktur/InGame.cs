@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Input;
 using Crack_Tomb;
+using Crack_Tomb.Spieler;
 
 namespace MainMenuCo
 {
@@ -21,6 +22,7 @@ namespace MainMenuCo
 
         public InGame()
         {
+            //Jannicks-Teil
             level = new Level();
             levelloader = new Level_Loader(level);
 
@@ -33,6 +35,7 @@ namespace MainMenuCo
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics)
         {
             graphicdevice = Graphics.GraphicsDevice;
+            //Jannicks-Teil
             effect = new BasicEffect(graphicdevice);
             camera = new Test_Kamera(new Vector3(0, 3, 5), 0.05f, 0.01f, graphicdevice);
         }
@@ -42,13 +45,15 @@ namespace MainMenuCo
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 return new Levelauswahl();
 
+            //Jannicks-Teil
             camera.Update();
 
-            return new InGame();
+            return this;
         }
 
         public override void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)
         {
+            //Jannicks-Teil
             effect.VertexColorEnabled = true;
 
             effect.CurrentTechnique.Passes[0].Apply();
