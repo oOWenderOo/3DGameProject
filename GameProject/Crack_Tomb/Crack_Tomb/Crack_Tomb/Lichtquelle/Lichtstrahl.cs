@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 
 namespace Lichtquelle
 {
-    class Lichtquelle
+    class Lichtstrahl
     {
         Vector3 position;
         Vector3 richtung;
@@ -18,7 +18,7 @@ namespace Lichtquelle
 
         Lichtquelle_Partikel[] p;
 
-        public Lichtquelle(int maxpartikel, Model partikel, Vector3 position, Vector3 richtung)
+        public Lichtstrahl(int maxpartikel, Model partikel, Vector3 position, Vector3 richtung)
         {
             this.position = position;
             this.richtung = richtung;

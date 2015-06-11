@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Input;
 using Crack_Tomb;
 using Crack_Tomb.Spieler;
+using Lichtquelle;
 
 namespace MainMenuCo
 {
@@ -19,6 +20,7 @@ namespace MainMenuCo
         VertexPositionColor[] vert = new VertexPositionColor[36];
         Test_Kamera camera;
         GraphicsDevice graphicdevice;
+        Lichtstrahl licht;
 
         public InGame()
         {
@@ -36,6 +38,9 @@ namespace MainMenuCo
             effect = new BasicEffect(graphicdevice);
             levelloader.Array_Loader(level);
             camera = new Test_Kamera(new Vector3(0, 3, 5), 0.05f, 0.01f, graphicdevice);
+
+            //Gabriels-Teil
+            licht = new Lichtstrahl(30, content.Load<Model>("cube"), new Vector3(0, 0, 0), new Vector3(1, 0, 0));
         }
 
         public override GameState Update(GameTime gameTime)
@@ -45,6 +50,9 @@ namespace MainMenuCo
 
             //Jannicks-Teil
             camera.Update();
+
+            //Gabriels-Teil
+            licht.Update(gameTime);
 
             return this;
         }
@@ -97,6 +105,9 @@ namespace MainMenuCo
 
             effect.View = camera.view;
             effect.Projection = camera.projection;
+
+            //Gabriels-Teil
+            licht.Draw(gameTime, camera.view, camera.projection);
         }
     }
 }

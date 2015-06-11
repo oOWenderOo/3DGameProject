@@ -13,6 +13,7 @@ namespace Lichtquelle
         Vector3 position;
         Vector3 bewegung;
         Model partikel;
+        int lebenszeit;
 
         public Lichtquelle_Partikel(Model partikel, Vector3 position, Vector3 bewegung)
         {
@@ -20,29 +21,42 @@ namespace Lichtquelle
             this.partikel = partikel;
             this.bewegung = bewegung;
             this.quelleposition = position;
+            lebenszeit = 100;
         }
 
         public void Update(GameTime gameTime)
         {
             //Kollisionsabfrage mit anderen Modellen
             //Hierbei muss die Bewegung gändert werden
+            if (lebenszeit > 0)
+            {
+                lebenszeit--;
+            }
+            else
+            {
+                position = quelleposition;
+                lebenszeit = 100;
+            }
 
             position += bewegung;
         }
 
         public void Draw(GameTime gameTime, Matrix view, Matrix projection)
         {
-            foreach (ModelMesh mesh in partikel.Meshes)
+            if (lebenszeit > 0)
             {
-                foreach (BasicEffect effect in mesh.Effects)
+                foreach (ModelMesh mesh in partikel.Meshes)
                 {
-                    effect.EnableDefaultLighting();
+                    foreach (BasicEffect effect in mesh.Effects)
+                    {
+                        effect.EnableDefaultLighting();
 
-                    effect.View = view;
-                    effect.Projection = projection;
-                    effect.World = Matrix.CreateTranslation(position);
+                        effect.View = view;
+                        effect.Projection = projection;
+                        effect.World = Matrix.CreateTranslation(position);
+                    }
+                    mesh.Draw();
                 }
-                mesh.Draw();
             }
         }
     }
