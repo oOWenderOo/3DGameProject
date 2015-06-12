@@ -43,3 +43,5 @@ C:\Users\Gabriel\Desktop\3DGameProject_Test.git\trunk\GameProject\Crack_Tomb\Cra
 C:\Users\Gabriel\Desktop\3DGameProject_Test.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Gabriel\Desktop\3DGameProject_Test.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\obj\x86\Debug\Crack_Tomb.exe
 C:\Users\Gabriel\Desktop\3DGameProject_Test.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\obj\x86\Debug\Crack_Tomb.pdb
+C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\ButtonTexture.xnb
+C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Testbildhintergrund.xnb

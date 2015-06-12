@@ -70,7 +70,7 @@ namespace MainMenuCo
         public void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)
         {
             SpriteBatch.Draw(texture, position, Color.White);
-            SpriteBatch.DrawString(font, text, new Vector2(position.X + 10, position.Y + 10), Color.Black);
+            SpriteBatch.DrawString(font, text, new Vector2(position.X + 20, position.Y + 15), Color.Black);
         }
     }
 }

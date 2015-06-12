@@ -12,8 +12,8 @@ namespace MainMenuCo
 {
     class Titlescreen:GameState
     {
-        SpriteFont font;
-        
+        SpriteFont fontText;
+        Texture2D background;
 
         public Titlescreen()
         {
@@ -21,7 +21,8 @@ namespace MainMenuCo
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics) 
         {
-            font = content.Load<SpriteFont>("Normal");
+            fontText = content.Load<SpriteFont>("Normal");
+            background = content.Load<Texture2D>("Testbildhintergrund");
         }
 
         public override GameState Update(GameTime gameTime)
@@ -36,8 +37,8 @@ namespace MainMenuCo
         public override void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch spriteBatch )
         {
             spriteBatch.Begin();
-            spriteBatch.DrawString(font, "Welcome by Crack Tomb!", new Vector2(230, 50), Color.AntiqueWhite);
-            spriteBatch.DrawString(font, "~ Press Enter ~",new Vector2(280, 350), Color.AntiqueWhite);
+            spriteBatch.Draw(background, new Vector2(0, 0), Color.White);
+            spriteBatch.DrawString(fontText, "~ Press Enter ~",new Vector2(280, 350), Color.Black);
             spriteBatch.End();
         }
         

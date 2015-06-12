@@ -11,31 +11,45 @@ namespace MainMenuCo
 {
     class MainMenu : GameState
     {
-        SpriteFont font;
+        SpriteFont fontButton;
+        SpriteFont fontText;
         Button[] buttons = new Button[3];
         Texture2D mouse;
+        Texture2D background;
+
+        int wartezeit;
 
         public MainMenu()
         {
-            buttons[0] = new Button(new Vector2(300, 200), "Rangliste", "Rangliste");
-            buttons[1] = new Button(new Vector2(300, 100), "Credits", "Credits");
-            buttons[2] = new Button(new Vector2(300, 300), "Levelauswahl", "Levelauswahl");
+            buttons[0] = new Button(new Vector2(60, 250), "Rangliste", "Rangliste");
+            buttons[1] = new Button(new Vector2(60, 350), "Credits", "Credits");
+            buttons[2] = new Button(new Vector2(60, 150), "Levelauswahl", "Levelauswahl");
+
+            wartezeit = 6;
         }
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics)
         {
-            font = content.Load<SpriteFont>("Normal");
+            fontButton = content.Load<SpriteFont>("ButtonTexture");
+            fontText = content.Load<SpriteFont>("Normal");
 
             for (int i = 0; i < buttons.Length; i++)
             {
                 buttons[i].SetTexture(content.Load<Texture2D>("button"));
-                buttons[i].SetFont(font);
+                buttons[i].SetFont(fontButton);
             }
             mouse = content.Load<Texture2D>("MouseZeiger");
+            background = content.Load<Texture2D>("Testbildhintergrund");
         }
 
         public override GameState Update(GameTime gameTime)
         {
+            if (wartezeit > 0)
+            {
+                wartezeit--;
+                return this;
+            }
+
             for (int i = 0; i < buttons.Length; i++)
             {
                 if (buttons[i].isPressed())
@@ -50,7 +64,8 @@ namespace MainMenuCo
         public override void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)
         {
             SpriteBatch.Begin();
-            SpriteBatch.DrawString(font, "Sie befinden sich nun im Haupt-Menu!", new Vector2(Graphics.PreferredBackBufferHeight / 2, 50), Color.AntiqueWhite);
+            SpriteBatch.Draw(background, new Vector2(0, 0), Color.White);
+            SpriteBatch.DrawString(fontText, "Hauptmenü", new Vector2( 60, 50), Color.Black);
             
 
             for (int i = 0; i < buttons.Length; i++)

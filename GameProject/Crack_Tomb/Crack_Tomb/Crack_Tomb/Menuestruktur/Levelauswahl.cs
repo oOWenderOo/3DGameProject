@@ -11,29 +11,44 @@ namespace MainMenuCo
 {
     class Levelauswahl : GameState //Status Levelauswahl
     {
-        SpriteFont font;
+        SpriteFont fontButton;
+        SpriteFont fontText;
         Button[] buttons = new Button[2];
         Texture2D mouse;
+        Texture2D background;
+
+        int wartezeit;
 
         public Levelauswahl()
         {
-            buttons[0] = new Button(new Vector2(0, 200), "MainMenu", "Back");
-            buttons[1] = new Button(new Vector2(300, 400), "InGame", "Start Test");
+            buttons[0] = new Button(new Vector2(60, 370), "MainMenu", "Zurück");
+            buttons[1] = new Button(new Vector2(540, 370), "InGame", "Level starten");
+
+            wartezeit = 6;
         }
 
-        public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics) 
+        public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics)
         {
-            font = content.Load<SpriteFont>("Normal");
+            fontButton = content.Load<SpriteFont>("ButtonTexture");
+            fontText = content.Load<SpriteFont>("Normal");
+
             for (int i = 0; i < buttons.Length; i++)
             {
                 buttons[i].SetTexture(content.Load<Texture2D>("button"));
-                buttons[i].SetFont(font);
+                buttons[i].SetFont(fontButton);
             }
             mouse = content.Load<Texture2D>("MouseZeiger");
+            background = content.Load<Texture2D>("Testbildhintergrund");
         }
 
         public override GameState Update(GameTime gameTime)
         {
+            if (wartezeit > 0)
+            {
+                wartezeit--;
+                return this;
+            }
+
             for (int i = 0; i < buttons.Length; i++)
             {
                 if (buttons[i].isPressed())
@@ -45,7 +60,8 @@ namespace MainMenuCo
         public override void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)
         {
             SpriteBatch.Begin();
-            SpriteBatch.DrawString(font, "Levelauswahl", new Vector2(Graphics.PreferredBackBufferHeight / 2, 50), Color.AntiqueWhite);
+            SpriteBatch.Draw(background, new Vector2(0, 0), Color.White);
+            SpriteBatch.DrawString(fontText, "Levelauswahl", new Vector2(60, 50), Color.Black);
 
 
             for (int i = 0; i < buttons.Length; i++)
