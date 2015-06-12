@@ -29,11 +29,13 @@ namespace MainMenuCo
         {
             fontButton = content.Load<SpriteFont>("ButtonTexture");
             fontText = content.Load<SpriteFont>("Normal");
+
             for (int i = 0; i < buttons.Length; i++)
             {
                 buttons[i].SetTexture(content.Load<Texture2D>("button"));
                 buttons[i].SetFont(fontButton);
             }
+
             mouse = content.Load<Texture2D>("MouseZeiger");
             background = content.Load<Texture2D>("Testbildhintergrund");
         }
