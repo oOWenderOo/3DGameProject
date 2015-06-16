@@ -18,9 +18,9 @@ namespace Crack_Tomb{
         float PosY;
         float PosZ;
 
-        float SizeX = 0.2f;     //Größen für Säulen müssen noch angepasst werden. Eventuell auch mit richtigem 3D-Objekt statt Textur
+        float SizeX = 1.0f;     //Größen für Säulen müssen noch angepasst werden. Eventuell auch mit richtigem 3D-Objekt statt Textur
         float SizeY = 1.0f;
-        float SizeZ = 0.2f;
+        float SizeZ = 1.0f;
 
         int ID;
 

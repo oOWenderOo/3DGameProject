@@ -18,9 +18,9 @@ namespace Crack_Tomb{
         float PosY;
         float PosZ;
 
-        float SizeX = 0.2f;
+        float SizeX = 1.0f;
         float SizeY = 1.0f;
-        float SizeZ = 0.2f;
+        float SizeZ = 1.0f;
 
         int ID;
 
@@ -67,9 +67,9 @@ namespace Crack_Tomb{
         float PosY;
         float PosZ;
 
-        float SizeX = 0.2f;
+        float SizeX = 1.0f;
         float SizeY = 1.0f;
-        float SizeZ = 0.2f;
+        float SizeZ = 1.0f;
 
         int ID;
 

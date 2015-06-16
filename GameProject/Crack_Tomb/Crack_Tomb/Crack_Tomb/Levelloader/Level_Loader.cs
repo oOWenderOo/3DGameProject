@@ -71,23 +71,23 @@ namespace Crack_Tomb{
             for (int i = 0; i <= 40; i++){
                 for (int j = 0; j <= 40; j++){
 
-                    boden[nB] = new Boden((float)i / 5, 0, (float)j / 5);
+                    boden[nB] = new Boden((float)i , 0, (float)j );
                     nB++;
 
                     switch (level.Level_Array[i, j]) {                
 
                         case 1:
-                            Wand_List[nW] = new Wand((float) i / 5, 0, (float) j / 5);
+                            Wand_List[nW] = new Wand((float) i , 0, (float) j );
                             nW++;
                             break;
                             
                         case 2:
-                            Wand_Loch_List[nWL] = new Wand_Loch((float)i / 5, 0, (float)j / 5);
+                            Wand_Loch_List[nWL] = new Wand_Loch((float)i , 0, (float)j );
                             nWL++;
                             break;
 
                         case 3:
-                            Säule_List[nS] = new Säule((float)i / 5, 0, (float)j / 5);
+                            Säule_List[nS] = new Säule((float)i , 0, (float)j );
                             nS++;
                             break;
 
