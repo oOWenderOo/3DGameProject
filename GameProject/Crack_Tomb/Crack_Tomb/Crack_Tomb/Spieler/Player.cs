@@ -13,11 +13,13 @@ namespace Crack_Tomb.Spieler
         Vector3 position;
         Model model;
         float speed = 1;
+        Inventar inventar;
 
         public Player(Vector3 startposition, Model model)
         {
             position = startposition;
             this.model = model;
+            inventar = new Inventar();
         }
 
         public void Update()

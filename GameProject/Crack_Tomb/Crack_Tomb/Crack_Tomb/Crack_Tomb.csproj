@@ -132,6 +132,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Levelloader\Program.cs" />
     <Compile Include="Levelloader\Game1.cs" />
+    <Compile Include="Spieler\Inventar.cs" />
     <Compile Include="Spieler\Kamera.cs" />
     <Compile Include="Spieler\Player.cs" />
   </ItemGroup>
