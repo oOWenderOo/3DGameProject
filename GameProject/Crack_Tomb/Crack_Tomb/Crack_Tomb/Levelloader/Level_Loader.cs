@@ -53,7 +53,6 @@ namespace Crack_Tomb{
         public Vector3 Licht_Start;
         public Vector3 Licht_Ziel;
 
-        public Level level;
 
         //public Level_Objekt[] level_objekte = new Level_Objekt[41*41];
         public int nW = 0;
@@ -61,12 +60,24 @@ namespace Crack_Tomb{
         public int nS = 0;
         public int nB = 0;
 
-        public Level_Loader(Level h_level) {
-            level = h_level;
-            //get_Level_Nummer();
+        public Level_Loader(int LevelNR) {
+            switch (LevelNR) { 
+            
+                case 0:
+                    Level_Array = new Level0().Level_Array;
+                    break;
+
+                case 1:
+                    Level_Array = new Level1().Level_Array;
+                    break;
+
+                default:
+                    Level_Array = new Level0().Level_Array;
+                    break;
+            }
         }
 
-        public void Array_Loader(Level level){                                  // Geht das ganze Level_Array durch und erzeugt automatisch Wände und Säulen die in den Level_Objekt_Container gelegt werden.
+        public void Array_Loader(){                                  // Geht das ganze Level_Array durch und erzeugt automatisch Wände und Säulen die in den Level_Objekt_Container gelegt werden.
 
             for (int i = 0; i <= 40; i++){
                 for (int j = 0; j <= 40; j++){
@@ -74,22 +85,33 @@ namespace Crack_Tomb{
                     boden[nB] = new Boden((float)i , 0, (float)j );
                     nB++;
 
-                    switch (level.Level_Array[i, j]) {                
+                    switch (Level_Array[i, j]) {                
 
-                        case 1:
+                        case 1:         //Wand
                             Wand_List[nW] = new Wand((float) i , 0, (float) j );
                             nW++;
                             break;
                             
-                        case 2:
+                        case 2:         //Wand mit Loch
                             Wand_Loch_List[nWL] = new Wand_Loch((float)i , 0, (float)j );
                             nWL++;
                             break;
 
-                        case 3:
+                        case 3:         //Säule
                             Säule_List[nS] = new Säule((float)i , 0, (float)j );
                             nS++;
                             break;
+
+                 /*       case 8:         //Lichtstartpunkt
+                            Säule_List[nS] = new Säule((float)i , 0, (float)j );
+                            nS++;
+                            break;
+
+                        case 9:         //Lichtendpunkt
+                            Säule_List[nS] = new Säule((float)i , 0, (float)j );
+                            nS++;
+                            break;   */                     
+
 
                         default:
 

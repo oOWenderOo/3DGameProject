@@ -59,7 +59,7 @@ namespace Crack_Tomb.Spieler
             }
         }
 
-        public void pushDoppelSpiegel()
+        public void pullDoppelSpiegel()
         {
             if (inventar[1] != 0)
             {
@@ -67,7 +67,7 @@ namespace Crack_Tomb.Spieler
             }
         }
 
-        public void pushFarbkristall()
+        public void pullFarbkristall()
         {
             if (inventar[2] != 0)
             {
@@ -75,7 +75,7 @@ namespace Crack_Tomb.Spieler
             }
         }
 
-        public void pushSplittPrisma()
+        public void pullSplittPrisma()
         {
             if (inventar[3] != 0)
             {
