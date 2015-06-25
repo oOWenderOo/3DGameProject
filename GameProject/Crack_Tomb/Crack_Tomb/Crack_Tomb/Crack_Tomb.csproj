@@ -123,8 +123,10 @@
     <Compile Include="Lichtquelle\Lichtquelle_Partikel.cs" />
     <Compile Include="Menuestruktur\Button.cs" />
     <Compile Include="Menuestruktur\Credits.cs" />
+    <Compile Include="Menuestruktur\GameOver.cs" />
     <Compile Include="Menuestruktur\GameState.cs" />
     <Compile Include="Menuestruktur\InGame.cs" />
+    <Compile Include="Menuestruktur\IngameTimer.cs" />
     <Compile Include="Menuestruktur\Levelauswahl.cs" />
     <Compile Include="Menuestruktur\MainMenu.cs" />
     <Compile Include="Menuestruktur\Rangliste.cs" />
@@ -135,6 +137,8 @@
     <Compile Include="Spieler\Inventar.cs" />
     <Compile Include="Spieler\Kamera.cs" />
     <Compile Include="Spieler\Player.cs" />
+    <Compile Include="Spieler\PlayerCollider.cs" />
+    <Compile Include="Spieler\PlayerSteuerung.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Levelloader\Game.ico" />

@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.Input;
 using Crack_Tomb;
 using Crack_Tomb.Spieler;
 using Lichtquelle;
+using Crack_Tomb.Menuestruktur;
 
 namespace MainMenuCo
 {
@@ -21,12 +22,19 @@ namespace MainMenuCo
         GraphicsDevice graphicdevice;
         Lichtstrahl licht;
 
+        //Annes-Teil
+        IngameTimer timer;
+        int wartcount = 0;
+
         public InGame()
         {
             //Jannicks-Teil
-            levelloader = new Level_Loader(1);      //////////// TODO:  1 durch "LevelNummer" ersetzen die irgentwo noch herkommen muss von der Levelauswahl
+            levelloader = new Level_Loader(1);      //////////// TODO:  1 durch "LevelNummer" ersetzen die irgendwo noch herkommen muss von der Levelauswahl
 
             //levelloader.Array_Loader(level);
+
+            //Annes-Teil
+            timer = new IngameTimer(0, 10.0f);
         }
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics)
@@ -39,6 +47,10 @@ namespace MainMenuCo
 
             //Gabriels-Teil
             licht = new Lichtstrahl(30, content.Load<Model>("cube"), new Vector3(0, 0, 0), new Vector3(1, 0, 0));
+
+            //Annes-Teil
+            timer.setFont(content);
+            timer.Position = new Vector2(50, 25);
         }
 
         public override GameState Update(GameTime gameTime)
@@ -52,7 +64,22 @@ namespace MainMenuCo
             //Gabriels-Teil
             licht.Update(gameTime);
 
-            return this;
+            //Annes-Teil
+            timer.Update(gameTime);
+
+            if (timer.Time == "00:00")
+            {
+                if (wartcount >= 30)
+                {
+                    return new GameOver();
+                }
+                else
+                {
+                    wartcount = wartcount + 1;
+                    return this;
+                }
+            }
+            else { return this; }
         }
 
         public override void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)
@@ -99,13 +126,14 @@ namespace MainMenuCo
                 n++;
             }
 
-
-
             effect.View = camera.view;
             effect.Projection = camera.projection;
 
             //Gabriels-Teil
             licht.Draw(gameTime, camera.view, camera.projection);
+
+            //Annes-Teil
+            timer.Draw(gameTime, Graphics, SpriteBatch);
         }
     }
 }
