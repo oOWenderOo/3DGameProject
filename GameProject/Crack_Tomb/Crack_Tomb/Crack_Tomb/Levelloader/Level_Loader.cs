@@ -71,6 +71,18 @@ namespace Crack_Tomb{
                     Level_Array = new Level1().Level_Array;
                     break;
 
+                case 2:
+                    Level_Array = new Level2().Level_Array;
+                    break;
+
+                case 3:
+                    Level_Array = new Level3().Level_Array;
+                    break;
+
+                case 4:
+                    Level_Array = new Level4().Level_Array;
+                    break;
+
                 default:
                     Level_Array = new Level0().Level_Array;
                     break;

@@ -29,7 +29,7 @@ namespace MainMenuCo
         public InGame()
         {
             //Jannicks-Teil
-            levelloader = new Level_Loader(1);      //////////// TODO:  1 durch "LevelNummer" ersetzen die irgendwo noch herkommen muss von der Levelauswahl
+            levelloader = new Level_Loader(2);      //////////// TODO:  1 durch "LevelNummer" ersetzen die irgendwo noch herkommen muss von der Levelauswahl
 
             //levelloader.Array_Loader(level);
 
