@@ -95,6 +95,8 @@ namespace Crack_Tomb
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
+            GraphicsDevice.DepthStencilState = DepthStencilState.Default;
+
             state.Draw(gameTime, graphics, spriteBatch);
 
             base.Draw(gameTime);

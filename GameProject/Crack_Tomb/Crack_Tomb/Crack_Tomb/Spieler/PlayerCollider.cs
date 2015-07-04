@@ -10,7 +10,7 @@ namespace Crack_Tomb.Spieler
     {
         int[,] Level_Array;
         int arrayposition_x;
-        int arrayposition_y;
+        int arrayposition_z;
 
         public PlayerCollider(int LevelNummer)
         {
@@ -31,8 +31,34 @@ namespace Crack_Tomb.Spieler
         //Kollisionsabfrage mit Spieler und Umgebung
         public bool IsColliding(Vector3 currentposition, Vector3 newposition)
         {
+            arrayposition_x = (int)currentposition.X;
+            arrayposition_z = (int)currentposition.Z;
 
-            return true;
+            if (arrayposition_x != (int)newposition.X || arrayposition_z != (int)newposition.Z)
+            {
+                int objectAtnew = Level_Array[(int)newposition.X, (int)newposition.Z];
+
+                switch (objectAtnew)
+                {
+                    case 0:
+                        return false;
+                        break;
+                    case 1:
+                        return true;
+                        break;
+                    case 2:
+                        return true;
+                        break;
+                    case 3:
+                        return true;
+                        break;
+                    default:
+                        return false;
+                        break;
+                }
+            }
+
+            return false;
         }
     }
 }

@@ -11,7 +11,7 @@ namespace Crack_Tomb.Spieler
     {
         Vector3 newposition;
         PlayerCollider playercollider;
-        public float speed = 1;
+        public float speed = 0.5f;
 
         public PlayerSteuerung(int LevelNummer)
         {
@@ -23,12 +23,12 @@ namespace Crack_Tomb.Spieler
             //Bestimmung der neuen Position bei bestimmter Eingabe des Spielers
             if (Keyboard.GetState().IsKeyDown(Keys.W) || Keyboard.GetState().IsKeyDown(Keys.Up))
             {
-                newposition = playerposition + new Vector3(0, speed, 0);
+                newposition = playerposition + new Vector3(0, 0, speed * -1);
             }
 
             if (Keyboard.GetState().IsKeyDown(Keys.S) || Keyboard.GetState().IsKeyDown(Keys.Down))
             {
-                newposition = playerposition + new Vector3(0, speed * -1, 0);
+                newposition = playerposition + new Vector3(0, 0, speed);
             }
 
             if (Keyboard.GetState().IsKeyDown(Keys.A) || Keyboard.GetState().IsKeyDown(Keys.Left))
