@@ -51,6 +51,7 @@ namespace Crack_Tomb{
 
         public Vector3 Spieler_Startpostion;
         public Vector3 Licht_Start;
+        public Vector3 Licht_Richtung;
         public Vector3 Licht_Ziel;
 
 
@@ -61,6 +62,8 @@ namespace Crack_Tomb{
         public int nB = 0;
 
         public Level_Loader(int LevelNR) {
+
+
             switch (LevelNR) { 
             
                 case 0:
@@ -73,6 +76,8 @@ namespace Crack_Tomb{
 
                 case 2:
                     Level_Array = new Level2().Level_Array;
+                    Licht_Start = new Level2().Licht_Start;
+                    Licht_Richtung = new Level2().Licht_Richtung;
                     break;
 
                 case 3:
@@ -90,6 +95,7 @@ namespace Crack_Tomb{
         }
 
         public void Array_Loader(){                                  // Geht das ganze Level_Array durch und erzeugt automatisch Wände und Säulen die in den Level_Objekt_Container gelegt werden.
+
 
             for (int i = 0; i <= 40; i++){
                 for (int j = 0; j <= 40; j++){

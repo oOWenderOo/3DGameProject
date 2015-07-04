@@ -21,6 +21,7 @@ namespace MainMenuCo
         Test_Kamera camera;
         GraphicsDevice graphicdevice;
         Lichtstrahl licht;
+        Vector3 lichtPos, lichtDir;
 
         //Annes-Teil
         IngameTimer timer;
@@ -30,11 +31,12 @@ namespace MainMenuCo
         {
             //Jannicks-Teil
             levelloader = new Level_Loader(2);      //////////// TODO:  1 durch "LevelNummer" ersetzen die irgendwo noch herkommen muss von der Levelauswahl
+            lichtPos = levelloader.Licht_Start;
+            lichtDir = levelloader.Licht_Richtung;
 
-            //levelloader.Array_Loader(level);
 
             //Annes-Teil
-            timer = new IngameTimer(0, 10.0f);
+            timer = new IngameTimer(0, 100.0f);
         }
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics)
@@ -46,7 +48,7 @@ namespace MainMenuCo
             camera = new Test_Kamera(new Vector3(0, 3, 5), 0.05f, 0.01f, graphicdevice);
 
             //Gabriels-Teil
-            licht = new Lichtstrahl(30, content.Load<Model>("cube"), new Vector3(0, 0, 0), new Vector3(1, 0, 0));
+            licht = new Lichtstrahl(30, content.Load<Model>("cube"), lichtPos, lichtDir);
 
             //Annes-Teil
             timer.setFont(content);

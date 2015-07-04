@@ -18,6 +18,7 @@ namespace Crack_Tomb{                                           //Level-Speicher
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(0, 0, 0);
        public Vector3 Licht_Ziel = new Vector3(0, 0, 0);
+       public Vector3 Licht_Richtung;
 
        public int[,] Level_Array = {{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
                                      {1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1},
@@ -78,6 +79,7 @@ namespace Crack_Tomb{                                           //Level-Speicher
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(0, 0, 0);
        public Vector3 Licht_Ziel = new Vector3(0, 0, 0);
+       public Vector3 Licht_Richtung;
 
        public int[,] Level_Array = {{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -137,8 +139,9 @@ namespace Crack_Tomb{                                           //Level-Speicher
        int Level_Nummer = 2;                //Startinventar 10x Spiegel
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
-       public Vector3 Licht_Start = new Vector3(0, 0, 0);
-       public Vector3 Licht_Ziel = new Vector3(0, 0, 0);
+       public Vector3 Licht_Start = new Vector3(18, 0, 10);
+       public Vector3 Licht_Ziel = new Vector3(10, 0, 2);
+       public Vector3 Licht_Richtung = new Vector3(-1, 0, 0);
 
        public int[,] Level_Array = {{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -199,6 +202,7 @@ namespace Crack_Tomb{                                           //Level-Speicher
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(0, 0, 0);
        public Vector3 Licht_Ziel = new Vector3(0, 0, 0);
+       public Vector3 Licht_Richtung;
 
        public int[,] Level_Array = {{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -259,6 +263,7 @@ namespace Crack_Tomb{                                           //Level-Speicher
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(0, 0, 0);
        public Vector3 Licht_Ziel = new Vector3(0, 0, 0);
+       public Vector3 Licht_Richtung;
 
        public int[,] Level_Array = {{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},

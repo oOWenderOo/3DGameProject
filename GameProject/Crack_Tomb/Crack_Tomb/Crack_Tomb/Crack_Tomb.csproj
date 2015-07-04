@@ -109,6 +109,7 @@
   <ItemGroup>
     <Compile Include="Levelloader\Barriere.cs" />
     <Compile Include="Levelloader\Boden.cs" />
+    <Compile Include="Levelloader\Color.cs" />
     <Compile Include="Levelloader\Level_Objekt.cs" />
     <Compile Include="Levelloader\Level.cs" />
     <Compile Include="Levelloader\Spieler_Obejkte.cs" />
