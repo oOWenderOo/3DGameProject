@@ -11,7 +11,7 @@ namespace Crack_Tomb.Spieler
     {
         Vector3 newposition;
         PlayerCollider playercollider;
-        public float speed = 0.5f;
+        public float speed = 0.1f;
 
         public PlayerSteuerung(int LevelNummer)
         {
