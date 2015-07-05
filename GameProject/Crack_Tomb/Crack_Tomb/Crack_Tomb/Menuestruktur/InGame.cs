@@ -18,7 +18,7 @@ namespace MainMenuCo
         BasicEffect effect;
         Level_Loader levelloader;
         VertexPositionColor[] vert = new VertexPositionColor[36];
-        Test_Kamera camera;
+        Kamera camera;
         GraphicsDevice graphicdevice;
         Lichtstrahl licht;
         Vector3 lichtPos, lichtDir;
@@ -45,7 +45,7 @@ namespace MainMenuCo
             //Jannicks-Teil
             effect = new BasicEffect(graphicdevice);
             levelloader.Array_Loader();
-            camera = new Test_Kamera(new Vector3(0, 3, 5), 0.05f, 0.01f, graphicdevice);
+            camera = new Kamera();
 
             //Gabriels-Teil
             licht = new Lichtstrahl(30, content.Load<Model>("cube"), lichtPos, lichtDir);
@@ -62,7 +62,7 @@ namespace MainMenuCo
                 return new Levelauswahl();
 
             //Jannicks-Teil
-            camera.Update();
+            //camera.Update();
 
             //Gabriels-Teil
             licht.Update(gameTime);

@@ -13,7 +13,7 @@ namespace Crack_Tomb.Spieler
 
         public Kamera()
         {
-            view = Matrix.CreateLookAt(new Vector3(0, -5, 5), new Vector3(0, 0, 0), Vector3.UnitY);
+            view = Matrix.CreateLookAt(new Vector3(10.5f, 30, 20f), new Vector3(10.5f, 0, 10), Vector3.UnitY);
             projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45), 800f / 480f, 0.1f, 100f);
         }
     }
