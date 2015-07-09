@@ -27,7 +27,7 @@ namespace Lichtquelle
             collider = new PartikelCollider(levelnummer);
         }
 
-        public void Update(GameTime gameTime, ref Player player)
+        public void Update(GameTime gameTime, ref Player player, ref bool gewonnen)
         {
             if (p == null)
             {
@@ -42,7 +42,7 @@ namespace Lichtquelle
                     p = p.getNachfolger();
                 }
 
-                p.Update(gameTime, collider, ref player);
+                p.Update(gameTime, collider, ref player, ref gewonnen);
             }
         }
 

@@ -23,6 +23,7 @@ namespace MainMenuCo
         Lichtstrahl licht;
         Vector3 lichtPos, lichtDir;
         Player player;
+        bool gewonnen = false;
 
         //Annes-Teil
         IngameTimer timer;
@@ -37,7 +38,7 @@ namespace MainMenuCo
             lichtDir = levelloader.Licht_Richtung;
 
             //Annes-Teil
-            timer = new IngameTimer(0, 100.0f);
+            timer = new IngameTimer(2, 0);
         }
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics)
@@ -66,8 +67,11 @@ namespace MainMenuCo
             //camera.Update();
 
             //Gabriels-Teil
-            licht.Update(gameTime, ref player);
+            licht.Update(gameTime, ref player, ref gewonnen);
             player.Update(gameTime);
+
+            if (gewonnen)
+                return new Gewonnen();
 
             //Annes-Teil
             timer.Update(gameTime);

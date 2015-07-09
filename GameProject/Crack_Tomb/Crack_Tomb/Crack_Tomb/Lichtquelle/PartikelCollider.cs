@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Lichtquelle;
 using Crack_Tomb.Spieler;
+using Crack_Tomb.Menuestruktur;
 
 namespace Crack_Tomb.Lichtquelle
 {
@@ -37,7 +38,7 @@ namespace Crack_Tomb.Lichtquelle
         }
 
         //Kollisionsabfrage mit Spieler und Umgebung
-        public void colliding(Lichtquelle_Partikel partikel, Vector3 newposition, ref Player player)
+        public void colliding(Lichtquelle_Partikel partikel, Vector3 newposition, ref Player player, ref bool gewonnen)
         {
             arrayposition_x = (int)Math.Floor(partikel.getPosition().X);
             arrayposition_y = (int)Math.Floor(partikel.getPosition().Z);
@@ -88,6 +89,9 @@ namespace Crack_Tomb.Lichtquelle
                                 //partikel.setPosition(newposition);
                                 break;
                         }
+                        break;
+                    case 9:
+                        gewonnen = true;
                         break;
                     default:
                         partikel.setPosition(newposition);

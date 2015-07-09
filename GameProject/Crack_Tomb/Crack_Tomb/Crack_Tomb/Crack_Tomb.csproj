@@ -127,6 +127,7 @@
     <Compile Include="Menuestruktur\Credits.cs" />
     <Compile Include="Menuestruktur\GameOver.cs" />
     <Compile Include="Menuestruktur\GameState.cs" />
+    <Compile Include="Menuestruktur\Gewonnen.cs" />
     <Compile Include="Menuestruktur\InGame.cs" />
     <Compile Include="Menuestruktur\IngameTimer.cs" />
     <Compile Include="Menuestruktur\Levelauswahl.cs" />

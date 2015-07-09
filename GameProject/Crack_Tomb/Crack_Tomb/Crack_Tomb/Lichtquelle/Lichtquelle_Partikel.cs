@@ -26,11 +26,11 @@ namespace Lichtquelle
             this.nachfolger = nachfolger;
         }
 
-        public void Update(GameTime gameTime, PartikelCollider collider, ref Player player)
+        public void Update(GameTime gameTime, PartikelCollider collider, ref Player player, ref bool gewonnen)
         {
             if (vorgänger != null)
             {
-                vorgänger.Update(gameTime, collider, ref player);
+                vorgänger.Update(gameTime, collider, ref player, ref gewonnen);
             }
             else
             {
@@ -52,13 +52,13 @@ namespace Lichtquelle
             {
                 Vector3 newposition = position + richtung;
 
-                collider.colliding(this, newposition, ref player);
+                collider.colliding(this, newposition, ref player, ref gewonnen);
             }
             else
             {
                 Vector3 newposition = position;
 
-                collider.colliding(this, newposition, ref player);
+                collider.colliding(this, newposition, ref player, ref gewonnen);
             }
         }
 
