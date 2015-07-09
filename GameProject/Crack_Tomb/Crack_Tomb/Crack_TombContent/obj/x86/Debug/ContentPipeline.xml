@@ -113,6 +113,46 @@
       <Output>obj\x86\Debug\cube_0.xml</Output>
       <Time>2015-07-05T17:13:10.2060809+02:00</Time>
     </Item>
+    <Item>
+      <Source>Spieler_Test.fbx</Source>
+      <Name>Spieler_Test</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Spieler_Test.xnb</Output>
+      <Time>2015-07-06T17:16:19.6825349+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Spieler_Test_0.xml</Key>
+        <Value>2015-07-06T17:16:26.9965872+02:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Spieler_Test.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Spieler_Test_0.xml</Output>
+      <Time>2015-07-06T17:16:19.6825349+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Dreieck.fbx</Source>
+      <Name>Dreieck</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Dreieck.xnb</Output>
+      <Time>2015-07-08T21:38:29.8751305+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Dreieck_0.xml</Key>
+        <Value>2015-07-08T21:38:31.8462433+02:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Dreieck.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Dreieck_0.xml</Output>
+      <Time>2015-07-08T21:38:29.8751305+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

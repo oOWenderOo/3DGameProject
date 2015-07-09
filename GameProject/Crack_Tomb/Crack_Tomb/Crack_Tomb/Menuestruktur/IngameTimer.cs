@@ -27,8 +27,7 @@ namespace Crack_Tomb.Menuestruktur
             }
        
             seconds = startSeconds;
-            minutes= startMinute;
-            
+            minutes= startMinute; 
         }
 
         public Vector2 Position 

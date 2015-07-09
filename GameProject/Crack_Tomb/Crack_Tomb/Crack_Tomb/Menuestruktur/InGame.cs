@@ -27,11 +27,12 @@ namespace MainMenuCo
         //Annes-Teil
         IngameTimer timer;
         int wartcount = 0;
+        int levelnummer = 2;
 
         public InGame()
         {
             //Jannicks-Teil
-            levelloader = new Level_Loader(2); //////////// TODO:  1 durch "LevelNummer" ersetzen die irgendwo noch herkommen muss von der Levelauswahl
+            levelloader = new Level_Loader(levelnummer); //////////// TODO:  1 durch "LevelNummer" ersetzen die irgendwo noch herkommen muss von der Levelauswahl
             lichtPos = levelloader.Licht_Start;
             lichtDir = levelloader.Licht_Richtung;
 
@@ -48,8 +49,8 @@ namespace MainMenuCo
             camera = new Kamera();
 
             //Gabriels-Teil
-            licht = new Lichtstrahl(30, content.Load<Model>("cube"), lichtPos, lichtDir);
-            player = new Player(lichtPos, content.Load<Model>("cube"), 2);
+            player = new Player(lichtPos, content.Load<Model>("Dreieck"), levelnummer);
+            licht = new Lichtstrahl(content.Load<Model>("cube"), lichtPos, lichtDir, levelnummer, player);
 
             //Annes-Teil
             timer.setFont(content);
@@ -65,8 +66,8 @@ namespace MainMenuCo
             //camera.Update();
 
             //Gabriels-Teil
-            licht.Update(gameTime);
-            player.Update();
+            licht.Update(gameTime, ref player);
+            player.Update(gameTime);
 
             //Annes-Teil
             timer.Update(gameTime);

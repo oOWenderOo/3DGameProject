@@ -14,19 +14,20 @@ namespace Crack_Tomb.Spieler
         Model model;
         public Inventar inventar;
         PlayerSteuerung playersteuerung;
+        int[,] Säulen_Array = new int[41, 41];
 
         public Player(Vector3 startposition, Model model, int LevelNummer)
         {
             position = startposition;
             this.model = model;
             inventar = new Inventar();
-            playersteuerung = new PlayerSteuerung(LevelNummer);
+            playersteuerung = new PlayerSteuerung(LevelNummer, ref Säulen_Array);
         }
 
-        public void Update()
+        public void Update(GameTime gametime)
         {
             //Steuerung des Spielers
-            position = playersteuerung.Update(position);
+            position = playersteuerung.Update(gametime, position, ref Säulen_Array);
         }
 
         public void Draw(Matrix view, Matrix projection)
@@ -44,6 +45,11 @@ namespace Crack_Tomb.Spieler
                 }
                 mesh.Draw();
             }
+        }
+
+        public int[,] getSäulenArray()
+        {
+            return Säulen_Array;
         }
     }
 }

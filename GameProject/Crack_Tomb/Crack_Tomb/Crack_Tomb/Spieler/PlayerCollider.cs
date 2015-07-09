@@ -12,7 +12,7 @@ namespace Crack_Tomb.Spieler
         int arrayposition_x;
         int arrayposition_y;
 
-        public PlayerCollider(int LevelNummer)
+        public PlayerCollider(int LevelNummer, ref int[,] Säulen_Array)
         {
             switch (LevelNummer)
             {
@@ -32,6 +32,21 @@ namespace Crack_Tomb.Spieler
                     Level_Array = new Level0().Level_Array;
                     break;
             }
+
+            for (int i = 0; i < 41; i++)
+            {
+                for (int j = 0; j < 41; j++)
+                {
+                    if (Level_Array[i, j] == 3)
+                    {
+                        Säulen_Array[i, j] = 1;
+                    }
+                    else
+                    {
+                        Säulen_Array[i, j] = 0;
+                    }
+                }
+            }
         }
 
         //Kollisionsabfrage mit Spieler und Umgebung
@@ -46,9 +61,6 @@ namespace Crack_Tomb.Spieler
 
                 switch (objectAtnew)
                 {
-                    case 0:
-                        return false;
-                        break;
                     case 1:
                         return true;
                         break;
