@@ -37,25 +37,25 @@ namespace Crack_Tomb{
 
         int Level_Nummer;
        
-        int[,] Level_Array;                                               //wird zu Int[,][] wenn mehrere Ebenen implementier werden
-        //public Schalter[] Schalter_List = new Schalter [41*41];
-        //public Tür[] Tür_List = new Tür[41 *41];
-        //public Barriere[] Barriere_List = new Barriere[41 * 41];
-        public Truhe[] Truhe_List = new Truhe[41*41];
-        //public Leiter[]
+        int[,] Level_Array;                                               
 
-        public Wand[] Wand_List = new Wand[41*41];
-        public Wand_Loch[] Wand_Loch_List = new Wand_Loch[41 * 41];
-        public Säule[] Säule_List = new Säule[41 * 41];            //Leiter optional
-        public Boden[] boden = new Boden[42 * 42];
+
+
+        public Wand[] Wand_List = new Wand[42*42];
+        public Wand_Loch[] Wand_Loch_List = new Wand_Loch[42 * 42];
+        public Säule[] Säule_List = new Säule[42 * 42];            
+        public Boden[] Boden = new Boden[42 * 42];
+        public Barriere[] Barriere_List = new Barriere[42 * 42];
+
+        //public Schalter[] Schalter_List = new Schalter [41*41];       //TODO
+        //public Tür[] Tür_List = new Tür[41 *41];                      //TODO
+        //public Truhe[] Truhe_List = new Truhe[41*41];                 //TODO
 
         public Vector3 Spieler_Startpostion;
         public Vector3 Licht_Start;
         public Vector3 Licht_Richtung;
         public Vector3 Licht_Ziel;
 
-
-        //public Level_Objekt[] level_objekte = new Level_Objekt[41*41];
         public int nW = 0;
         public int nWL = 0;
         public int nS = 0;
@@ -68,10 +68,14 @@ namespace Crack_Tomb{
             
                 case 0:
                     Level_Array = new Level0().Level_Array;
+                    Licht_Start = new Level0().Licht_Start;
+                    Licht_Richtung = new Level0().Licht_Richtung;
                     break;
 
                 case 1:
                     Level_Array = new Level1().Level_Array;
+                    Licht_Start = new Level1().Licht_Start;
+                    Licht_Richtung = new Level1().Licht_Richtung;
                     break;
 
                 case 2:
@@ -82,25 +86,32 @@ namespace Crack_Tomb{
 
                 case 3:
                     Level_Array = new Level3().Level_Array;
+                    Licht_Start = new Level3().Licht_Start;
+                    Licht_Richtung = new Level3().Licht_Richtung;
+                    Barriere_List = new Level3().Barriere_List;
                     break;
 
                 case 4:
                     Level_Array = new Level4().Level_Array;
+                    Licht_Start = new Level4().Licht_Start;
+                    Licht_Richtung = new Level4().Licht_Richtung;
                     break;
 
                 default:
                     Level_Array = new Level0().Level_Array;
+                    Licht_Start = new Level0().Licht_Start;
+                    Licht_Richtung = new Level0().Licht_Richtung;
                     break;
             }
         }
 
-        public void Array_Loader(){                                  // Geht das ganze Level_Array durch und erzeugt automatisch Wände und Säulen die in den Level_Objekt_Container gelegt werden.
+        public void Array_Loader(){                                  // Geht das ganze Level_Array durch und erzeugt automatisch Wände und Säulen die in die zugehörigen Listen gelegt werden.
 
 
             for (int i = 0; i <= 40; i++){
                 for (int j = 0; j <= 40; j++){
 
-                    boden[nB] = new Boden((float)i , 0, (float)j );
+                    Boden[nB] = new Boden((float)i , 0, (float)j );
                     nB++;
 
                     switch (Level_Array[i, j]) {                
@@ -139,6 +150,11 @@ namespace Crack_Tomb{
                     }
                 }
             }
+
+
+
+
+
         }
         
 

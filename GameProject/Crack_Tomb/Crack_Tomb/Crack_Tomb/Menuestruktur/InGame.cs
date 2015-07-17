@@ -28,7 +28,7 @@ namespace MainMenuCo
         //Annes-Teil
         IngameTimer timer;
         int wartcount = 0;
-        int levelnummer = 2;
+        int levelnummer = 3;
 
         public InGame()
         {
@@ -101,9 +101,9 @@ namespace MainMenuCo
 
             int n = 0;
 
-            while (levelloader.boden[n] != null)
+            while (levelloader.Boden[n] != null)
             {
-                vert = levelloader.boden[n].ver;
+                vert = levelloader.Boden[n].ver;
                 graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 2);
                 n++;
             }
@@ -131,6 +131,15 @@ namespace MainMenuCo
             while (levelloader.Säule_List[n] != null && n < 41 * 41)
             {
                 vert = levelloader.Säule_List[n].ver;
+                graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
+                n++;
+            }
+
+            n = 0;
+
+            while (levelloader.Barriere_List[n] != null && n < 41 * 41)
+            {
+                vert = levelloader.Barriere_List[n].ver;
                 graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
                 n++;
             }

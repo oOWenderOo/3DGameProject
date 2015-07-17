@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>Cylinder</Name>
     <Identity>
-      <SourceFilename>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_TombContent\Spieler_Test.fbx</SourceFilename>
+      <SourceFilename>C:\Users\Jannick\Desktop\3DGameProject\GameProject\Crack_Tomb\Crack_Tomb\Crack_TombContent\Spieler_Test.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>3.774895E-08 -0.5 -3.774895E-08 0 -0.5 -3.774895E-08 -3E-15 0 0 3.774895E-08 -0.5 0 0 0 0 1</Transform>
@@ -25,7 +25,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>Material</Name>
       <Identity>
-        <SourceFilename>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_TombContent\Spieler_Test.fbx</SourceFilename>
+        <SourceFilename>C:\Users\Jannick\Desktop\3DGameProject\GameProject\Crack_Tomb\Crack_Tomb\Crack_TombContent\Spieler_Test.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
