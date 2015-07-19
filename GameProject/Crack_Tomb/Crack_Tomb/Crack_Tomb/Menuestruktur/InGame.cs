@@ -28,10 +28,13 @@ namespace MainMenuCo
         //Annes-Teil
         IngameTimer timer;
         int wartcount = 0;
-        int levelnummer = 3;
+        int levelnummer;
 
-        public InGame()
+        public InGame(int levelnummer)
         {
+            //Gabriels-Teil
+            this.levelnummer = levelnummer;
+
             //Jannicks-Teil
             levelloader = new Level_Loader(levelnummer); //////////// TODO:  1 durch "LevelNummer" ersetzen die irgendwo noch herkommen muss von der Levelauswahl
             lichtPos = levelloader.Licht_Start;
@@ -50,8 +53,8 @@ namespace MainMenuCo
             camera = new Kamera();
 
             //Gabriels-Teil
-            player = new Player(lichtPos, content.Load<Model>("Dreieck"), levelnummer);
-            licht = new Lichtstrahl(content.Load<Model>("cube"), lichtPos, lichtDir, levelnummer, player);
+            player = new Player(lichtPos, content.Load<Model>("Spieler_mit_Hut"), levelnummer);
+            licht = new Lichtstrahl(content.Load<Model>("partikel"), lichtPos, lichtDir, levelnummer, player);
 
             //Annes-Teil
             timer.setFont(content);

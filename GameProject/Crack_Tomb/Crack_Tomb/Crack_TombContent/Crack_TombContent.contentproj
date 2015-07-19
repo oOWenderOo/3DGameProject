@@ -98,15 +98,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Spieler_Test.fbx">
-      <Name>Spieler_Test</Name>
+    <Compile Include="Spieler_mit_Hut.fbx">
+      <Name>Spieler_mit_Hut</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dreieck.fbx">
-      <Name>Dreieck</Name>
+    <Compile Include="partikel.fbx">
+      <Name>partikel</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>

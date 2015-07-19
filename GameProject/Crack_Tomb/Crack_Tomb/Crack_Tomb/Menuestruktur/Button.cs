@@ -51,7 +51,7 @@ namespace MainMenuCo
             }
         }
 
-        public GameState GetState()
+        public GameState GetState(int levelnummer)
         {
             if (state == "MainMenu")
                 return new MainMenu();
@@ -62,7 +62,7 @@ namespace MainMenuCo
             if (state == "Levelauswahl")
                 return new Levelauswahl();
             if (state == "InGame")
-                return new InGame();
+                return new InGame(levelnummer);
 
             return new Titlescreen();
         }

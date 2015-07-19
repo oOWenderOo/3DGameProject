@@ -48,7 +48,7 @@ namespace Lichtquelle
                 }
             }
 
-            if (((int)gameTime.TotalGameTime.Milliseconds) % 100 == 0)
+            if (((int)gameTime.TotalGameTime.Milliseconds) % 10 == 0)
             {
                 Vector3 newposition = position + richtung;
 
@@ -69,7 +69,7 @@ namespace Lichtquelle
                 vorgänger.Draw(gameTime, view, projection);
             }
 
-            partikelmodel.Draw(Matrix.CreateTranslation(position), view, projection);
+            partikelmodel.Draw(Matrix.CreateTranslation(position+ new Vector3(0, 0.5f, 0)), view, projection);
         }
 
         public Vector3 getPosition()

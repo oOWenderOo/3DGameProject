@@ -18,6 +18,7 @@ namespace MainMenuCo
         Texture2D background;
 
         int wartezeit;
+        int levelnummer = 2;
 
         public Levelauswahl()
         {
@@ -52,7 +53,7 @@ namespace MainMenuCo
             for (int i = 0; i < buttons.Length; i++)
             {
                 if (buttons[i].isPressed())
-                    return buttons[i].GetState();
+                    return buttons[i].GetState(levelnummer);
             }
             return this;
         }

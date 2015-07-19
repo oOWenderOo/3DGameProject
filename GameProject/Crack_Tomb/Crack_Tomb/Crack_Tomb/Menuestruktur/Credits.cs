@@ -51,7 +51,7 @@ namespace MainMenuCo
             for (int i = 0; i < buttons.Length; i++)
             {
                 if (buttons[i].isPressed())
-                    return buttons[i].GetState();
+                    return buttons[i].GetState(0);
             }
             return this;
         }

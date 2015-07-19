@@ -6,6 +6,6 @@ Content\Normal.xnb
 Content\ButtonTexture.xnb
 Content\Ship.xnb
 Content\cube.xnb
-Content\Spieler_Test.xnb
-Content\Dreieck.xnb
 Content\ShipTexture_0.xnb
+Content\Spieler_mit_Hut.xnb
+Content\partikel.xnb
