@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Crack_Tomb.Menuestruktur;
 
 namespace MainMenuCo
 {
@@ -63,6 +64,8 @@ namespace MainMenuCo
                 return new Levelauswahl();
             if (state == "InGame")
                 return new InGame(levelnummer);
+            if (state == "Beenden")
+                return new Beenden();
 
             return new Titlescreen();
         }

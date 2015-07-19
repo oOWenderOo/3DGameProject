@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using MainMenuCo;
+using Crack_Tomb.Menuestruktur;
 
 namespace Crack_Tomb
 {
@@ -85,6 +86,9 @@ namespace Crack_Tomb
             }
 
             base.Update(gameTime);
+
+            if (Object.ReferenceEquals(state.GetType(), new Beenden().GetType()))
+                this.Exit();
         }
 
         /// <summary>

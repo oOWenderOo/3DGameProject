@@ -13,7 +13,7 @@ namespace MainMenuCo
     {
         SpriteFont fontButton;
         SpriteFont fontText;
-        Button[] buttons = new Button[3];
+        Button[] buttons = new Button[4];
         Texture2D mouse;
         Texture2D background;
 
@@ -21,9 +21,10 @@ namespace MainMenuCo
 
         public MainMenu()
         {
-            buttons[0] = new Button(new Vector2(60, 250), "Rangliste", "Rangliste");
-            buttons[1] = new Button(new Vector2(60, 350), "Credits", "Credits");
+            buttons[0] = new Button(new Vector2(60, 225), "Rangliste", "Rangliste");
+            buttons[1] = new Button(new Vector2(60, 300), "Credits", "Credits");
             buttons[2] = new Button(new Vector2(60, 150), "Levelauswahl", "Levelauswahl");
+            buttons[3] = new Button(new Vector2(60, 375), "Beenden", "Spiel beenden");
 
             wartezeit = 6;
         }

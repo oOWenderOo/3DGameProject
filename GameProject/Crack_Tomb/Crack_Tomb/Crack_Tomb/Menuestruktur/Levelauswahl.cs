@@ -34,7 +34,7 @@ namespace MainMenuCo
             {
                 string text = "";
                 text = text + (i + 1);
-                levelbuttons[i] = new LevelButton(i + 1, new Vector2(300, 100 + 50 * i + i), text);
+                levelbuttons[i] = new LevelButton(i + 1, new Vector2(300 + 50 * i + i, 100), text);
                 text = "";
             }
 
