@@ -60,8 +60,22 @@ namespace Crack_Tomb.Menuestruktur
         {
             if (this.levelnummer != levelnummer)
             {
-                SpriteBatch.Draw(texture, position, Color.White);
-                SpriteBatch.DrawString(font, text, new Vector2(position.X + 20, position.Y + 15), Color.Black);
+                var mousestate = Mouse.GetState();
+                Vector2 mouseposition = new Vector2(mousestate.X, mousestate.Y);
+
+                int hoehe = texture.Height;
+                int breite = texture.Width;
+
+                if (mouseposition.X > position.X && mouseposition.Y > position.Y && mouseposition.Y < (position.Y + hoehe) && mouseposition.X < (position.X + breite))
+                {
+                    SpriteBatch.Draw(texture, position, Color.Gray);
+                    SpriteBatch.DrawString(font, text, new Vector2(position.X + 20, position.Y + 15), Color.Black);
+                }
+                else
+                {
+                    SpriteBatch.Draw(texture, position, Color.White);
+                    SpriteBatch.DrawString(font, text, new Vector2(position.X + 20, position.Y + 15), Color.Black);
+                }
             }
             else
             {
