@@ -134,6 +134,7 @@
     <Compile Include="Menuestruktur\Levelauswahl.cs" />
     <Compile Include="Menuestruktur\LevelButton.cs" />
     <Compile Include="Menuestruktur\MainMenu.cs" />
+    <Compile Include="Menuestruktur\PauseMenü.cs" />
     <Compile Include="Menuestruktur\Rangliste.cs" />
     <Compile Include="Menuestruktur\Titlescreen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

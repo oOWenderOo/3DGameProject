@@ -23,6 +23,7 @@ namespace MainMenuCo
         Lichtstrahl licht;
         Vector3 lichtPos, lichtDir;
         Player player;
+        PauseMenü pausemenü;
         bool gewonnen = false;
 
         //Annes-Teil
@@ -55,6 +56,7 @@ namespace MainMenuCo
             //Gabriels-Teil
             player = new Player(lichtPos, content.Load<Model>("Spieler_mit_Hut"), levelnummer);
             licht = new Lichtstrahl(content.Load<Model>("partikel"), lichtPos, lichtDir, levelnummer, player);
+            pausemenü = new PauseMenü(content);
 
             //Annes-Teil
             timer.setFont(content);
@@ -63,35 +65,38 @@ namespace MainMenuCo
 
         public override GameState Update(GameTime gameTime)
         {
-            if (Keyboard.GetState().IsKeyDown(Keys.Escape))
-                return new Levelauswahl();
+            pausemenü.checkPause(gameTime);
 
-            //Jannicks-Teil
-            //camera.Update();
-
-            //Gabriels-Teil
-            licht.Update(gameTime, ref player, ref gewonnen);
-            player.Update(gameTime);
-
-            if (gewonnen)
-                return new Gewonnen();
-
-            //Annes-Teil
-            timer.Update(gameTime);
-
-            if (timer.Time == "00:00")
+            if (!pausemenü.ispause)
             {
-                if (wartcount >= 30)
+                //Gabriels-Teil
+                licht.Update(gameTime, ref player, ref gewonnen);
+                player.Update(gameTime);
+
+                if (gewonnen)
+                    return new Gewonnen();
+
+                //Annes-Teil
+                timer.Update(gameTime);
+
+                if (timer.Time == "00:00")
                 {
-                    return new GameOver();
+                    if (wartcount >= 30)
+                    {
+                        return new GameOver();
+                    }
+                    else
+                    {
+                        wartcount = wartcount + 1;
+                        return this;
+                    }
                 }
-                else
-                {
-                    wartcount = wartcount + 1;
-                    return this;
-                }
+                else { return this; }
             }
-            else { return this; }
+            else
+            {
+                return pausemenü.Update(this);
+            }
         }
 
         public override void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)
@@ -156,6 +161,11 @@ namespace MainMenuCo
 
             //Annes-Teil
             timer.Draw(gameTime, Graphics, SpriteBatch);
+
+            if (pausemenü.ispause)
+            {
+                pausemenü.Draw(gameTime, Graphics, SpriteBatch);
+            }
         }
     }
 }
