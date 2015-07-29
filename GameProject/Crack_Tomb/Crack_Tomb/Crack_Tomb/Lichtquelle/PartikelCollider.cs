@@ -52,7 +52,7 @@ namespace Crack_Tomb.Lichtquelle
                     case 1: //Kollision Wand
                         partikel.setRichtung(new Vector3(0, 0, 0));
                         break;
-                    case 2:
+                    case 2: //Wand mit Loch
                         partikel.setPosition(newposition);
                         break;
                     case 3: //Kollision Säule
@@ -161,7 +161,8 @@ namespace Crack_Tomb.Lichtquelle
                                 break;
                         }
                         break;
-                    case 9:
+                    case 9: //Kollision Ziel
+                        partikel.setRichtung(new Vector3(0, 0, 0));
                         gewonnen = true;
                         break;
                     default:
