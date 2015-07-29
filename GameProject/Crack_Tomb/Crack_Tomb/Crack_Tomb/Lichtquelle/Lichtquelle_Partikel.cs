@@ -6,11 +6,13 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Crack_Tomb.Lichtquelle;
 using Crack_Tomb.Spieler;
+using Crack_Tomb;
 
 namespace Lichtquelle
 {
     class Lichtquelle_Partikel
     {
+        MyColor farbe;
         Vector3 position;
         Vector3 richtung;
         Model partikelmodel;
@@ -80,6 +82,11 @@ namespace Lichtquelle
         public Vector3 getRichtung()
         {
             return richtung;
+        }
+
+        public Model getModel()
+        {
+            return partikelmodel;
         }
 
         public void setVorgänger(Lichtquelle_Partikel vorgänger)

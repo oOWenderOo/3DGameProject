@@ -54,7 +54,7 @@ namespace MainMenuCo
             camera = new Kamera();
 
             //Gabriels-Teil
-            player = new Player(lichtPos, content.Load<Model>("Spieler_mit_Hut"), levelnummer);
+            player = new Player(lichtPos, content.Load<Model>("Spieler_mit_Hut"), levelnummer, content);
             licht = new Lichtstrahl(content.Load<Model>("partikel"), lichtPos, lichtDir, levelnummer, player);
             pausemenü = new PauseMenü(content);
 
@@ -157,7 +157,7 @@ namespace MainMenuCo
 
             //Gabriels-Teil
             licht.Draw(gameTime, camera.view, camera.projection);
-            player.Draw(camera.view, camera.projection);
+            player.Draw(camera.view, camera.projection, SpriteBatch);
 
             //Annes-Teil
             timer.Draw(gameTime, Graphics, SpriteBatch);

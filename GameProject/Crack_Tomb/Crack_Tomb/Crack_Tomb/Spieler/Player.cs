@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Content;
 
 namespace Crack_Tomb.Spieler
 {
@@ -12,25 +13,25 @@ namespace Crack_Tomb.Spieler
     {
         public Vector3 position;
         Model model;
-        public Inventar inventar;
+        Inventar inventar;
         PlayerSteuerung playersteuerung;
         int[,] Säulen_Array = new int[41, 41];
 
-        public Player(Vector3 startposition, Model model, int LevelNummer)
+        public Player(Vector3 startposition, Model model, int LevelNummer, ContentManager content)
         {
             position = startposition;
             this.model = model;
-            inventar = new Inventar();
+            inventar = new Inventar(content);
             playersteuerung = new PlayerSteuerung(LevelNummer, ref Säulen_Array);
         }
 
         public void Update(GameTime gametime)
         {
             //Steuerung des Spielers
-            position = playersteuerung.Update(gametime, position, ref Säulen_Array);
+            position = playersteuerung.Update(gametime, position, ref Säulen_Array, ref inventar);
         }
 
-        public void Draw(Matrix view, Matrix projection)
+        public void Draw(Matrix view, Matrix projection, SpriteBatch spritebatch)
         {
             //Spieler wird sichtbar gemacht
             foreach (ModelMesh mesh in model.Meshes)
@@ -45,6 +46,8 @@ namespace Crack_Tomb.Spieler
                 }
                 mesh.Draw();
             }
+
+            inventar.Draw(spritebatch);
         }
 
         public int[,] getSäulenArray()

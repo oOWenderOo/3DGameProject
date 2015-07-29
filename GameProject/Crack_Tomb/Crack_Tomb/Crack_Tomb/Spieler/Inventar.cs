@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework;
 
 namespace Crack_Tomb.Spieler
 {
@@ -12,32 +15,41 @@ namespace Crack_Tomb.Spieler
 
         //Bedeutung der Positionen
         //0 - Spiegel
-        //1 - Doppelseitiger Spiegel
+        //1 - Splitt-Prisma
         //2 - Farbkristall
-        //3 - Splitt-Prisma
 
         private int[] inventar;
+        SpriteFont font;
 
         //Erzeugen eines Inventars
-        public Inventar()
+        public Inventar(ContentManager content)
         {
-            inventar = new int[4];
+            inventar = new int[3];
+            font = content.Load<SpriteFont>("Normal");
 
             for (int i = 0; i < inventar.Length; i++)
             {
-                inventar[i] = 0;
+                inventar[i] = 5;
             }
+        }
+
+        public void Draw(SpriteBatch spritebatch)
+        {
+            spritebatch.Begin();
+
+            for (int i = 0; i < inventar.Length; i++)
+            {
+                string str = "" + inventar[i];
+                spritebatch.DrawString(font, str, new Vector2(500, 100 * i), Color.Black);
+            }
+
+            spritebatch.End();
         }
 
         //Objekte ins Inventar einfügen
         public void pushSpiegel()
         {
             inventar[0]++;
-        }
-
-        public void pushDoppelSpiegel()
-        {
-            inventar[1]++;
         }
 
         public void pushFarbkristall()
@@ -47,7 +59,7 @@ namespace Crack_Tomb.Spieler
 
         public void pushSplittPrisma()
         {
-            inventar[3]++;
+            inventar[1]++;
         }
 
         //Objekte aus dem Inventar entfernen
@@ -56,14 +68,6 @@ namespace Crack_Tomb.Spieler
             if (inventar[0] != 0)
             {
                 inventar[0]--;
-            }
-        }
-
-        public void pullDoppelSpiegel()
-        {
-            if (inventar[1] != 0)
-            {
-                inventar[1]--;
             }
         }
 
@@ -77,10 +81,25 @@ namespace Crack_Tomb.Spieler
 
         public void pullSplittPrisma()
         {
-            if (inventar[3] != 0)
+            if (inventar[1] != 0)
             {
-                inventar[3]--;
+                inventar[1]--;
             }
+        }
+
+        public int getNumSpiegel()
+        {
+            return inventar[0];
+        }
+
+        public int getNumSplittPrisma()
+        {
+            return inventar[1];
+        }
+
+        public int getNumFarbkristall()
+        {
+            return inventar[2];
         }
     }
 }

@@ -49,40 +49,111 @@ namespace Crack_Tomb.Lichtquelle
 
                 switch (objectAtnew)
                 {
-                    case 1:
+                    case 1: //Kollision Wand
                         partikel.setRichtung(new Vector3(0, 0, 0));
                         break;
                     case 2:
                         partikel.setPosition(newposition);
                         break;
-                    case 3:
+                    case 3: //Kollision Säule
+                        Vector3 partikelrichtung = partikel.getRichtung();
+                        Vector3 oben = new Vector3(0, 0, -1);
+                        Vector3 unten = new Vector3(0, 0, 1);
+                        Vector3 rechts = new Vector3(1, 0, 0);
+                        Vector3 links = new Vector3(-1, 0, 0);
+                        partikelrichtung.Normalize();
+
                         switch (player.getSäulenArray()[(int)Math.Floor(newposition.X), (int)Math.Floor(newposition.Z)])
                         {
                             case 1:
                                 partikel.setPosition(newposition);
                                 break;
                             case 2:
-                                partikel.setRichtung(new Vector3(0, 0, -1));
-                                partikel.setPosition(newposition);
-                                newposition = partikel.getPosition() + partikel.getRichtung();
-                                partikel.setPosition(newposition);
+                                if (partikelrichtung == oben)
+                                {
+                                    partikel.setRichtung(links);
+                                    partikel.setPosition(newposition);
+                                    newposition = partikel.getPosition() + partikel.getRichtung();
+                                    partikel.setPosition(newposition);
+                                }
+
+                                if (partikelrichtung == unten)
+                                {
+                                    partikel.setRichtung(rechts);
+                                    partikel.setPosition(newposition);
+                                    newposition = partikel.getPosition() + partikel.getRichtung();
+                                    partikel.setPosition(newposition);
+                                }
+
+                                if (partikelrichtung == rechts)
+                                {
+                                    partikel.setRichtung(unten);
+                                    partikel.setPosition(newposition);
+                                    newposition = partikel.getPosition() + partikel.getRichtung();
+                                    partikel.setPosition(newposition);
+                                }
+
+                                if (partikelrichtung == links)
+                                {
+                                    partikel.setRichtung(oben);
+                                    partikel.setPosition(newposition);
+                                    newposition = partikel.getPosition() + partikel.getRichtung();
+                                    partikel.setPosition(newposition);
+                                }
                                 break;
                             case 3:
-                                partikel.setRichtung(new Vector3(1, 0, 0));
-                                partikel.setPosition(newposition);
-                                newposition = partikel.getPosition() + partikel.getRichtung();
-                                partikel.setPosition(newposition);
+                                if (partikelrichtung == oben)
+                                {
+                                    partikel.setRichtung(rechts);
+                                    partikel.setPosition(newposition);
+                                    newposition = partikel.getPosition() + partikel.getRichtung();
+                                    partikel.setPosition(newposition);
+                                }
+
+                                if (partikelrichtung == unten)
+                                {
+                                    partikel.setRichtung(links);
+                                    partikel.setPosition(newposition);
+                                    newposition = partikel.getPosition() + partikel.getRichtung();
+                                    partikel.setPosition(newposition);
+                                }
+
+                                if (partikelrichtung == rechts)
+                                {
+                                    partikel.setRichtung(oben);
+                                    partikel.setPosition(newposition);
+                                    newposition = partikel.getPosition() + partikel.getRichtung();
+                                    partikel.setPosition(newposition);
+                                }
+
+                                if (partikelrichtung == links)
+                                {
+                                    partikel.setRichtung(unten);
+                                    partikel.setPosition(newposition);
+                                    newposition = partikel.getPosition() + partikel.getRichtung();
+                                    partikel.setPosition(newposition);
+                                }
                                 break;
                             case 4:
-                                partikel.setRichtung(new Vector3(0, 0, 1));
-                                partikel.setPosition(newposition);
-                                newposition = partikel.getPosition() + partikel.getRichtung();
-                                partikel.setPosition(newposition);
+                                if (partikelrichtung == oben || partikelrichtung == unten)
+                                {
+                                    partikel.setPosition(newposition);
+                                    partikel.setNachfolger(new Lichtquelle_Partikel(partikel.getModel(), partikel.getPosition(), links, partikel, partikel.getNachfolger()));
+                                    partikel.getNachfolger().getNachfolger().setVorgänger(partikel.getNachfolger());
+                                    partikel.setNachfolger(new Lichtquelle_Partikel(partikel.getModel(), partikel.getPosition(), rechts, partikel, partikel.getNachfolger()));
+                                    partikel.getNachfolger().getNachfolger().setVorgänger(partikel.getNachfolger());
+                                }
+
+                                if (partikelrichtung == rechts || partikelrichtung == links)
+                                {
+                                    partikel.setPosition(newposition);
+                                    partikel.setNachfolger(new Lichtquelle_Partikel(partikel.getModel(), partikel.getPosition(), oben, partikel, partikel.getNachfolger()));
+                                    partikel.getNachfolger().getNachfolger().setVorgänger(partikel.getNachfolger());
+                                    partikel.setNachfolger(new Lichtquelle_Partikel(partikel.getModel(), partikel.getPosition(), unten, partikel, partikel.getNachfolger()));
+                                    partikel.getNachfolger().getNachfolger().setVorgänger(partikel.getNachfolger());
+                                }
                                 break;
                             case 5:
-                                partikel.setRichtung(new Vector3(-1, 0, 0));
-                                partikel.setPosition(newposition);
-                                newposition = partikel.getPosition() + partikel.getRichtung();
                                 partikel.setPosition(newposition);
                                 break;
                             default:
