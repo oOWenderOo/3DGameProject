@@ -32,6 +32,7 @@ namespace Crack_Tomb.Menuestruktur
 
             wartezeit = 10;
 
+            /*
             int counter = 0;
             string line;
 
@@ -43,7 +44,7 @@ namespace Crack_Tomb.Menuestruktur
                 counter++;
             }
 
-            file.Close();
+            file.Close();*/
         }
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics)
@@ -87,11 +88,11 @@ namespace Crack_Tomb.Menuestruktur
             {
                 buttons[i].Draw(gameTime, Graphics, SpriteBatch);
             }
-
+            /*
             for (int i = 0; i < rangliste.Length; i++)
             {
                 SpriteBatch.DrawString(fontText, rangliste[i], new Vector2(0, 30 * i), Color.Black);
-            }
+            }*/
 
             SpriteBatch.Draw(mouse, new Vector2(Mouse.GetState().X, Mouse.GetState().Y), Color.White);
 

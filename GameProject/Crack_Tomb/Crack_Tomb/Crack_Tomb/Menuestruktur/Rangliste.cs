@@ -26,7 +26,7 @@ namespace MainMenuCo
 
             wartezeit = 6;
 
-            int counter = 0;
+            /*int counter = 0;
             string line;
 
             System.IO.StreamReader file = new System.IO.StreamReader(@"c:\Users\Gabriel\Test.txt");
@@ -37,7 +37,7 @@ namespace MainMenuCo
                 counter++;
             }
 
-            file.Close();
+            file.Close();*/
         }
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics) 
@@ -81,11 +81,11 @@ namespace MainMenuCo
             {
                 buttons[i].Draw(gameTime, Graphics, SpriteBatch);
             }
-
+            /*
             for (int i = 0; i < rangliste.Length; i++)
             {
                 SpriteBatch.DrawString(fontText, rangliste[i], new Vector2(0, 30 * i), Color.Black);
-            }
+            }*/
 
             SpriteBatch.Draw(mouse, new Vector2(Mouse.GetState().X, Mouse.GetState().Y), Color.White);
 
