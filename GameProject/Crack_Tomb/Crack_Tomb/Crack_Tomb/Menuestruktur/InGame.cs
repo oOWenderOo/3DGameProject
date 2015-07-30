@@ -74,7 +74,7 @@ namespace MainMenuCo
                 player.Update(gameTime);
 
                 if (gewonnen)
-                    return new Gewonnen();
+                    return new Gewonnen(levelnummer);
 
                 //Annes-Teil
                 timer.Update(gameTime);
@@ -83,7 +83,7 @@ namespace MainMenuCo
                 {
                     if (wartcount >= 30)
                     {
-                        return new GameOver();
+                        return new GameOver(levelnummer);
                     }
                     else
                     {
