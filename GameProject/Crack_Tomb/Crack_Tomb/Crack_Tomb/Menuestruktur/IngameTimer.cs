@@ -18,6 +18,7 @@ namespace Crack_Tomb.Menuestruktur
         private Vector2 position;
         int minutes;
         float seconds;
+        Texture2D timertextur;
 
         public IngameTimer(int startMinute, float startSeconds)
         {
@@ -39,6 +40,11 @@ namespace Crack_Tomb.Menuestruktur
         public void setFont(ContentManager content)
         {
             font = content.Load<SpriteFont>("Normal");
+        }
+
+        public void setTexture(ContentManager content)
+        {
+            timertextur = content.Load<Texture2D>("Timer");
         }
 
         public  void Update(GameTime gameTime)
@@ -95,6 +101,7 @@ namespace Crack_Tomb.Menuestruktur
         public void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch spriteBatch)
         {
             spriteBatch.Begin();
+            spriteBatch.Draw(timertextur, new Vector2(Position.X - 30, Position.Y), Color.White);
             spriteBatch.DrawString(font, Timetext, Position, Color.Blue);
             spriteBatch.End();
         }

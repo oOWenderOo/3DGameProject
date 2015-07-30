@@ -119,8 +119,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pausenmenü Hintergrund 366 x 400.png">
-      <Name>Pausenmenü Hintergrund 366 x 400</Name>
+    <Compile Include="Pausenmenü Hintergrund 412 x 450.png">
+      <Name>Pausenmenü Hintergrund 412 x 450</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Score.png">
+      <Name>Score</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Timer.png">
+      <Name>Timer</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

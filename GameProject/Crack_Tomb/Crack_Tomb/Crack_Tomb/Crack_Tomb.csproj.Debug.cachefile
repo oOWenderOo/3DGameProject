@@ -3,7 +3,6 @@ Content\button.xnb
 Content\ShipTexture.xnb
 Content\Testbildhintergrund.xnb
 Content\levelbutton.xnb
-Content\Pausenmenü Hintergrund 366 x 400.xnb
 Content\Normal.xnb
 Content\ButtonTexture.xnb
 Content\Ship.xnb
@@ -11,3 +10,6 @@ Content\cube.xnb
 Content\Spieler_mit_Hut.xnb
 Content\partikel.xnb
 Content\ShipTexture_0.xnb
+Content\Pausenmenü Hintergrund 412 x 450.xnb
+Content\Score.xnb
+Content\Timer.xnb

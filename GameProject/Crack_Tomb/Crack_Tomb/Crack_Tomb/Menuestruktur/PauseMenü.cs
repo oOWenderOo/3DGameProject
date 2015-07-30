@@ -25,7 +25,7 @@ namespace Crack_Tomb.Menuestruktur
             mouse = content.Load<Texture2D>("MouseZeiger");
             fontButton = content.Load<SpriteFont>("ButtonTexture");
             fontText = content.Load<SpriteFont>("Normal");
-            background = content.Load<Texture2D>("Pausenmenü Hintergrund 366 x 400");
+            background = content.Load<Texture2D>("Pausenmenü Hintergrund 412 x 450");
 
             buttons[0] = new Button(new Vector2(60, 225), "Fortsetzen", "Fortsetzen");
             buttons[1] = new Button(new Vector2(60, 300), "Levelauswahl", "Levelauswahl");

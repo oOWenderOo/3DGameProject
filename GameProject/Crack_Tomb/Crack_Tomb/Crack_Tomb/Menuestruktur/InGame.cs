@@ -60,6 +60,7 @@ namespace MainMenuCo
 
             //Annes-Teil
             timer.setFont(content);
+            timer.setTexture(content);
             timer.Position = new Vector2(50, 25);
         }
 

@@ -47,15 +47,6 @@
       <Time>2015-07-29T12:32:51.4537911+02:00</Time>
     </Item>
     <Item>
-      <Source>Pausenmenü Hintergrund 366 x 400.png</Source>
-      <Name>Pausenmenü Hintergrund 366 x 400</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Pausenmenü Hintergrund 366 x 400.xnb</Output>
-      <Time>2015-07-29T12:32:51.2517795+02:00</Time>
-    </Item>
-    <Item>
       <Source>Normal.spritefont</Source>
       <Name>Normal</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -170,6 +161,33 @@
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\partikel_0.xml</Output>
       <Time>2015-07-29T12:32:53.4229037+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Pausenmenü Hintergrund 412 x 450.png</Source>
+      <Name>Pausenmenü Hintergrund 412 x 450</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Pausenmenü Hintergrund 412 x 450.xnb</Output>
+      <Time>2015-07-30T11:18:07.4719559+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Score.png</Source>
+      <Name>Score</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Score.xnb</Output>
+      <Time>2015-07-30T11:18:56.1636134+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Timer.png</Source>
+      <Name>Timer</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Timer.xnb</Output>
+      <Time>2015-07-30T11:19:00.0072496+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
