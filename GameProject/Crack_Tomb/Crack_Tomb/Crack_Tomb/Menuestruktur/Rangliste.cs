@@ -18,12 +18,26 @@ namespace MainMenuCo
         Texture2D background;
 
         int wartezeit;
+        string[] rangliste = new string[10];
 
         public Rangliste()
         {
             buttons[0] = new Button(new Vector2(60, 370), "MainMenu", "Zurück");
 
             wartezeit = 6;
+
+            int counter = 0;
+            string line;
+
+            System.IO.StreamReader file = new System.IO.StreamReader(@"c:\Users\Gabriel\Test.txt");
+
+            while ((line = file.ReadLine()) != null)
+            {
+                rangliste[counter] = line;
+                counter++;
+            }
+
+            file.Close();
         }
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics) 
@@ -66,6 +80,11 @@ namespace MainMenuCo
             for (int i = 0; i < buttons.Length; i++)
             {
                 buttons[i].Draw(gameTime, Graphics, SpriteBatch);
+            }
+
+            for (int i = 0; i < rangliste.Length; i++)
+            {
+                SpriteBatch.DrawString(fontText, rangliste[i], new Vector2(0, 30 * i), Color.Black);
             }
 
             SpriteBatch.Draw(mouse, new Vector2(Mouse.GetState().X, Mouse.GetState().Y), Color.White);

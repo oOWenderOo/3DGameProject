@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Input;
+using System.IO;
 
 namespace Crack_Tomb.Menuestruktur
 {
@@ -20,6 +21,7 @@ namespace Crack_Tomb.Menuestruktur
 
         int wartezeit;
         int levelnummer;
+        string[] rangliste = new string[10];
 
         public Gewonnen(int levelnummer)
         {
@@ -29,6 +31,19 @@ namespace Crack_Tomb.Menuestruktur
             buttons[1] = new Button(new Vector2(60, 370), "InGame", "Level erneut starten");
 
             wartezeit = 10;
+
+            int counter = 0;
+            string line;
+
+            System.IO.StreamReader file = new System.IO.StreamReader(@"c:\Users\Gabriel\Test.txt");
+
+            while ((line = file.ReadLine()) != null)
+            {
+                rangliste[counter] = line;
+                counter++;
+            }
+
+            file.Close();
         }
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics)
@@ -71,6 +86,11 @@ namespace Crack_Tomb.Menuestruktur
             for (int i = 0; i < buttons.Length; i++)
             {
                 buttons[i].Draw(gameTime, Graphics, SpriteBatch);
+            }
+
+            for (int i = 0; i < rangliste.Length; i++)
+            {
+                SpriteBatch.DrawString(fontText, rangliste[i], new Vector2(0, 30 * i), Color.Black);
             }
 
             SpriteBatch.Draw(mouse, new Vector2(Mouse.GetState().X, Mouse.GetState().Y), Color.White);
