@@ -80,8 +80,16 @@ namespace Crack_Tomb.Menuestruktur
                 }
                 else
                 {
-                    SpriteBatch.Draw(texture, position, Color.White);
-                    SpriteBatch.DrawString(font, text, new Vector2(position.X + 20, position.Y + 15), Color.Black);
+                    if (freigeschaltet)
+                    {
+                        SpriteBatch.Draw(texture, position, Color.White);
+                        SpriteBatch.DrawString(font, text, new Vector2(position.X + 20, position.Y + 15), Color.Black);
+                    }
+                    else
+                    {
+                        SpriteBatch.Draw(texture, position, Color.Gray);
+                        SpriteBatch.DrawString(font, text, new Vector2(position.X + 20, position.Y + 15), Color.Black);
+                    }
                 }
             }
             else

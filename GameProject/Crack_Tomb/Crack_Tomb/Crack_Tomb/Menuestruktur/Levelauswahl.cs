@@ -20,7 +20,7 @@ namespace MainMenuCo
         Texture2D background;
 
         int wartezeit;
-        int levelnummer = 2;
+        int levelnummer = 1;
         int anzahl_level = 6;
 
         public Levelauswahl()
@@ -95,7 +95,7 @@ namespace MainMenuCo
 
             for (int i = 0; i < anzahl_level; i++)
             {
-                if (levelbuttons[i].isPressed())
+                if (levelbuttons[i].isPressed() && levelbuttons[i].getFreigeschaltet() == true)
                     levelnummer = levelbuttons[i].getLevelnummer();
             }
 
