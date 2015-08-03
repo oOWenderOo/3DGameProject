@@ -75,8 +75,16 @@ namespace Crack_Tomb.Menuestruktur
 
                 if (mouseposition.X > position.X && mouseposition.Y > position.Y && mouseposition.Y < (position.Y + hoehe) && mouseposition.X < (position.X + breite))
                 {
-                    SpriteBatch.Draw(texture, position, Color.Gray);
-                    SpriteBatch.DrawString(font, text, new Vector2(position.X + 20, position.Y + 15), Color.Black);
+                    if (freigeschaltet)
+                    {
+                        SpriteBatch.Draw(texture, position, Color.Blue);
+                        SpriteBatch.DrawString(font, text, new Vector2(position.X + 20, position.Y + 15), Color.White);
+                    }
+                    else
+                    {
+                        SpriteBatch.Draw(texture, position, Color.Gray);
+                        SpriteBatch.DrawString(font, text, new Vector2(position.X + 20, position.Y + 15), Color.Black);
+                    }
                 }
                 else
                 {
