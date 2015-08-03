@@ -15,16 +15,30 @@ namespace MainMenuCo
     {
         SpriteFont fontText;
         Texture2D background;
+        int anzahllevel = 6;
 
         public Titlescreen()
         {
-            /*
-            if (!File.Exists(@"c:\Users\Gabriel\Test.txt"))
+            for (int i = 1; i <= anzahllevel; i++)
             {
-                string[] lines = { "Ralf 100", "Hans 90", "Mueller 80", "Hansen 70", "Wender 60", "Netuwi 50", "Jan 40", "Lisa 30", "Paul 20", "Patrick 10" };
+                string dateinahme = "Level" + i + ".txt";
 
-                System.IO.File.WriteAllLines(@"c:\Users\Gabriel\Test.txt", lines);
-            }*/
+                if (!File.Exists(@dateinahme))
+                {
+                    if (i == 1)
+                    {
+                        string[] lines = { "true", "Ralf 100", "Hans 90", "Mueller 80", "Hansen 70", "Wender 60", "Netuwi 50", "Jan 40", "Lisa 30", "Paul 20", "Patrick 10" };
+
+                        System.IO.File.WriteAllLines(@dateinahme, lines);
+                    }
+                    else
+                    {
+                        string[] lines = { "false", "Ralf 100", "Hans 90", "Mueller 80", "Hansen 70", "Wender 60", "Netuwi 50", "Jan 40", "Lisa 30", "Paul 20", "Patrick 10" };
+
+                        System.IO.File.WriteAllLines(@dateinahme, lines);
+                    }
+                }
+            }
         }
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics) 

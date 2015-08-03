@@ -32,19 +32,23 @@ namespace Crack_Tomb.Menuestruktur
 
             wartezeit = 10;
 
-            /*
+            
             int counter = 0;
             string line;
+            string dateiname = "Level" + levelnummer + ".txt";
 
-            System.IO.StreamReader file = new System.IO.StreamReader(@"c:\Users\Gabriel\Test.txt");
+            System.IO.StreamReader file = new System.IO.StreamReader(@dateiname);
 
             while ((line = file.ReadLine()) != null)
             {
-                rangliste[counter] = line;
+                if (counter != 0)
+                {
+                    rangliste[counter - 1] = line;
+                }
                 counter++;
             }
 
-            file.Close();*/
+            file.Close();
         }
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics)
@@ -88,11 +92,11 @@ namespace Crack_Tomb.Menuestruktur
             {
                 buttons[i].Draw(gameTime, Graphics, SpriteBatch);
             }
-            /*
+            
             for (int i = 0; i < rangliste.Length; i++)
             {
                 SpriteBatch.DrawString(fontText, rangliste[i], new Vector2(0, 30 * i), Color.Black);
-            }*/
+            }
 
             SpriteBatch.Draw(mouse, new Vector2(Mouse.GetState().X, Mouse.GetState().Y), Color.White);
 
