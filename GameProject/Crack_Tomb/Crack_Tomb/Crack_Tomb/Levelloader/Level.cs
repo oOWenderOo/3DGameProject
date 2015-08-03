@@ -96,13 +96,13 @@ namespace Crack_Tomb{
        int Level_Nummer = 1;                                //StartInventar 7x Spiegel  
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
-       public Vector3 Licht_Start = new Vector3(0, 0, 0);
-       public Vector3 Licht_Ziel = new Vector3(0, 0, 0);
-       public Vector3 Licht_Richtung;
+       public Vector3 Licht_Start = new Vector3(2.5f, 0, 14.5f);
+       public Vector3 Licht_Ziel = new Vector3(14, 0, 2);
+       public Vector3 Licht_Richtung = new Vector3(-1,0,0);
 
        public int[,] Level_Array = {{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-                                    {1,0,3,0,0,0,0,0,0,0,3,0,0,0,9,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+                                    {1,0,3,0,0,0,0,0,0,0,3,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,1,1,1,1,0,0,0,1,1,2,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -114,7 +114,7 @@ namespace Crack_Tomb{
                                     {1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,0,0,0,1,1,2,1,1,0,0,0,1,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-                                    {1,0,8,0,0,0,3,0,1,0,3,0,0,0,3,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+                                    {1,0,0,0,0,0,3,0,1,0,3,0,0,0,3,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -159,12 +159,12 @@ namespace Crack_Tomb{
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(18.5f, 0, 10.5f);
-       public Vector3 Licht_Ziel = new Vector3(10, 0, 2);
+       public Vector3 Licht_Ziel = new Vector3(2, 0, 10);
        public Vector3 Licht_Richtung = new Vector3(-1, 0, 0);
 
        public int[,] Level_Array = {{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-                                    {1,0,0,0,1,0,3,0,1,0,9,0,2,0,0,0,1,0,3,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+                                    {1,0,0,0,1,0,3,0,1,0,0,0,2,0,0,0,1,0,3,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,1,2,1,1,0,0,0,1,1,2,1,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -180,7 +180,7 @@ namespace Crack_Tomb{
                                     {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,1,2,1,1,0,0,0,1,0,0,0,1,0,0,0,1,1,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-                                    {1,0,3,0,0,0,3,0,1,0,8,0,1,0,3,0,0,0,3,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+                                    {1,0,3,0,0,0,3,0,1,0,0,0,1,0,3,0,0,0,3,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -270,7 +270,7 @@ namespace Crack_Tomb{
 
        /* Liste für die Licht-Barrieren. Positionswerte stimmen mit Werten im Array überein für Abfrage. */
 
-        public Barriere[] Barriere_List;          
+       //public Barriere[] Barriere_List;          
 
         
        
@@ -290,8 +290,8 @@ namespace Crack_Tomb{
        int Level_Nummer = 4;
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
-       public Vector3 Licht_Start = new Vector3(10.5f, 0, 14.5f);
-       public Vector3 Licht_Ziel = new Vector3(10, 0, 6);
+       public Vector3 Licht_Start = new Vector3(14.5f, 0, 10.5f);
+       public Vector3 Licht_Ziel = new Vector3(6, 0, 10);
        public Vector3 Licht_Richtung = new Vector3(1,0,0);
 
        public int[,] Level_Array = {{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -337,21 +337,22 @@ namespace Crack_Tomb{
                                     {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}};
 
 
-       public Barriere[] Barriere_List = {new Barriere(2,0,4,000001,0),
-                                          new Barriere(2,0,8,000010,0),
-                                          new Barriere(2,0,12,010000,0),
-                                          new Barriere(2,0,16,100000,0),
-                                          new Barriere(6,0,8,000010,0),
-                                          new Barriere(6,0,12,010000,0),
-                                          new Barriere(6,0,16,100000,0),
-                                          new Barriere(14,0,8,001000,0),
-                                          new Barriere(14,0,12,000100,0),
-                                          new Barriere(18,0,8,000100,0),
-                                          new Barriere(18,0,12,000010,0),
-                                          new Barriere(18,0,16,000001,0),
-                                          new Barriere(8,0,2,100000,1),
-                                          new Barriere(12,0,2,100000,1),
-                                          new Barriere(8,0,10,000100,1)    
+       public Barriere[] Barriere_List = {new Barriere(4,0,2,000001,0),
+                                          new Barriere(8,0,2,000010,0),
+                                          new Barriere(12,0,2,010000,0),
+                                          new Barriere(16,0,2,100000,0),
+                                          new Barriere(8,0,6,000010,0),
+                                          new Barriere(12,0,6,010000,0),
+                                          new Barriere(16,0,6,100000,0),
+                                          new Barriere(8,0,14,001000,0),
+                                          new Barriere(12,0,14,000100,0),
+                                          new Barriere(8,0,18,000100,0),
+                                          new Barriere(12,0,18,000010,0),
+                                          new Barriere(16,0,18,000001,0),
+                                          new Barriere(2,0,8,100000,1),
+                                          new Barriere(2,0,12,100000,1),
+                                          new Barriere(10,0,8,000100,1),  
+                                          null
                                          };
 
 
@@ -368,7 +369,7 @@ namespace Crack_Tomb{
        int Level_Nummer = 5;
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
-       public Vector3 Licht_Start = new Vector3(6.5f, 0, 22.5f);
+       public Vector3 Licht_Start = new Vector3(22.5f, 0, 6.5f);
        public Vector3 Licht_Ziel = new Vector3(22, 0, 22);
        public Vector3 Licht_Richtung = new Vector3(1, 0, 0);
 
@@ -415,10 +416,11 @@ namespace Crack_Tomb{
                                     {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}};
 
 
-       public Barriere[] Barriere_List = {new Barriere(18,0,20,010000,0),
-                                          new Barriere(22,0,16,000010,0),
-                                          new Barriere(16,0,14,000010,1),
-                                          new Barriere(12,0,22,000010,1)
+       public Barriere[] Barriere_List = {new Barriere(20,0,18,010000,0),
+                                          new Barriere(16,0,22,000010,0),
+                                          new Barriere(14,0,16,000010,1),
+                                          new Barriere(22,0,12,000010,1),
+                                          null
                                          };
 
 
@@ -435,8 +437,8 @@ namespace Crack_Tomb{
        int Level_Nummer = 6;
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
-       public Vector3 Licht_Start = new Vector3(6.5f, 0, 22.5f);
-       public Vector3 Licht_Ziel = new Vector3(22, 0, 22);
+       public Vector3 Licht_Start = new Vector3(18.5f, 0, 2.5f);
+       public Vector3 Licht_Ziel = new Vector3(2, 0, 2);
        public Vector3 Licht_Richtung = new Vector3(-1, 0, 0);
 
        public int[,] Level_Array = {{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -482,10 +484,11 @@ namespace Crack_Tomb{
                                     {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}};
 
 
-       public Barriere[] Barriere_List = {new Barriere(18,0,8,000001,0),
-                                          new Barriere(18,0,16,010000,0),
-                                          new Barriere(4,0,2,100000,1),
-                                          new Barriere(16,0,6,000001,1)
+       public Barriere[] Barriere_List = {new Barriere(8,0,18,000001,0),
+                                          new Barriere(16,0,18,010000,0),
+                                          new Barriere(2,0,4,100000,1),
+                                          new Barriere(6,0,16,000001,1),
+                                          null
                                          }; 
         
 

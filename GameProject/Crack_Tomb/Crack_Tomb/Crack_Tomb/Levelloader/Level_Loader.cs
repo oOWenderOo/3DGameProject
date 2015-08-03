@@ -88,13 +88,27 @@ namespace Crack_Tomb{
                     Level_Array = new Level3().Level_Array;
                     Licht_Start = new Level3().Licht_Start;
                     Licht_Richtung = new Level3().Licht_Richtung;
-                    Barriere_List = new Level3().Barriere_List;
+                    //Barriere_List = new Level3().Barriere_List;
                     break;
 
                 case 4:
                     Level_Array = new Level4().Level_Array;
                     Licht_Start = new Level4().Licht_Start;
                     Licht_Richtung = new Level4().Licht_Richtung;
+                    break;
+
+                case 5:
+                    Level_Array = new Level5().Level_Array;
+                    Licht_Start = new Level5().Licht_Start;
+                    Licht_Richtung = new Level5().Licht_Richtung;
+                    Barriere_List = new Level5().Barriere_List;
+                    break;
+
+                case 6:
+                    Level_Array = new Level6().Level_Array;
+                    Licht_Start = new Level6().Licht_Start;
+                    Licht_Richtung = new Level6().Licht_Richtung;
+                    Barriere_List = new Level6().Barriere_List;
                     break;
 
                 default:
