@@ -21,7 +21,7 @@ namespace MainMenuCo
 
         int wartezeit;
         int levelnummer = 2;
-        int anzahl_level = 3;
+        int anzahl_level = 6;
 
         public Levelauswahl()
         {

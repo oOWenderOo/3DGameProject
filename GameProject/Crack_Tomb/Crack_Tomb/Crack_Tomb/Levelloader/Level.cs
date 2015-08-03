@@ -370,7 +370,7 @@ namespace Crack_Tomb{
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(6.5f, 0, 22.5f);
        public Vector3 Licht_Ziel = new Vector3(22, 0, 22);
-       public Vector3 Licht_Richtung = new Vector3(-1, 0, 0);
+       public Vector3 Licht_Richtung = new Vector3(1, 0, 0);
 
        public int[,] Level_Array = {{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
