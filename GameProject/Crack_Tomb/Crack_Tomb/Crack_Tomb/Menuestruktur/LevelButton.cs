@@ -15,12 +15,19 @@ namespace Crack_Tomb.Menuestruktur
         string text;
         SpriteFont font;
         int levelnummer;
+        bool freigeschaltet;
 
-        public LevelButton(int levelnummer, Vector2 position, string text)
+        public LevelButton(int levelnummer, Vector2 position, string text, bool freigeschaltet)
         {
             this.levelnummer = levelnummer;
             this.position = position;
             this.text = text;
+            this.freigeschaltet = freigeschaltet;
+        }
+
+        public bool getFreigeschaltet()
+        {
+            return freigeschaltet;
         }
 
         public void SetFont(SpriteFont font)
@@ -68,13 +75,29 @@ namespace Crack_Tomb.Menuestruktur
 
                 if (mouseposition.X > position.X && mouseposition.Y > position.Y && mouseposition.Y < (position.Y + hoehe) && mouseposition.X < (position.X + breite))
                 {
-                    SpriteBatch.Draw(texture, position, Color.Gray);
-                    SpriteBatch.DrawString(font, text, new Vector2(position.X + 20, position.Y + 15), Color.Black);
+                    if (freigeschaltet)
+                    {
+                        SpriteBatch.Draw(texture, position, Color.Blue);
+                        SpriteBatch.DrawString(font, text, new Vector2(position.X + 20, position.Y + 15), Color.White);
+                    }
+                    else
+                    {
+                        SpriteBatch.Draw(texture, position, Color.Gray);
+                        SpriteBatch.DrawString(font, text, new Vector2(position.X + 20, position.Y + 15), Color.Black);
+                    }
                 }
                 else
                 {
-                    SpriteBatch.Draw(texture, position, Color.White);
-                    SpriteBatch.DrawString(font, text, new Vector2(position.X + 20, position.Y + 15), Color.Black);
+                    if (freigeschaltet)
+                    {
+                        SpriteBatch.Draw(texture, position, Color.White);
+                        SpriteBatch.DrawString(font, text, new Vector2(position.X + 20, position.Y + 15), Color.Black);
+                    }
+                    else
+                    {
+                        SpriteBatch.Draw(texture, position, Color.Gray);
+                        SpriteBatch.DrawString(font, text, new Vector2(position.X + 20, position.Y + 15), Color.Black);
+                    }
                 }
             }
             else

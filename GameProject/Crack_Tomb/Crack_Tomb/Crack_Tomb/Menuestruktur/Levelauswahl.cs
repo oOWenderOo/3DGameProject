@@ -20,7 +20,7 @@ namespace MainMenuCo
         Texture2D background;
 
         int wartezeit;
-        int levelnummer = 2;
+        int levelnummer = 1;
         int anzahl_level = 6;
 
         public Levelauswahl()
@@ -34,7 +34,24 @@ namespace MainMenuCo
             {
                 string text = "";
                 text = text + (i + 1);
-                levelbuttons[i] = new LevelButton(i + 1, new Vector2(300 + 50 * i + i, 100), text);
+                string dateiname = "Level" + (i + 1) + ".txt";
+                string line;
+
+                System.IO.StreamReader file = new System.IO.StreamReader(@dateiname);
+
+                line = file.ReadLine();
+
+                file.Close();
+
+                if (line == "true")
+                {
+                    levelbuttons[i] = new LevelButton(i + 1, new Vector2(300 + 50 * i + i, 100), text, true);
+                }
+                else
+                {
+                    levelbuttons[i] = new LevelButton(i + 1, new Vector2(300 + 50 * i + i, 100), text, false);
+                }
+
                 text = "";
             }
 
@@ -78,7 +95,7 @@ namespace MainMenuCo
 
             for (int i = 0; i < anzahl_level; i++)
             {
-                if (levelbuttons[i].isPressed())
+                if (levelbuttons[i].isPressed() && levelbuttons[i].getFreigeschaltet() == true)
                     levelnummer = levelbuttons[i].getLevelnummer();
             }
 
