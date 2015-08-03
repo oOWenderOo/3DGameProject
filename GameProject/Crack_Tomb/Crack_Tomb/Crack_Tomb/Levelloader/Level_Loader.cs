@@ -95,6 +95,7 @@ namespace Crack_Tomb{
                     Level_Array = new Level4().Level_Array;
                     Licht_Start = new Level4().Licht_Start;
                     Licht_Richtung = new Level4().Licht_Richtung;
+                    Barriere_List = new Level4().Barriere_List;
                     break;
 
                 case 5:
