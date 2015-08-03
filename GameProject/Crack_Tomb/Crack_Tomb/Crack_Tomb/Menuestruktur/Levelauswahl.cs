@@ -34,7 +34,24 @@ namespace MainMenuCo
             {
                 string text = "";
                 text = text + (i + 1);
-                levelbuttons[i] = new LevelButton(i + 1, new Vector2(300 + 50 * i + i, 100), text);
+                string dateiname = "Level" + (i + 1) + ".txt";
+                string line;
+
+                System.IO.StreamReader file = new System.IO.StreamReader(@dateiname);
+
+                line = file.ReadLine();
+
+                file.Close();
+
+                if (line == "true")
+                {
+                    levelbuttons[i] = new LevelButton(i + 1, new Vector2(300 + 50 * i + i, 100), text, true);
+                }
+                else
+                {
+                    levelbuttons[i] = new LevelButton(i + 1, new Vector2(300 + 50 * i + i, 100), text, false);
+                }
+
                 text = "";
             }
 

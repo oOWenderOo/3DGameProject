@@ -15,12 +15,19 @@ namespace Crack_Tomb.Menuestruktur
         string text;
         SpriteFont font;
         int levelnummer;
+        bool freigeschaltet;
 
-        public LevelButton(int levelnummer, Vector2 position, string text)
+        public LevelButton(int levelnummer, Vector2 position, string text, bool freigeschaltet)
         {
             this.levelnummer = levelnummer;
             this.position = position;
             this.text = text;
+            this.freigeschaltet = freigeschaltet;
+        }
+
+        public bool getFreigeschaltet()
+        {
+            return freigeschaltet;
         }
 
         public void SetFont(SpriteFont font)
