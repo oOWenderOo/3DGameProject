@@ -45,10 +45,32 @@ namespace Crack_Tomb.Menuestruktur
                 {
                     rangliste[counter - 1] = line;
                 }
+
                 counter++;
             }
 
             file.Close();
+
+            string[] levelfrei = new string[11];
+            levelfrei[0] = "true";
+            string dateiname2 = "Level" + (levelnummer + 1) + ".txt";
+            counter = 0;
+
+            System.IO.StreamReader file2 = new System.IO.StreamReader(@dateiname2);
+
+            while ((line = file2.ReadLine()) != null)
+            {
+                if (counter != 0)
+                {
+                    levelfrei[counter] = line;
+                }
+
+                counter++;
+            }
+
+            file2.Close();
+
+            System.IO.File.WriteAllLines(@dateiname2, levelfrei);
         }
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics)
@@ -67,7 +89,6 @@ namespace Crack_Tomb.Menuestruktur
 
         public override GameState Update(GameTime gameTime)
         {
-
             if (wartezeit > 0)
             {
                 wartezeit--;
@@ -79,6 +100,7 @@ namespace Crack_Tomb.Menuestruktur
                 if (buttons[i].isPressed())
                     return buttons[i].GetState(levelnummer);
             }
+
             return this;
         }
 

@@ -1,5 +1,4 @@
-false
-Ralf 100
+true
 Hans 90
 Mueller 80
 Hansen 70
@@ -9,3 +8,4 @@ Jan 40
 Lisa 30
 Paul 20
 Patrick 10
+

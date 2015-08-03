@@ -21,21 +21,21 @@ namespace MainMenuCo
         {
             for (int i = 1; i <= anzahllevel; i++)
             {
-                string dateinahme = "Level" + i + ".txt";
+                string dateiname = "Level" + i + ".txt";
 
-                if (!File.Exists(@dateinahme))
+                if (!File.Exists(@dateiname))
                 {
                     if (i == 1)
                     {
                         string[] lines = { "true", "Ralf 100", "Hans 90", "Mueller 80", "Hansen 70", "Wender 60", "Netuwi 50", "Jan 40", "Lisa 30", "Paul 20", "Patrick 10" };
 
-                        System.IO.File.WriteAllLines(@dateinahme, lines);
+                        System.IO.File.WriteAllLines(@dateiname, lines);
                     }
                     else
                     {
                         string[] lines = { "false", "Ralf 100", "Hans 90", "Mueller 80", "Hansen 70", "Wender 60", "Netuwi 50", "Jan 40", "Lisa 30", "Paul 20", "Patrick 10" };
 
-                        System.IO.File.WriteAllLines(@dateinahme, lines);
+                        System.IO.File.WriteAllLines(@dateiname, lines);
                     }
                 }
             }
