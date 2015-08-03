@@ -28,6 +28,12 @@ namespace Crack_Tomb.Spieler
                 case 4:
                     Level_Array = new Level4().Level_Array;
                     break;
+                case 5:
+                    Level_Array = new Level5().Level_Array;
+                    break;
+                case 6:
+                    Level_Array = new Level6().Level_Array;
+                    break;
                 default:
                     Level_Array = new Level0().Level_Array;
                     break;
