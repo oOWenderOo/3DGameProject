@@ -61,6 +61,8 @@ namespace Crack_Tomb{
         public int nS = 0;
         public int nB = 0;
 
+        BasicEffect effect;
+
         public Level_Loader(int LevelNR) {
 
 
@@ -171,8 +173,62 @@ namespace Crack_Tomb{
 
 
         }
-        
 
+        public void Draw(GraphicsDevice graphicdevice)
+        {
+
+
+
+            int n = 0;
+            VertexPositionColor[] vert = new VertexPositionColor[36];
+
+            while (this.Boden[n] != null)
+            {
+                vert = this.Boden[n].ver;
+                graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 2);
+                n++;
+            }
+
+            n = 0;
+
+            while (this.Wand_List[n] != null && n < 41 * 41)
+            {
+                vert = this.Wand_List[n].ver;
+                graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
+                n++;
+            }
+
+            n = 0;
+
+            while (this.Wand_Loch_List[n] != null && n < 41 * 41)
+            {
+                vert = this.Wand_Loch_List[n].ver;
+                graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
+                n++;
+            }
+
+            n = 0;
+
+            while (this.Säule_List[n] != null && n < 41 * 41)
+            {
+                vert = this.Säule_List[n].ver;
+                graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
+                n++;
+            }
+
+            n = 0;
+
+            while (this.Barriere_List[n] != null && n < 41 * 41)
+            {
+                vert = this.Barriere_List[n].ver;
+                graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
+                n++;
+            }
+
+            //effect.View = camera.view;
+            //effect.Projection = camera.projection;
+
+        }
 
 
     }

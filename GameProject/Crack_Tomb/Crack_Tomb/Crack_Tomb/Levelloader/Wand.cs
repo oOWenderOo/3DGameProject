@@ -27,7 +27,12 @@ namespace Crack_Tomb{
         public VertexPositionColor[] verIntern = new VertexPositionColor[8];
         public VertexPositionColor[] ver = new VertexPositionColor[36];
 
+
+        Model Wand_Model;
+
         public Wand(float hPosX, float hPosY, float hPosZ){
+
+            
 
             PosX = hPosX;
             PosY = hPosY;

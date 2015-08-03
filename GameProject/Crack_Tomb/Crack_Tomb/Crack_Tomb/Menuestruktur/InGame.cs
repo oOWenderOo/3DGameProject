@@ -19,7 +19,7 @@ namespace MainMenuCo
         Level_Loader levelloader;
         VertexPositionColor[] vert = new VertexPositionColor[36];
         Kamera camera;
-        GraphicsDevice graphicdevice;
+        public GraphicsDevice graphicdevice;
         Lichtstrahl licht;
         Vector3 lichtPos, lichtDir;
         Player player;
@@ -102,59 +102,19 @@ namespace MainMenuCo
 
         public override void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)
         {
-            //Graphics.GraphicsDevice.Clear(Color.CornflowerBlue);
-            //Jannicks-Teil
-            effect.VertexColorEnabled = true;
 
+            //Jannicks-Teil
+
+            effect.VertexColorEnabled = true;
             effect.CurrentTechnique.Passes[0].Apply();
 
-            int n = 0;
-
-            while (levelloader.Boden[n] != null)
-            {
-                vert = levelloader.Boden[n].ver;
-                graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 2);
-                n++;
-            }
-
-            n = 0;
-
-            while (levelloader.Wand_List[n] != null && n < 41 * 41)
-            {
-                vert = levelloader.Wand_List[n].ver;
-                graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
-                n++;
-            }
-
-            n = 0;
-
-            while (levelloader.Wand_Loch_List[n] != null && n < 41 * 41)
-            {
-                vert = levelloader.Wand_Loch_List[n].ver;
-                graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
-                n++;
-            }
-
-            n = 0;
-
-            while (levelloader.Säule_List[n] != null && n < 41 * 41)
-            {
-                vert = levelloader.Säule_List[n].ver;
-                graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
-                n++;
-            }
-
-            n = 0;
-
-            while (levelloader.Barriere_List[n] != null && n < 41 * 41)
-            {
-                vert = levelloader.Barriere_List[n].ver;
-                graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
-                n++;
-            }
+            levelloader.Draw(this.graphicdevice);
 
             effect.View = camera.view;
             effect.Projection = camera.projection;
+            
+            
+            
 
             //Gabriels-Teil
             licht.Draw(gameTime, camera.view, camera.projection);
