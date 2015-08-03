@@ -414,6 +414,99 @@ namespace Crack_Tomb.Spieler
                                     break;
                             }
                         }
+                        else
+                        {
+                            if(Keyboard.GetState().IsKeyDown(Keys.E))
+                            {
+                                switch (Säulen_Array[arrayposition_x, arrayposition_y + 1])
+                                {
+                                    case 2:
+                                        inventar.pushSpiegel();
+                                        Säulen_Array[arrayposition_x, arrayposition_y + 1] = 1;
+                                        break;
+                                    case 3:
+                                        inventar.pushSpiegel();
+                                        Säulen_Array[arrayposition_x, arrayposition_y + 1] = 1;
+                                        break;
+                                    case 4:
+                                        inventar.pushSplittPrisma();
+                                        Säulen_Array[arrayposition_x, arrayposition_y + 1] = 1;
+                                        break;
+                                    case 5:
+                                        inventar.pushFarbkristall();
+                                        Säulen_Array[arrayposition_x, arrayposition_y + 1] = 1;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
+                                switch (Säulen_Array[arrayposition_x, arrayposition_y - 1])
+                                {
+                                    case 2:
+                                        inventar.pushSpiegel();
+                                        Säulen_Array[arrayposition_x, arrayposition_y - 1] = 1;
+                                        break;
+                                    case 3:
+                                        inventar.pushSpiegel();
+                                        Säulen_Array[arrayposition_x, arrayposition_y - 1] = 1;
+                                        break;
+                                    case 4:
+                                        inventar.pushSplittPrisma();
+                                        Säulen_Array[arrayposition_x, arrayposition_y - 1] = 1;
+                                        break;
+                                    case 5:
+                                        inventar.pushFarbkristall();
+                                        Säulen_Array[arrayposition_x, arrayposition_y - 1] = 1;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
+                                switch (Säulen_Array[arrayposition_x + 1, arrayposition_y])
+                                {
+                                    case 2:
+                                        inventar.pushSpiegel();
+                                        Säulen_Array[arrayposition_x + 1, arrayposition_y] = 1;
+                                        break;
+                                    case 3:
+                                        inventar.pushSpiegel();
+                                        Säulen_Array[arrayposition_x + 1, arrayposition_y] = 1;
+                                        break;
+                                    case 4:
+                                        inventar.pushSplittPrisma();
+                                        Säulen_Array[arrayposition_x + 1, arrayposition_y] = 1;
+                                        break;
+                                    case 5:
+                                        inventar.pushFarbkristall();
+                                        Säulen_Array[arrayposition_x + 1, arrayposition_y] = 1;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
+                                switch (Säulen_Array[arrayposition_x - 1, arrayposition_y])
+                                {
+                                    case 2:
+                                        inventar.pushSpiegel();
+                                        Säulen_Array[arrayposition_x - 1, arrayposition_y] = 1;
+                                        break;
+                                    case 3:
+                                        inventar.pushSpiegel();
+                                        Säulen_Array[arrayposition_x - 1, arrayposition_y] = 1;
+                                        break;
+                                    case 4:
+                                        inventar.pushSplittPrisma();
+                                        Säulen_Array[arrayposition_x - 1, arrayposition_y] = 1;
+                                        break;
+                                    case 5:
+                                        inventar.pushFarbkristall();
+                                        Säulen_Array[arrayposition_x - 1, arrayposition_y] = 1;
+                                        break;
+                                    default:
+                                        break;
+                                }
+                            }
+                        }
                     }
                 }
             }
