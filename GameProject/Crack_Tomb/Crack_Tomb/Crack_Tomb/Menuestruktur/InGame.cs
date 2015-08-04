@@ -50,7 +50,7 @@ namespace MainMenuCo
             graphicdevice = Graphics.GraphicsDevice;
             //Jannicks-Teil
             effect = new BasicEffect(graphicdevice);
-            levelloader.Array_Loader();
+            levelloader.Array_Loader(content);
             camera = new Kamera();
 
             //Gabriels-Teil
@@ -108,7 +108,9 @@ namespace MainMenuCo
             effect.VertexColorEnabled = true;
             effect.CurrentTechnique.Passes[0].Apply();
 
-            levelloader.Draw(this.graphicdevice);
+
+
+            levelloader.Draw(this.graphicdevice, camera.view, camera.projection);
 
             effect.View = camera.view;
             effect.Projection = camera.projection;

@@ -34,7 +34,7 @@ namespace Crack_Tomb{
 
         */
 
-
+        Model model;
         int Level_Nummer;
        
         int[,] Level_Array;                                               
@@ -46,6 +46,7 @@ namespace Crack_Tomb{
         public Säule[] Säule_List = new Säule[42 * 42];            
         public Boden[] Boden = new Boden[42 * 42];
         public Barriere[] Barriere_List = new Barriere[42 * 42];
+        public int[] Wand_Model_List = new int[42 * 42*2];
 
         //public Schalter[] Schalter_List = new Schalter [41*41];       //TODO
         //public Tür[] Tür_List = new Tür[41 *41];                      //TODO
@@ -61,12 +62,12 @@ namespace Crack_Tomb{
         public int nS = 0;
         public int nB = 0;
 
-        BasicEffect effect;
 
         public Level_Loader(int LevelNR) {
 
+            Level_Nummer = LevelNR;
 
-            switch (LevelNR) { 
+            switch (Level_Nummer) { 
             
                 case 0:
                     Level_Array = new Level0().Level_Array;
@@ -122,7 +123,8 @@ namespace Crack_Tomb{
             }
         }
 
-        public void Array_Loader(){                                  // Geht das ganze Level_Array durch und erzeugt automatisch Wände und Säulen die in die zugehörigen Listen gelegt werden.
+        public void Array_Loader(ContentManager content)
+        {                                  // Geht das ganze Level_Array durch und erzeugt automatisch Wände und Säulen die in die zugehörigen Listen gelegt werden.
 
 
             for (int i = 0; i <= 40; i++){
@@ -134,8 +136,15 @@ namespace Crack_Tomb{
                     switch (Level_Array[i, j]) {                
 
                         case 1:         //Wand
-                            Wand_List[nW] = new Wand((float) i , 0, (float) j );
+                            model = content.Load<Model>("wand");
+
+                            Wand_Model_List[nW] = i;
+                            Wand_Model_List[nW+1] = j;
+
+                            //Wand_List[nW] = new Wand((float) i , 0, (float) j );
                             nW++;
+                            nW++;
+
                             break;
                             
                         case 2:         //Wand mit Loch
@@ -174,9 +183,10 @@ namespace Crack_Tomb{
 
         }
 
-        public void Draw(GraphicsDevice graphicdevice)
+        public void Draw(GraphicsDevice graphicdevice, Matrix view, Matrix projection)
         {
 
+            //graphicdevice.Clear(Color.CornflowerBlue);
 
 
             int n = 0;
@@ -191,16 +201,29 @@ namespace Crack_Tomb{
 
             n = 0;
 
-            while (this.Wand_List[n] != null && n < 41 * 41)
+            while (this.Wand_Model_List[n] != null && n < 41 * 41 * 2)
             {
-                vert = this.Wand_List[n].ver;
-                graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
+                //vert = this.Wand_List[n].ver;
+                //graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
+                foreach (ModelMesh mesh in model.Meshes)
+                {
+                    foreach (BasicEffect effect in mesh.Effects)
+                    {
+                        effect.EnableDefaultLighting();
+
+                        effect.View = view;
+                        effect.Projection = projection;
+                        effect.World = Matrix.CreateTranslation(new Vector3(this.Wand_Model_List[n],0,this.Wand_Model_List[n+1]));
+                    }
+                    mesh.Draw();
+                }
+                n++;
                 n++;
             }
 
             n = 0;
 
-            while (this.Wand_Loch_List[n] != null && n < 41 * 41)
+            /*while (this.Wand_Loch_List[n] != null && n < 41 * 41)
             {
                 vert = this.Wand_Loch_List[n].ver;
                 graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
@@ -223,10 +246,8 @@ namespace Crack_Tomb{
                 vert = this.Barriere_List[n].ver;
                 graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
                 n++;
-            }
+            }*/
 
-            //effect.View = camera.view;
-            //effect.Projection = camera.projection;
 
         }
 

@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using Microsoft.Xna.Framework.Content;
 
 namespace Crack_Tomb{
 
@@ -22,6 +23,8 @@ namespace Crack_Tomb{
         float SizeY = 1.0f;
         float SizeZ = 1.0f;
 
+        ContentManager content;
+
         int ID;
 
         public VertexPositionColor[] verIntern = new VertexPositionColor[8];
@@ -32,7 +35,7 @@ namespace Crack_Tomb{
 
         public Wand(float hPosX, float hPosY, float hPosZ){
 
-            
+            Wand_Model = content.Load<Model>("Wand");
 
             PosX = hPosX;
             PosY = hPosY;
