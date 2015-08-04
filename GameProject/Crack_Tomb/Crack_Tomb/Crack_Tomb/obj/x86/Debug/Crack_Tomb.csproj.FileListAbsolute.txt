@@ -60,3 +60,7 @@ C:\Users\Jannick\Desktop\3DGameProject\GameProject\Crack_Tomb\Crack_Tomb\Crack_T
 C:\Users\Jannick\Desktop\3DGameProject\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Spieler_mit_Hut.xnb
 C:\Users\Jannick\Desktop\3DGameProject\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\partikel.xnb
 C:\Users\Jannick\Desktop\3DGameProject\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\wand.xnb
+C:\Users\Jannick\Desktop\3DGameProject\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\saule_mit_loch_platz.xnb
+C:\Users\Jannick\Desktop\3DGameProject\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Boden.xnb
+C:\Users\Jannick\Desktop\3DGameProject\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\saule_platz.xnb
+C:\Users\Jannick\Desktop\3DGameProject\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\saule_mit_halbloch_platz.xnb

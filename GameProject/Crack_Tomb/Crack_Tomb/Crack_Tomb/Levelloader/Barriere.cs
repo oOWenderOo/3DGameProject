@@ -12,7 +12,7 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Crack_Tomb{
 
-    public class Barriere : Level_Objekt{
+    public class Barriere{
 
         //Implementierung so wie bei den anderen Objekten, Konsturktor/Zeichenfunktion je nach späterem Aussehen
         //Farbkodierung offen

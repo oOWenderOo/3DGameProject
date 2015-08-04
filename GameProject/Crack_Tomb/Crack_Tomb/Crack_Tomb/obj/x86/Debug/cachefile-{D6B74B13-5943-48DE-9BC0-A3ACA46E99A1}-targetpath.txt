@@ -14,3 +14,7 @@ Content\ButtonTexture.xnb
 Content\Normal.xnb
 Content\ShipTexture_0.xnb
 Content\wand.xnb
+Content\saule_mit_loch_platz.xnb
+Content\Boden.xnb
+Content\saule_platz.xnb
+Content\saule_mit_halbloch_platz.xnb
