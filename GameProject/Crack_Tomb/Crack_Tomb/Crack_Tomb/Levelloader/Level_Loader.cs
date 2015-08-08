@@ -35,6 +35,8 @@ namespace Crack_Tomb{
         */
 
         Model wand_model, loch_model, barriere_model, tür_offen_model, tür_zu_model, säule_model, schalter_model, boden_model;
+        Model b_rot, b_gelb_rot, b_gelb, b_gelb_grün, b_grün, b_cyan_grün, b_cyan, b_cyan_blau, b_blau, b_magenta_blau, b_magenta, b_magenta_rot;
+        Model tür_offen, tür_geschlossen, schalter;
         int Level_Nummer;
        
         int[,] Level_Array;                                               
@@ -68,6 +70,7 @@ namespace Crack_Tomb{
         public int nWL = 0;
         public int nS = 0;
         public int nB = 0;
+        public int nBb = 0;
 
 
         public Level_Loader(int LevelNR) {
@@ -140,9 +143,24 @@ namespace Crack_Tomb{
             säule_model = content.Load<Model>("saule_platz");                   //SÄULE
             loch_model = content.Load<Model>("saule_mit_loch_platz");           //WAND MIT LOCH
             boden_model = content.Load<Model>("boden");                         //BODEN
+            b_rot = content.Load<Model>("boden");                               //ROT-BARRIERE
+            b_gelb_rot = content.Load<Model>("boden");                          //GELB-ROT-BARRIERE
+            b_gelb = content.Load<Model>("boden");                              //GELB-BARRIERE
+            b_gelb_grün= content.Load<Model>("boden");                          //GELB-GRÜN-BARRIERE
+            b_grün = content.Load<Model>("boden");                              //GRÜN-BARRIERE
+            b_cyan_grün = content.Load<Model>("boden");                         //CYAN-GRÜN-BARRIERE
+            b_cyan = content.Load<Model>("boden");                              //CYAN-BARRIERE
+            b_cyan_blau = content.Load<Model>("boden");                         //CYAN-BLAU-BARRIERE
+            b_blau = content.Load<Model>("boden");                              //BLAU-BARRIERE
+            b_magenta_blau = content.Load<Model>("boden");                      //MAGENTA-BLAU-BARRIERE
+            b_magenta = content.Load<Model>("boden");                           //MAGENTA-BARRIERE
+            b_magenta_rot = content.Load<Model>("boden");                       //MAGENTA-ROT-BARRIERE
+            tür_geschlossen = content.Load<Model>("boden");                     //OFFENE TÜR
+            tür_offen = content.Load<Model>("boden");                           //GESCHLOSSENE TÜR
+            schalter = content.Load<Model>("boden");                            //SCHALTER
 
 
-            for (int i = 0; i <= 40; i++){
+            for (int i = 0; i <= 40; i++){              //TODO : Implementierung der Zeichung von Türen/Schaltern, da dort noch ein logisches Problem ist...
                 for (int j = 0; j <= 40; j++){
 
                     Boden_List[nB] = i;
@@ -173,6 +191,19 @@ namespace Crack_Tomb{
                             nS++;
                             break;
 
+                        case 5:
+                            Barriere_List[nBb] = i;
+                            Barriere_List[nBb + 1] = j;
+
+                            //HIER EINFÜGEN, Suche in BarriereListe des Levels um Farbe der Barriere zu ermitteln
+
+                            Barriere_List[nBb + 2] = 000000;
+
+                            nBb++;
+                            nBb++;
+                            nBb++;
+                            break;
+
                  /*       case 8:         //Lichtstartpunkt
                             Säule_List[nS] = new Säule((float)i , 0, (float)j );
                             nS++;
@@ -198,6 +229,7 @@ namespace Crack_Tomb{
             Wand_List[nW] = -1;
             Loch_List[nWL] = -1;
             Säule_List[nS] = -1;
+            Barriere_List[nBb] = -1;
 
 
         }
@@ -300,12 +332,33 @@ namespace Crack_Tomb{
 
             n = 0;
 
-            /*while (this.Barriere_List[n] != null && n < 41 * 41)
+
+
+
+
+
+            while (this.Barriere_List[n] != -1 && n < 41 * 41)
             {
-                vert = this.Barriere_List[n].ver;
-                graphicdevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, vert, 0, 12);
+
+                //TODO:  CASE-Abfrage über Farbwert der Barriere
+
+                foreach (ModelMesh mesh in b_rot.Meshes)
+                {
+                    foreach (BasicEffect effect in mesh.Effects)
+                    {
+                        effect.EnableDefaultLighting();
+
+                        effect.View = view;
+                        effect.Projection = projection;
+                        effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(this.Barriere_List[n] + 0.5f, 0.5f, this.Barriere_List[n + 1] + 0.5f));
+                    }
+                    mesh.Draw();
+                }
                 n++;
-            }*/
+                n++;
+            }
+
+            n = 0;
 
 
         }
