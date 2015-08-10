@@ -51,10 +51,10 @@ namespace MainMenuCo
             //Jannicks-Teil
             effect = new BasicEffect(graphicdevice);
             levelloader.Array_Loader(content);
-            camera = new Kamera();
 
             //Gabriels-Teil
             player = new Player(lichtPos, content.Load<Model>("Spieler_mit_Hut"), levelnummer, content);
+            camera = new Kamera(player.position);
             licht = new Lichtstrahl(content.Load<Model>("partikel"), lichtPos, lichtDir, levelnummer, player);
             pausemenü = new PauseMenü(content);
 
@@ -73,6 +73,7 @@ namespace MainMenuCo
                 //Gabriels-Teil
                 licht.Update(gameTime, ref player, ref gewonnen);
                 player.Update(gameTime);
+                camera.Update(player.position);
 
                 if (gewonnen)
                     return new Gewonnen(levelnummer);
