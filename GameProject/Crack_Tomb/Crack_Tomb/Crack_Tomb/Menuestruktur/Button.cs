@@ -16,6 +16,7 @@ namespace MainMenuCo
         string state;
         string text;
         SpriteFont font;
+        bool isgedrückt = false;
 
         public Button(Vector2 position, string state, string text)
         {
@@ -44,10 +45,23 @@ namespace MainMenuCo
 
             if (mousestate.LeftButton == ButtonState.Pressed && mouseposition.X > position.X && mouseposition.Y > position.Y && mouseposition.Y < (position.Y + hoehe) && mouseposition.X < (position.X + breite))
             {
-                return true;
+                isgedrückt = true;
+                return false;
             }
             else
             {
+                if (isgedrückt == true && mousestate.LeftButton == ButtonState.Released && mouseposition.X > position.X && mouseposition.Y > position.Y && mouseposition.Y < (position.Y + hoehe) && mouseposition.X < (position.X + breite))
+                {
+                    isgedrückt = false;
+                    return true;
+                }
+                else
+                {
+                    if (mousestate.LeftButton == ButtonState.Released && isgedrückt == true)
+                    {
+                        isgedrückt = false;
+                    }
+                }
 
                 return false;
             }

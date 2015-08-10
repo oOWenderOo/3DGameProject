@@ -19,6 +19,7 @@ namespace Crack_Tomb.Menuestruktur
         Button[] buttons = new Button[3];
         Texture2D mouse;
         Texture2D background;
+        bool pausegedrückt = false;
 
         public PauseMenü(ContentManager content)
         {
@@ -46,9 +47,17 @@ namespace Crack_Tomb.Menuestruktur
                     ispause = false;
             }
 
-            if ((Keyboard.GetState().IsKeyDown(Keys.Escape) || Keyboard.GetState().IsKeyDown(Keys.P)) && ((int)gametime.TotalGameTime.Milliseconds) % 100 == 0)
+            if ((Keyboard.GetState().IsKeyDown(Keys.Escape) || Keyboard.GetState().IsKeyDown(Keys.P)))
             {
-                ispause = (!ispause);
+                pausegedrückt = true;
+            }
+            else
+            {
+                if (pausegedrückt == true && (Keyboard.GetState().IsKeyUp(Keys.Escape) || Keyboard.GetState().IsKeyUp(Keys.P)))
+                {
+                    pausegedrückt = false;
+                    ispause = (!ispause);
+                }
             }
         }
 
