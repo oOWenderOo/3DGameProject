@@ -61,7 +61,7 @@ namespace MainMenuCo
             //Annes-Teil
             timer.setFont(content);
             timer.setTexture(content);
-            timer.Position = new Vector2(50, 25);
+            timer.Position = new Vector2(50, 15);
         }
 
         public override GameState Update(GameTime gameTime)
