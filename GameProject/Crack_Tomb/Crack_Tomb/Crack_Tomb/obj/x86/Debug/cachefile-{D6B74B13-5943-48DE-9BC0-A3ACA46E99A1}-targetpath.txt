@@ -3,7 +3,6 @@ Content\button.xnb
 Content\ShipTexture.xnb
 Content\Testbildhintergrund.xnb
 Content\levelbutton.xnb
-Content\Pausenmenü Hintergrund 412 x 450.xnb
 Content\Score.xnb
 Content\Timer.xnb
 Content\Ship.xnb
@@ -20,3 +19,4 @@ Content\Normal.xnb
 Content\ShipTexture_0.xnb
 Content\Pausemenubutton.xnb
 Content\Inventar.xnb
+Content\Pausenmenü mit Hintergund(grau).xnb

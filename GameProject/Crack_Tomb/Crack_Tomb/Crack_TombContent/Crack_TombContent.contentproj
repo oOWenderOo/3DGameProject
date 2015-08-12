@@ -98,13 +98,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pausenmenü Hintergrund 412 x 450.png">
-      <Name>Pausenmenü Hintergrund 412 x 450</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Timer.png">
       <Name>Timer</Name>
       <Importer>TextureImporter</Importer>
@@ -184,6 +177,13 @@
   <ItemGroup>
     <Compile Include="MouseZeiger.png">
       <Name>MouseZeiger</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pausenmenü mit Hintergund%28grau%29.png">
+      <Name>Pausenmenü mit Hintergund%28grau%29</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

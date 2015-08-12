@@ -47,15 +47,6 @@
       <Time>2015-08-12T14:40:43.2387818+02:00</Time>
     </Item>
     <Item>
-      <Source>Pausenmenü Hintergrund 412 x 450.png</Source>
-      <Name>Pausenmenü Hintergrund 412 x 450</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Pausenmenü Hintergrund 412 x 450.xnb</Output>
-      <Time>2015-08-12T14:40:43.1725252+02:00</Time>
-    </Item>
-    <Item>
       <Source>Score.png</Source>
       <Name>Score</Name>
       <Importer>TextureImporter</Importer>
@@ -306,6 +297,15 @@
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Inventar.xnb</Output>
       <Time>2015-08-12T14:40:43.1645183+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Pausenmenü mit Hintergund(grau).png</Source>
+      <Name>Pausenmenü mit Hintergund(grau)</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Pausenmenü mit Hintergund(grau).xnb</Output>
+      <Time>2015-08-12T15:02:20.4802576+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
