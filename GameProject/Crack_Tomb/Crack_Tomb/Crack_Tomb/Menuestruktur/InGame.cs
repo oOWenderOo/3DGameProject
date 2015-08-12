@@ -26,6 +26,10 @@ namespace MainMenuCo
         PauseMenü pausemenü;
         bool gewonnen = false;
         Texture2D score;
+        SpriteFont schriftartscore;
+        int punkte;
+        int minuten = 2;
+        int sekunden = 0;
 
         //Annes-Teil
         IngameTimer timer;
@@ -44,6 +48,7 @@ namespace MainMenuCo
 
             //Annes-Teil
             timer = new IngameTimer(2, 0);
+            punkte = minuten * 60 * 10 + sekunden * 10;
         }
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics)
@@ -64,6 +69,7 @@ namespace MainMenuCo
             timer.setTexture(content);
             timer.Position = new Vector2(50, 15);
             score = content.Load<Texture2D>("Score");
+            schriftartscore = content.Load<SpriteFont>("Normal");
         }
 
         public override GameState Update(GameTime gameTime)
@@ -78,10 +84,11 @@ namespace MainMenuCo
                 camera.Update(player.position);
 
                 if (gewonnen)
-                    return new Gewonnen(levelnummer);
+                    return new Gewonnen(levelnummer, punkte);
 
                 //Annes-Teil
                 timer.Update(gameTime);
+                punkte = timer.getMinutes() * 60 * 10 + timer.getSeconds() * 10;
 
                 if (timer.Time == "00:00")
                 {
@@ -130,6 +137,7 @@ namespace MainMenuCo
             SpriteBatch.Begin();
 
             SpriteBatch.Draw(score, new Vector2(625, 20), Color.White);
+            SpriteBatch.DrawString(schriftartscore, "" + punkte, new Vector2(665, 22), Color.Black);
 
             SpriteBatch.End();
 

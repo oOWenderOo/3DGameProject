@@ -47,6 +47,16 @@ namespace Crack_Tomb.Menuestruktur
             timertextur = content.Load<Texture2D>("Timer");
         }
 
+        public int getSeconds()
+        {
+            return (int)seconds;
+        }
+
+        public int getMinutes()
+        {
+            return minutes;
+        }
+
         public  void Update(GameTime gameTime)
         {
             float deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
