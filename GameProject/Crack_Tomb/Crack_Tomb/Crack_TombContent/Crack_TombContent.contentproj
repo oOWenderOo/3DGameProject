@@ -105,13 +105,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Score.png">
-      <Name>Score</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Timer.png">
       <Name>Timer</Name>
       <Importer>TextureImporter</Importer>
@@ -168,6 +161,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Inventar.png">
+      <Name>Inventar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Score.png">
+      <Name>Score</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Pausemenubutton.png">
       <Name>Pausemenubutton</Name>
       <Importer>TextureImporter</Importer>
@@ -177,13 +184,6 @@
   <ItemGroup>
     <Compile Include="MouseZeiger.png">
       <Name>MouseZeiger</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Inventar.png">
-      <Name>Inventar</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

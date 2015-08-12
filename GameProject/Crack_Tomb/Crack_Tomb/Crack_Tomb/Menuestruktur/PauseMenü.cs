@@ -20,6 +20,8 @@ namespace Crack_Tomb.Menuestruktur
         Texture2D mouse;
         Texture2D background;
         bool pausegedrückt = false;
+        int x = 200;
+        int y = 20;
 
         public PauseMenü(ContentManager content)
         {
@@ -28,9 +30,9 @@ namespace Crack_Tomb.Menuestruktur
             fontText = content.Load<SpriteFont>("Normal");
             background = content.Load<Texture2D>("Pausenmenü Hintergrund 412 x 450");
 
-            buttons[0] = new Button(new Vector2(60, 225), "Fortsetzen", "Fortsetzen");
-            buttons[1] = new Button(new Vector2(60, 300), "Levelauswahl", "Levelauswahl");
-            buttons[2] = new Button(new Vector2(60, 150), "MainMenu", "Hauptmenü");
+            buttons[0] = new Button(new Vector2(130 + x, 225 + y), "Fortsetzen", "Fortsetzen");
+            buttons[1] = new Button(new Vector2(130 + x, 300 + y), "Levelauswahl", "Levelauswahl");
+            buttons[2] = new Button(new Vector2(130 + x, 150 + y), "MainMenu", "Hauptmenü");
 
             for (int i = 0; i < buttons.Length; i++)
             {
@@ -76,7 +78,7 @@ namespace Crack_Tomb.Menuestruktur
         {
             SpriteBatch.Begin();
 
-            SpriteBatch.Draw(background, new Vector2(0, 0), Color.White);
+            SpriteBatch.Draw(background, new Vector2(x, y), Color.White);
 
             for (int i = 0; i < buttons.Length; i++)
             {
