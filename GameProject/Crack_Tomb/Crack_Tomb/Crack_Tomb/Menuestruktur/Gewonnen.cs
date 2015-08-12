@@ -170,9 +170,12 @@ namespace Crack_Tomb.Menuestruktur
             SpriteBatch.Draw(background, new Vector2(0, 0), Color.White);
             SpriteBatch.DrawString(fontText, "Du hast gewonnen!", new Vector2(300, 100), Color.Green);
 
-            for (int i = 0; i < buttons.Length; i++)
+            if (!musseintragen)
             {
-                buttons[i].Draw(gameTime, Graphics, SpriteBatch);
+                for (int i = 0; i < buttons.Length; i++)
+                {
+                    buttons[i].Draw(gameTime, Graphics, SpriteBatch);
+                }
             }
             
             for (int i = 0; i < rangliste.Length; i++)
