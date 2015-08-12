@@ -18,11 +18,12 @@ namespace Crack_Tomb.Menuestruktur
         Button[] buttons = new Button[2];
         Texture2D mouse;
         Texture2D background;
-
-        int wartezeit;
         int levelnummer;
         int punkte;
         string[] rangliste = new string[10];
+        int[] ranglistePunkte = new int[10];
+        int position = 0; //in der Rangliste
+        bool musseintragen = false;
 
         public Gewonnen(int levelnummer, int punkte)
         {
@@ -31,9 +32,6 @@ namespace Crack_Tomb.Menuestruktur
 
             buttons[0] = new Button(new Vector2(540, 370), "MainMenu", "Zurück ins Menü");
             buttons[1] = new Button(new Vector2(60, 370), "InGame", "Level erneut starten");
-
-            wartezeit = 10;
-
             
             int counter = 0;
             string line;
@@ -52,6 +50,41 @@ namespace Crack_Tomb.Menuestruktur
             }
 
             file.Close();
+
+            for (int i = 0; i < rangliste.Length; i++)
+            {
+                for (int j = rangliste[i].Length - 1; j >= 0; j--)
+                {
+                    if (rangliste[i].ElementAt<char>(j) == ' ')
+                    {
+                        ranglistePunkte[i] = Convert.ToInt32(rangliste[i].Substring(j + 1));
+                        break;
+                    }
+                }
+            }
+
+            for (int i = 0; i < ranglistePunkte.Length; i++)
+            {
+                if (ranglistePunkte[i] > punkte)
+                {
+                    position++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            for (int i = rangliste.Length - 1; i > position; i--)
+            {
+                rangliste[i] = rangliste[i - 1];
+            }
+
+            if (position < rangliste.Length)
+            {
+                rangliste[position] = "";
+                musseintragen = true;
+            }
 
             string[] levelfrei = new string[11];
             levelfrei[0] = "true";
@@ -91,16 +124,17 @@ namespace Crack_Tomb.Menuestruktur
 
         public override GameState Update(GameTime gameTime)
         {
-            if (wartezeit > 0)
+            if (musseintragen)
             {
-                wartezeit--;
-                return this;
+                musseintragen = false;
             }
-
-            for (int i = 0; i < buttons.Length; i++)
+            else
             {
-                if (buttons[i].isPressed())
-                    return buttons[i].GetState(levelnummer);
+                for (int i = 0; i < buttons.Length; i++)
+                {
+                    if (buttons[i].isPressed())
+                        return buttons[i].GetState(levelnummer);
+                }
             }
 
             return this;
