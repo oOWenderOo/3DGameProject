@@ -20,12 +20,14 @@ namespace Crack_Tomb.Spieler
 
         private int[] inventar;
         SpriteFont font;
+        Texture2D inventarTextur;
 
         //Erzeugen eines Inventars
         public Inventar(ContentManager content)
         {
             inventar = new int[3];
             font = content.Load<SpriteFont>("Normal");
+            inventarTextur = content.Load<Texture2D>("Inventar");
 
             for (int i = 0; i < inventar.Length; i++)
             {
@@ -37,10 +39,12 @@ namespace Crack_Tomb.Spieler
         {
             spritebatch.Begin();
 
+            spritebatch.Draw(inventarTextur, new Vector2(-10, 370), Color.White);
+
             for (int i = 0; i < inventar.Length; i++)
             {
                 string str = "" + inventar[i];
-                spritebatch.DrawString(font, str, new Vector2(500, 100 * i), Color.Black);
+                spritebatch.DrawString(font, str, new Vector2(70 + 80 * i, 400), Color.Black);
             }
 
             spritebatch.End();

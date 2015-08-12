@@ -25,6 +25,7 @@ namespace MainMenuCo
         Player player;
         PauseMenü pausemenü;
         bool gewonnen = false;
+        Texture2D score;
 
         //Annes-Teil
         IngameTimer timer;
@@ -62,6 +63,7 @@ namespace MainMenuCo
             timer.setFont(content);
             timer.setTexture(content);
             timer.Position = new Vector2(50, 15);
+            score = content.Load<Texture2D>("Score");
         }
 
         public override GameState Update(GameTime gameTime)
@@ -125,6 +127,11 @@ namespace MainMenuCo
 
             //Annes-Teil
             timer.Draw(gameTime, Graphics, SpriteBatch);
+            SpriteBatch.Begin();
+
+            SpriteBatch.Draw(score, new Vector2(625, 20), Color.White);
+
+            SpriteBatch.End();
 
             if (pausemenü.ispause)
             {

@@ -34,7 +34,7 @@ namespace Crack_Tomb.Menuestruktur
 
             for (int i = 0; i < buttons.Length; i++)
             {
-                buttons[i].SetTexture(content.Load<Texture2D>("button"));
+                buttons[i].SetTexture(content.Load<Texture2D>("Pausemenubutton"));
                 buttons[i].SetFont(fontButton);
             }
         }
