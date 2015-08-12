@@ -24,6 +24,7 @@ namespace Crack_Tomb.Menuestruktur
         int[] ranglistePunkte = new int[10];
         int position = 0; //in der Rangliste
         bool musseintragen = false;
+        string EingabeName = "Hallo";
 
         public Gewonnen(int levelnummer, int punkte)
         {
@@ -65,7 +66,7 @@ namespace Crack_Tomb.Menuestruktur
 
             for (int i = 0; i < ranglistePunkte.Length; i++)
             {
-                if (ranglistePunkte[i] > punkte)
+                if (ranglistePunkte[i] >= punkte)
                 {
                     position++;
                 }
@@ -126,7 +127,30 @@ namespace Crack_Tomb.Menuestruktur
         {
             if (musseintragen)
             {
-                musseintragen = false;
+                if (Keyboard.GetState().IsKeyDown(Keys.Enter) && EingabeName.Length > 0)
+                {
+                    string dateiname = "Level" + levelnummer + ".txt";
+
+                    rangliste[position] = EingabeName + " " + punkte;
+
+                    string[] neurangliste = new string[11];
+
+                    for (int i = 0; i < neurangliste.Length; i++)
+                    {
+                        if (i == 0)
+                        {
+                            neurangliste[i] = "true";
+                        }
+                        else
+                        {
+                            neurangliste[i] = rangliste[i - 1];
+                        }
+                    }
+
+                    System.IO.File.WriteAllLines(@dateiname, neurangliste);
+
+                    musseintragen = false;
+                }
             }
             else
             {
@@ -153,7 +177,19 @@ namespace Crack_Tomb.Menuestruktur
             
             for (int i = 0; i < rangliste.Length; i++)
             {
-                SpriteBatch.DrawString(fontText, rangliste[i], new Vector2(0, 30 * i), Color.Black);
+                if (rangliste[i] != "")
+                {
+                    SpriteBatch.DrawString(fontText, rangliste[i], new Vector2(0, 30 * i), Color.Black);
+                }
+                else
+                {
+                    SpriteBatch.DrawString(fontText, "<-----------", new Vector2(0, 30 * i), Color.Black);
+                }
+            }
+
+            if (musseintragen)
+            {
+                SpriteBatch.DrawString(fontText, EingabeName, new Vector2(300, 300), Color.Black);
             }
 
             SpriteBatch.Draw(mouse, new Vector2(Mouse.GetState().X, Mouse.GetState().Y), Color.White);
