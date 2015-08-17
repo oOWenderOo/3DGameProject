@@ -233,15 +233,11 @@ namespace Crack_Tomb.Menuestruktur
                 {
                     SpriteBatch.DrawString(fontText, rangliste[i], new Vector2(0, 30 * i), Color.Black);
                 }
-                else
-                {
-                    SpriteBatch.DrawString(fontText, "<-----------", new Vector2(0, 30 * i), Color.Black);
-                }
             }
 
             if (musseintragen)
             {
-                SpriteBatch.DrawString(fontText, EingabeName, new Vector2(300, 300), Color.Black);
+                SpriteBatch.DrawString(fontText, EingabeName, new Vector2(0, 30 * position), Color.Black);
             }
 
             SpriteBatch.Draw(mouse, new Vector2(Mouse.GetState().X, Mouse.GetState().Y), Color.White);

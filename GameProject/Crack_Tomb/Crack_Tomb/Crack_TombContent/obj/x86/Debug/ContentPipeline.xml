@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\MouseZeiger.xnb</Output>
-      <Time>2015-08-13T16:00:32.7167261+02:00</Time>
+      <Time>2015-08-17T15:11:52.1047898+02:00</Time>
     </Item>
     <Item>
       <Source>button.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\button.xnb</Output>
-      <Time>2015-08-13T16:00:33.0932985+02:00</Time>
+      <Time>2015-08-17T15:11:52.1818706+02:00</Time>
     </Item>
     <Item>
       <Source>ShipTexture.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\ShipTexture.xnb</Output>
-      <Time>2015-08-13T16:00:32.7307396+02:00</Time>
+      <Time>2015-08-17T15:11:52.1188027+02:00</Time>
     </Item>
     <Item>
       <Source>Testbildhintergrund.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Testbildhintergrund.xnb</Output>
-      <Time>2015-08-13T16:00:32.7367469+02:00</Time>
+      <Time>2015-08-17T15:11:52.1238083+02:00</Time>
     </Item>
     <Item>
       <Source>levelbutton.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\levelbutton.xnb</Output>
-      <Time>2015-08-13T16:00:33.0983036+02:00</Time>
+      <Time>2015-08-17T15:11:52.1878831+02:00</Time>
     </Item>
     <Item>
       <Source>Score.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Score.xnb</Output>
-      <Time>2015-08-13T16:00:32.7267358+02:00</Time>
+      <Time>2015-08-17T15:11:52.1138125+02:00</Time>
     </Item>
     <Item>
       <Source>Timer.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Timer.xnb</Output>
-      <Time>2015-08-13T16:00:32.7978042+02:00</Time>
+      <Time>2015-08-17T15:11:52.1258097+02:00</Time>
     </Item>
     <Item>
       <Source>Ship.fbx</Source>
@@ -71,10 +71,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Ship.xnb</Output>
-      <Time>2015-08-13T16:00:32.7287382+02:00</Time>
+      <Time>2015-08-17T15:11:52.1168005+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Ship_0.xml</Key>
-        <Value>2015-08-13T16:30:22.5132173+02:00</Value>
+        <Value>2015-08-17T15:13:00.2122855+02:00</Value>
       </Dependency>
       <Request>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\ShipTexture_0.xnb</Request>
     </Item>
@@ -85,10 +85,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\cube.xnb</Output>
-      <Time>2015-08-13T16:00:33.0958027+02:00</Time>
+      <Time>2015-08-17T15:11:52.1848658+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\cube_0.xml</Key>
-        <Value>2015-08-13T16:30:23.2209043+02:00</Value>
+        <Value>2015-08-17T15:13:00.6899613+02:00</Value>
       </Dependency>
       <Request>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\ShipTexture_0.xnb</Request>
     </Item>
@@ -99,10 +99,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Spieler_mit_Hut.xnb</Output>
-      <Time>2015-08-13T16:00:32.7327418+02:00</Time>
+      <Time>2015-08-17T15:11:52.1208049+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Spieler_mit_Hut_0.xml</Key>
-        <Value>2015-08-13T16:30:23.3019808+02:00</Value>
+        <Value>2015-08-17T15:13:00.7640298+02:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -112,10 +112,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\partikel.xnb</Output>
-      <Time>2015-08-13T16:00:33.8353341+02:00</Time>
+      <Time>2015-08-17T15:11:52.2872559+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\partikel_0.xml</Key>
-        <Value>2015-08-13T16:30:23.3800558+02:00</Value>
+        <Value>2015-08-17T15:13:00.8330963+02:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -125,10 +125,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\wand.xnb</Output>
-      <Time>2015-08-13T16:00:33.857355+02:00</Time>
+      <Time>2015-08-17T15:11:52.297266+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\wand_0.xml</Key>
-        <Value>2015-08-13T16:30:23.4461199+02:00</Value>
+        <Value>2015-08-17T15:13:00.8891498+02:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -138,10 +138,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\saule_mit_loch_platz.xnb</Output>
-      <Time>2015-08-13T16:00:33.8403476+02:00</Time>
+      <Time>2015-08-17T15:11:52.2922605+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\saule_mit_loch_platz_0.xml</Key>
-        <Value>2015-08-13T16:30:23.506177+02:00</Value>
+        <Value>2015-08-17T15:13:00.942189+02:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -151,10 +151,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Boden.xnb</Output>
-      <Time>2015-08-13T16:00:32.7067165+02:00</Time>
+      <Time>2015-08-17T15:11:52.0937807+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Boden_0.xml</Key>
-        <Value>2015-08-13T16:30:23.5712395+02:00</Value>
+        <Value>2015-08-17T15:13:01.0031925+02:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -164,10 +164,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\saule_platz.xnb</Output>
-      <Time>2015-08-13T16:00:33.8433415+02:00</Time>
+      <Time>2015-08-17T15:11:52.2942637+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\saule_platz_0.xml</Key>
-        <Value>2015-08-13T16:30:23.6322978+02:00</Value>
+        <Value>2015-08-17T15:13:01.0542413+02:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -177,10 +177,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\saule_mit_halbloch_platz.xnb</Output>
-      <Time>2015-08-13T16:00:33.8383372+02:00</Time>
+      <Time>2015-08-17T15:11:52.2902593+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\saule_mit_halbloch_platz_0.xml</Key>
-        <Value>2015-08-13T16:30:23.6903551+02:00</Value>
+        <Value>2015-08-17T15:13:01.1072924+02:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -190,7 +190,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\ButtonTexture.xnb</Output>
-      <Time>2015-08-13T16:00:32.7087185+02:00</Time>
+      <Time>2015-08-17T15:11:52.0957806+02:00</Time>
     </Item>
     <Item>
       <Source>Normal.spritefont</Source>
@@ -199,14 +199,14 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Normal.xnb</Output>
-      <Time>2015-08-13T16:00:32.7187283+02:00</Time>
+      <Time>2015-08-17T15:11:52.1067917+02:00</Time>
     </Item>
     <Item>
       <Source>Ship.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Ship_0.xml</Output>
-      <Time>2015-08-13T16:00:32.7287382+02:00</Time>
+      <Time>2015-08-17T15:11:52.1168005+02:00</Time>
     </Item>
     <Item>
       <Source>ShipTexture.png</Source>
@@ -222,63 +222,63 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\ShipTexture_0.xnb</Output>
-      <Time>2015-08-13T16:00:32.7307396+02:00</Time>
+      <Time>2015-08-17T15:11:52.1188027+02:00</Time>
     </Item>
     <Item>
       <Source>cube.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\cube_0.xml</Output>
-      <Time>2015-08-13T16:00:33.0958027+02:00</Time>
+      <Time>2015-08-17T15:11:52.1848658+02:00</Time>
     </Item>
     <Item>
       <Source>Spieler_mit_Hut.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Spieler_mit_Hut_0.xml</Output>
-      <Time>2015-08-13T16:00:32.7327418+02:00</Time>
+      <Time>2015-08-17T15:11:52.1208049+02:00</Time>
     </Item>
     <Item>
       <Source>partikel.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\partikel_0.xml</Output>
-      <Time>2015-08-13T16:00:33.8353341+02:00</Time>
+      <Time>2015-08-17T15:11:52.2872559+02:00</Time>
     </Item>
     <Item>
       <Source>wand.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\wand_0.xml</Output>
-      <Time>2015-08-13T16:00:33.857355+02:00</Time>
+      <Time>2015-08-17T15:11:52.297266+02:00</Time>
     </Item>
     <Item>
       <Source>saule_mit_loch_platz.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\saule_mit_loch_platz_0.xml</Output>
-      <Time>2015-08-13T16:00:33.8403476+02:00</Time>
+      <Time>2015-08-17T15:11:52.2922605+02:00</Time>
     </Item>
     <Item>
       <Source>Boden.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Boden_0.xml</Output>
-      <Time>2015-08-13T16:00:32.7067165+02:00</Time>
+      <Time>2015-08-17T15:11:52.0937807+02:00</Time>
     </Item>
     <Item>
       <Source>saule_platz.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\saule_platz_0.xml</Output>
-      <Time>2015-08-13T16:00:33.8433415+02:00</Time>
+      <Time>2015-08-17T15:11:52.2942637+02:00</Time>
     </Item>
     <Item>
       <Source>saule_mit_halbloch_platz.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\saule_mit_halbloch_platz_0.xml</Output>
-      <Time>2015-08-13T16:00:33.8383372+02:00</Time>
+      <Time>2015-08-17T15:11:52.2902593+02:00</Time>
     </Item>
     <Item>
       <Source>Pausemenubutton.png</Source>
@@ -287,7 +287,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Pausemenubutton.xnb</Output>
-      <Time>2015-08-13T16:00:32.7217312+02:00</Time>
+      <Time>2015-08-17T15:11:52.1087928+02:00</Time>
     </Item>
     <Item>
       <Source>Inventar.png</Source>
@@ -296,7 +296,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Inventar.xnb</Output>
-      <Time>2015-08-13T16:00:32.7157254+02:00</Time>
+      <Time>2015-08-17T15:11:52.1017866+02:00</Time>
     </Item>
     <Item>
       <Source>Pausenmenü mit Hintergund(grau).png</Source>
@@ -305,7 +305,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Pausenmenü mit Hintergund(grau).xnb</Output>
-      <Time>2015-08-13T16:00:32.7247338+02:00</Time>
+      <Time>2015-08-17T15:11:52.1117985+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
