@@ -176,6 +176,10 @@ namespace Crack_Tomb.Lichtquelle
                         break;
                 }
             }
+            else
+            {
+                partikel.setPosition(newposition);
+            }
         }
     }
 }
