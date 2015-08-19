@@ -1,5 +1,4 @@
 true
-level 980
 Ralf 100
 Hans 90
 Mueller 80
@@ -9,3 +8,4 @@ Netuwi 50
 Jan 40
 Lisa 30
 Paul 20
+Patrick 10

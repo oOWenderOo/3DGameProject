@@ -15,7 +15,7 @@ namespace MainMenuCo
     {
         SpriteFont fontText;
         Texture2D background;
-        int anzahllevel = 6;
+        int anzahllevel = 10;
 
         public Titlescreen()
         {
