@@ -191,18 +191,103 @@ namespace Crack_Tomb{
                             nS++;
                             break;
 
-                        case 5:
+                        case 5000001:
                             Barriere_List[nBb] = i;
                             Barriere_List[nBb + 1] = j;
-
-                            //HIER EINFÜGEN, Suche in BarriereListe des Levels um Farbe der Barriere zu ermitteln
-
-                            Barriere_List[nBb + 2] = 000000;
-
+                            Barriere_List[nBb + 2] = 000001;
                             nBb++;
                             nBb++;
                             nBb++;
                             break;
+                        case 5000010:
+                            Barriere_List[nBb] = i;
+                            Barriere_List[nBb + 1] = j;
+                            Barriere_List[nBb + 2] = 000010;
+                            nBb++;
+                            nBb++;
+                            nBb++;
+                            break;
+                        case 5000100:
+                            Barriere_List[nBb] = i;
+                            Barriere_List[nBb + 1] = j;
+                            Barriere_List[nBb + 2] = 000100;
+                            nBb++;
+                            nBb++;
+                            nBb++;
+                            break;
+                        case 5001000:
+                            Barriere_List[nBb] = i;
+                            Barriere_List[nBb + 1] = j;
+                            Barriere_List[nBb + 2] = 001000;
+                            nBb++;
+                            nBb++;
+                            nBb++;
+                            break;
+                        case 5010000:
+                            Barriere_List[nBb] = i;
+                            Barriere_List[nBb + 1] = j;
+                            Barriere_List[nBb + 2] = 010000;
+                            nBb++;
+                            nBb++;
+                            nBb++;
+                            break;
+                        case 5100000:
+                            Barriere_List[nBb] = i;
+                            Barriere_List[nBb + 1] = j;
+                            Barriere_List[nBb + 2] = 100000;
+                            nBb++;
+                            nBb++;
+                            nBb++;
+                            break;
+                        case 5100001:
+                            Barriere_List[nBb] = i;
+                            Barriere_List[nBb + 1] = j;
+                            Barriere_List[nBb + 2] = 100001;
+                            nBb++;
+                            nBb++;
+                            nBb++;
+                            break;
+                        case 5000011:
+                            Barriere_List[nBb] = i;
+                            Barriere_List[nBb + 1] = j;
+                            Barriere_List[nBb + 2] = 000011;
+                            nBb++;
+                            nBb++;
+                            nBb++;
+                            break;
+                        case 5000110:
+                            Barriere_List[nBb] = i;
+                            Barriere_List[nBb + 1] = j;
+                            Barriere_List[nBb + 2] = 000110;
+                            nBb++;
+                            nBb++;
+                            nBb++;
+                            break;
+                        case 5001100:
+                            Barriere_List[nBb] = i;
+                            Barriere_List[nBb + 1] = j;
+                            Barriere_List[nBb + 2] = 001100;
+                            nBb++;
+                            nBb++;
+                            nBb++;
+                            break;
+                        case 5011000:
+                            Barriere_List[nBb] = i;
+                            Barriere_List[nBb + 1] = j;
+                            Barriere_List[nBb + 2] = 011000;
+                            nBb++;
+                            nBb++;
+                            nBb++;
+                            break;
+                        case 5110000:
+                            Barriere_List[nBb] = i;
+                            Barriere_List[nBb + 1] = j;
+                            Barriere_List[nBb + 2] = 110000;
+                            nBb++;
+                            nBb++;
+                            nBb++;
+                            break;
+
 
                  /*       case 8:         //Lichtstartpunkt
                             Säule_List[nS] = new Säule((float)i , 0, (float)j );
