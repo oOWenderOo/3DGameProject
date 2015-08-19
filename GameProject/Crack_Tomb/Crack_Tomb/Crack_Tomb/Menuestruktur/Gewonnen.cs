@@ -237,7 +237,14 @@ namespace Crack_Tomb.Menuestruktur
 
             if (musseintragen)
             {
-                SpriteBatch.DrawString(fontText, EingabeName, new Vector2(0, 30 * position), Color.Black);
+                if (((int)gameTime.TotalGameTime.Milliseconds) % 800 >= 0 && ((int)gameTime.TotalGameTime.Milliseconds) % 800 <= 400)
+                {
+                    SpriteBatch.DrawString(fontText, EingabeName, new Vector2(0, 30 * position), Color.Red);
+                }
+                else
+                {
+                    SpriteBatch.DrawString(fontText, EingabeName + "_", new Vector2(0, 30 * position), Color.Red);
+                }
             }
 
             SpriteBatch.Draw(mouse, new Vector2(Mouse.GetState().X, Mouse.GetState().Y), Color.White);
