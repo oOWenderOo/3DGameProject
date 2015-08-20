@@ -171,6 +171,27 @@ namespace Crack_Tomb.Lichtquelle
                             case 5:
                                 partikel.setPosition(newposition);
                                 break;
+                            case 6:
+                                partikel.setPosition(newposition);
+                                break;
+                            case 7:
+                                partikel.setPosition(newposition);
+                                break;
+                            case 8:
+                                partikel.setPosition(newposition);
+                                break;
+                            case 9:
+                                partikel.setPosition(newposition);
+                                break;
+                            case 10:
+                                partikel.setPosition(newposition);
+                                break;
+                            case 11:
+                                partikel.setPosition(newposition);
+                                break;
+                            case 12:
+                                partikel.setPosition(newposition);
+                                break;
                             default:
                                 //partikel.setPosition(newposition);
                                 break;

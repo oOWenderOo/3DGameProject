@@ -134,5 +134,10 @@ namespace Lichtquelle
         {
             this.richtung = richtung;
         }
+
+        public void setFarbe(MyColor farbe)
+        {
+            this.farbe = farbe;
+        }
     }
 }
