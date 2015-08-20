@@ -7,6 +7,9 @@ Content\saule_mit_loch_platz.xnb
 Content\Boden.xnb
 Content\saule_platz.xnb
 Content\saule_mit_halbloch_platz.xnb
+Content\kristall.xnb
+Content\Spiegel.xnb
+Content\Splittprisma.xnb
 Content\ShipTexture.xnb
 Content\Testbildhintergrund.xnb
 Content\levelbutton.xnb
@@ -19,9 +22,6 @@ Content\MouseZeiger.xnb
 Content\Pausenmenü mit Hintergund(grau).xnb
 Content\ButtonTexture.xnb
 Content\Normal.xnb
-Content\ShipTexture_0.xnb
-Content\kristall.xnb
-Content\Spiegel.xnb
-Content\Splittprisma.xnb
 Content\PartikelEffect.xnb
 Content\KristallEffect.xnb
+Content\ShipTexture_0.xnb
