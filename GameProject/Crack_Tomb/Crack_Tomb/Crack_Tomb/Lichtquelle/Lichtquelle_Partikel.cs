@@ -84,6 +84,11 @@ namespace Lichtquelle
             return richtung;
         }
 
+        public MyColor getFarbe()
+        {
+            return farbe;
+        }
+
         public Model getModel()
         {
             return partikelmodel;

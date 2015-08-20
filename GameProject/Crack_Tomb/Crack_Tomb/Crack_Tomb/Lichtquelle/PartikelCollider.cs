@@ -180,6 +180,136 @@ namespace Crack_Tomb.Lichtquelle
                         partikel.setRichtung(new Vector3(0, 0, 0));
                         gewonnen = true;
                         break;
+                    case 5000000:
+                        if (partikel.getFarbe().mycolor == 000000)
+                        {
+                            partikel.setPosition(newposition);
+                        }
+                        else
+                        {
+                            partikel.setRichtung(new Vector3(0, 0, 0));
+                        }
+                        break;
+                    case 5000001:
+                        if (partikel.getFarbe().mycolor == 000001)
+                        {
+                            partikel.setPosition(newposition);
+                        }
+                        else
+                        {
+                            partikel.setRichtung(new Vector3(0, 0, 0));
+                        }
+                        break;
+                    case 5000010:
+                        if (partikel.getFarbe().mycolor == 000010)
+                        {
+                            partikel.setPosition(newposition);
+                        }
+                        else
+                        {
+                            partikel.setRichtung(new Vector3(0, 0, 0));
+                        }
+                        break;
+                    case 5000100:
+                        if (partikel.getFarbe().mycolor == 000100)
+                        {
+                            partikel.setPosition(newposition);
+                        }
+                        else
+                        {
+                            partikel.setRichtung(new Vector3(0, 0, 0));
+                        }
+                        break;
+                    case 5001000:
+                        if (partikel.getFarbe().mycolor == 001000)
+                        {
+                            partikel.setPosition(newposition);
+                        }
+                        else
+                        {
+                            partikel.setRichtung(new Vector3(0, 0, 0));
+                        }
+                        break;
+                    case 5010000:
+                        if (partikel.getFarbe().mycolor == 010000)
+                        {
+                            partikel.setPosition(newposition);
+                        }
+                        else
+                        {
+                            partikel.setRichtung(new Vector3(0, 0, 0));
+                        }
+                        break;
+                    case 5100000:
+                        if (partikel.getFarbe().mycolor == 100000)
+                        {
+                            partikel.setPosition(newposition);
+                        }
+                        else
+                        {
+                            partikel.setRichtung(new Vector3(0, 0, 0));
+                        }
+                        break;
+                    case 5000011:
+                        if (partikel.getFarbe().mycolor == 000011)
+                        {
+                            partikel.setPosition(newposition);
+                        }
+                        else
+                        {
+                            partikel.setRichtung(new Vector3(0, 0, 0));
+                        }
+                        break;
+                    case 5000110:
+                        if (partikel.getFarbe().mycolor == 000110)
+                        {
+                            partikel.setPosition(newposition);
+                        }
+                        else
+                        {
+                            partikel.setRichtung(new Vector3(0, 0, 0));
+                        }
+                        break;
+                    case 5001100:
+                        if (partikel.getFarbe().mycolor == 001100)
+                        {
+                            partikel.setPosition(newposition);
+                        }
+                        else
+                        {
+                            partikel.setRichtung(new Vector3(0, 0, 0));
+                        }
+                        break;
+                    case 5011000:
+                        if (partikel.getFarbe().mycolor == 011000)
+                        {
+                            partikel.setPosition(newposition);
+                        }
+                        else
+                        {
+                            partikel.setRichtung(new Vector3(0, 0, 0));
+                        }
+                        break;
+                    case 5110000:
+                        if (partikel.getFarbe().mycolor == 110000)
+                        {
+                            partikel.setPosition(newposition);
+                        }
+                        else
+                        {
+                            partikel.setRichtung(new Vector3(0, 0, 0));
+                        }
+                        break;
+                    case 5100001:
+                        if (partikel.getFarbe().mycolor == 100001)
+                        {
+                            partikel.setPosition(newposition);
+                        }
+                        else
+                        {
+                            partikel.setRichtung(new Vector3(0, 0, 0));
+                        }
+                        break;
                     default:
                         partikel.setPosition(newposition);
                         break;
