@@ -50,8 +50,7 @@ namespace Crack_Tomb{
         //public Barriere[] Barriere_List = new Barriere[42 * 42];
         public int[] Wand_List = new int[42 * 42*2];
         public int[] Loch_List = new int[42 * 42 * 2];
-        public int[] Tür_Zu_List = new int[42 * 42 * 2];
-        public int[] Tür_Offen_List = new int[42 * 42 * 2];
+        public int[] Tür_List = new int[42 * 42 * 2];
         public int[] Säule_List = new int[42 * 42 * 2];
         public int[] Schalter_List = new int[42 * 42 * 2];
         public int[] Barriere_List = new int[42 * 42 * 2];
@@ -71,6 +70,8 @@ namespace Crack_Tomb{
         public int nS = 0;
         public int nB = 0;
         public int nBb = 0;
+        public int nT = 0;
+        public int nSch = 0;
 
 
         public Level_Loader(int LevelNR) {
@@ -101,28 +102,70 @@ namespace Crack_Tomb{
                     Level_Array = new Level3().Level_Array;
                     Licht_Start = new Level3().Licht_Start;
                     Licht_Richtung = new Level3().Licht_Richtung;
-                    //Barriere_List = new Level3().Barriere_List;
                     break;
 
                 case 4:
                     Level_Array = new Level4().Level_Array;
                     Licht_Start = new Level4().Licht_Start;
                     Licht_Richtung = new Level4().Licht_Richtung;
-                    //Barriere_List = new Level4().Barriere_List;
                     break;
 
                 case 5:
                     Level_Array = new Level5().Level_Array;
                     Licht_Start = new Level5().Licht_Start;
                     Licht_Richtung = new Level5().Licht_Richtung;
-                    //Barriere_List = new Level5().Barriere_List;
                     break;
 
                 case 6:
                     Level_Array = new Level6().Level_Array;
                     Licht_Start = new Level6().Licht_Start;
                     Licht_Richtung = new Level6().Licht_Richtung;
-                    //Barriere_List = new Level6().Barriere_List;
+                    break;
+                case 7:
+                    Level_Array = new Level7().Level_Array;
+                    Licht_Start = new Level7().Licht_Start;
+                    Licht_Richtung = new Level7().Licht_Richtung;
+                    break;
+
+                case 8:
+                    Level_Array = new Level8().Level_Array;
+                    Licht_Start = new Level8().Licht_Start;
+                    Licht_Richtung = new Level8().Licht_Richtung;
+                    break;
+
+                case 9:
+                    Level_Array = new Level9().Level_Array;
+                    Licht_Start = new Level9().Licht_Start;
+                    Licht_Richtung = new Level9().Licht_Richtung;
+                    break;
+
+                case 10:
+                    Level_Array = new Level10().Level_Array;
+                    Licht_Start = new Level10().Licht_Start;
+                    Licht_Richtung = new Level10().Licht_Richtung;
+                    break;
+
+                case 11:
+                    Level_Array = new Level11().Level_Array;
+                    Licht_Start = new Level11().Licht_Start;
+                    Licht_Richtung = new Level11().Licht_Richtung;
+                    break;
+
+                case 12:
+                    Level_Array = new Level12().Level_Array;
+                    Licht_Start = new Level12().Licht_Start;
+                    Licht_Richtung = new Level12().Licht_Richtung;
+                    break;
+                case 13:
+                    Level_Array = new Level13().Level_Array;
+                    Licht_Start = new Level13().Licht_Start;
+                    Licht_Richtung = new Level13().Licht_Richtung;
+                    break;
+
+                case 14:
+                    Level_Array = new Level14().Level_Array;
+                    Licht_Start = new Level14().Licht_Start;
+                    Licht_Richtung = new Level14().Licht_Richtung;
                     break;
 
                 default:
@@ -287,18 +330,114 @@ namespace Crack_Tomb{
                             nBb++;
                             nBb++;
                             break;
-
-
-                 /*       case 8:         //Lichtstartpunkt
-                            Säule_List[nS] = new Säule((float)i , 0, (float)j );
-                            nS++;
+                        case 71:
+                            Tür_List[nT] = i;
+                            Tür_List[nT+1] = j;
+                            nT++;
+                            nT++;
                             break;
-
-                        case 9:         //Lichtendpunkt
-                            Säule_List[nS] = new Säule((float)i , 0, (float)j );
-                            nS++;
-                            break;   */                     
-
+                        case 72:
+                            Tür_List[nT] = i;
+                            Tür_List[nT + 1] = j;
+                            nT++;
+                            nT++;
+                            break;
+                        case 73:
+                            Tür_List[nT] = i;
+                            Tür_List[nT + 1] = j;
+                            nT++;
+                            nT++;
+                            break;
+                        case 74:
+                            Tür_List[nT] = i;
+                            Tür_List[nT + 1] = j;
+                            nT++;
+                            nT++;
+                            break;
+                        case 75:
+                            Tür_List[nT] = i;
+                            Tür_List[nT + 1] = j;
+                            nT++;
+                            nT++;
+                            break;
+                        case 76:
+                            Tür_List[nT] = i;
+                            Tür_List[nT + 1] = j;
+                            nT++;
+                            nT++;
+                            break;
+                        case 77:
+                            Tür_List[nT] = i;
+                            Tür_List[nT + 1] = j;
+                            nT++;
+                            nT++;
+                            break;
+                        case 78:
+                            Tür_List[nT] = i;
+                            Tür_List[nT + 1] = j;
+                            nT++;
+                            nT++;
+                            break;
+                        case 79:
+                            Tür_List[nT] = i;
+                            Tür_List[nT + 1] = j;
+                            nT++;
+                            nT++;
+                            break;
+                        case 61:
+                            Schalter_List[nSch] = i;
+                            Schalter_List[nSch + 1] = j;
+                            nSch++;
+                            nSch++;
+                            break;
+                        case 62:
+                            Schalter_List[nSch] = i;
+                            Schalter_List[nSch + 1] = j;
+                            nSch++;
+                            nSch++;
+                            break;
+                        case 63:
+                            Schalter_List[nSch] = i;
+                            Schalter_List[nSch + 1] = j;
+                            nSch++;
+                            nSch++;
+                            break;
+                        case 64:
+                            Schalter_List[nSch] = i;
+                            Schalter_List[nSch + 1] = j;
+                            nSch++;
+                            nSch++;
+                            break;
+                        case 65:
+                            Schalter_List[nSch] = i;
+                            Schalter_List[nSch + 1] = j;
+                            nSch++;
+                            nSch++;
+                            break;
+                        case 66:
+                            Schalter_List[nSch] = i;
+                            Schalter_List[nSch + 1] = j;
+                            nSch++;
+                            nSch++;
+                            break;
+                        case 67:
+                            Schalter_List[nSch] = i;
+                            Schalter_List[nSch + 1] = j;
+                            nSch++;
+                            nSch++;
+                            break;
+                        case 68:
+                            Schalter_List[nSch] = i;
+                            Schalter_List[nSch + 1] = j;
+                            nSch++;
+                            nSch++;
+                            break;
+                        case 69:
+                            Schalter_List[nSch] = i;
+                            Schalter_List[nSch + 1] = j;
+                            nSch++;
+                            nSch++;
+                            break;                           
 
                         default:
 
@@ -315,6 +454,8 @@ namespace Crack_Tomb{
             Loch_List[nWL] = -1;
             Säule_List[nS] = -1;
             Barriere_List[nBb] = -1;
+            Tür_List[nT] = -1;
+            Schalter_List[nSch] = -1;
 
 
         }
@@ -420,14 +561,237 @@ namespace Crack_Tomb{
 
 
 
-
+            /*   BARRIERE   */
 
             while (this.Barriere_List[n] != -1 && n < 41 * 41)
             {
 
-                //TODO:  CASE-Abfrage über Farbwert der Barriere
+                switch (Barriere_List[n+2]){
 
-                foreach (ModelMesh mesh in b_rot.Meshes)
+                    case 000001:
+
+                        foreach (ModelMesh mesh in b_rot.Meshes){
+                            foreach (BasicEffect effect in mesh.Effects){
+                                effect.EnableDefaultLighting();
+                                effect.View = view;
+                                effect.Projection = projection;
+                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(this.Barriere_List[n] + 0.5f, 0.5f, this.Barriere_List[n + 1] + 0.5f));
+                            }
+                            mesh.Draw();
+                        }
+                        n++;
+                        n++;
+                        n++;
+                        break;
+
+                    case 000010:
+
+                        foreach (ModelMesh mesh in b_gelb.Meshes)
+                        {
+                            foreach (BasicEffect effect in mesh.Effects)
+                            {
+                                effect.EnableDefaultLighting();
+                                effect.View = view;
+                                effect.Projection = projection;
+                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(this.Barriere_List[n] + 0.5f, 0.5f, this.Barriere_List[n + 1] + 0.5f));
+                            }
+                            mesh.Draw();
+                        }
+                        n++;
+                        n++;
+                        n++;
+                        break;
+
+                    case 000100:
+
+                        foreach (ModelMesh mesh in b_grün.Meshes)
+                        {
+                            foreach (BasicEffect effect in mesh.Effects)
+                            {
+                                effect.EnableDefaultLighting();
+                                effect.View = view;
+                                effect.Projection = projection;
+                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(this.Barriere_List[n] + 0.5f, 0.5f, this.Barriere_List[n + 1] + 0.5f));
+                            }
+                            mesh.Draw();
+                        }
+                        n++;
+                        n++;
+                        n++;
+                        break;
+
+                    case 001000:
+
+                        foreach (ModelMesh mesh in b_cyan.Meshes)
+                        {
+                            foreach (BasicEffect effect in mesh.Effects)
+                            {
+                                effect.EnableDefaultLighting();
+                                effect.View = view;
+                                effect.Projection = projection;
+                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(this.Barriere_List[n] + 0.5f, 0.5f, this.Barriere_List[n + 1] + 0.5f));
+                            }
+                            mesh.Draw();
+                        }
+                        n++;
+                        n++;
+                        n++;
+                        break;
+
+                    case 010000:
+
+                        foreach (ModelMesh mesh in b_blau.Meshes)
+                        {
+                            foreach (BasicEffect effect in mesh.Effects)
+                            {
+                                effect.EnableDefaultLighting();
+                                effect.View = view;
+                                effect.Projection = projection;
+                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(this.Barriere_List[n] + 0.5f, 0.5f, this.Barriere_List[n + 1] + 0.5f));
+                            }
+                            mesh.Draw();
+                        }
+                        n++;
+                        n++;
+                        n++;
+                        break;
+
+                    case 100000:
+
+                        foreach (ModelMesh mesh in b_magenta.Meshes)
+                        {
+                            foreach (BasicEffect effect in mesh.Effects)
+                            {
+                                effect.EnableDefaultLighting();
+                                effect.View = view;
+                                effect.Projection = projection;
+                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(this.Barriere_List[n] + 0.5f, 0.5f, this.Barriere_List[n + 1] + 0.5f));
+                            }
+                            mesh.Draw();
+                        }
+                        n++;
+                        n++;
+                        n++;
+                        break;
+
+                    case 100001:
+
+                        foreach (ModelMesh mesh in b_magenta_rot.Meshes)
+                        {
+                            foreach (BasicEffect effect in mesh.Effects)
+                            {
+                                effect.EnableDefaultLighting();
+                                effect.View = view;
+                                effect.Projection = projection;
+                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(this.Barriere_List[n] + 0.5f, 0.5f, this.Barriere_List[n + 1] + 0.5f));
+                            }
+                            mesh.Draw();
+                        }
+                        n++;
+                        n++;
+                        n++;
+                        break;
+
+                    case 000011:
+
+                        foreach (ModelMesh mesh in b_gelb_rot.Meshes)
+                        {
+                            foreach (BasicEffect effect in mesh.Effects)
+                            {
+                                effect.EnableDefaultLighting();
+                                effect.View = view;
+                                effect.Projection = projection;
+                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(this.Barriere_List[n] + 0.5f, 0.5f, this.Barriere_List[n + 1] + 0.5f));
+                            }
+                            mesh.Draw();
+                        }
+                        n++;
+                        n++;
+                        n++;
+                        break;
+
+                    case 000110:
+
+                        foreach (ModelMesh mesh in b_gelb_grün.Meshes)
+                        {
+                            foreach (BasicEffect effect in mesh.Effects)
+                            {
+                                effect.EnableDefaultLighting();
+                                effect.View = view;
+                                effect.Projection = projection;
+                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(this.Barriere_List[n] + 0.5f, 0.5f, this.Barriere_List[n + 1] + 0.5f));
+                            }
+                            mesh.Draw();
+                        }
+                        n++;
+                        n++;
+                        n++;
+                        break;
+
+                    case 001100:
+
+                        foreach (ModelMesh mesh in b_cyan_grün.Meshes)
+                        {
+                            foreach (BasicEffect effect in mesh.Effects)
+                            {
+                                effect.EnableDefaultLighting();
+                                effect.View = view;
+                                effect.Projection = projection;
+                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(this.Barriere_List[n] + 0.5f, 0.5f, this.Barriere_List[n + 1] + 0.5f));
+                            }
+                            mesh.Draw();
+                        }
+                        n++;
+                        n++;
+                        n++;
+                        break;
+
+                    case 011000:
+
+                        foreach (ModelMesh mesh in b_cyan_blau.Meshes)
+                        {
+                            foreach (BasicEffect effect in mesh.Effects)
+                            {
+                                effect.EnableDefaultLighting();
+                                effect.View = view;
+                                effect.Projection = projection;
+                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(this.Barriere_List[n] + 0.5f, 0.5f, this.Barriere_List[n + 1] + 0.5f));
+                            }
+                            mesh.Draw();
+                        }
+                        n++;
+                        n++;
+                        n++;
+                        break;
+
+                    case 110000:
+
+                        foreach (ModelMesh mesh in b_magenta_blau.Meshes)
+                        {
+                            foreach (BasicEffect effect in mesh.Effects)
+                            {
+                                effect.EnableDefaultLighting();
+                                effect.View = view;
+                                effect.Projection = projection;
+                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(this.Barriere_List[n] + 0.5f, 0.5f, this.Barriere_List[n + 1] + 0.5f));
+                            }
+                            mesh.Draw();
+                        }
+                        n++;
+                        n++;
+                        n++;
+                        break;
+                }
+            }
+
+            n = 0;
+
+
+            /*   TÜR   */
+
+            while (this.Tür_List[n] != -1 && n < 41 * 41)
+            {
+                foreach (ModelMesh mesh in tür_zu_model.Meshes)
                 {
                     foreach (BasicEffect effect in mesh.Effects)
                     {
@@ -435,7 +799,29 @@ namespace Crack_Tomb{
 
                         effect.View = view;
                         effect.Projection = projection;
-                        effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(this.Barriere_List[n] + 0.5f, 0.5f, this.Barriere_List[n + 1] + 0.5f));
+                        effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(this.Tür_List[n] + 0.5f, 0.5f, this.Tür_List[n + 1] + 0.5f));
+                    }
+                    mesh.Draw();
+                }
+                n++;
+                n++;
+            }
+
+            n = 0;
+
+            /*   SCHALTER   */
+
+            while (this.Schalter_List[n] != -1 && n < 41 * 41)
+            {
+                foreach (ModelMesh mesh in schalter_model.Meshes)
+                {
+                    foreach (BasicEffect effect in mesh.Effects)
+                    {
+                        effect.EnableDefaultLighting();
+
+                        effect.View = view;
+                        effect.Projection = projection;
+                        effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(this.Schalter_List[n] + 0.5f, 0.5f, this.Schalter_List[n + 1] + 0.5f));
                     }
                     mesh.Draw();
                 }
