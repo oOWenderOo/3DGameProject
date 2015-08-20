@@ -17,6 +17,7 @@ namespace Crack_Tomb.Spieler
         Inventar inventar;
         PlayerSteuerung playersteuerung;
         int[,] Säulen_Array = new int[41, 41];
+        Effect kristalleffect;
 
         public Player(Vector3 startposition, Model spielermodel, int LevelNummer, ContentManager content)
         {
@@ -27,6 +28,7 @@ namespace Crack_Tomb.Spieler
             spiegel = content.Load<Model>("Spiegel");
             splittprisma = content.Load<Model>("Splittprisma");
             farbkristall = content.Load<Model>("kristall");
+            kristalleffect = content.Load<Effect>("KristallEffect");
         }
 
         public void Update(GameTime gametime)
@@ -67,28 +69,140 @@ namespace Crack_Tomb.Spieler
                             splittprisma.Draw(Matrix.CreateTranslation(new Vector3(i, 0, j)), view, projection);
                             break;
                         case 5:
-                            farbkristall.Draw(Matrix.CreateTranslation(new Vector3(i, 0, j)), view, projection);
+                            foreach (ModelMesh mesh in farbkristall.Meshes)
+                            {
+                                foreach (ModelMeshPart part in mesh.MeshParts)
+                                {
+                                    part.Effect = kristalleffect;
+                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i, 0, j)));
+                                    kristalleffect.Parameters["View"].SetValue(view);
+                                    kristalleffect.Parameters["Projection"].SetValue(projection);
+                                    kristalleffect.Parameters["AmbientColor"].SetValue(new Vector4(1, 1, 1, 1));
+
+                                    Matrix worldInverseTransposeMatrix = Matrix.Transpose(Matrix.Invert(mesh.ParentBone.Transform * Matrix.CreateTranslation(position + new Vector3(0, 0.5f, 0))));
+                                    kristalleffect.Parameters["WorldInverseTranspose"].SetValue(worldInverseTransposeMatrix);
+                                }
+                                mesh.Draw();
+                            }
                             break;
                         case 6:
-                            farbkristall.Draw(Matrix.CreateTranslation(new Vector3(i, 0, j)), view, projection);
+                            foreach (ModelMesh mesh in farbkristall.Meshes)
+                            {
+                                foreach (ModelMeshPart part in mesh.MeshParts)
+                                {
+                                    part.Effect = kristalleffect;
+                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i, 0, j)));
+                                    kristalleffect.Parameters["View"].SetValue(view);
+                                    kristalleffect.Parameters["Projection"].SetValue(projection);
+                                    kristalleffect.Parameters["AmbientColor"].SetValue(new Vector4(1, 0, 0, 1));
+
+                                    Matrix worldInverseTransposeMatrix = Matrix.Transpose(Matrix.Invert(mesh.ParentBone.Transform * Matrix.CreateTranslation(position + new Vector3(0, 0.5f, 0))));
+                                    kristalleffect.Parameters["WorldInverseTranspose"].SetValue(worldInverseTransposeMatrix);
+                                }
+                                mesh.Draw();
+                            }
                             break;
                         case 7:
-                            farbkristall.Draw(Matrix.CreateTranslation(new Vector3(i, 0, j)), view, projection);
+                            foreach (ModelMesh mesh in farbkristall.Meshes)
+                            {
+                                foreach (ModelMeshPart part in mesh.MeshParts)
+                                {
+                                    part.Effect = kristalleffect;
+                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i, 0, j)));
+                                    kristalleffect.Parameters["View"].SetValue(view);
+                                    kristalleffect.Parameters["Projection"].SetValue(projection);
+                                    kristalleffect.Parameters["AmbientColor"].SetValue(new Vector4(1, 1, 0, 1));
+
+                                    Matrix worldInverseTransposeMatrix = Matrix.Transpose(Matrix.Invert(mesh.ParentBone.Transform * Matrix.CreateTranslation(position + new Vector3(0, 0.5f, 0))));
+                                    kristalleffect.Parameters["WorldInverseTranspose"].SetValue(worldInverseTransposeMatrix);
+                                }
+                                mesh.Draw();
+                            }
                             break;
                         case 8:
-                            farbkristall.Draw(Matrix.CreateTranslation(new Vector3(i, 0, j)), view, projection);
+                            foreach (ModelMesh mesh in farbkristall.Meshes)
+                            {
+                                foreach (ModelMeshPart part in mesh.MeshParts)
+                                {
+                                    part.Effect = kristalleffect;
+                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i, 0, j)));
+                                    kristalleffect.Parameters["View"].SetValue(view);
+                                    kristalleffect.Parameters["Projection"].SetValue(projection);
+                                    kristalleffect.Parameters["AmbientColor"].SetValue(new Vector4(0, 1, 0, 1));
+
+                                    Matrix worldInverseTransposeMatrix = Matrix.Transpose(Matrix.Invert(mesh.ParentBone.Transform * Matrix.CreateTranslation(position + new Vector3(0, 0.5f, 0))));
+                                    kristalleffect.Parameters["WorldInverseTranspose"].SetValue(worldInverseTransposeMatrix);
+                                }
+                                mesh.Draw();
+                            }
                             break;
                         case 9:
-                            farbkristall.Draw(Matrix.CreateTranslation(new Vector3(i, 0, j)), view, projection);
+                            foreach (ModelMesh mesh in farbkristall.Meshes)
+                            {
+                                foreach (ModelMeshPart part in mesh.MeshParts)
+                                {
+                                    part.Effect = kristalleffect;
+                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i, 0, j)));
+                                    kristalleffect.Parameters["View"].SetValue(view);
+                                    kristalleffect.Parameters["Projection"].SetValue(projection);
+                                    kristalleffect.Parameters["AmbientColor"].SetValue(new Vector4(0, 1, 1, 1));
+
+                                    Matrix worldInverseTransposeMatrix = Matrix.Transpose(Matrix.Invert(mesh.ParentBone.Transform * Matrix.CreateTranslation(position + new Vector3(0, 0.5f, 0))));
+                                    kristalleffect.Parameters["WorldInverseTranspose"].SetValue(worldInverseTransposeMatrix);
+                                }
+                                mesh.Draw();
+                            }
                             break;
                         case 10:
-                            farbkristall.Draw(Matrix.CreateTranslation(new Vector3(i, 0, j)), view, projection);
+                            foreach (ModelMesh mesh in farbkristall.Meshes)
+                            {
+                                foreach (ModelMeshPart part in mesh.MeshParts)
+                                {
+                                    part.Effect = kristalleffect;
+                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i, 0, j)));
+                                    kristalleffect.Parameters["View"].SetValue(view);
+                                    kristalleffect.Parameters["Projection"].SetValue(projection);
+                                    kristalleffect.Parameters["AmbientColor"].SetValue(new Vector4(0, 0, 1, 1));
+
+                                    Matrix worldInverseTransposeMatrix = Matrix.Transpose(Matrix.Invert(mesh.ParentBone.Transform * Matrix.CreateTranslation(position + new Vector3(0, 0.5f, 0))));
+                                    kristalleffect.Parameters["WorldInverseTranspose"].SetValue(worldInverseTransposeMatrix);
+                                }
+                                mesh.Draw();
+                            }
                             break;
                         case 11:
-                            farbkristall.Draw(Matrix.CreateTranslation(new Vector3(i, 0, j)), view, projection);
+                            foreach (ModelMesh mesh in farbkristall.Meshes)
+                            {
+                                foreach (ModelMeshPart part in mesh.MeshParts)
+                                {
+                                    part.Effect = kristalleffect;
+                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i, 0, j)));
+                                    kristalleffect.Parameters["View"].SetValue(view);
+                                    kristalleffect.Parameters["Projection"].SetValue(projection);
+                                    kristalleffect.Parameters["AmbientColor"].SetValue(new Vector4(1, 0, 1, 1));
+
+                                    Matrix worldInverseTransposeMatrix = Matrix.Transpose(Matrix.Invert(mesh.ParentBone.Transform * Matrix.CreateTranslation(position + new Vector3(0, 0.5f, 0))));
+                                    kristalleffect.Parameters["WorldInverseTranspose"].SetValue(worldInverseTransposeMatrix);
+                                }
+                                mesh.Draw();
+                            }
                             break;
                         case 12:
-                            farbkristall.Draw(Matrix.CreateTranslation(new Vector3(i, 0, j)), view, projection);
+                            foreach (ModelMesh mesh in farbkristall.Meshes)
+                            {
+                                foreach (ModelMeshPart part in mesh.MeshParts)
+                                {
+                                    part.Effect = kristalleffect;
+                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i, 0, j)));
+                                    kristalleffect.Parameters["View"].SetValue(view);
+                                    kristalleffect.Parameters["Projection"].SetValue(projection);
+                                    kristalleffect.Parameters["AmbientColor"].SetValue(new Vector4(0, 0, 0, 1));
+
+                                    Matrix worldInverseTransposeMatrix = Matrix.Transpose(Matrix.Invert(mesh.ParentBone.Transform * Matrix.CreateTranslation(position + new Vector3(0, 0.5f, 0))));
+                                    kristalleffect.Parameters["WorldInverseTranspose"].SetValue(worldInverseTransposeMatrix);
+                                }
+                                mesh.Draw();
+                            }
                             break;
                         default:
                             break;
