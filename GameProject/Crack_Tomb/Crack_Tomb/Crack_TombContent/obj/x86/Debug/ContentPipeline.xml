@@ -307,6 +307,66 @@
       <Output>obj\x86\Debug\saule_mit_halbloch_platz_0.xml</Output>
       <Time>2015-08-20T14:01:30.8879989+02:00</Time>
     </Item>
+    <Item>
+      <Source>kristall.fbx</Source>
+      <Name>kristall</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\kristall.xnb</Output>
+      <Time>2015-08-20T14:39:11.7888107+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\kristall_0.xml</Key>
+        <Value>2015-08-20T14:40:38.521824+02:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Spiegel.fbx</Source>
+      <Name>Spiegel</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Spiegel.xnb</Output>
+      <Time>2015-08-20T14:39:16.6727533+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Spiegel_0.xml</Key>
+        <Value>2015-08-20T14:40:38.6339316+02:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Splittprisma.fbx</Source>
+      <Name>Splittprisma</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Splittprisma.xnb</Output>
+      <Time>2015-08-20T14:39:20.959776+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Splittprisma_0.xml</Key>
+        <Value>2015-08-20T14:40:38.685981+02:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>kristall.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\kristall_0.xml</Output>
+      <Time>2015-08-20T14:39:11.7888107+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Spiegel.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Spiegel_0.xml</Output>
+      <Time>2015-08-20T14:39:16.6727533+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Splittprisma.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Splittprisma_0.xml</Output>
+      <Time>2015-08-20T14:39:20.959776+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
