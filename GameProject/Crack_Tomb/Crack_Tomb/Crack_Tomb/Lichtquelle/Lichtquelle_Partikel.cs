@@ -19,8 +19,9 @@ namespace Lichtquelle
         Lichtquelle_Partikel vorgänger;
         Lichtquelle_Partikel nachfolger;
 
-        public Lichtquelle_Partikel(Model partikelmodel, Vector3 position, Vector3 richtung, Lichtquelle_Partikel vorgänger, Lichtquelle_Partikel nachfolger)
+        public Lichtquelle_Partikel(Model partikelmodel, Vector3 position, Vector3 richtung, Lichtquelle_Partikel vorgänger, Lichtquelle_Partikel nachfolger, MyColor farbe)
         {
+            this.farbe = farbe;
             this.partikelmodel = partikelmodel;
             this.position = position;
             this.richtung = richtung;

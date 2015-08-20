@@ -153,18 +153,18 @@ namespace Crack_Tomb.Lichtquelle
                                 if (partikelrichtung == oben || partikelrichtung == unten)
                                 {
                                     partikel.setPosition(newposition);
-                                    partikel.setNachfolger(new Lichtquelle_Partikel(partikel.getModel(), partikel.getPosition(), links, partikel, partikel.getNachfolger()));
+                                    partikel.setNachfolger(new Lichtquelle_Partikel(partikel.getModel(), partikel.getPosition(), links, partikel, partikel.getNachfolger(), new MyColor(partikel.getFarbe().mycolor)));
                                     partikel.getNachfolger().getNachfolger().setVorgänger(partikel.getNachfolger());
-                                    partikel.setNachfolger(new Lichtquelle_Partikel(partikel.getModel(), partikel.getPosition(), rechts, partikel, partikel.getNachfolger()));
+                                    partikel.setNachfolger(new Lichtquelle_Partikel(partikel.getModel(), partikel.getPosition(), rechts, partikel, partikel.getNachfolger(), new MyColor(partikel.getFarbe().mycolor)));
                                     partikel.getNachfolger().getNachfolger().setVorgänger(partikel.getNachfolger());
                                 }
 
                                 if (partikelrichtung == rechts || partikelrichtung == links)
                                 {
                                     partikel.setPosition(newposition);
-                                    partikel.setNachfolger(new Lichtquelle_Partikel(partikel.getModel(), partikel.getPosition(), oben, partikel, partikel.getNachfolger()));
+                                    partikel.setNachfolger(new Lichtquelle_Partikel(partikel.getModel(), partikel.getPosition(), oben, partikel, partikel.getNachfolger(), new MyColor(partikel.getFarbe().mycolor)));
                                     partikel.getNachfolger().getNachfolger().setVorgänger(partikel.getNachfolger());
-                                    partikel.setNachfolger(new Lichtquelle_Partikel(partikel.getModel(), partikel.getPosition(), unten, partikel, partikel.getNachfolger()));
+                                    partikel.setNachfolger(new Lichtquelle_Partikel(partikel.getModel(), partikel.getPosition(), unten, partikel, partikel.getNachfolger(), new MyColor(partikel.getFarbe().mycolor)));
                                     partikel.getNachfolger().getNachfolger().setVorgänger(partikel.getNachfolger());
                                 }
                                 break;

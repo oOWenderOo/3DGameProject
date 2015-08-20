@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using Crack_Tomb.Lichtquelle;
 using Crack_Tomb.Spieler;
+using Crack_Tomb;
 
 namespace Lichtquelle
 {
@@ -23,7 +24,7 @@ namespace Lichtquelle
             this.position = position;
             this.richtung = richtung;
 
-            p = new Lichtquelle_Partikel(partikelmodel, position, richtung, null, null);
+            p = new Lichtquelle_Partikel(partikelmodel, position, richtung, null, null, new MyColor(000000));
             collider = new PartikelCollider(levelnummer);
         }
 
@@ -31,13 +32,13 @@ namespace Lichtquelle
         {
             if (p == null)
             {
-                p = new Lichtquelle_Partikel(partikelmodel, position, richtung, null, null);
+                p = new Lichtquelle_Partikel(partikelmodel, position, richtung, null, null, new MyColor(000000));
             }
             else
             {
                 if (dist(position, p.getPosition()) > 1)
                 {
-                    newp = new Lichtquelle_Partikel(partikelmodel, position, richtung, p, null);
+                    newp = new Lichtquelle_Partikel(partikelmodel, position, richtung, p, null, new MyColor(000000));
                     p.setNachfolger(newp);
                     p = p.getNachfolger();
                 }
