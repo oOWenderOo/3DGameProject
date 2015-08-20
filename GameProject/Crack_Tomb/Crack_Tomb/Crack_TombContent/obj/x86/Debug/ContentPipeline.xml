@@ -367,6 +367,15 @@
       <Output>obj\x86\Debug\Splittprisma_0.xml</Output>
       <Time>2015-08-20T14:39:20.959776+02:00</Time>
     </Item>
+    <Item>
+      <Source>PartikelEffect.fx</Source>
+      <Name>PartikelEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\PartikelEffect.xnb</Output>
+      <Time>2015-08-20T15:08:01.4232847+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
