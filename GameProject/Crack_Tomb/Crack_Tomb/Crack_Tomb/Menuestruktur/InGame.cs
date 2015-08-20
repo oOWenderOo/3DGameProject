@@ -61,7 +61,7 @@ namespace MainMenuCo
             //Gabriels-Teil
             player = new Player(lichtPos, content.Load<Model>("Spieler_mit_Hut"), levelnummer, content);
             camera = new Kamera(player.position);
-            licht = new Lichtstrahl(content.Load<Model>("partikel"), lichtPos, lichtDir, levelnummer, player);
+            licht = new Lichtstrahl(content.Load<Model>("partikel"), lichtPos, lichtDir, levelnummer, player, content.Load<Effect>("PartikelEffect"));
             pausemenü = new PauseMenü(content);
 
             //Annes-Teil

@@ -18,9 +18,12 @@ namespace Lichtquelle
         Model partikelmodel;
         Lichtquelle_Partikel vorgänger;
         Lichtquelle_Partikel nachfolger;
+        public Effect effect;
 
-        public Lichtquelle_Partikel(Model partikelmodel, Vector3 position, Vector3 richtung, Lichtquelle_Partikel vorgänger, Lichtquelle_Partikel nachfolger)
+        public Lichtquelle_Partikel(Model partikelmodel, Vector3 position, Vector3 richtung, Lichtquelle_Partikel vorgänger, Lichtquelle_Partikel nachfolger, MyColor farbe, Effect effect)
         {
+            this.effect = effect;
+            this.farbe = farbe;
             this.partikelmodel = partikelmodel;
             this.position = position;
             this.richtung = richtung;
@@ -71,7 +74,66 @@ namespace Lichtquelle
                 vorgänger.Draw(gameTime, view, projection);
             }
 
-            partikelmodel.Draw(Matrix.CreateTranslation(position+ new Vector3(0, 0.5f, 0)), view, projection);
+            foreach (ModelMesh mesh in partikelmodel.Meshes)
+            {
+                foreach (ModelMeshPart part in mesh.MeshParts)
+                {
+                    part.Effect = effect;
+                    effect.Parameters["World"].SetValue(Matrix.CreateTranslation(position + new Vector3(0, 0.5f, 0)));
+                    effect.Parameters["View"].SetValue(view);
+                    effect.Parameters["Projection"].SetValue(projection);
+
+                    switch (farbe.mycolor)
+                    {
+                        case 000000:
+                            effect.Parameters["AmbientColor"].SetValue(new Vector4(1, 1, 1, 1));
+                            break;
+                        case 000001:
+                            effect.Parameters["AmbientColor"].SetValue(new Vector4(1, 0, 0, 1));
+                            break;
+                        case 000010:
+                            effect.Parameters["AmbientColor"].SetValue(new Vector4(1, 1, 0, 1));
+                            break;
+                        case 000100:
+                            effect.Parameters["AmbientColor"].SetValue(new Vector4(0, 1, 0, 1));
+                            break;
+                        case 001000:
+                            effect.Parameters["AmbientColor"].SetValue(new Vector4(0, 1, 1, 1));
+                            break;
+                        case 010000:
+                            effect.Parameters["AmbientColor"].SetValue(new Vector4(0, 0, 1, 1));
+                            break;
+                        case 100000:
+                            effect.Parameters["AmbientColor"].SetValue(new Vector4(1, 0, 1, 1));
+                            break;
+                        case 000011:
+                            effect.Parameters["AmbientColor"].SetValue(new Vector4(1, 0.5f, 0, 1));
+                            break;
+                        case 000110:
+                            effect.Parameters["AmbientColor"].SetValue(new Vector4(0.5f, 1, 0, 1));
+                            break;
+                        case 001100:
+                            effect.Parameters["AmbientColor"].SetValue(new Vector4(0, 1, 0.5f, 1));
+                            break;
+                        case 011000:
+                            effect.Parameters["AmbientColor"].SetValue(new Vector4(0, 0.5f, 1, 1));
+                            break;
+                        case 110000:
+                            effect.Parameters["AmbientColor"].SetValue(new Vector4(0.5f, 0, 1, 1));
+                            break;
+                        case 100001:
+                            effect.Parameters["AmbientColor"].SetValue(new Vector4(1, 0, 0.5f, 1));
+                            break;
+                        default:
+                            effect.Parameters["AmbientColor"].SetValue(new Vector4(0, 0, 0, 1));
+                            break;
+                    }
+
+                    Matrix worldInverseTransposeMatrix = Matrix.Transpose(Matrix.Invert(mesh.ParentBone.Transform * Matrix.CreateTranslation(position + new Vector3(0, 0.5f, 0))));
+                    effect.Parameters["WorldInverseTranspose"].SetValue(worldInverseTransposeMatrix);
+                }
+                mesh.Draw();
+            }
         }
 
         public Vector3 getPosition()
@@ -82,6 +144,11 @@ namespace Lichtquelle
         public Vector3 getRichtung()
         {
             return richtung;
+        }
+
+        public MyColor getFarbe()
+        {
+            return farbe;
         }
 
         public Model getModel()
@@ -127,6 +194,11 @@ namespace Lichtquelle
         public void setRichtung(Vector3 richtung)
         {
             this.richtung = richtung;
+        }
+
+        public void setFarbe(MyColor farbe)
+        {
+            this.farbe = farbe;
         }
     }
 }

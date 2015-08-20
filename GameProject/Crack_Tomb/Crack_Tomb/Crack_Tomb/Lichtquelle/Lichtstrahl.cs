@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using Crack_Tomb.Lichtquelle;
 using Crack_Tomb.Spieler;
+using Crack_Tomb;
 
 namespace Lichtquelle
 {
@@ -16,14 +17,16 @@ namespace Lichtquelle
         Vector3 richtung;
         Model partikelmodel;
         PartikelCollider collider;
+        Effect partikeleffect;
 
-        public Lichtstrahl(Model partikelmodel, Vector3 position, Vector3 richtung , int levelnummer, Player player)
+        public Lichtstrahl(Model partikelmodel, Vector3 position, Vector3 richtung , int levelnummer, Player player, Effect partikeleffect)
         {
+            this.partikeleffect = partikeleffect;
             this.partikelmodel = partikelmodel;
             this.position = position;
             this.richtung = richtung;
 
-            p = new Lichtquelle_Partikel(partikelmodel, position, richtung, null, null);
+            p = new Lichtquelle_Partikel(partikelmodel, position, richtung, null, null, new MyColor(000000), partikeleffect);
             collider = new PartikelCollider(levelnummer);
         }
 
@@ -31,13 +34,13 @@ namespace Lichtquelle
         {
             if (p == null)
             {
-                p = new Lichtquelle_Partikel(partikelmodel, position, richtung, null, null);
+                p = new Lichtquelle_Partikel(partikelmodel, position, richtung, null, null, new MyColor(000000), partikeleffect);
             }
             else
             {
                 if (dist(position, p.getPosition()) > 1)
                 {
-                    newp = new Lichtquelle_Partikel(partikelmodel, position, richtung, p, null);
+                    newp = new Lichtquelle_Partikel(partikelmodel, position, richtung, p, null, new MyColor(000000), partikeleffect);
                     p.setNachfolger(newp);
                     p = p.getNachfolger();
                 }

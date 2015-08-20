@@ -46,7 +46,16 @@ namespace Crack_Tomb.Spieler
             }
 
             //Was wird reingesetzt:
-            //nichts = 0, Säule = 1, Spiegel links unten nach rechts oben = 2, Spiegel rechts unten nach links oben = 3, Splittprisma = 4, Farbkristall = 5
+            //nichts = 0, Säule = 1, Spiegel links unten nach rechts oben = 2, Spiegel rechts unten nach links oben = 3, Splittprisma = 4
+            //Farbkristall:
+            //Weiß = 5
+            //Rot = 6
+            //Gelb = 7
+            //Grün = 8
+            //Cyan = 9
+            //Blau = 10
+            //Magenta = 11
+            //Schwarz = 12
             int arrayposition_x = (int)Math.Floor(playerposition.X);
             int arrayposition_y = (int)Math.Floor(playerposition.Z);
 
