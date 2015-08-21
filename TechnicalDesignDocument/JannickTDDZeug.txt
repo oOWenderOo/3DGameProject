@@ -1,0 +1,15 @@
+Machart:
+
+-anfangs für jedes Objekt eine Klasse das automatisch Dreiecke definiert und in eine Liste packt, damit wurde dann provisorisch gezeichnet.
+-jetzt : diese Klassen sind Quasi nutzlos da keine Objekte mehr erstellt werden.
+
+-Die Level haben ein Array in dem BItmapartig alle Objekte des Levels in Zahlendarstellung eingetragen sind. Dazu noch 3 seperate Vektor für Lichtstart/Richtung
+-Die Levelloader-Klasse läd sich das jeweilige Level. Dann wird das Array abgelaufen und verschiedene Liste für die Objekte werden mit Zahlen für die Positionen befüllt
+-die Zeichfuntion ließt dann diese Listen aus und malt die Objekte an der richtigen Stelle.
+
+-Levelbau erfoglte in Minecraft : d.h. ich habe dort mit einem System das Level konstruiert. Durch die "Mechaniken" die Minecraft bietet konnte ich so optimal die Level verändern/testen
+-Danach folgte Übertragung der "Blöcke" in "Zahlen" für den Code.
+
+-Die Farbklasse besteht aus einem 6-bit Wert der eine RBG-Farbe darstellt. die Mixfuntion geht einfach alle möglichen Kombinationen durch und gibt dann die neue Farbe zurück.
+
+-mehr hab ich eigentlich nicht gemacht.
