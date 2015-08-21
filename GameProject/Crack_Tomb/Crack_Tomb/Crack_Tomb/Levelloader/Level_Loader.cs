@@ -168,6 +168,12 @@ namespace Crack_Tomb{
                     Licht_Richtung = new Level14().Licht_Richtung;
                     break;
 
+                case 15:
+                    Level_Array = new Level15().Level_Array;
+                    Licht_Start = new Level15().Licht_Start;
+                    Licht_Richtung = new Level15().Licht_Richtung;
+                    break;
+
                 default:
                     Level_Array = new Level0().Level_Array;
                     Licht_Start = new Level0().Licht_Start;
