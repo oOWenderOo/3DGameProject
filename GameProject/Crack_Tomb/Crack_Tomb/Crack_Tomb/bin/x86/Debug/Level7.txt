@@ -1,5 +1,6 @@
 true
 Halloa 1180
+Hallo 1000
 Ralf 100
 Hans 90
 Mueller 80
@@ -8,4 +9,3 @@ Wender 60
 Netuwi 50
 Jan 40
 Lisa 30
-Paul 20
