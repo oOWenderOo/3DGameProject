@@ -192,18 +192,18 @@ namespace Crack_Tomb{
             säule_model = content.Load<Model>("saule_platz");                   //SÄULE
             loch_model = content.Load<Model>("saule_mit_loch_platz");           //WAND MIT LOCH
             boden_model = content.Load<Model>("ground");                         //BODEN
-            b_rot = content.Load<Model>("boden");                               //ROT-BARRIERE
-            b_gelb_rot = content.Load<Model>("boden");                          //GELB-ROT-BARRIERE
-            b_gelb = content.Load<Model>("boden");                              //GELB-BARRIERE
-            b_gelb_grün= content.Load<Model>("boden");                          //GELB-GRÜN-BARRIERE
-            b_grün = content.Load<Model>("boden");                              //GRÜN-BARRIERE
-            b_cyan_grün = content.Load<Model>("boden");                         //CYAN-GRÜN-BARRIERE
-            b_cyan = content.Load<Model>("boden");                              //CYAN-BARRIERE
-            b_cyan_blau = content.Load<Model>("boden");                         //CYAN-BLAU-BARRIERE
-            b_blau = content.Load<Model>("boden");                              //BLAU-BARRIERE
-            b_magenta_blau = content.Load<Model>("boden");                      //MAGENTA-BLAU-BARRIERE
-            b_magenta = content.Load<Model>("boden");                           //MAGENTA-BARRIERE
-            b_magenta_rot = content.Load<Model>("boden");                       //MAGENTA-ROT-BARRIERE
+            b_rot = content.Load<Model>("Farbbarrieren");                               //ROT-BARRIERE
+            b_gelb_rot = content.Load<Model>("Farbbarrieren");                          //GELB-ROT-BARRIERE
+            b_gelb = content.Load<Model>("Farbbarrieren");                              //GELB-BARRIERE
+            b_gelb_grün = content.Load<Model>("Farbbarrieren");                          //GELB-GRÜN-BARRIERE
+            b_grün = content.Load<Model>("Farbbarrieren");                              //GRÜN-BARRIERE
+            b_cyan_grün = content.Load<Model>("Farbbarrieren");                         //CYAN-GRÜN-BARRIERE
+            b_cyan = content.Load<Model>("Farbbarrieren");                              //CYAN-BARRIERE
+            b_cyan_blau = content.Load<Model>("Farbbarrieren");                         //CYAN-BLAU-BARRIERE
+            b_blau = content.Load<Model>("Farbbarrieren");                              //BLAU-BARRIERE
+            b_magenta_blau = content.Load<Model>("Farbbarrieren");                      //MAGENTA-BLAU-BARRIERE
+            b_magenta = content.Load<Model>("Farbbarrieren");                           //MAGENTA-BARRIERE
+            b_magenta_rot = content.Load<Model>("Farbbarrieren");                       //MAGENTA-ROT-BARRIERE
             tür_geschlossen = content.Load<Model>("boden");                     //OFFENE TÜR
             tür_offen = content.Load<Model>("boden");                           //GESCHLOSSENE TÜR
             schalter = content.Load<Model>("boden");                            //SCHALTER
@@ -487,7 +487,7 @@ namespace Crack_Tomb{
 
                         effect.View = view;
                         effect.Projection = projection;
-                        effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(this.Boden_List[n] + 0.5f, 0.5f, this.Boden_List[n + 1] + 0.5f));
+                        effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(this.Boden_List[n] + 0.5f, 0f, this.Boden_List[n + 1] + 0.5f));
                     }
                     mesh.Draw();
                 }

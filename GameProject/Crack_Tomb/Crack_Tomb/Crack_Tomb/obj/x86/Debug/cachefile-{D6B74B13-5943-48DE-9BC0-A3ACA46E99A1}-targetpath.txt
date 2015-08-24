@@ -30,3 +30,6 @@ Content\Spiegel_0.xnb
 Content\Bodentextur.xnb
 Content\ground.xnb
 Content\Bodentextur_0.xnb
+Content\song.xnb
+Content\song.wma
+Content\Farbbarrieren.xnb

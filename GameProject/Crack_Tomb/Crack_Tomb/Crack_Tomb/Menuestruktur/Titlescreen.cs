@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.Content;
 using System.Threading;
 using Microsoft.Xna.Framework.Input;
 using System.IO;
+using Microsoft.Xna.Framework.Media;
 
 namespace MainMenuCo
 {
@@ -16,6 +17,7 @@ namespace MainMenuCo
         SpriteFont fontText;
         Texture2D background;
         int anzahllevel = 10;
+        Song song;
 
         public Titlescreen()
         {
@@ -45,6 +47,9 @@ namespace MainMenuCo
         {
             fontText = content.Load<SpriteFont>("Normal");
             background = content.Load<Texture2D>("Testbildhintergrund");
+            song = content.Load<Song>("song");
+            MediaPlayer.Play(song);
+            MediaPlayer.IsRepeating = true;
         }
 
         public override GameState Update(GameTime gameTime)

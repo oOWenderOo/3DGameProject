@@ -457,6 +457,36 @@
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Bodentextur_0.xnb</Output>
       <Time>2015-08-24T16:29:42.7837215+02:00</Time>
     </Item>
+    <Item>
+      <Source>song.mp3</Source>
+      <Name>song</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\song.xnb</Output>
+      <Extra>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\song.wma</Extra>
+      <Time>2015-08-24T16:50:34.6114582+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Farbbarrieren.fbx</Source>
+      <Name>Farbbarrieren</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Farbbarrieren.xnb</Output>
+      <Time>2015-08-24T16:55:52.8990596+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Farbbarrieren_0.xml</Key>
+        <Value>2015-08-24T16:57:11.0840633+02:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Farbbarrieren.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Farbbarrieren_0.xml</Output>
+      <Time>2015-08-24T16:55:52.8990596+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
