@@ -814,13 +814,13 @@ namespace Crack_Tomb.Spieler
                             }
                             else
                             {
-                                if (Keyboard.GetState().IsKeyDown(Keys.D5) && inventar.getNumFarbkristallCyan() > 0 && !isgedrücktD1 && !isgedrücktD2 && !isgedrücktD3 && !isgedrücktD4 && !isgedrücktD6)
+                                if (Keyboard.GetState().IsKeyDown(Keys.D5) && inventar.getNumFarbkristallBlue() > 0 && !isgedrücktD1 && !isgedrücktD2 && !isgedrücktD3 && !isgedrücktD4 && !isgedrücktD6)
                                 {
                                     isgedrücktD5 = true;
                                 }
                                 else
                                 {
-                                    if (Keyboard.GetState().IsKeyDown(Keys.D6) && inventar.getNumFarbkristallCyan() > 0 && !isgedrücktD1 && !isgedrücktD2 && !isgedrücktD3 && !isgedrücktD4 && !isgedrücktD5)
+                                    if (Keyboard.GetState().IsKeyDown(Keys.D6) && inventar.getNumFarbkristallMagenta() > 0 && !isgedrücktD1 && !isgedrücktD2 && !isgedrücktD3 && !isgedrücktD4 && !isgedrücktD5)
                                     {
                                         isgedrücktD6 = true;
                                     }
