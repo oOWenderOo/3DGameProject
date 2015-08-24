@@ -48,14 +48,12 @@ namespace Crack_Tomb.Spieler
             //Was wird reingesetzt:
             //nichts = 0, Säule = 1, Spiegel links unten nach rechts oben = 2, Spiegel rechts unten nach links oben = 3, Splittprisma = 4
             //Farbkristall:
-            //Weiß = 5
-            //Rot = 6
-            //Gelb = 7
-            //Grün = 8
-            //Cyan = 9
-            //Blau = 10
-            //Magenta = 11
-            //Schwarz = 12
+            //Rot = 5
+            //Gelb = 6
+            //Grün = 7
+            //Cyan = 8
+            //Blau = 9
+            //Magenta = 10
             int arrayposition_x = (int)Math.Floor(playerposition.X);
             int arrayposition_y = (int)Math.Floor(playerposition.Z);
 
@@ -114,7 +112,7 @@ namespace Crack_Tomb.Spieler
                     case 5:
                         if (inventar.getNumSpiegel() != 0)
                         {
-                            inventar.pushFarbkristall();
+                            inventar.pushFarbkristallRed();
                             inventar.pullSpiegel();
                             Säulen_Array[arrayposition_x, arrayposition_y + 1] = 2;
                         }
@@ -149,7 +147,7 @@ namespace Crack_Tomb.Spieler
                     case 5:
                         if (inventar.getNumSpiegel() != 0)
                         {
-                            inventar.pushFarbkristall();
+                            inventar.pushFarbkristallRed();
                             inventar.pullSpiegel();
                             Säulen_Array[arrayposition_x, arrayposition_y - 1] = 2;
                         }
@@ -184,7 +182,7 @@ namespace Crack_Tomb.Spieler
                     case 5:
                         if (inventar.getNumSpiegel() != 0)
                         {
-                            inventar.pushFarbkristall();
+                            inventar.pushFarbkristallRed();
                             inventar.pullSpiegel();
                             Säulen_Array[arrayposition_x + 1, arrayposition_y] = 2;
                         }
@@ -219,7 +217,7 @@ namespace Crack_Tomb.Spieler
                     case 5:
                         if (inventar.getNumSpiegel() != 0)
                         {
-                            inventar.pushFarbkristall();
+                            inventar.pushFarbkristallRed();
                             inventar.pullSpiegel();
                             Säulen_Array[arrayposition_x - 1, arrayposition_y] = 2;
                         }
@@ -252,7 +250,7 @@ namespace Crack_Tomb.Spieler
                         case 4:
                             break;
                         case 5:
-                            inventar.pushFarbkristall();
+                            inventar.pushFarbkristallRed();
                             inventar.pullSplittPrisma();
                             Säulen_Array[arrayposition_x, arrayposition_y + 1] = 4;
                             break;
@@ -279,7 +277,7 @@ namespace Crack_Tomb.Spieler
                         case 4:
                             break;
                         case 5:
-                            inventar.pushFarbkristall();
+                            inventar.pushFarbkristallRed();
                             inventar.pullSplittPrisma();
                             Säulen_Array[arrayposition_x, arrayposition_y - 1] = 4;
                             break;
@@ -306,7 +304,7 @@ namespace Crack_Tomb.Spieler
                         case 4:
                             break;
                         case 5:
-                            inventar.pushFarbkristall();
+                            inventar.pushFarbkristallRed();
                             inventar.pullSplittPrisma();
                             Säulen_Array[arrayposition_x + 1, arrayposition_y] = 4;
                             break;
@@ -333,7 +331,7 @@ namespace Crack_Tomb.Spieler
                         case 4:
                             break;
                         case 5:
-                            inventar.pushFarbkristall();
+                            inventar.pushFarbkristallRed();
                             inventar.pullSplittPrisma();
                             Säulen_Array[arrayposition_x - 1, arrayposition_y] = 4;
                             break;
@@ -349,22 +347,22 @@ namespace Crack_Tomb.Spieler
                         switch (Säulen_Array[arrayposition_x, arrayposition_y + 1])
                         {
                             case 1:
-                                inventar.pullFarbkristall();
+                                inventar.pullFarbkristallRed();
                                 Säulen_Array[arrayposition_x, arrayposition_y + 1] = 5;
                                 break;
                             case 2:
                                 inventar.pushSpiegel();
-                                inventar.pullFarbkristall();
+                                inventar.pullFarbkristallRed();
                                 Säulen_Array[arrayposition_x, arrayposition_y + 1] = 5;
                                 break;
                             case 3:
                                 inventar.pushSpiegel();
-                                inventar.pullFarbkristall();
+                                inventar.pullFarbkristallRed();
                                 Säulen_Array[arrayposition_x, arrayposition_y + 1] = 5;
                                 break;
                             case 4:
                                 inventar.pushSplittPrisma();
-                                inventar.pullFarbkristall();
+                                inventar.pullFarbkristallRed();
                                 Säulen_Array[arrayposition_x, arrayposition_y + 1] = 5;
                                 break;
                             case 5:
@@ -376,22 +374,22 @@ namespace Crack_Tomb.Spieler
                         switch (Säulen_Array[arrayposition_x, arrayposition_y - 1])
                         {
                             case 1:
-                                inventar.pullFarbkristall();
+                                inventar.pullFarbkristallRed();
                                 Säulen_Array[arrayposition_x, arrayposition_y - 1] = 5;
                                 break;
                             case 2:
                                 inventar.pushSpiegel();
-                                inventar.pullFarbkristall();
+                                inventar.pullFarbkristallRed();
                                 Säulen_Array[arrayposition_x, arrayposition_y - 1] = 5;
                                 break;
                             case 3:
                                 inventar.pushSpiegel();
-                                inventar.pullFarbkristall();
+                                inventar.pullFarbkristallRed();
                                 Säulen_Array[arrayposition_x, arrayposition_y - 1] = 5;
                                 break;
                             case 4:
                                 inventar.pushSplittPrisma();
-                                inventar.pullFarbkristall();
+                                inventar.pullFarbkristallRed();
                                 Säulen_Array[arrayposition_x, arrayposition_y - 1] = 5;
                                 break;
                             case 5:
@@ -403,22 +401,22 @@ namespace Crack_Tomb.Spieler
                         switch (Säulen_Array[arrayposition_x + 1, arrayposition_y])
                         {
                             case 1:
-                                inventar.pullFarbkristall();
+                                inventar.pullFarbkristallRed();
                                 Säulen_Array[arrayposition_x + 1, arrayposition_y] = 5;
                                 break;
                             case 2:
                                 inventar.pushSpiegel();
-                                inventar.pullFarbkristall();
+                                inventar.pullFarbkristallRed();
                                 Säulen_Array[arrayposition_x + 1, arrayposition_y] = 5;
                                 break;
                             case 3:
                                 inventar.pushSpiegel();
-                                inventar.pullFarbkristall();
+                                inventar.pullFarbkristallRed();
                                 Säulen_Array[arrayposition_x + 1, arrayposition_y] = 5;
                                 break;
                             case 4:
                                 inventar.pushSplittPrisma();
-                                inventar.pullFarbkristall();
+                                inventar.pullFarbkristallRed();
                                 Säulen_Array[arrayposition_x + 1, arrayposition_y] = 5;
                                 break;
                             case 5:
@@ -430,22 +428,22 @@ namespace Crack_Tomb.Spieler
                         switch (Säulen_Array[arrayposition_x - 1, arrayposition_y])
                         {
                             case 1:
-                                inventar.pullFarbkristall();
+                                inventar.pullFarbkristallRed();
                                 Säulen_Array[arrayposition_x - 1, arrayposition_y] = 5;
                                 break;
                             case 2:
                                 inventar.pushSpiegel();
-                                inventar.pullFarbkristall();
+                                inventar.pullFarbkristallRed();
                                 Säulen_Array[arrayposition_x - 1, arrayposition_y] = 5;
                                 break;
                             case 3:
                                 inventar.pushSpiegel();
-                                inventar.pullFarbkristall();
+                                inventar.pullFarbkristallRed();
                                 Säulen_Array[arrayposition_x - 1, arrayposition_y] = 5;
                                 break;
                             case 4:
                                 inventar.pushSplittPrisma();
-                                inventar.pullFarbkristall();
+                                inventar.pullFarbkristallRed();
                                 Säulen_Array[arrayposition_x - 1, arrayposition_y] = 5;
                                 break;
                             case 5:
@@ -474,7 +472,7 @@ namespace Crack_Tomb.Spieler
                                     Säulen_Array[arrayposition_x, arrayposition_y + 1] = 1;
                                     break;
                                 case 5:
-                                    inventar.pushFarbkristall();
+                                    inventar.pushFarbkristallRed();
                                     Säulen_Array[arrayposition_x, arrayposition_y + 1] = 1;
                                     break;
                                 default:
@@ -496,7 +494,7 @@ namespace Crack_Tomb.Spieler
                                     Säulen_Array[arrayposition_x, arrayposition_y - 1] = 1;
                                     break;
                                 case 5:
-                                    inventar.pushFarbkristall();
+                                    inventar.pushFarbkristallRed();
                                     Säulen_Array[arrayposition_x, arrayposition_y - 1] = 1;
                                     break;
                                 default:
@@ -518,7 +516,7 @@ namespace Crack_Tomb.Spieler
                                     Säulen_Array[arrayposition_x + 1, arrayposition_y] = 1;
                                     break;
                                 case 5:
-                                    inventar.pushFarbkristall();
+                                    inventar.pushFarbkristallRed();
                                     Säulen_Array[arrayposition_x + 1, arrayposition_y] = 1;
                                     break;
                                 default:
@@ -540,7 +538,7 @@ namespace Crack_Tomb.Spieler
                                     Säulen_Array[arrayposition_x - 1, arrayposition_y] = 1;
                                     break;
                                 case 5:
-                                    inventar.pushFarbkristall();
+                                    inventar.pushFarbkristallRed();
                                     Säulen_Array[arrayposition_x - 1, arrayposition_y] = 1;
                                     break;
                                 default:

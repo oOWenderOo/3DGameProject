@@ -1,6 +1,7 @@
 true
 HIHO 1060
 Gabriel 1040
+Hallo 1010
 Hallo 950
 Ha 890
 Hallo 870
@@ -8,4 +9,3 @@ Ralf 100
 Hans 90
 Mueller 80
 Hansen 70
-Wender 60

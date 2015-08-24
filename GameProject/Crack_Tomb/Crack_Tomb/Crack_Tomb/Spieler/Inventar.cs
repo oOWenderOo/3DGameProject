@@ -21,11 +21,12 @@ namespace Crack_Tomb.Spieler
         private int[] inventar;
         SpriteFont font;
         Texture2D inventarTextur;
+        public bool drawFarbkristalle = false;
 
         //Erzeugen eines Inventars
         public Inventar(ContentManager content)
         {
-            inventar = new int[3];
+            inventar = new int[8];
             font = content.Load<SpriteFont>("Normal");
             inventarTextur = content.Load<Texture2D>("Inventar");
 
@@ -41,13 +42,68 @@ namespace Crack_Tomb.Spieler
 
             spritebatch.Draw(inventarTextur, new Vector2(-10, 370), Color.White);
 
-            for (int i = 0; i < inventar.Length; i++)
+            if (drawFarbkristalle)
             {
-                string str = "" + inventar[i];
-                spritebatch.DrawString(font, str, new Vector2(70 + 80 * i, 400), Color.Black);
+
+                for (int i = 2; i < inventar.Length; i++)
+                {
+                    string str = "" + inventar[i];
+                    spritebatch.DrawString(font, str, new Vector2(70 + 80 * i, 400), Color.Black);
+                }
+            }
+            else
+            {
+                for (int i = 0; i < 2; i++)
+                {
+                    string str = "" + inventar[i];
+                    spritebatch.DrawString(font, str, new Vector2(70 + 80 * i, 400), Color.Black);
+                }
+
+                spritebatch.DrawString(font, "" + getNumFarbkristall(), new Vector2(70 + 80 * 2, 400), Color.Black);
             }
 
             spritebatch.End();
+        }
+
+        //Object im Inventar auf bestimmten Wert setzen
+        public void setSpiegel(int anzahl)
+        {
+            inventar[0] = anzahl;
+        }
+
+        public void setSplittPrisma(int anzahl)
+        {
+            inventar[1] = anzahl;
+        }
+
+        public void setFatbkristallRed(int anzahl)
+        {
+            inventar[2] = anzahl;
+        }
+
+        public void setFatbkristallYellow(int anzahl)
+        {
+            inventar[3] = anzahl;
+        }
+
+        public void setFatbkristallGreen(int anzahl)
+        {
+            inventar[4] = anzahl;
+        }
+
+        public void setFatbkristallCyan(int anzahl)
+        {
+            inventar[5] = anzahl;
+        }
+
+        public void setFatbkristallBlue(int anzahl)
+        {
+            inventar[6] = anzahl;
+        }
+
+        public void setFatbkristallMagenta(int anzahl)
+        {
+            inventar[7] = anzahl;
         }
 
         //Objekte ins Inventar einfügen
@@ -56,14 +112,45 @@ namespace Crack_Tomb.Spieler
             inventar[0]++;
         }
 
-        public void pushFarbkristall()
+        public void pushSplittPrisma()
+        {
+            inventar[1]++;
+        }
+
+
+        public void pushFarbkristallRed()
         {
             inventar[2]++;
         }
 
-        public void pushSplittPrisma()
+
+        public void pushFarbkristallYellow()
         {
-            inventar[1]++;
+            inventar[3]++;
+        }
+
+
+        public void pushFarbkristallGreen()
+        {
+            inventar[4]++;
+        }
+
+
+        public void pushFarbkristallCyan()
+        {
+            inventar[5]++;
+        }
+
+
+        public void pushFarbkristallBlue()
+        {
+            inventar[6]++;
+        }
+
+
+        public void pushFarbkristallMagenta()
+        {
+            inventar[7]++;
         }
 
         //Objekte aus dem Inventar entfernen
@@ -75,7 +162,15 @@ namespace Crack_Tomb.Spieler
             }
         }
 
-        public void pullFarbkristall()
+        public void pullSplittPrisma()
+        {
+            if (inventar[1] != 0)
+            {
+                inventar[1]--;
+            }
+        }
+
+        public void pullFarbkristallRed()
         {
             if (inventar[2] != 0)
             {
@@ -83,11 +178,43 @@ namespace Crack_Tomb.Spieler
             }
         }
 
-        public void pullSplittPrisma()
+        public void pullFarbkristallYellow()
         {
-            if (inventar[1] != 0)
+            if (inventar[3] != 0)
             {
-                inventar[1]--;
+                inventar[3]--;
+            }
+        }
+
+        public void pullFarbkristallGreen()
+        {
+            if (inventar[4] != 0)
+            {
+                inventar[4]--;
+            }
+        }
+
+        public void pullFarbkristallCyan()
+        {
+            if (inventar[5] != 0)
+            {
+                inventar[5]--;
+            }
+        }
+
+        public void pullFarbkristallBlue()
+        {
+            if (inventar[6] != 0)
+            {
+                inventar[6]--;
+            }
+        }
+
+        public void pullFarbkristallMagenta()
+        {
+            if (inventar[7] != 0)
+            {
+                inventar[7]--;
             }
         }
 
@@ -103,7 +230,37 @@ namespace Crack_Tomb.Spieler
 
         public int getNumFarbkristall()
         {
+            return inventar[2] + inventar[3] + inventar[4] + inventar[5] + inventar[6] + inventar[7];
+        }
+
+        public int getNumFarbkristallRed()
+        {
             return inventar[2];
+        }
+
+        public int getNumFarbkristallYellow()
+        {
+            return inventar[3];
+        }
+
+        public int getNumFarbkristallGreen()
+        {
+            return inventar[4];
+        }
+
+        public int getNumFarbkristallCyan()
+        {
+            return inventar[5];
+        }
+
+        public int getNumFarbkristallBlue()
+        {
+            return inventar[6];
+        }
+
+        public int getNumFarbkristallMagenta()
+        {
+            return inventar[7];
         }
     }
 }

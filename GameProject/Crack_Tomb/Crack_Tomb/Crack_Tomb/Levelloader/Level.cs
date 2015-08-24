@@ -92,6 +92,14 @@ namespace Crack_Tomb{
    public class Level1{  
                                                          
        int Level_Nummer = 1;                                //StartInventar 7x Spiegel  
+       public int anzahlSpiegel = 7;
+       public int anzahlSplittPrisma = 0;
+       public int anzahlRed = 0;
+       public int anzahlYellow = 0;
+       public int anzahlGreen = 0;
+       public int anzahlCyan = 0;
+       public int anzahlBlue = 0;
+       public int anzahlMagenta = 0;
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(2.5f, 0, 14.5f);
@@ -153,6 +161,14 @@ namespace Crack_Tomb{
    {
 
        int Level_Nummer = 2;                //Startinventar 10x Spiegel
+       public int anzahlSpiegel = 10;
+       public int anzahlSplittPrisma = 0;
+       public int anzahlRed = 0;
+       public int anzahlYellow = 0;
+       public int anzahlGreen = 0;
+       public int anzahlCyan = 0;
+       public int anzahlBlue = 0;
+       public int anzahlMagenta = 0;
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(18.5f, 0, 10.5f);
@@ -214,6 +230,14 @@ namespace Crack_Tomb{
    {
 
        int Level_Nummer = 3;        //Startinventar : 4x Spiegel
+       public int anzahlSpiegel = 4;
+       public int anzahlSplittPrisma = 0;
+       public int anzahlRed = 0;
+       public int anzahlYellow = 0;
+       public int anzahlGreen = 0;
+       public int anzahlCyan = 0;
+       public int anzahlBlue = 0;
+       public int anzahlMagenta = 0;
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(10.5f, 0, 2.5f);
@@ -285,6 +309,14 @@ namespace Crack_Tomb{
        //Startinventar : 8x Spiegel, 2x Blau, 1x Rot, 1x Cyan, 1x Magenta, 1x Gelb, 1x Grün
 
        int Level_Nummer = 4;
+       public int anzahlSpiegel = 8;
+       public int anzahlSplittPrisma = 0;
+       public int anzahlRed = 1;
+       public int anzahlYellow = 1;
+       public int anzahlGreen = 1;
+       public int anzahlCyan = 1;
+       public int anzahlBlue = 2;
+       public int anzahlMagenta = 1;
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(14.5f, 0, 10.5f);
@@ -365,6 +397,14 @@ namespace Crack_Tomb{
        //Startinventar: 11x Spiegel, 1x Rot, 1x Grün, 1x Blau
 
        int Level_Nummer = 5;
+       public int anzahlSpiegel = 11;
+       public int anzahlSplittPrisma = 0;
+       public int anzahlRed = 1;
+       public int anzahlYellow = 0;
+       public int anzahlGreen = 1;
+       public int anzahlCyan = 0;
+       public int anzahlBlue = 1;
+       public int anzahlMagenta = 0;
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(22.5f, 0, 6.5f);
@@ -434,6 +474,14 @@ namespace Crack_Tomb{
        //Startinventar: 7x Spiegel, 1x Rot, 1x Blau
 
        int Level_Nummer = 6;
+       public int anzahlSpiegel = 7;
+       public int anzahlSplittPrisma = 0;
+       public int anzahlRed = 1;
+       public int anzahlYellow = 0;
+       public int anzahlGreen = 0;
+       public int anzahlCyan = 0;
+       public int anzahlBlue = 1;
+       public int anzahlMagenta = 0;
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(18.5f, 0, 2.5f);
@@ -503,6 +551,14 @@ namespace Crack_Tomb{
        //Startinventar:  2x jeden der 6 Farbkristalle
 
        int Level_Nummer = 7;
+       public int anzahlSpiegel = 0;
+       public int anzahlSplittPrisma = 0;
+       public int anzahlRed = 2;
+       public int anzahlYellow = 2;
+       public int anzahlGreen = 2;
+       public int anzahlCyan = 2;
+       public int anzahlBlue = 2;
+       public int anzahlMagenta = 2;
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(26.5f, 0, 2.5f);
@@ -557,6 +613,14 @@ namespace Crack_Tomb{
        //Startinventar: 16x Spiegel
 
        int Level_Nummer = 8;
+       public int anzahlSpiegel = 16;
+       public int anzahlSplittPrisma = 0;
+       public int anzahlRed = 0;
+       public int anzahlYellow = 0;
+       public int anzahlGreen = 0;
+       public int anzahlCyan = 0;
+       public int anzahlBlue = 0;
+       public int anzahlMagenta = 0;
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(18.5f, 0, 18.5f);
@@ -618,6 +682,14 @@ namespace Crack_Tomb{
        //Startinventar: 11x Spiegel, 1x jeden der 6 Farbkristalle
 
        int Level_Nummer = 9;
+       public int anzahlSpiegel = 11;
+       public int anzahlSplittPrisma = 0;
+       public int anzahlRed = 1;
+       public int anzahlYellow = 1;
+       public int anzahlGreen = 1;
+       public int anzahlCyan = 1;
+       public int anzahlBlue = 1;
+       public int anzahlMagenta = 1;
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(30.5f, 0, 30.5f);
@@ -679,6 +751,14 @@ namespace Crack_Tomb{
        //Startinventar: 2x Spiegel, 1x Rot, 1x Split
 
        int Level_Nummer = 10;
+       public int anzahlSpiegel = 2;
+       public int anzahlSplittPrisma = 1;
+       public int anzahlRed = 1;
+       public int anzahlYellow = 0;
+       public int anzahlGreen = 0;
+       public int anzahlCyan = 0;
+       public int anzahlBlue = 0;
+       public int anzahlMagenta = 0;
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(14.5f, 0, 2.5f);
@@ -740,6 +820,14 @@ namespace Crack_Tomb{
        //Startinventar: 12x Spiegel, 3x Rot, 1x Blau, 1x Gelb, 1x Grün
 
        int Level_Nummer = 11;
+       public int anzahlSpiegel = 12;
+       public int anzahlSplittPrisma = 0;
+       public int anzahlRed = 3;
+       public int anzahlYellow = 1;
+       public int anzahlGreen = 1;
+       public int anzahlCyan = 0;
+       public int anzahlBlue = 1;
+       public int anzahlMagenta = 0;
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(22.5f, 0, 22.5f);
@@ -801,6 +889,14 @@ namespace Crack_Tomb{
        //Startinventar: 11x Spiegel, 1x Blau, 1x Cyan, 1x Split
 
        int Level_Nummer = 12;
+       public int anzahlSpiegel = 11;
+       public int anzahlSplittPrisma = 1;
+       public int anzahlRed = 0;
+       public int anzahlYellow = 0;
+       public int anzahlGreen = 0;
+       public int anzahlCyan = 1;
+       public int anzahlBlue = 1;
+       public int anzahlMagenta = 0;
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(22.5f, 0, 14.5f);
@@ -862,6 +958,14 @@ namespace Crack_Tomb{
        //Startinventar: 15x Spiegel, 3x Rot, 2x Gelb
 
        int Level_Nummer = 13;
+       public int anzahlSpiegel = 15;
+       public int anzahlSplittPrisma = 0;
+       public int anzahlRed = 3;
+       public int anzahlYellow = 2;
+       public int anzahlGreen = 0;
+       public int anzahlCyan = 0;
+       public int anzahlBlue = 0;
+       public int anzahlMagenta = 0;
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(22.5f, 0, 22.5f);
@@ -923,6 +1027,14 @@ namespace Crack_Tomb{
        //Startinventar: 20x Spiegel, 3x Rot, 3x Magenta, 2x Blau, 1x Cyan, 1x Grün, 1x Gelb, 1x Split
 
        int Level_Nummer = 14;
+       public int anzahlSpiegel = 20;
+       public int anzahlSplittPrisma = 1;
+       public int anzahlRed = 3;
+       public int anzahlYellow = 1;
+       public int anzahlGreen = 1;
+       public int anzahlCyan = 1;
+       public int anzahlBlue = 2;
+       public int anzahlMagenta = 3;
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(22.5f, 0, 22.5f);
@@ -986,6 +1098,14 @@ namespace Crack_Tomb{
        //Startinventar: 24x Spiegel, 1x Rot, 1x Grün, 1x Blau, 2x Split
 
        int Level_Nummer = 15;
+       public int anzahlSpiegel = 24;
+       public int anzahlSplittPrisma = 2;
+       public int anzahlRed = 1;
+       public int anzahlYellow = 0;
+       public int anzahlGreen = 1;
+       public int anzahlCyan = 0;
+       public int anzahlBlue = 1;
+       public int anzahlMagenta = 0;
 
        public Vector3 Spieler_Startpostion = new Vector3(0, 0, 0);
        public Vector3 Licht_Start = new Vector3(38.5f, 0, 22.5f);

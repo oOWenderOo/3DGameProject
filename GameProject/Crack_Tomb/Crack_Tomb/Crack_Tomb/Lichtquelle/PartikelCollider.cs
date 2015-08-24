@@ -169,27 +169,69 @@ namespace Crack_Tomb.Lichtquelle
                                 }
                                 break;
                             case 5:
+                                if (partikel.getFarbe().mycolor == 000000)
+                                {
+                                    partikel.setFarbe(new MyColor(000001));
+                                }
+                                else
+                                {
+                                    partikel.setFarbe(new MyColor(MyColor.mixColor(partikel.getFarbe(), new MyColor(000001))));
+                                }
                                 partikel.setPosition(newposition);
                                 break;
                             case 6:
+                                if (partikel.getFarbe().mycolor == 000000)
+                                {
+                                    partikel.setFarbe(new MyColor(000010));
+                                }
+                                else
+                                {
+                                    partikel.setFarbe(new MyColor(MyColor.mixColor(partikel.getFarbe(), new MyColor(000010))));
+                                }
                                 partikel.setPosition(newposition);
                                 break;
                             case 7:
+                                if (partikel.getFarbe().mycolor == 000000)
+                                {
+                                    partikel.setFarbe(new MyColor(000100));
+                                }
+                                else
+                                {
+                                    partikel.setFarbe(new MyColor(MyColor.mixColor(partikel.getFarbe(), new MyColor(000100))));
+                                }
                                 partikel.setPosition(newposition);
                                 break;
                             case 8:
+                                if (partikel.getFarbe().mycolor == 000000)
+                                {
+                                    partikel.setFarbe(new MyColor(001000));
+                                }
+                                else
+                                {
+                                    partikel.setFarbe(new MyColor(MyColor.mixColor(partikel.getFarbe(), new MyColor(001000))));
+                                }
                                 partikel.setPosition(newposition);
                                 break;
                             case 9:
+                                if (partikel.getFarbe().mycolor == 000000)
+                                {
+                                    partikel.setFarbe(new MyColor(010000));
+                                }
+                                else
+                                {
+                                    partikel.setFarbe(new MyColor(MyColor.mixColor(partikel.getFarbe(), new MyColor(010000))));
+                                }
                                 partikel.setPosition(newposition);
                                 break;
                             case 10:
-                                partikel.setPosition(newposition);
-                                break;
-                            case 11:
-                                partikel.setPosition(newposition);
-                                break;
-                            case 12:
+                                if (partikel.getFarbe().mycolor == 000000)
+                                {
+                                    partikel.setFarbe(new MyColor(100000));
+                                }
+                                else
+                                {
+                                    partikel.setFarbe(new MyColor(MyColor.mixColor(partikel.getFarbe(), new MyColor(100000))));
+                                }
                                 partikel.setPosition(newposition);
                                 break;
                             default:

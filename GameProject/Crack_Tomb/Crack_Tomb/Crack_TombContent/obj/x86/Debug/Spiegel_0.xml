@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>Cube</Name>
     <Identity>
-      <SourceFilename>C:\Users\Jannick\Desktop\3DGameProject\GameProject\Crack_Tomb\Crack_Tomb\Crack_TombContent\Spiegel.fbx</SourceFilename>
+      <SourceFilename>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_TombContent\Spiegel.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>7.54979E-08 0 -1 0 -1 0 -7.54979E-08 0 0 1 0 0 0 0 0 1</Transform>
@@ -25,7 +25,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>Material</Name>
       <Identity>
-        <SourceFilename>C:\Users\Jannick\Desktop\3DGameProject\GameProject\Crack_Tomb\Crack_Tomb\Crack_TombContent\Spiegel.fbx</SourceFilename>
+        <SourceFilename>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_TombContent\Spiegel.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>

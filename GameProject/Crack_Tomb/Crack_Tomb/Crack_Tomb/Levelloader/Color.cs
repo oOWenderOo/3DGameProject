@@ -35,7 +35,7 @@ namespace Crack_Tomb{
             else color = new Color(1, 1, 1);                                //Black
         }
 
-        public int mixColor(MyColor RayColor, MyColor ObjectColor){               //RayColor kann 12 Farbwerte + Schwarz/Weiss annehmen, Objectcolor nur 6 + S/W  (da es nur 6 farbige Kristalle gibt)
+        static public int mixColor(MyColor RayColor, MyColor ObjectColor){               //RayColor kann 12 Farbwerte + Schwarz/Weiss annehmen, Objectcolor nur 6 + S/W  (da es nur 6 farbige Kristalle gibt)
                                                                                     //Klasse für Mischung von Lichtstrahfarbe und KristallFarbe. 
                                                                                     //Vergleich für die Lichtbarrieren und Schalter erfolgt über direkten Vergleich der jeweiligen "X.Mycolor.mycolor" Werte
             int newColor = 000000;
