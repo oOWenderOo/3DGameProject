@@ -191,7 +191,7 @@ namespace Crack_Tomb{
             wand_model = content.Load<Model>("wand");                           //WAND
             säule_model = content.Load<Model>("saule_platz");                   //SÄULE
             loch_model = content.Load<Model>("saule_mit_loch_platz");           //WAND MIT LOCH
-            boden_model = content.Load<Model>("boden");                         //BODEN
+            boden_model = content.Load<Model>("ground");                         //BODEN
             b_rot = content.Load<Model>("boden");                               //ROT-BARRIERE
             b_gelb_rot = content.Load<Model>("boden");                          //GELB-ROT-BARRIERE
             b_gelb = content.Load<Model>("boden");                              //GELB-BARRIERE

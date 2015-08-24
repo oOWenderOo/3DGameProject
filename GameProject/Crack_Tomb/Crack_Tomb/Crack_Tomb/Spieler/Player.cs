@@ -25,7 +25,7 @@ namespace Crack_Tomb.Spieler
             this.spielermodel = spielermodel;
             inventar = new Inventar(content);
             playersteuerung = new PlayerSteuerung(LevelNummer, ref Säulen_Array);
-            spiegel = content.Load<Model>("Spiegel");
+            spiegel = content.Load<Model>("Mirror");
             splittprisma = content.Load<Model>("Splittprisma");
             farbkristall = content.Load<Model>("kristall");
             kristalleffect = content.Load<Effect>("KristallEffect");

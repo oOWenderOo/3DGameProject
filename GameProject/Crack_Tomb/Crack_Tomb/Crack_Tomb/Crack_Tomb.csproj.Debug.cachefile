@@ -8,7 +8,6 @@ Content\Boden.xnb
 Content\saule_platz.xnb
 Content\saule_mit_halbloch_platz.xnb
 Content\kristall.xnb
-Content\Spiegel.xnb
 Content\Splittprisma.xnb
 Content\ShipTexture.xnb
 Content\Testbildhintergrund.xnb
@@ -25,3 +24,9 @@ Content\Normal.xnb
 Content\PartikelEffect.xnb
 Content\KristallEffect.xnb
 Content\ShipTexture_0.xnb
+Content\Mirror.xnb
+Content\Spiegel.xnb
+Content\Spiegel_0.xnb
+Content\Bodentextur.xnb
+Content\ground.xnb
+Content\Bodentextur_0.xnb

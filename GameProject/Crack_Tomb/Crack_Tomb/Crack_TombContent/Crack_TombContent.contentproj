@@ -126,13 +126,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Boden.fbx">
-      <Name>Boden</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="saule_platz.fbx">
       <Name>saule_platz</Name>
       <Importer>FbxImporter</Importer>
@@ -196,13 +189,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Spiegel.fbx">
-      <Name>Spiegel</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Splittprisma.fbx">
       <Name>Splittprisma</Name>
       <Importer>FbxImporter</Importer>
@@ -221,6 +207,41 @@
       <Name>KristallEffect</Name>
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mirror.fbx">
+      <Name>Mirror</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Spiegel.png">
+      <Name>Spiegel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Boden.fbx">
+      <Name>Boden</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bodentextur.png">
+      <Name>Bodentextur</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ground.fbx">
+      <Name>ground</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
