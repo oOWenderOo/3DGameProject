@@ -797,7 +797,7 @@ namespace Crack_Tomb{
 
             while (this.Tür_List[n] != -1 && n < 41 * 41)
             {
-                foreach (ModelMesh mesh in tür_zu_model.Meshes)
+                foreach (ModelMesh mesh in tür_geschlossen.Meshes)
                 {
                     foreach (BasicEffect effect in mesh.Effects)
                     {
@@ -819,7 +819,7 @@ namespace Crack_Tomb{
 
             while (this.Schalter_List[n] != -1 && n < 41 * 41)
             {
-                foreach (ModelMesh mesh in schalter_model.Meshes)
+                foreach (ModelMesh mesh in schalter.Meshes)
                 {
                     foreach (BasicEffect effect in mesh.Effects)
                     {
