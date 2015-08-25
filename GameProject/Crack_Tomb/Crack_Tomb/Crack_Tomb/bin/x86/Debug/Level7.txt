@@ -1,11 +1,11 @@
-true
-Halloa 1180
-Hallo 1070
-Hallo 1070
-Hallo 1070
-Hallo 1040
-Hallo 1000
-Hallo 630
+false
 Ralf 100
 Hans 90
 Mueller 80
+Hansen 70
+Wender 60
+Netuwi 50
+Jan 40
+Lisa 30
+Paul 20
+Patrick 10

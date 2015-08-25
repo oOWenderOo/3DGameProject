@@ -19,6 +19,8 @@ namespace Crack_Tomb.Levelloader
 
         public Vector3 Licht_Start;
         public Vector3 Licht_Richtung;
+        public int minuten;
+        public int sekunden;
 
         int[,] Level_Array;
 
@@ -32,81 +34,113 @@ namespace Crack_Tomb.Levelloader
                     Level_Array = new Level1().Level_Array;
                     Licht_Start = new Level1().Licht_Start;
                     Licht_Richtung = new Level1().Licht_Richtung;
+                    minuten = new Level1().minuten;
+                    sekunden = new Level1().sekunden;
                     break;
                 case 2:
                     Level_Array = new Level2().Level_Array;
                     Licht_Start = new Level2().Licht_Start;
                     Licht_Richtung = new Level2().Licht_Richtung;
+                    minuten = new Level2().minuten;
+                    sekunden = new Level2().sekunden;
                     break;
                 case 3:
                     Level_Array = new Level3().Level_Array;
                     Licht_Start = new Level3().Licht_Start;
                     Licht_Richtung = new Level3().Licht_Richtung;
+                    minuten = new Level3().minuten;
+                    sekunden = new Level3().sekunden;
                     break;
                 case 4:
                     Level_Array = new Level4().Level_Array;
                     Licht_Start = new Level4().Licht_Start;
                     Licht_Richtung = new Level4().Licht_Richtung;
+                    minuten = new Level4().minuten;
+                    sekunden = new Level4().sekunden;
                     break;
                 case 5:
                     Level_Array = new Level5().Level_Array;
                     Licht_Start = new Level5().Licht_Start;
                     Licht_Richtung = new Level5().Licht_Richtung;
+                    minuten = new Level5().minuten;
+                    sekunden = new Level5().sekunden;
                     break;
                 case 6:
                     Level_Array = new Level6().Level_Array;
                     Licht_Start = new Level6().Licht_Start;
                     Licht_Richtung = new Level6().Licht_Richtung;
+                    minuten = new Level6().minuten;
+                    sekunden = new Level6().sekunden;
                     break;
                 case 7:
                     Level_Array = new Level7().Level_Array;
                     Licht_Start = new Level7().Licht_Start;
                     Licht_Richtung = new Level7().Licht_Richtung;
+                    minuten = new Level7().minuten;
+                    sekunden = new Level7().sekunden;
                     break;
                 case 8:
                     Level_Array = new Level8().Level_Array;
                     Licht_Start = new Level8().Licht_Start;
                     Licht_Richtung = new Level8().Licht_Richtung;
+                    minuten = new Level8().minuten;
+                    sekunden = new Level8().sekunden;
                     break;
                 case 9:
                     Level_Array = new Level9().Level_Array;
                     Licht_Start = new Level9().Licht_Start;
                     Licht_Richtung = new Level9().Licht_Richtung;
+                    minuten = new Level9().minuten;
+                    sekunden = new Level9().sekunden;
                     break;
                 case 10:
                     Level_Array = new Level10().Level_Array;
                     Licht_Start = new Level10().Licht_Start;
                     Licht_Richtung = new Level10().Licht_Richtung;
+                    minuten = new Level10().minuten;
+                    sekunden = new Level10().sekunden;
                     break;
                 case 11:
                     Level_Array = new Level11().Level_Array;
                     Licht_Start = new Level11().Licht_Start;
                     Licht_Richtung = new Level11().Licht_Richtung;
+                    minuten = new Level11().minuten;
+                    sekunden = new Level11().sekunden;
                     break;
                 case 12:
                     Level_Array = new Level12().Level_Array;
                     Licht_Start = new Level12().Licht_Start;
                     Licht_Richtung = new Level12().Licht_Richtung;
+                    minuten = new Level12().minuten;
+                    sekunden = new Level12().sekunden;
                     break;
                 case 13:
                     Level_Array = new Level13().Level_Array;
                     Licht_Start = new Level13().Licht_Start;
                     Licht_Richtung = new Level13().Licht_Richtung;
+                    minuten = new Level13().minuten;
+                    sekunden = new Level13().sekunden;
                     break;
                 case 14:
                     Level_Array = new Level14().Level_Array;
                     Licht_Start = new Level14().Licht_Start;
                     Licht_Richtung = new Level14().Licht_Richtung;
+                    minuten = new Level14().minuten;
+                    sekunden = new Level14().sekunden;
                     break;
                 case 15:
                     Level_Array = new Level15().Level_Array;
                     Licht_Start = new Level15().Licht_Start;
                     Licht_Richtung = new Level15().Licht_Richtung;
+                    minuten = new Level15().minuten;
+                    sekunden = new Level15().sekunden;
                     break;
                 default:
                     Level_Array = new Level0().Level_Array;
                     Licht_Start = new Level0().Licht_Start;
                     Licht_Richtung = new Level0().Licht_Richtung;
+                    minuten = new Level0().minuten;
+                    sekunden = new Level0().sekunden;
                     break;
             }
         }
