@@ -228,10 +228,10 @@ namespace Crack_Tomb.Spieler
                     switch (Säulen_Array[i, j])
                     {
                         case 2:
-                            spiegel.Draw(Matrix.CreateTranslation(new Vector3(i,0,j)), view, projection);
+                            spiegel.Draw(Matrix.CreateRotationZ(3.141f / 4f) * Matrix.CreateRotationX(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i, 0, j)), view, projection);
                             break;
                         case 3:
-                            spiegel.Draw(Matrix.CreateTranslation(new Vector3(i, 0, j)), view, projection);
+                            spiegel.Draw(Matrix.CreateRotationZ(3.141f / -4f) * Matrix.CreateRotationX(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i, 0, j)), view, projection);
                             break;
                         case 4:
                             splittprisma.Draw(Matrix.CreateTranslation(new Vector3(i, 0, j)), view, projection);

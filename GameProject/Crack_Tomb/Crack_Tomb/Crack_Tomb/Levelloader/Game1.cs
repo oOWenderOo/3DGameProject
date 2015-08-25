@@ -74,9 +74,6 @@ namespace Crack_Tomb
         protected override void Update(GameTime gameTime)
         {
             // Allows the game to exit
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-                this.Exit();
-
             state = state.Update(gameTime);
 
             if (oldstate != state)
