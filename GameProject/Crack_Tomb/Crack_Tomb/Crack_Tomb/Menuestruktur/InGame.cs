@@ -10,13 +10,14 @@ using Crack_Tomb;
 using Crack_Tomb.Spieler;
 using Lichtquelle;
 using Crack_Tomb.Menuestruktur;
+using Crack_Tomb.Levelloader;
 
 namespace MainMenuCo
 {
     class InGame : GameState
     {
         BasicEffect effect;
-        Level_Loader levelloader;
+        Level_LoaderV2 levelloader;
         VertexPositionColor[] vert = new VertexPositionColor[36];
         Kamera camera;
         public GraphicsDevice graphicdevice;
@@ -42,7 +43,7 @@ namespace MainMenuCo
             this.levelnummer = levelnummer;
 
             //Jannicks-Teil
-            levelloader = new Level_Loader(levelnummer); //////////// TODO:  1 durch "LevelNummer" ersetzen die irgendwo noch herkommen muss von der Levelauswahl
+            levelloader = new Level_LoaderV2(levelnummer); //////////// TODO:  1 durch "LevelNummer" ersetzen die irgendwo noch herkommen muss von der Levelauswahl
             lichtPos = levelloader.Licht_Start;
             lichtDir = levelloader.Licht_Richtung;
 
@@ -59,17 +60,17 @@ namespace MainMenuCo
             levelloader.Array_Loader(content);
 
             //Gabriels-Teil
-            player = new Player(lichtPos, content.Load<Model>("Spieler_mit_Hut"), levelnummer, content);
+            player = new Player(lichtPos, content.Load<Model>("3DModelle/Spieler_mit_Hut"), levelnummer, content);
             camera = new Kamera(player.position);
-            licht = new Lichtstrahl(content.Load<Model>("partikel"), lichtPos, lichtDir, levelnummer, player, content.Load<Effect>("PartikelEffect"));
+            licht = new Lichtstrahl(content.Load<Model>("3DModelle/partikel"), lichtPos, lichtDir, levelnummer, player, content.Load<Effect>("Shader/PartikelEffect"));
             pausemenü = new PauseMenü(content);
 
             //Annes-Teil
             timer.setFont(content);
             timer.setTexture(content);
             timer.Position = new Vector2(50, 15);
-            score = content.Load<Texture2D>("Score");
-            schriftartscore = content.Load<SpriteFont>("Normal");
+            score = content.Load<Texture2D>("2DTexturen/Score");
+            schriftartscore = content.Load<SpriteFont>("Fonts/Normal");
         }
 
         public override GameState Update(GameTime gameTime)

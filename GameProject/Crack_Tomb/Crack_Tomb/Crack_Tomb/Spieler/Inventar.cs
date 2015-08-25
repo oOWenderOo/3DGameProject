@@ -27,8 +27,8 @@ namespace Crack_Tomb.Spieler
         public Inventar(ContentManager content)
         {
             inventar = new int[8];
-            font = content.Load<SpriteFont>("Normal");
-            inventarTextur = content.Load<Texture2D>("Inventar");
+            font = content.Load<SpriteFont>("Fonts/Normal");
+            inventarTextur = content.Load<Texture2D>("2DTexturen/Inventar");
 
             for (int i = 0; i < inventar.Length; i++)
             {

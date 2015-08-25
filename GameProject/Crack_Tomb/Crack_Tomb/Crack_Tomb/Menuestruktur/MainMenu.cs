@@ -31,16 +31,16 @@ namespace MainMenuCo
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics)
         {
-            fontButton = content.Load<SpriteFont>("ButtonTexture");
-            fontText = content.Load<SpriteFont>("Normal");
+            fontButton = content.Load<SpriteFont>("Fonts/Button");
+            fontText = content.Load<SpriteFont>("Fonts/Normal");
 
             for (int i = 0; i < buttons.Length; i++)
             {
-                buttons[i].SetTexture(content.Load<Texture2D>("button"));
+                buttons[i].SetTexture(content.Load<Texture2D>("2DTexturen/button"));
                 buttons[i].SetFont(fontButton);
             }
-            mouse = content.Load<Texture2D>("MouseZeiger");
-            background = content.Load<Texture2D>("Testbildhintergrund");
+            mouse = content.Load<Texture2D>("2DTexturen/MouseZeiger");
+            background = content.Load<Texture2D>("2DTexturen/Testbildhintergrund");
         }
 
         public override GameState Update(GameTime gameTime)

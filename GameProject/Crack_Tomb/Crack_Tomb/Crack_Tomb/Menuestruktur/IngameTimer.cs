@@ -39,12 +39,12 @@ namespace Crack_Tomb.Menuestruktur
 
         public void setFont(ContentManager content)
         {
-            font = content.Load<SpriteFont>("Normal");
+            font = content.Load<SpriteFont>("Fonts/Normal");
         }
 
         public void setTexture(ContentManager content)
         {
-            timertextur = content.Load<Texture2D>("Timer");
+            timertextur = content.Load<Texture2D>("2DTexturen/Timer");
         }
 
         public int getSeconds()

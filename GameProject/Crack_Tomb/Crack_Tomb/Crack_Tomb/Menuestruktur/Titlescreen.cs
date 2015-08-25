@@ -45,9 +45,9 @@ namespace MainMenuCo
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics) 
         {
-            fontText = content.Load<SpriteFont>("Normal");
-            background = content.Load<Texture2D>("Testbildhintergrund");
-            song = content.Load<Song>("song");
+            fontText = content.Load<SpriteFont>("Fonts/Normal");
+            background = content.Load<Texture2D>("2DTexturen/Testbildhintergrund");
+            song = content.Load<Song>("Audio/song");
             MediaPlayer.Play(song);
             MediaPlayer.IsRepeating = true;
         }

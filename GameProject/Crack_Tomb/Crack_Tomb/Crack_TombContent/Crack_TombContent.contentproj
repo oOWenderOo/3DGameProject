@@ -42,220 +42,206 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ship.fbx">
-      <Name>Ship</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="ShipTexture.png">
-      <Name>ShipTexture</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="cube.fbx">
-      <Name>cube</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="ButtonTexture.spritefont">
-      <Name>ButtonTexture</Name>
+    <Compile Include="Fonts\Button.spritefont">
+      <Name>Button</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Testbildhintergrund.png">
+    <Compile Include="2DTexturen\Testbildhintergrund.png">
       <Name>Testbildhintergrund</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Spieler_mit_Hut.fbx">
+    <Compile Include="3DModelle\Spieler_mit_Hut.fbx">
       <Name>Spieler_mit_Hut</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="partikel.fbx">
+    <Compile Include="3DModelle\partikel.fbx">
       <Name>partikel</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="levelbutton.png">
+    <Compile Include="2DTexturen\levelbutton.png">
       <Name>levelbutton</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Timer.png">
+    <Compile Include="2DTexturen\Timer.png">
       <Name>Timer</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Normal.spritefont">
+    <Compile Include="Fonts\Normal.spritefont">
       <Name>Normal</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="wand.fbx">
+    <Compile Include="3DModelle\wand.fbx">
       <Name>wand</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="saule_mit_loch_platz.fbx">
+    <Compile Include="3DModelle\saule_mit_loch_platz.fbx">
       <Name>saule_mit_loch_platz</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="saule_platz.fbx">
+    <Compile Include="3DModelle\saule_platz.fbx">
       <Name>saule_platz</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="saule_mit_halbloch_platz.fbx">
+    <Compile Include="3DModelle\saule_mit_halbloch_platz.fbx">
       <Name>saule_mit_halbloch_platz</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="button.png">
+    <Compile Include="2DTexturen\button.png">
       <Name>button</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Inventar.png">
+    <Compile Include="2DTexturen\Inventar.png">
       <Name>Inventar</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Score.png">
+    <Compile Include="2DTexturen\Score.png">
       <Name>Score</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pausemenubutton.png">
+    <Compile Include="2DTexturen\Pausemenubutton.png">
       <Name>Pausemenubutton</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MouseZeiger.png">
+    <Compile Include="2DTexturen\MouseZeiger.png">
       <Name>MouseZeiger</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pausenmenü mit Hintergund%28grau%29.png">
+    <Compile Include="2DTexturen\Pausenmenü mit Hintergund%28grau%29.png">
       <Name>Pausenmenü mit Hintergund%28grau%29</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="kristall.fbx">
+    <Compile Include="3DModelle\kristall.fbx">
       <Name>kristall</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Splittprisma.fbx">
+    <Compile Include="3DModelle\Splittprisma.fbx">
       <Name>Splittprisma</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PartikelEffect.fx">
+    <Compile Include="Shader\PartikelEffect.fx">
       <Name>PartikelEffect</Name>
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KristallEffect.fx">
+    <Compile Include="Shader\KristallEffect.fx">
       <Name>KristallEffect</Name>
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mirror.fbx">
+    <Compile Include="3DModelle\Mirror.fbx">
       <Name>Mirror</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Spiegel.png">
+    <Compile Include="3DModelle\Spiegel.png">
       <Name>Spiegel</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Boden.fbx">
+    <Compile Include="3DModelle\Boden.fbx">
       <Name>Boden</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bodentextur.png">
+    <Compile Include="3DModelle\Bodentextur.png">
       <Name>Bodentextur</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ground.fbx">
+    <Compile Include="3DModelle\ground.fbx">
       <Name>ground</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="song.mp3">
+    <Compile Include="Audio\song.mp3">
       <Name>song</Name>
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Farbbarrieren.fbx">
+    <Compile Include="3DModelle\Farbbarrieren.fbx">
       <Name>Farbbarrieren</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Shader\BarriereEffect.fx">
+      <Name>BarriereEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

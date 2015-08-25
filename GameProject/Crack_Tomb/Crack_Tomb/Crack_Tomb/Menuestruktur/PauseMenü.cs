@@ -23,10 +23,10 @@ namespace Crack_Tomb.Menuestruktur
 
         public PauseMenü(ContentManager content)
         {
-            mouse = content.Load<Texture2D>("MouseZeiger");
-            fontButton = content.Load<SpriteFont>("ButtonTexture");
-            fontText = content.Load<SpriteFont>("Normal");
-            background = content.Load<Texture2D>("Pausenmenü mit Hintergund(grau)");
+            mouse = content.Load<Texture2D>("2DTexturen/MouseZeiger");
+            fontButton = content.Load<SpriteFont>("Fonts/Button");
+            fontText = content.Load<SpriteFont>("Fonts/Normal");
+            background = content.Load<Texture2D>("2DTexturen/Pausenmenü mit Hintergund(grau)");
 
             buttons[0] = new Button(new Vector2(300, 225), "Fortsetzen", "Fortsetzen");
             buttons[1] = new Button(new Vector2(300, 300), "Levelauswahl", "Levelauswahl");
@@ -34,7 +34,7 @@ namespace Crack_Tomb.Menuestruktur
 
             for (int i = 0; i < buttons.Length; i++)
             {
-                buttons[i].SetTexture(content.Load<Texture2D>("Pausemenubutton"));
+                buttons[i].SetTexture(content.Load<Texture2D>("2DTexturen/Pausemenubutton"));
                 buttons[i].SetFont(fontButton);
             }
         }

@@ -111,6 +111,7 @@
     <Compile Include="Levelloader\Boden.cs" />
     <Compile Include="Levelloader\Color.cs" />
     <Compile Include="Levelloader\Level.cs" />
+    <Compile Include="Levelloader\Level_LoaderV2.cs" />
     <Compile Include="Levelloader\Spieler_Obejkte.cs" />
     <Compile Include="Levelloader\Säule.cs" />
     <Compile Include="Levelloader\Test_Kamera.cs" />
