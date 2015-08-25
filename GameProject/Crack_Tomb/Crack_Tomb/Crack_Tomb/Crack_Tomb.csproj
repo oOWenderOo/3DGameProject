@@ -107,19 +107,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Levelloader\Barriere.cs" />
-    <Compile Include="Levelloader\Boden.cs" />
     <Compile Include="Levelloader\Color.cs" />
     <Compile Include="Levelloader\Level.cs" />
     <Compile Include="Levelloader\Level_LoaderV2.cs" />
-    <Compile Include="Levelloader\Spieler_Obejkte.cs" />
-    <Compile Include="Levelloader\Säule.cs" />
-    <Compile Include="Levelloader\Test_Kamera.cs" />
-    <Compile Include="Levelloader\Tür.cs" />
-    <Compile Include="Levelloader\Schalter.cs" />
-    <Compile Include="Levelloader\Truhe.cs" />
     <Compile Include="Levelloader\Level_Loader.cs" />
-    <Compile Include="Levelloader\Wand.cs" />
     <Compile Include="Lichtquelle\Lichtstrahl.cs" />
     <Compile Include="Lichtquelle\Lichtquelle_Partikel.cs" />
     <Compile Include="Lichtquelle\PartikelCollider.cs" />

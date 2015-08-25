@@ -376,25 +376,6 @@ namespace Crack_Tomb{
                                     {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}};
 
 
-       public Barriere[] Barriere_List = {new Barriere(4,0,2,000001,0),
-                                          new Barriere(8,0,2,000010,0),
-                                          new Barriere(12,0,2,010000,0),
-                                          new Barriere(16,0,2,100000,0),
-                                          new Barriere(8,0,6,000010,0),
-                                          new Barriere(12,0,6,010000,0),
-                                          new Barriere(16,0,6,100000,0),
-                                          new Barriere(8,0,14,001000,0),
-                                          new Barriere(12,0,14,000100,0),
-                                          new Barriere(8,0,18,000100,0),
-                                          new Barriere(12,0,18,000010,0),
-                                          new Barriere(16,0,18,000001,0),
-                                          new Barriere(2,0,8,100000,1),
-                                          new Barriere(2,0,12,100000,1),
-                                          new Barriere(10,0,8,000100,1),  
-                                          null
-                                         };
-
-
        //public Schalter[] Schalter_List;
        //public Tür[] Tür_List;
        
@@ -466,14 +447,6 @@ namespace Crack_Tomb{
                                     {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}};
 
 
-       public Barriere[] Barriere_List = {new Barriere(20,0,18,010000,0),
-                                          new Barriere(16,0,22,000010,0),
-                                          new Barriere(14,0,16,000010,1),
-                                          new Barriere(22,0,12,000010,1),
-                                          null
-                                         };
-
-
        //public Schalter[] Schalter_List;
        //public Tür[] Tür_List;
 
@@ -543,14 +516,6 @@ namespace Crack_Tomb{
                                     {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                                     {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}};
-
-
-       public Barriere[] Barriere_List = {new Barriere(8,0,18,000001,0),
-                                          new Barriere(16,0,18,010000,0),
-                                          new Barriere(2,0,4,100000,1),
-                                          new Barriere(6,0,16,000001,1),
-                                          null
-                                         }; 
         
 
        //public Schalter[] Schalter_List;
