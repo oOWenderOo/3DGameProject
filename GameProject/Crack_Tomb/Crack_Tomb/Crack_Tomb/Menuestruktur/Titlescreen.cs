@@ -16,7 +16,7 @@ namespace MainMenuCo
     {
         SpriteFont fontText;
         Texture2D background;
-        int anzahllevel = 10;
+        int anzahllevel = 15;
         Song song;
 
         public Titlescreen()
@@ -41,6 +41,10 @@ namespace MainMenuCo
                     }
                 }
             }
+
+            string[] linesl = { "" };
+
+            System.IO.File.WriteAllLines(@"Level" + (anzahllevel + 1) + ".txt", linesl);
         }
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics) 
