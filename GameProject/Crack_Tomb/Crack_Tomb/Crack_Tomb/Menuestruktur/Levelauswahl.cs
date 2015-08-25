@@ -29,6 +29,8 @@ namespace MainMenuCo
             buttons[1] = new Button(new Vector2(540, 370), "InGame", "Level starten");
 
             levelbuttons = new LevelButton[anzahl_level];
+            int help = 0;
+            int help2 = 0;
 
             for (int i = 0; i < anzahl_level; i++)
             {
@@ -43,14 +45,22 @@ namespace MainMenuCo
 
                 file.Close();
 
+                if (i % 8 == 0)
+                {
+                    help += 55;
+                    help2 = 0;
+                }
+
                 if (line == "true")
                 {
-                    levelbuttons[i] = new LevelButton(i + 1, new Vector2(300 + 50 * i + i, 100), text, true);
+                    levelbuttons[i] = new LevelButton(i + 1, new Vector2(300 + help2, 100 + help), text, true);
                 }
                 else
                 {
-                    levelbuttons[i] = new LevelButton(i + 1, new Vector2(300 + 50 * i + i, 100), text, false);
+                    levelbuttons[i] = new LevelButton(i + 1, new Vector2(300 + help2, 100 + help), text, false);
                 }
+
+                help2 += 55;
 
                 text = "";
             }
