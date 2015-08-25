@@ -14,6 +14,7 @@ namespace Crack_Tomb.Levelloader
         Model wand_model, loch_model, säule_model, boden_model;
         Model barriere_model;
         Model tür_offen_model, tür_geschlossen_model, schalter_model;
+        Model ziel_model, start_model;
         Effect barriereEffect;
 
         public Vector3 Licht_Start;
@@ -120,6 +121,7 @@ namespace Crack_Tomb.Levelloader
             tür_geschlossen_model = content.Load<Model>("3DModelle/boden");               //OFFENE TÜR
             tür_offen_model = content.Load<Model>("3DModelle/boden");                     //GESCHLOSSENE TÜR
             schalter_model = content.Load<Model>("3DModelle/boden");                      //SCHALTER
+            ziel_model = content.Load<Model>("3DModelle/Endpunkt");                       //Ziel
             barriereEffect = content.Load<Effect>("Shader/BarriereEffect");
         }
 
@@ -668,6 +670,132 @@ namespace Crack_Tomb.Levelloader
                                 mesh.Draw();
                             }
                             break;
+                        case 61: //Schalter
+                            foreach (ModelMesh mesh in schalter_model.Meshes)
+                            {
+                                foreach (BasicEffect effect in mesh.Effects)
+                                {
+                                    effect.EnableDefaultLighting();
+
+                                    effect.View = view;
+                                    effect.Projection = projection;
+                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
+                                }
+                                mesh.Draw();
+                            }
+                            break;
+                        case 62: //Schalter
+                            foreach (ModelMesh mesh in schalter_model.Meshes)
+                            {
+                                foreach (BasicEffect effect in mesh.Effects)
+                                {
+                                    effect.EnableDefaultLighting();
+
+                                    effect.View = view;
+                                    effect.Projection = projection;
+                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
+                                }
+                                mesh.Draw();
+                            }
+                            break;
+                        case 63: //Schalter
+                            foreach (ModelMesh mesh in schalter_model.Meshes)
+                            {
+                                foreach (BasicEffect effect in mesh.Effects)
+                                {
+                                    effect.EnableDefaultLighting();
+
+                                    effect.View = view;
+                                    effect.Projection = projection;
+                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
+                                }
+                                mesh.Draw();
+                            }
+                            break;
+                        case 64: //Schalter
+                            foreach (ModelMesh mesh in schalter_model.Meshes)
+                            {
+                                foreach (BasicEffect effect in mesh.Effects)
+                                {
+                                    effect.EnableDefaultLighting();
+
+                                    effect.View = view;
+                                    effect.Projection = projection;
+                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
+                                }
+                                mesh.Draw();
+                            }
+                            break;
+                        case 65: //Schalter
+                            foreach (ModelMesh mesh in schalter_model.Meshes)
+                            {
+                                foreach (BasicEffect effect in mesh.Effects)
+                                {
+                                    effect.EnableDefaultLighting();
+
+                                    effect.View = view;
+                                    effect.Projection = projection;
+                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
+                                }
+                                mesh.Draw();
+                            }
+                            break;
+                        case 66: //Schalter
+                            foreach (ModelMesh mesh in schalter_model.Meshes)
+                            {
+                                foreach (BasicEffect effect in mesh.Effects)
+                                {
+                                    effect.EnableDefaultLighting();
+
+                                    effect.View = view;
+                                    effect.Projection = projection;
+                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
+                                }
+                                mesh.Draw();
+                            }
+                            break;
+                        case 67: //Schalter
+                            foreach (ModelMesh mesh in schalter_model.Meshes)
+                            {
+                                foreach (BasicEffect effect in mesh.Effects)
+                                {
+                                    effect.EnableDefaultLighting();
+
+                                    effect.View = view;
+                                    effect.Projection = projection;
+                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
+                                }
+                                mesh.Draw();
+                            }
+                            break;
+                        case 68: //Schalter
+                            foreach (ModelMesh mesh in schalter_model.Meshes)
+                            {
+                                foreach (BasicEffect effect in mesh.Effects)
+                                {
+                                    effect.EnableDefaultLighting();
+
+                                    effect.View = view;
+                                    effect.Projection = projection;
+                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
+                                }
+                                mesh.Draw();
+                            }
+                            break;
+                        case 69: //Schalter
+                            foreach (ModelMesh mesh in schalter_model.Meshes)
+                            {
+                                foreach (BasicEffect effect in mesh.Effects)
+                                {
+                                    effect.EnableDefaultLighting();
+
+                                    effect.View = view;
+                                    effect.Projection = projection;
+                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
+                                }
+                                mesh.Draw();
+                            }
+                            break;
                         case 71: //Tür
                             foreach (ModelMesh mesh in tür_geschlossen_model.Meshes)
                             {
@@ -794,8 +922,8 @@ namespace Crack_Tomb.Levelloader
                                 mesh.Draw();
                             }
                             break;
-                        case 61: //Schalter
-                            foreach (ModelMesh mesh in schalter_model.Meshes)
+                        case 9:
+                            foreach (ModelMesh mesh in ziel_model.Meshes)
                             {
                                 foreach (BasicEffect effect in mesh.Effects)
                                 {
@@ -803,13 +931,12 @@ namespace Crack_Tomb.Levelloader
 
                                     effect.View = view;
                                     effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
+                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0f, j + 0.5f));
                                 }
                                 mesh.Draw();
                             }
-                            break;
-                        case 62: //Schalter
-                            foreach (ModelMesh mesh in schalter_model.Meshes)
+
+                            foreach (ModelMesh mesh in boden_model.Meshes)
                             {
                                 foreach (BasicEffect effect in mesh.Effects)
                                 {
@@ -817,105 +944,7 @@ namespace Crack_Tomb.Levelloader
 
                                     effect.View = view;
                                     effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 63: //Schalter
-                            foreach (ModelMesh mesh in schalter_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 64: //Schalter
-                            foreach (ModelMesh mesh in schalter_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 65: //Schalter
-                            foreach (ModelMesh mesh in schalter_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 66: //Schalter
-                            foreach (ModelMesh mesh in schalter_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 67: //Schalter
-                            foreach (ModelMesh mesh in schalter_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 68: //Schalter
-                            foreach (ModelMesh mesh in schalter_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 69: //Schalter
-                            foreach (ModelMesh mesh in schalter_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
+                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
                                 }
                                 mesh.Draw();
                             }

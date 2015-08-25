@@ -48,7 +48,7 @@ namespace MainMenuCo
             lichtDir = levelloader.Licht_Richtung;
 
             //Annes-Teil
-            timer = new IngameTimer(2, 0);
+            timer = new IngameTimer(0, 10);
             punkte = minuten * 60 * 10 + sekunden * 10;
         }
 

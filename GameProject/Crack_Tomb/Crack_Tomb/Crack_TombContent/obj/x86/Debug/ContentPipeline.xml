@@ -429,6 +429,52 @@
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Fonts\Button.xnb</Output>
       <Time>2015-08-24T13:49:37.2737371+02:00</Time>
     </Item>
+    <Item>
+      <Source>3DModelle\Endpunkt_Textur.png</Source>
+      <Name>3DModelle\Endpunkt_Textur</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Endpunkt_Textur.xnb</Output>
+      <Time>2015-08-25T17:15:16.0657398+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Endpunkt.fbx</Source>
+      <Name>3DModelle\Endpunkt</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Endpunkt.xnb</Output>
+      <Time>2015-08-25T17:15:20.8661993+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\3DModelle\Endpunkt_0.xml</Key>
+        <Value>2015-08-25T17:15:22.324572+02:00</Value>
+      </Dependency>
+      <Request>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Endpunkt_Textur_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>3DModelle\Endpunkt.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\3DModelle\Endpunkt_0.xml</Output>
+      <Time>2015-08-25T17:15:20.8661993+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Endpunkt_Textur.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Endpunkt_Textur_0.xnb</Output>
+      <Time>2015-08-25T17:15:16.0657398+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
