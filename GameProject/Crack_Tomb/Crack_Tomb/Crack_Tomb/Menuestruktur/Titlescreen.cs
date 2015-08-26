@@ -54,6 +54,7 @@ namespace MainMenuCo
             song = content.Load<Song>("Audio/song");
             MediaPlayer.Play(song);
             MediaPlayer.IsRepeating = true;
+            MediaPlayer.Stop();
         }
 
         public override GameState Update(GameTime gameTime)

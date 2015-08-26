@@ -19,7 +19,6 @@ namespace MainMenuCo
         Texture2D mouse;
         Texture2D background;
 
-        int wartezeit;
         int levelnummer = 1;
         int anzahl_level = 15;
 
@@ -64,8 +63,6 @@ namespace MainMenuCo
 
                 text = "";
             }
-
-            wartezeit = 6;
         }
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics)
@@ -91,12 +88,6 @@ namespace MainMenuCo
 
         public override GameState Update(GameTime gameTime)
         {
-            if (wartezeit > 0)
-            {
-                wartezeit--;
-                return this;
-            }
-
             for (int i = 0; i < buttons.Length; i++)
             {
                 if (buttons[i].isPressed())
