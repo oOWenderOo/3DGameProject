@@ -33,3 +33,6 @@ Content\Fonts\Button.xnb
 Content\3DModelle\Endpunkt_Textur.xnb
 Content\3DModelle\Endpunkt.xnb
 Content\3DModelle\Endpunkt_Textur_0.xnb
+Content\3DModelle\Schalter_Textur.xnb
+Content\3DModelle\Door_Schalter.xnb
+Content\3DModelle\Schalter_Textur_0.xnb
