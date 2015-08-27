@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Audio;
 
 namespace Crack_Tomb.Spieler
 {
@@ -24,7 +25,7 @@ namespace Crack_Tomb.Spieler
             position = startposition;
             this.spielermodel = spielermodel;
             inventar = new Inventar(content);
-            playersteuerung = new PlayerSteuerung(LevelNummer, ref Säulen_Array);
+            playersteuerung = new PlayerSteuerung(LevelNummer, ref Säulen_Array, content.Load<SoundEffect>("Audio/farbkristallkramen"), content.Load<SoundEffect>("Audio/herausnehmen"));
             spiegel = content.Load<Model>("3DModelle/Mirror");
             splittprisma = content.Load<Model>("3DModelle/Splittprisma");
             farbkristall = content.Load<Model>("3DModelle/kristall");

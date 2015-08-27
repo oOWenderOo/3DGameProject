@@ -295,16 +295,6 @@
       <Time>2015-08-27T14:20:23.1902627+02:00</Time>
     </Item>
     <Item>
-      <Source>Audio\song.mp3</Source>
-      <Name>Audio\song</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Audio\song.xnb</Output>
-      <Extra>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Audio\song.wma</Extra>
-      <Time>2015-08-27T14:20:22.9478053+02:00</Time>
-    </Item>
-    <Item>
       <Source>3DModelle\Spieler_mit_Hut.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
@@ -520,6 +510,83 @@
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Schalter_Textur_0.xnb</Output>
       <Time>2015-08-27T14:17:41.9965428+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\einsetzen.wav</Source>
+      <Name>Audio\einsetzen</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Audio\einsetzen.xnb</Output>
+      <Time>2015-08-27T16:14:38.2747033+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\verlorenSong.mp3</Source>
+      <Name>Audio\verlorenSong</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Audio\verlorenSong.xnb</Output>
+      <Extra>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Audio\verlorenSong.wma</Extra>
+      <Time>2015-08-27T15:49:22.3111763+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\titelscreenSong.mp3</Source>
+      <Name>Audio\titelscreenSong</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Audio\titelscreenSong.xnb</Output>
+      <Extra>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Audio\titelscreenSong.wma</Extra>
+      <Time>2015-08-27T16:19:05.7907582+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\menuSong.mp3</Source>
+      <Name>Audio\menuSong</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Audio\menuSong.xnb</Output>
+      <Extra>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Audio\menuSong.wma</Extra>
+      <Time>2015-08-27T15:49:44.1398761+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\inGameSong.mp3</Source>
+      <Name>Audio\inGameSong</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Audio\inGameSong.xnb</Output>
+      <Extra>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Audio\inGameSong.wma</Extra>
+      <Time>2015-08-27T15:41:28.5016985+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\gewonnenSong.mp3</Source>
+      <Name>Audio\gewonnenSong</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Audio\gewonnenSong.xnb</Output>
+      <Extra>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Audio\gewonnenSong.wma</Extra>
+      <Time>2015-08-27T15:43:48.3139539+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\farbkristallkramen.wav</Source>
+      <Name>Audio\farbkristallkramen</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Audio\farbkristallkramen.xnb</Output>
+      <Time>2015-08-27T16:14:29.3065819+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\herausnehmen.wav</Source>
+      <Name>Audio\herausnehmen</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Audio\herausnehmen.xnb</Output>
+      <Time>2015-08-27T16:18:18.7844557+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

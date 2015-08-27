@@ -19,11 +19,13 @@ namespace Crack_Tomb.Levelloader
 
         public SongController(ContentManager content)
         {
-            titelscreenSong = content.Load<Song>("Audio/song");
-            menuSong = content.Load<Song>("Audio/song");
-            inGameSong = content.Load<Song>("Audio/song");
-            gewonnenSong = content.Load<Song>("Audio/song");
-            verlorenSong = content.Load<Song>("Audio/song");
+            titelscreenSong = content.Load<Song>("Audio/titelscreenSong");
+            menuSong = content.Load<Song>("Audio/menuSong");
+            inGameSong = content.Load<Song>("Audio/inGameSong");
+            gewonnenSong = content.Load<Song>("Audio/gewonnenSong");
+            verlorenSong = content.Load<Song>("Audio/verlorenSong");
+
+            MediaPlayer.IsRepeating = true;
         }
 
         public void checkSong(GameState state, GameState oldstate)

@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 
 namespace Crack_Tomb.Spieler
 {
@@ -22,6 +23,7 @@ namespace Crack_Tomb.Spieler
         SpriteFont font;
         Texture2D inventarTextur;
         public bool drawFarbkristalle = false;
+        SoundEffect einsetzen;
 
         //Erzeugen eines Inventars
         public Inventar(ContentManager content)
@@ -29,6 +31,7 @@ namespace Crack_Tomb.Spieler
             inventar = new int[8];
             font = content.Load<SpriteFont>("Fonts/Normal");
             inventarTextur = content.Load<Texture2D>("2DTexturen/Inventar");
+            einsetzen = content.Load<SoundEffect>("Audio/einsetzen");
 
             for (int i = 0; i < inventar.Length; i++)
             {
@@ -159,6 +162,7 @@ namespace Crack_Tomb.Spieler
             if (inventar[0] != 0)
             {
                 inventar[0]--;
+                einsetzen.Play();
             }
         }
 
@@ -167,6 +171,7 @@ namespace Crack_Tomb.Spieler
             if (inventar[1] != 0)
             {
                 inventar[1]--;
+                einsetzen.Play();
             }
         }
 
@@ -175,6 +180,7 @@ namespace Crack_Tomb.Spieler
             if (inventar[2] != 0)
             {
                 inventar[2]--;
+                einsetzen.Play();
             }
         }
 
@@ -183,6 +189,7 @@ namespace Crack_Tomb.Spieler
             if (inventar[3] != 0)
             {
                 inventar[3]--;
+                einsetzen.Play();
             }
         }
 
@@ -191,6 +198,7 @@ namespace Crack_Tomb.Spieler
             if (inventar[4] != 0)
             {
                 inventar[4]--;
+                einsetzen.Play();
             }
         }
 
@@ -199,6 +207,7 @@ namespace Crack_Tomb.Spieler
             if (inventar[5] != 0)
             {
                 inventar[5]--;
+                einsetzen.Play();
             }
         }
 
@@ -207,6 +216,7 @@ namespace Crack_Tomb.Spieler
             if (inventar[6] != 0)
             {
                 inventar[6]--;
+                einsetzen.Play();
             }
         }
 
@@ -215,6 +225,7 @@ namespace Crack_Tomb.Spieler
             if (inventar[7] != 0)
             {
                 inventar[7]--;
+                einsetzen.Play();
             }
         }
 

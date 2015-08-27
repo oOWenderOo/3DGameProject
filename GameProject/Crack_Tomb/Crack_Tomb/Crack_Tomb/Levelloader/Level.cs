@@ -165,7 +165,7 @@ namespace Crack_Tomb{
    {
 
        int Level_Nummer = 2;                //Startinventar 10x Spiegel
-       public int minuten = 2;
+       public int minuten = 0;
        public int sekunden = 10;
        public int anzahlSpiegel = 10;
        public int anzahlSplittPrisma = 0;

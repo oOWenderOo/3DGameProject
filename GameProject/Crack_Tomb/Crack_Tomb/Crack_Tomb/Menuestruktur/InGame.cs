@@ -11,6 +11,7 @@ using Crack_Tomb.Spieler;
 using Lichtquelle;
 using Crack_Tomb.Menuestruktur;
 using Crack_Tomb.Levelloader;
+using Microsoft.Xna.Framework.Media;
 
 namespace MainMenuCo
 {
@@ -85,6 +86,7 @@ namespace MainMenuCo
                 licht.Update(gameTime, ref player, ref gewonnen);
                 player.Update(gameTime);
                 camera.Update(player.position);
+                MediaPlayer.Resume();
 
                 if (gewonnen)
                     return new Gewonnen(levelnummer, punkte);
@@ -109,6 +111,7 @@ namespace MainMenuCo
             }
             else
             {
+                MediaPlayer.Pause();
                 return pausemenü.Update(this);
             }
         }

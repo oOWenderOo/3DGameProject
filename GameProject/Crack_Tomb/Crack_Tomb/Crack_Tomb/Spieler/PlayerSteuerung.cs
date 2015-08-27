@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 
 namespace Crack_Tomb.Spieler
 {
@@ -19,9 +20,12 @@ namespace Crack_Tomb.Spieler
         bool isgedrücktD5 = false;
         bool isgedrücktD6 = false;
         bool isgedrücktE = false;
+        SoundEffect farbkristallkramen, herausnehmen;
 
-        public PlayerSteuerung(int LevelNummer, ref int[,] Säulen_Array)
+        public PlayerSteuerung(int LevelNummer, ref int[,] Säulen_Array, SoundEffect farbkristallkramen, SoundEffect herausnehmen)
         {
+            this.farbkristallkramen = farbkristallkramen;
+            this.herausnehmen = herausnehmen;
             playercollider = new PlayerCollider(LevelNummer, ref Säulen_Array);
         }
 
@@ -610,6 +614,7 @@ namespace Crack_Tomb.Spieler
                         {
                             isgedrücktD3 = false;
                             inventar.drawFarbkristalle = true;
+                            farbkristallkramen.Play();
                         }
                         else
                         {
@@ -621,38 +626,47 @@ namespace Crack_Tomb.Spieler
                                     case 2:
                                         inventar.pushSpiegel();
                                         Säulen_Array[arrayposition_x, arrayposition_y + 1] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 3:
                                         inventar.pushSpiegel();
                                         Säulen_Array[arrayposition_x, arrayposition_y + 1] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 4:
                                         inventar.pushSplittPrisma();
                                         Säulen_Array[arrayposition_x, arrayposition_y + 1] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 5:
                                         inventar.pushFarbkristallRed();
                                         Säulen_Array[arrayposition_x, arrayposition_y + 1] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 6:
                                         inventar.pushFarbkristallYellow();
                                         Säulen_Array[arrayposition_x, arrayposition_y + 1] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 7:
                                         inventar.pushFarbkristallGreen();
                                         Säulen_Array[arrayposition_x, arrayposition_y + 1] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 8:
                                         inventar.pushFarbkristallCyan();
                                         Säulen_Array[arrayposition_x, arrayposition_y + 1] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 9:
                                         inventar.pushFarbkristallBlue();
                                         Säulen_Array[arrayposition_x, arrayposition_y + 1] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 10:
                                         inventar.pushFarbkristallMagenta();
                                         Säulen_Array[arrayposition_x, arrayposition_y + 1] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     default:
                                         break;
@@ -663,38 +677,47 @@ namespace Crack_Tomb.Spieler
                                     case 2:
                                         inventar.pushSpiegel();
                                         Säulen_Array[arrayposition_x, arrayposition_y - 1] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 3:
                                         inventar.pushSpiegel();
                                         Säulen_Array[arrayposition_x, arrayposition_y - 1] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 4:
                                         inventar.pushSplittPrisma();
                                         Säulen_Array[arrayposition_x, arrayposition_y - 1] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 5:
                                         inventar.pushFarbkristallRed();
                                         Säulen_Array[arrayposition_x, arrayposition_y - 1] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 6:
                                         inventar.pushFarbkristallYellow();
                                         Säulen_Array[arrayposition_x, arrayposition_y - 1] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 7:
                                         inventar.pushFarbkristallGreen();
                                         Säulen_Array[arrayposition_x, arrayposition_y - 1] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 8:
                                         inventar.pushFarbkristallCyan();
                                         Säulen_Array[arrayposition_x, arrayposition_y - 1] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 9:
                                         inventar.pushFarbkristallBlue();
                                         Säulen_Array[arrayposition_x, arrayposition_y - 1] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 10:
                                         inventar.pushFarbkristallMagenta();
                                         Säulen_Array[arrayposition_x, arrayposition_y - 1] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     default:
                                         break;
@@ -705,38 +728,47 @@ namespace Crack_Tomb.Spieler
                                     case 2:
                                         inventar.pushSpiegel();
                                         Säulen_Array[arrayposition_x + 1, arrayposition_y] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 3:
                                         inventar.pushSpiegel();
                                         Säulen_Array[arrayposition_x + 1, arrayposition_y] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 4:
                                         inventar.pushSplittPrisma();
                                         Säulen_Array[arrayposition_x + 1, arrayposition_y] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 5:
                                         inventar.pushFarbkristallRed();
                                         Säulen_Array[arrayposition_x + 1, arrayposition_y] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 6:
                                         inventar.pushFarbkristallYellow();
                                         Säulen_Array[arrayposition_x + 1, arrayposition_y] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 7:
                                         inventar.pushFarbkristallGreen();
                                         Säulen_Array[arrayposition_x + 1, arrayposition_y] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 8:
                                         inventar.pushFarbkristallCyan();
                                         Säulen_Array[arrayposition_x + 1, arrayposition_y] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 9:
                                         inventar.pushFarbkristallBlue();
                                         Säulen_Array[arrayposition_x + 1, arrayposition_y] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 10:
                                         inventar.pushFarbkristallMagenta();
                                         Säulen_Array[arrayposition_x + 1, arrayposition_y] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     default:
                                         break;
@@ -747,38 +779,47 @@ namespace Crack_Tomb.Spieler
                                     case 2:
                                         inventar.pushSpiegel();
                                         Säulen_Array[arrayposition_x - 1, arrayposition_y] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 3:
                                         inventar.pushSpiegel();
                                         Säulen_Array[arrayposition_x - 1, arrayposition_y] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 4:
                                         inventar.pushSplittPrisma();
                                         Säulen_Array[arrayposition_x - 1, arrayposition_y] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 5:
                                         inventar.pushFarbkristallRed();
                                         Säulen_Array[arrayposition_x - 1, arrayposition_y] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 6:
                                         inventar.pushFarbkristallYellow();
                                         Säulen_Array[arrayposition_x - 1, arrayposition_y] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 7:
                                         inventar.pushFarbkristallGreen();
                                         Säulen_Array[arrayposition_x - 1, arrayposition_y] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 8:
                                         inventar.pushFarbkristallCyan();
                                         Säulen_Array[arrayposition_x - 1, arrayposition_y] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 9:
                                         inventar.pushFarbkristallBlue();
                                         Säulen_Array[arrayposition_x - 1, arrayposition_y] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     case 10:
                                         inventar.pushFarbkristallMagenta();
                                         Säulen_Array[arrayposition_x - 1, arrayposition_y] = 1;
+                                        herausnehmen.Play();
                                         break;
                                     default:
                                         break;

@@ -25,7 +25,6 @@ Content\3DModelle\Bodentextur.xnb
 Content\Shader\PartikelEffect.xnb
 Content\Shader\KristallEffect.xnb
 Content\Shader\BarriereEffect.xnb
-Content\Audio\song.xnb
 Content\3DModelle\Spiegel_0.xnb
 Content\3DModelle\Bodentextur_0.xnb
 Content\Fonts\Button.xnb
@@ -35,4 +34,16 @@ Content\3DModelle\Endpunkt_Textur_0.xnb
 Content\3DModelle\Schalter_Textur.xnb
 Content\3DModelle\Door_Schalter.xnb
 Content\3DModelle\Schalter_Textur_0.xnb
-Content\Audio\song.wma
+Content\Audio\einsetzen.xnb
+Content\Audio\verlorenSong.xnb
+Content\Audio\titelscreenSong.xnb
+Content\Audio\menuSong.xnb
+Content\Audio\inGameSong.xnb
+Content\Audio\gewonnenSong.xnb
+Content\Audio\farbkristallkramen.xnb
+Content\Audio\herausnehmen.xnb
+Content\Audio\verlorenSong.wma
+Content\Audio\titelscreenSong.wma
+Content\Audio\menuSong.wma
+Content\Audio\inGameSong.wma
+Content\Audio\gewonnenSong.wma
