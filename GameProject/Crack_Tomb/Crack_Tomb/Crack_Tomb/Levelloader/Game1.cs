@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using MainMenuCo;
 using Crack_Tomb.Menuestruktur;
+using Crack_Tomb.Levelloader;
 
 namespace Crack_Tomb
 {
@@ -20,6 +21,7 @@ namespace Crack_Tomb
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        SongController songController;
 
         GameState oldstate = null;
         GameState state = new Titlescreen();
@@ -28,6 +30,7 @@ namespace Crack_Tomb
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            songController = new SongController(Content);
         }
 
         /// <summary>
@@ -78,6 +81,7 @@ namespace Crack_Tomb
 
             if (oldstate != state)
             {
+                songController.checkSong(state, oldstate);
                 oldstate = state;
                 state.LoadContent(Content, graphics);
             }

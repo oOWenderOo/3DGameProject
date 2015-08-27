@@ -111,6 +111,7 @@
     <Compile Include="Levelloader\Level.cs" />
     <Compile Include="Levelloader\Level_LoaderV2.cs" />
     <Compile Include="Levelloader\Level_Loader.cs" />
+    <Compile Include="Levelloader\SongController.cs" />
     <Compile Include="Lichtquelle\Lichtstrahl.cs" />
     <Compile Include="Lichtquelle\Lichtquelle_Partikel.cs" />
     <Compile Include="Lichtquelle\PartikelCollider.cs" />

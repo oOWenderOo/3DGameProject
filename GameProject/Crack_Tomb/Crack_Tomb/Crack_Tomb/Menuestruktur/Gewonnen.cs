@@ -59,6 +59,8 @@ namespace Crack_Tomb.Menuestruktur
              isGedrücktBack = false,
              isGedrücktSpace = false;
 
+        public Gewonnen() { }
+
         public Gewonnen(int levelnummer, int punkte)
         {
             this.levelnummer = levelnummer;

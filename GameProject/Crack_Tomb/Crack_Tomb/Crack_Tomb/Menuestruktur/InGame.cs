@@ -37,6 +37,8 @@ namespace MainMenuCo
         int wartcount = 0;
         int levelnummer;
 
+        public InGame() { }
+
         public InGame(int levelnummer)
         {
             //Gabriels-Teil

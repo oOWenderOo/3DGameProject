@@ -8,7 +8,6 @@ using Microsoft.Xna.Framework.Content;
 using System.Threading;
 using Microsoft.Xna.Framework.Input;
 using System.IO;
-using Microsoft.Xna.Framework.Media;
 
 namespace MainMenuCo
 {
@@ -17,7 +16,6 @@ namespace MainMenuCo
         SpriteFont fontText;
         Texture2D background;
         int anzahllevel = 15;
-        Song song;
 
         public Titlescreen()
         {
@@ -51,10 +49,6 @@ namespace MainMenuCo
         {
             fontText = content.Load<SpriteFont>("Fonts/Normal");
             background = content.Load<Texture2D>("2DTexturen/Testbildhintergrund");
-            song = content.Load<Song>("Audio/song");
-            MediaPlayer.Play(song);
-            MediaPlayer.IsRepeating = true;
-            MediaPlayer.Stop();
         }
 
         public override GameState Update(GameTime gameTime)
@@ -73,6 +67,5 @@ namespace MainMenuCo
             spriteBatch.DrawString(fontText, "~ Press Enter ~",new Vector2(280, 350), Color.Black);
             spriteBatch.End();
         }
-        
     }
 }

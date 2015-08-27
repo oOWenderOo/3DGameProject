@@ -21,6 +21,8 @@ namespace Crack_Tomb.Menuestruktur
         int wartezeit;
         int levelnummer;
 
+        public GameOver() { }
+
         public GameOver(int levelnummer)
         {
             this.levelnummer = levelnummer;
