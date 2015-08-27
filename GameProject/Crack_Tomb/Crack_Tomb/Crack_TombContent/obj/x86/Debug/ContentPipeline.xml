@@ -211,7 +211,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\Inventar.xnb</Output>
-      <Time>2015-08-27T14:17:30.4152282+02:00</Time>
+      <Time>2015-08-27T17:08:02.0650922+02:00</Time>
     </Item>
     <Item>
       <Source>2DTexturen\Score.png</Source>
@@ -587,6 +587,15 @@
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Audio\herausnehmen.xnb</Output>
       <Time>2015-08-27T16:18:18.7844557+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\PauseFont.spritefont</Source>
+      <Name>Fonts\PauseFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Fonts\PauseFont.xnb</Output>
+      <Time>2015-08-27T17:33:51.7789742+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

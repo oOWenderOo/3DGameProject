@@ -15,11 +15,12 @@ namespace Crack_Tomb.Menuestruktur
     {
         SpriteFont fontButton;
         SpriteFont fontText;
-        Button[] buttons = new Button[2];
+        Button[] buttons;
         Texture2D mouse;
         Texture2D background;
         int levelnummer;
         int punkte;
+        int anzahlLevel = 15;
         string[] rangliste = new string[10];
         int[] ranglistePunkte = new int[10];
         int position = 0; //in der Rangliste
@@ -66,9 +67,21 @@ namespace Crack_Tomb.Menuestruktur
             this.levelnummer = levelnummer;
             this.punkte = punkte;
 
-            buttons[0] = new Button(new Vector2(540, 370), "MainMenu", "Zurück ins Menü");
-            buttons[1] = new Button(new Vector2(60, 370), "InGame", "Level erneut starten");
-            
+            if (levelnummer < anzahlLevel)
+            {
+                buttons = new Button[3];
+
+                buttons[0] = new Button(new Vector2(540, 370), "MainMenu", "Zurück ins Menü");
+                buttons[1] = new Button(new Vector2(300, 370), "InGame", "Level erneut starten");
+                buttons[2] = new Button(new Vector2(60, 370), "InGame", "Nächstes Level");
+            }
+            else
+            {
+                buttons = new Button[2];
+
+                buttons[0] = new Button(new Vector2(540, 370), "MainMenu", "Zurück ins Menü");
+                buttons[1] = new Button(new Vector2(300, 370), "InGame", "Level erneut starten");
+            }
             int counter = 0;
             string line;
             string dateiname = "Level" + levelnummer + ".txt";
@@ -208,7 +221,16 @@ namespace Crack_Tomb.Menuestruktur
                 for (int i = 0; i < buttons.Length; i++)
                 {
                     if (buttons[i].isPressed())
-                        return buttons[i].GetState(levelnummer);
+                    {
+                        if (i == 2)
+                        {
+                            return buttons[i].GetState(levelnummer + 1);
+                        }
+                        else
+                        {
+                            return buttons[i].GetState(levelnummer);
+                        }
+                    }
                 }
             }
 

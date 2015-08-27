@@ -24,6 +24,8 @@ namespace Crack_Tomb.Spieler
         Texture2D inventarTextur;
         public bool drawFarbkristalle = false;
         SoundEffect einsetzen;
+        int positionNumX = 70;
+        int positionNumY = 400;
 
         //Erzeugen eines Inventars
         public Inventar(ContentManager content)
@@ -51,7 +53,7 @@ namespace Crack_Tomb.Spieler
                 for (int i = 2; i < inventar.Length; i++)
                 {
                     string str = "" + inventar[i];
-                    spritebatch.DrawString(font, str, new Vector2(70 + 80 * i, 400), Color.Black);
+                    spritebatch.DrawString(font, str, new Vector2(positionNumX + 80 * i, positionNumY), Color.Black);
                 }
             }
             else
@@ -59,10 +61,10 @@ namespace Crack_Tomb.Spieler
                 for (int i = 0; i < 2; i++)
                 {
                     string str = "" + inventar[i];
-                    spritebatch.DrawString(font, str, new Vector2(70 + 80 * i, 400), Color.Black);
+                    spritebatch.DrawString(font, str, new Vector2(positionNumX + 80 * i, positionNumY), Color.Black);
                 }
 
-                spritebatch.DrawString(font, "" + getNumFarbkristall(), new Vector2(70 + 80 * 2, 400), Color.Black);
+                spritebatch.DrawString(font, "" + getNumFarbkristall(), new Vector2(positionNumX + 80 * 2, positionNumY), Color.Black);
             }
 
             spritebatch.End();

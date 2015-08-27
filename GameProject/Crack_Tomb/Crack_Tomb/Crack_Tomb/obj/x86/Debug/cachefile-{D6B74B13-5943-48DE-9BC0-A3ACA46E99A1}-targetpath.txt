@@ -47,3 +47,4 @@ Content\Audio\gewonnenSong.xnb
 Content\Audio\gewonnenSong.wma
 Content\Audio\farbkristallkramen.xnb
 Content\Audio\herausnehmen.xnb
+Content\Fonts\PauseFont.xnb

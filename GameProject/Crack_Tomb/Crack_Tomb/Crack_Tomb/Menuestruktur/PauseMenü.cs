@@ -16,6 +16,7 @@ namespace Crack_Tomb.Menuestruktur
 
         SpriteFont fontButton;
         SpriteFont fontText;
+        SpriteFont pauseFont;
         Button[] buttons = new Button[3];
         Texture2D mouse;
         Texture2D background;
@@ -26,11 +27,12 @@ namespace Crack_Tomb.Menuestruktur
             mouse = content.Load<Texture2D>("2DTexturen/MouseZeiger");
             fontButton = content.Load<SpriteFont>("Fonts/Button");
             fontText = content.Load<SpriteFont>("Fonts/Normal");
+            pauseFont = content.Load<SpriteFont>("Fonts/PauseFont");
             background = content.Load<Texture2D>("2DTexturen/Pausenmenü mit Hintergund(grau)");
 
-            buttons[0] = new Button(new Vector2(300, 225), "Fortsetzen", "Fortsetzen");
-            buttons[1] = new Button(new Vector2(300, 300), "Levelauswahl", "Levelauswahl");
-            buttons[2] = new Button(new Vector2(300, 150), "MainMenu", "Hauptmenü");
+            buttons[0] = new Button(new Vector2(300, 150), "Fortsetzen", "Fortsetzen");
+            buttons[1] = new Button(new Vector2(300, 225), "Levelauswahl", "Levelauswahl");
+            buttons[2] = new Button(new Vector2(300, 300), "MainMenu", "Hauptmenü");
 
             for (int i = 0; i < buttons.Length; i++)
             {
@@ -77,6 +79,8 @@ namespace Crack_Tomb.Menuestruktur
             SpriteBatch.Begin();
 
             SpriteBatch.Draw(background, new Vector2(0, 0), Color.White);
+
+            SpriteBatch.DrawString(pauseFont, "Pause", new Vector2(330, 80), Color.Black);
 
             for (int i = 0; i < buttons.Length; i++)
             {
