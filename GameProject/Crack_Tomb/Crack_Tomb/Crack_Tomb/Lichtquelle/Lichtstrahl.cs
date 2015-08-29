@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework;
 using Crack_Tomb.Lichtquelle;
 using Crack_Tomb.Spieler;
 using Crack_Tomb;
+using Crack_Tomb.Levelloader;
 
 namespace Lichtquelle
 {
@@ -27,10 +28,10 @@ namespace Lichtquelle
             this.richtung = richtung;
 
             p = new Lichtquelle_Partikel(partikelmodel, position, richtung, null, null, new MyColor(000000), partikeleffect);
-            collider = new PartikelCollider(levelnummer);
+            collider = new PartikelCollider();
         }
 
-        public void Update(GameTime gameTime, ref Player player, ref bool gewonnen)
+        public void Update(GameTime gameTime, ref Player player, ref bool gewonnen, ref Level_LoaderV2 levelloader)
         {
             if (p == null)
             {
@@ -45,7 +46,7 @@ namespace Lichtquelle
                     p = p.getNachfolger();
                 }
 
-                p.Update(gameTime, collider, ref player, ref gewonnen);
+                p.Update(gameTime, collider, ref player, ref gewonnen, ref levelloader);
             }
         }
 

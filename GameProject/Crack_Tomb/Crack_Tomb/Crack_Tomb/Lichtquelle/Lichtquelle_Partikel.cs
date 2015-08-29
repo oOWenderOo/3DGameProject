@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Crack_Tomb.Lichtquelle;
 using Crack_Tomb.Spieler;
 using Crack_Tomb;
+using Crack_Tomb.Levelloader;
 
 namespace Lichtquelle
 {
@@ -31,11 +32,11 @@ namespace Lichtquelle
             this.nachfolger = nachfolger;
         }
 
-        public void Update(GameTime gameTime, PartikelCollider collider, ref Player player, ref bool gewonnen)
+        public void Update(GameTime gameTime, PartikelCollider collider, ref Player player, ref bool gewonnen, ref Level_LoaderV2 levelloader)
         {
             if (vorgänger != null)
             {
-                vorgänger.Update(gameTime, collider, ref player, ref gewonnen);
+                vorgänger.Update(gameTime, collider, ref player, ref gewonnen, ref levelloader);
             }
             else
             {
@@ -57,13 +58,13 @@ namespace Lichtquelle
             {
                 Vector3 newposition = position + richtung;
 
-                collider.colliding(this, newposition, ref player, ref gewonnen);
+                collider.colliding(this, newposition, ref player, ref gewonnen, ref levelloader);
             }
             else
             {
                 Vector3 newposition = position;
 
-                collider.colliding(this, newposition, ref player, ref gewonnen);
+                collider.colliding(this, newposition, ref player, ref gewonnen, ref levelloader);
             }
         }
 

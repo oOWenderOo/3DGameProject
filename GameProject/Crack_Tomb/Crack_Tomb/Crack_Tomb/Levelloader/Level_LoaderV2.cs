@@ -13,7 +13,7 @@ namespace Crack_Tomb.Levelloader
         int Level_Nummer;
         Model wand_model, loch_model, säule_model, boden_model;
         Model barriere_model;
-        Model tür_offen_model, tür_geschlossen_model, schalter_model;
+        Model tür_offen_model, tür_geschlossen_model, schalter_an_model, schalter_aus_model;
         Model ziel_model, start_model;
         Effect barriereEffect;
 
@@ -22,7 +22,7 @@ namespace Crack_Tomb.Levelloader
         public int minuten;
         public int sekunden;
 
-        int[,] Level_Array;
+        public int[,] Level_Array;
 
         public Level_LoaderV2(int Level_Nummer)
         {
@@ -153,8 +153,9 @@ namespace Crack_Tomb.Levelloader
             boden_model = content.Load<Model>("3DModelle/ground");                        //BODEN
             barriere_model = content.Load<Model>("3DModelle/Farbbarrieren");              //BARRIERE
             tür_geschlossen_model = content.Load<Model>("3DModelle/boden");               //OFFENE TÜR
-            tür_offen_model = content.Load<Model>("3DModelle/boden");                     //GESCHLOSSENE TÜR
-            schalter_model = content.Load<Model>("3DModelle/Door_Schalter");                      //SCHALTER
+            tür_offen_model = content.Load<Model>("3DModelle/ground");                    //GESCHLOSSENE TÜR
+            schalter_aus_model = content.Load<Model>("3DModelle/Door_Schalter");          //SCHALTER AUS
+            schalter_an_model = content.Load<Model>("3DModelle/ground");                  //SCHALTER AN
             ziel_model = content.Load<Model>("3DModelle/Endpunkt");                       //Ziel
             barriereEffect = content.Load<Effect>("Shader/BarriereEffect");
         }
@@ -704,448 +705,7 @@ namespace Crack_Tomb.Levelloader
                                 mesh.Draw();
                             }
                             break;
-                        case 61: //Schalter
-                            foreach (ModelMesh mesh in schalter_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-
-                                    if (Level_Array[i + 1, j] == 1)
-                                    {
-                                        effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.95f, 0.5f, j + 0.5f));
-                                    }
-                                    else
-                                    {
-                                        if (Level_Array[i - 1, j] == 1)
-                                        {
-                                            effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.95f, 0.5f, j + 0.5f));
-                                        }
-                                        else
-                                        {
-                                            if (Level_Array[i, j + 1] == 1)
-                                            {
-                                                effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.95f));
-                                            }
-                                            else
-                                            {
-                                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j - 0.95f));
-                                            }
-                                        }
-                                    }
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 62: //Schalter
-                            foreach (ModelMesh mesh in schalter_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-
-                                    if (Level_Array[i + 1, j] == 1)
-                                    {
-                                        effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.95f, 0.5f, j + 0.5f));
-                                    }
-                                    else
-                                    {
-                                        if (Level_Array[i - 1, j] == 1)
-                                        {
-                                            effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.95f, 0.5f, j + 0.5f));
-                                        }
-                                        else
-                                        {
-                                            if (Level_Array[i, j + 1] == 1)
-                                            {
-                                                effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.95f));
-                                            }
-                                            else
-                                            {
-                                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j - 0.95f));
-                                            }
-                                        }
-                                    }
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 63: //Schalter
-                            foreach (ModelMesh mesh in schalter_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-
-                                    if (Level_Array[i + 1, j] == 1)
-                                    {
-                                        effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.95f, 0.5f, j + 0.5f));
-                                    }
-                                    else
-                                    {
-                                        if (Level_Array[i - 1, j] == 1)
-                                        {
-                                            effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.95f, 0.5f, j + 0.5f));
-                                        }
-                                        else
-                                        {
-                                            if (Level_Array[i, j + 1] == 1)
-                                            {
-                                                effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.95f));
-                                            }
-                                            else
-                                            {
-                                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j - 0.95f));
-                                            }
-                                        }
-                                    }
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 64: //Schalter
-                            foreach (ModelMesh mesh in schalter_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-
-                                    if (Level_Array[i + 1, j] == 1)
-                                    {
-                                        effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.95f, 0.5f, j + 0.5f));
-                                    }
-                                    else
-                                    {
-                                        if (Level_Array[i - 1, j] == 1)
-                                        {
-                                            effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.95f, 0.5f, j + 0.5f));
-                                        }
-                                        else
-                                        {
-                                            if (Level_Array[i, j + 1] == 1)
-                                            {
-                                                effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.95f));
-                                            }
-                                            else
-                                            {
-                                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j - 0.95f));
-                                            }
-                                        }
-                                    }
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 65: //Schalter
-                            foreach (ModelMesh mesh in schalter_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-
-                                    if (Level_Array[i + 1, j] == 1)
-                                    {
-                                        effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.95f, 0.5f, j + 0.5f));
-                                    }
-                                    else
-                                    {
-                                        if (Level_Array[i - 1, j] == 1)
-                                        {
-                                            effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.95f, 0.5f, j + 0.5f));
-                                        }
-                                        else
-                                        {
-                                            if (Level_Array[i, j + 1] == 1)
-                                            {
-                                                effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.95f));
-                                            }
-                                            else
-                                            {
-                                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j - 0.95f));
-                                            }
-                                        }
-                                    }
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 66: //Schalter
-                            foreach (ModelMesh mesh in schalter_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-
-                                    if (Level_Array[i + 1, j] == 1)
-                                    {
-                                        effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.95f, 0.5f, j + 0.5f));
-                                    }
-                                    else
-                                    {
-                                        if (Level_Array[i - 1, j] == 1)
-                                        {
-                                            effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.95f, 0.5f, j + 0.5f));
-                                        }
-                                        else
-                                        {
-                                            if (Level_Array[i, j + 1] == 1)
-                                            {
-                                                effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.95f));
-                                            }
-                                            else
-                                            {
-                                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j - 0.95f));
-                                            }
-                                        }
-                                    }
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 67: //Schalter
-                            foreach (ModelMesh mesh in schalter_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-
-                                    if (Level_Array[i + 1, j] == 1)
-                                    {
-                                        effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.95f, 0.5f, j + 0.5f));
-                                    }
-                                    else
-                                    {
-                                        if (Level_Array[i - 1, j] == 1)
-                                        {
-                                            effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.95f, 0.5f, j + 0.5f));
-                                        }
-                                        else
-                                        {
-                                            if (Level_Array[i, j + 1] == 1)
-                                            {
-                                                effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.95f));
-                                            }
-                                            else
-                                            {
-                                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j - 0.95f));
-                                            }
-                                        }
-                                    }
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 68: //Schalter
-                            foreach (ModelMesh mesh in schalter_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-
-                                    if (Level_Array[i + 1, j] == 1)
-                                    {
-                                        effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.95f, 0.5f, j + 0.5f));
-                                    }
-                                    else
-                                    {
-                                        if (Level_Array[i - 1, j] == 1)
-                                        {
-                                            effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.95f, 0.5f, j + 0.5f));
-                                        }
-                                        else
-                                        {
-                                            if (Level_Array[i, j + 1] == 1)
-                                            {
-                                                effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.95f));
-                                            }
-                                            else
-                                            {
-                                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j - 0.95f));
-                                            }
-                                        }
-                                    }
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 69: //Schalter
-                            foreach (ModelMesh mesh in schalter_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-
-                                    if (Level_Array[i + 1, j] == 1)
-                                    {
-                                        effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.95f, 0.5f, j + 0.5f));
-                                    }
-                                    else
-                                    {
-                                        if (Level_Array[i - 1, j] == 1)
-                                        {
-                                            effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.95f, 0.5f, j + 0.5f));
-                                        }
-                                        else
-                                        {
-                                            if (Level_Array[i, j + 1] == 1)
-                                            {
-                                                effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.95f));
-                                            }
-                                            else
-                                            {
-                                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j - 0.95f));
-                                            }
-                                        }
-                                    }
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 71: //Tür
+                        case 70: //Tür zu
                             foreach (ModelMesh mesh in tür_geschlossen_model.Meshes)
                             {
                                 foreach (BasicEffect effect in mesh.Effects)
@@ -1154,13 +714,13 @@ namespace Crack_Tomb.Levelloader
 
                                     effect.View = view;
                                     effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
+                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
                                 }
                                 mesh.Draw();
                             }
                             break;
-                        case 72: //Tür
-                            foreach (ModelMesh mesh in tür_geschlossen_model.Meshes)
+                        case 71: //Tür offen
+                            foreach (ModelMesh mesh in tür_offen_model.Meshes)
                             {
                                 foreach (BasicEffect effect in mesh.Effects)
                                 {
@@ -1168,105 +728,7 @@ namespace Crack_Tomb.Levelloader
 
                                     effect.View = view;
                                     effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 73: //Tür
-                            foreach (ModelMesh mesh in tür_geschlossen_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 74: //Tür
-                            foreach (ModelMesh mesh in tür_geschlossen_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 75: //Tür
-                            foreach (ModelMesh mesh in tür_geschlossen_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 76: //Tür
-                            foreach (ModelMesh mesh in tür_geschlossen_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 77: //Tür
-                            foreach (ModelMesh mesh in tür_geschlossen_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 78: //Tür
-                            foreach (ModelMesh mesh in tür_geschlossen_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
-                        case 79: //Tür
-                            foreach (ModelMesh mesh in tür_geschlossen_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
+                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
                                 }
                                 mesh.Draw();
                             }
@@ -1312,6 +774,108 @@ namespace Crack_Tomb.Levelloader
                                 mesh.Draw();
                             }
                             break;
+                    }
+
+                    if (Level_Array[i, j] >= 600000 && Level_Array[i, j] <= 604141)
+                    {
+                        foreach (ModelMesh mesh in schalter_aus_model.Meshes)
+                        {
+                            foreach (BasicEffect effect in mesh.Effects)
+                            {
+                                effect.EnableDefaultLighting();
+
+                                effect.View = view;
+                                effect.Projection = projection;
+
+                                if (Level_Array[i + 1, j] == 1)
+                                {
+                                    effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.95f, 0.5f, j + 0.5f));
+                                }
+                                else
+                                {
+                                    if (Level_Array[i - 1, j] == 1)
+                                    {
+                                        effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.95f, 0.5f, j + 0.5f));
+                                    }
+                                    else
+                                    {
+                                        if (Level_Array[i, j + 1] == 1)
+                                        {
+                                            effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.95f));
+                                        }
+                                        else
+                                        {
+                                            effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j - 0.95f));
+                                        }
+                                    }
+                                }
+                            }
+                            mesh.Draw();
+                        }
+
+                        foreach (ModelMesh mesh in boden_model.Meshes)
+                        {
+                            foreach (BasicEffect effect in mesh.Effects)
+                            {
+                                effect.EnableDefaultLighting();
+
+                                effect.View = view;
+                                effect.Projection = projection;
+                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
+                            }
+                            mesh.Draw();
+                        }
+                    }
+
+                    if (Level_Array[i, j] >= 610000 && Level_Array[i, j] <= 614141)
+                    {
+                        foreach (ModelMesh mesh in schalter_an_model.Meshes)
+                        {
+                            foreach (BasicEffect effect in mesh.Effects)
+                            {
+                                effect.EnableDefaultLighting();
+
+                                effect.View = view;
+                                effect.Projection = projection;
+
+                                if (Level_Array[i + 1, j] == 1)
+                                {
+                                    effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.95f, 0.5f, j + 0.5f));
+                                }
+                                else
+                                {
+                                    if (Level_Array[i - 1, j] == 1)
+                                    {
+                                        effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.95f, 0.5f, j + 0.5f));
+                                    }
+                                    else
+                                    {
+                                        if (Level_Array[i, j + 1] == 1)
+                                        {
+                                            effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.95f));
+                                        }
+                                        else
+                                        {
+                                            effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j - 0.95f));
+                                        }
+                                    }
+                                }
+                            }
+                            mesh.Draw();
+                        }
+
+                        foreach (ModelMesh mesh in boden_model.Meshes)
+                        {
+                            foreach (BasicEffect effect in mesh.Effects)
+                            {
+                                effect.EnableDefaultLighting();
+
+                                effect.View = view;
+                                effect.Projection = projection;
+                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
+                            }
+                            mesh.Draw();
+                        }
                     }
                 }
             }

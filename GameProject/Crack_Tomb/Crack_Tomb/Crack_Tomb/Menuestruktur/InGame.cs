@@ -83,8 +83,8 @@ namespace MainMenuCo
             if (!pausemenü.ispause)
             {
                 //Gabriels-Teil
-                licht.Update(gameTime, ref player, ref gewonnen);
-                player.Update(gameTime);
+                licht.Update(gameTime, ref player, ref gewonnen, ref levelloader);
+                player.Update(gameTime, ref levelloader);
                 camera.Update(player.position);
                 MediaPlayer.Resume();
 

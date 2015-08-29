@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
+using Crack_Tomb.Levelloader;
 
 namespace Crack_Tomb.Spieler
 {
@@ -83,14 +84,14 @@ namespace Crack_Tomb.Spieler
         }
 
         //Kollisionsabfrage mit Spieler und Umgebung
-        public bool IsColliding(Vector3 currentposition, Vector3 newposition)
+        public bool IsColliding(Vector3 currentposition, Vector3 newposition, ref Level_LoaderV2 levelloader)
         {
             arrayposition_x = (int)Math.Floor(currentposition.X);
             arrayposition_y = (int)Math.Floor(currentposition.Z);
 
             if (arrayposition_x != (int)Math.Floor(newposition.X) || arrayposition_y != (int)Math.Floor(newposition.Z))
             {
-                int objectAtnew = Level_Array[(int)Math.Floor(newposition.X), (int)Math.Floor(newposition.Z)];
+                int objectAtnew = levelloader.Level_Array[(int)Math.Floor(newposition.X), (int)Math.Floor(newposition.Z)];
 
                 switch (objectAtnew)
                 {
@@ -99,6 +100,8 @@ namespace Crack_Tomb.Spieler
                     case 2:
                         return true;
                     case 3:
+                        return true;
+                    case 70:
                         return true;
                     case 9:
                         return true;

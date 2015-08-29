@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Audio;
+using Crack_Tomb.Levelloader;
 
 namespace Crack_Tomb.Spieler
 {
@@ -33,10 +34,10 @@ namespace Crack_Tomb.Spieler
             setInventar(LevelNummer);
         }
 
-        public void Update(GameTime gametime)
+        public void Update(GameTime gametime, ref Level_LoaderV2 levelloader)
         {
             //Steuerung des Spielers
-            position = playersteuerung.Update(gametime, position, ref Säulen_Array, ref inventar);
+            position = playersteuerung.Update(gametime, position, ref Säulen_Array, ref inventar, ref levelloader);
         }
 
         public void setInventar(int levelnummer)

@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
+using Crack_Tomb.Levelloader;
 
 namespace Crack_Tomb.Spieler
 {
@@ -29,7 +30,7 @@ namespace Crack_Tomb.Spieler
             playercollider = new PlayerCollider(LevelNummer, ref Säulen_Array);
         }
 
-        public Vector3 Update(GameTime gametime, Vector3 playerposition, ref int[,] Säulen_Array, ref Inventar inventar)
+        public Vector3 Update(GameTime gametime, Vector3 playerposition, ref int[,] Säulen_Array, ref Inventar inventar, ref Level_LoaderV2 levelloader)
         {
             //Bestimmung der neuen Position bei bestimmter Eingabe des Spielers
             if (Keyboard.GetState().IsKeyDown(Keys.W) || Keyboard.GetState().IsKeyDown(Keys.Up))
@@ -2122,7 +2123,7 @@ namespace Crack_Tomb.Spieler
             }
 
             //Kollisionsprüfung
-            if (!playercollider.IsColliding(playerposition, newposition))
+            if (!playercollider.IsColliding(playerposition, newposition, ref levelloader))
             {
                 return newposition;
             }
