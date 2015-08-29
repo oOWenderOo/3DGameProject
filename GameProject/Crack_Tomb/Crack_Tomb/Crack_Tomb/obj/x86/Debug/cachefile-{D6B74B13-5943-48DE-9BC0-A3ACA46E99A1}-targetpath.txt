@@ -48,3 +48,4 @@ Content\Audio\gewonnenSong.wma
 Content\Audio\farbkristallkramen.xnb
 Content\Audio\herausnehmen.xnb
 Content\Fonts\PauseFont.xnb
+Content\Fonts\InventarNummer.xnb

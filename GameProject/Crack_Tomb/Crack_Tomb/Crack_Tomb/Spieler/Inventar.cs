@@ -24,14 +24,14 @@ namespace Crack_Tomb.Spieler
         Texture2D inventarTextur;
         public bool drawFarbkristalle = false;
         SoundEffect einsetzen;
-        int positionNumX = 70;
-        int positionNumY = 400;
+        int positionNumX = 85;
+        int positionNumY = 420;
 
         //Erzeugen eines Inventars
         public Inventar(ContentManager content)
         {
             inventar = new int[8];
-            font = content.Load<SpriteFont>("Fonts/Normal");
+            font = content.Load<SpriteFont>("Fonts/InventarNummer");
             inventarTextur = content.Load<Texture2D>("2DTexturen/Inventar");
             einsetzen = content.Load<SoundEffect>("Audio/einsetzen");
 

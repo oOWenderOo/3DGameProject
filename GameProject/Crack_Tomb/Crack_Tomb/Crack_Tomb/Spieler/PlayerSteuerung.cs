@@ -64,34 +64,34 @@ namespace Crack_Tomb.Spieler
             int arrayposition_x = (int)Math.Floor(playerposition.X);
             int arrayposition_y = (int)Math.Floor(playerposition.Z);
 
-            if (Keyboard.GetState().IsKeyDown(Keys.D1) && inventar.getNumSpiegel() >= 0 && !isgedrücktD2 && !isgedrücktD3)
+            if (!inventar.drawFarbkristalle)
             {
-                isgedrücktD1 = true;
-            }
-            else
-            {
-                if (Keyboard.GetState().IsKeyDown(Keys.D2) && inventar.getNumSplittPrisma() > 0 && !isgedrücktD1 && !isgedrücktD3)
+                if (Keyboard.GetState().IsKeyDown(Keys.D1) && inventar.getNumSpiegel() >= 0 && !isgedrücktD2 && !isgedrücktD3)
                 {
-                    isgedrücktD2 = true;
+                    isgedrücktD1 = true;
                 }
                 else
                 {
-                    if (Keyboard.GetState().IsKeyDown(Keys.D3) && inventar.getNumFarbkristall() > 0 && !isgedrücktD2 && !isgedrücktD1)
+                    if (Keyboard.GetState().IsKeyDown(Keys.D2) && inventar.getNumSplittPrisma() > 0 && !isgedrücktD1 && !isgedrücktD3)
                     {
-                        isgedrücktD3 = true;
+                        isgedrücktD2 = true;
                     }
                     else
                     {
-                        if (Keyboard.GetState().IsKeyDown(Keys.E) && !isgedrücktD1 && !isgedrücktD2 && !isgedrücktD3)
+                        if (Keyboard.GetState().IsKeyDown(Keys.D3) && inventar.getNumFarbkristall() > 0 && !isgedrücktD2 && !isgedrücktD1)
                         {
-                            isgedrücktE = true;
+                            isgedrücktD3 = true;
+                        }
+                        else
+                        {
+                            if (Keyboard.GetState().IsKeyDown(Keys.E) && !isgedrücktD1 && !isgedrücktD2 && !isgedrücktD3)
+                            {
+                                isgedrücktE = true;
+                            }
                         }
                     }
                 }
-            }
 
-            if (!inventar.drawFarbkristalle)
-            {
                 if (isgedrücktD1 && Keyboard.GetState().IsKeyUp(Keys.D1)) //Spiegel einfügen
                 {
                     isgedrücktD1 = false;
