@@ -18,6 +18,7 @@ namespace MainMenuCo
         LevelButton[] levelbuttons;
         Texture2D mouse;
         Texture2D background;
+        Texture2D levelauswahlRahmen;
 
         int levelnummer = 1;
         int anzahl_level = 15;
@@ -84,6 +85,7 @@ namespace MainMenuCo
 
             mouse = content.Load<Texture2D>("2DTexturen/MouseZeiger");
             background = content.Load<Texture2D>("2DTexturen/Testbildhintergrund");
+            levelauswahlRahmen = content.Load<Texture2D>("2DTexturen/LevelAuswahlRahmen");
         }
 
         public override GameState Update(GameTime gameTime)
@@ -108,6 +110,8 @@ namespace MainMenuCo
             SpriteBatch.Begin();
             SpriteBatch.Draw(background, new Vector2(0, 0), Color.White);
             SpriteBatch.DrawString(fontText, "Levelauswahl", new Vector2(60, 50), Color.Black);
+
+            SpriteBatch.Draw(levelauswahlRahmen, new Vector2(350, 10), Color.White);
 
             for (int i = 0; i < buttons.Length; i++)
             {

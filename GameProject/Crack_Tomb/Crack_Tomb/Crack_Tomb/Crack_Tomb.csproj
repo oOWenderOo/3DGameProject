@@ -108,7 +108,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Levelloader\Color.cs" />
-    <Compile Include="Levelloader\Level.cs" />
+    <Compile Include="Levelloader\Level\ALevel.cs" />
+    <Compile Include="Levelloader\Level\Level00.cs" />
+    <Compile Include="Levelloader\Level\Level01.cs" />
+    <Compile Include="Levelloader\Level\Level10.cs" />
+    <Compile Include="Levelloader\Level\Level11.cs" />
+    <Compile Include="Levelloader\Level\Level12.cs" />
+    <Compile Include="Levelloader\Level\Level13.cs" />
+    <Compile Include="Levelloader\Level\Level14.cs" />
+    <Compile Include="Levelloader\Level\Level15.cs" />
+    <Compile Include="Levelloader\Level\Level02.cs" />
+    <Compile Include="Levelloader\Level\Level03.cs" />
+    <Compile Include="Levelloader\Level\Level04.cs" />
+    <Compile Include="Levelloader\Level\Level05.cs" />
+    <Compile Include="Levelloader\Level\Level06.cs" />
+    <Compile Include="Levelloader\Level\Level07.cs" />
+    <Compile Include="Levelloader\Level\Level08.cs" />
+    <Compile Include="Levelloader\Level\Level09.cs" />
     <Compile Include="Levelloader\Level_LoaderV2.cs" />
     <Compile Include="Levelloader\Level_Loader.cs" />
     <Compile Include="Levelloader\SongController.cs" />

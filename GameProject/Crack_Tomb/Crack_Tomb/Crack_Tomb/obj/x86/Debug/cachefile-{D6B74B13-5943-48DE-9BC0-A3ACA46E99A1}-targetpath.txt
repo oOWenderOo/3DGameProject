@@ -2,7 +2,6 @@ Content\3DModelle\Spieler_mit_Hut.xnb
 Content\3DModelle\partikel.xnb
 Content\3DModelle\wand.xnb
 Content\3DModelle\saule_mit_loch_platz.xnb
-Content\3DModelle\saule_platz.xnb
 Content\3DModelle\saule_mit_halbloch_platz.xnb
 Content\3DModelle\kristall.xnb
 Content\3DModelle\Splittprisma.xnb
@@ -49,3 +48,14 @@ Content\Audio\farbkristallkramen.xnb
 Content\Audio\herausnehmen.xnb
 Content\Fonts\PauseFont.xnb
 Content\Fonts\InventarNummer.xnb
+Content\3DModelle\Anfangspunkt_Textur.xnb
+Content\3DModelle\Startpunktfertig.xnb
+Content\3DModelle\Schalter_Rot_Textur.xnb
+Content\3DModelle\Door_Schalter_An.xnb
+Content\3DModelle\Schalter_Rot_Textur_0.xnb
+Content\3DModelle\Säulen_mit_Loch_Textur.xnb
+Content\3DModelle\Säule mit Loch.xnb
+Content\3DModelle\Sulen_mit_Loch_Textur_0.xnb
+Content\3DModelle\Anfangspunkt_Textur_0.xnb
+Content\2DTexturen\LevelAuswahlRahmen.xnb
+Content\2DTexturen\Rangliste.xnb

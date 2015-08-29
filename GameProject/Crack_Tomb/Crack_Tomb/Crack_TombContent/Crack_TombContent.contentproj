@@ -105,13 +105,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="3DModelle\saule_platz.fbx">
-      <Name>saule_platz</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="3DModelle\saule_mit_halbloch_platz.fbx">
       <Name>saule_mit_halbloch_platz</Name>
       <Importer>FbxImporter</Importer>
@@ -315,13 +308,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2DTexturen\Inventar.png">
-      <Name>Inventar</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Fonts\PauseFont.spritefont">
       <Name>PauseFont</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -333,6 +319,69 @@
       <Name>InventarNummer</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Door_Schalter_An.fbx">
+      <Name>Door_Schalter_An</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Schalter_Rot_Textur.png">
+      <Name>Schalter_Rot_Textur</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Anfangspunkt_Textur.png">
+      <Name>Anfangspunkt_Textur</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Startpunktfertig.fbx">
+      <Name>Startpunktfertig</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Säulen_mit_Loch_Textur.png">
+      <Name>Säulen_mit_Loch_Textur</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Säule mit Loch.fbx">
+      <Name>Säule mit Loch</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2DTexturen\Inventar.png">
+      <Name>Inventar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2DTexturen\LevelAuswahlRahmen.png">
+      <Name>LevelAuswahlRahmen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2DTexturen\Rangliste.png">
+      <Name>Rangliste</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

@@ -27,7 +27,7 @@ namespace Crack_Tomb.Spieler
         {
             this.farbkristallkramen = farbkristallkramen;
             this.herausnehmen = herausnehmen;
-            playercollider = new PlayerCollider(LevelNummer, ref Säulen_Array);
+            playercollider = new PlayerCollider();
         }
 
         public Vector3 Update(GameTime gametime, Vector3 playerposition, ref int[,] Säulen_Array, ref Inventar inventar, ref Level_LoaderV2 levelloader)

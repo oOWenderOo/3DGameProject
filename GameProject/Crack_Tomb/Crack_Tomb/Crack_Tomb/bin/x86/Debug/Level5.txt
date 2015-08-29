@@ -1,11 +1,11 @@
 true
 Hallo 1070
 Hallo 1070
+Hallos 680
+Hallo 660
 Halloa 540
 Ralf 100
 Hans 90
 Mueller 80
 Hansen 70
 Wender 60
-Netuwi 50
-Jan 40

@@ -54,19 +54,6 @@
       </Dependency>
     </Item>
     <Item>
-      <Source>3DModelle\saule_platz.fbx</Source>
-      <Name>3DModelle\saule_platz</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\saule_platz.xnb</Output>
-      <Time>2015-08-28T18:15:00.1215268+02:00</Time>
-      <Dependency>
-        <Key>obj\x86\Debug\3DModelle\saule_platz_0.xml</Key>
-        <Value>2015-08-28T18:26:06.1669806+02:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
       <Source>3DModelle\saule_mit_halbloch_platz.fbx</Source>
       <Name>3DModelle\saule_mit_halbloch_platz</Name>
       <Importer>FbxImporter</Importer>
@@ -211,7 +198,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\Inventar.xnb</Output>
-      <Time>2015-08-28T18:14:47.6921414+02:00</Time>
+      <Time>2015-08-29T17:24:46.396125+02:00</Time>
     </Item>
     <Item>
       <Source>2DTexturen\Score.png</Source>
@@ -321,13 +308,6 @@
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\3DModelle\saule_mit_loch_platz_0.xml</Output>
       <Time>2015-08-28T18:15:00.118536+02:00</Time>
-    </Item>
-    <Item>
-      <Source>3DModelle\saule_platz.fbx</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>obj\x86\Debug\3DModelle\saule_platz_0.xml</Output>
-      <Time>2015-08-28T18:15:00.1215268+02:00</Time>
     </Item>
     <Item>
       <Source>3DModelle\saule_mit_halbloch_platz.fbx</Source>
@@ -605,6 +585,162 @@
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Fonts\InventarNummer.xnb</Output>
       <Time>2015-08-29T12:55:53.7821671+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Anfangspunkt_Textur.png</Source>
+      <Name>3DModelle\Anfangspunkt_Textur</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Anfangspunkt_Textur.xnb</Output>
+      <Time>2015-08-29T16:49:51.1718474+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Startpunktfertig.fbx</Source>
+      <Name>3DModelle\Startpunktfertig</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Startpunktfertig.xnb</Output>
+      <Time>2015-08-29T16:49:57.3777289+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\3DModelle\Startpunktfertig_0.xml</Key>
+        <Value>2015-08-29T16:50:11.09793+02:00</Value>
+      </Dependency>
+      <Request>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Anfangspunkt_Textur_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>3DModelle\Startpunktfertig.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\3DModelle\Startpunktfertig_0.xml</Output>
+      <Time>2015-08-29T16:49:57.3777289+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Schalter_Rot_Textur.png</Source>
+      <Name>3DModelle\Schalter_Rot_Textur</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Schalter_Rot_Textur.xnb</Output>
+      <Time>2015-08-29T15:40:37.1500086+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Door_Schalter_An.fbx</Source>
+      <Name>3DModelle\Door_Schalter_An</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Door_Schalter_An.xnb</Output>
+      <Time>2015-08-29T15:40:28.344655+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\3DModelle\Door_Schalter_An_0.xml</Key>
+        <Value>2015-08-29T15:40:54.1078892+02:00</Value>
+      </Dependency>
+      <Request>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Schalter_Rot_Textur_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>3DModelle\Door_Schalter_An.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\3DModelle\Door_Schalter_An_0.xml</Output>
+      <Time>2015-08-29T15:40:28.344655+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Schalter_Rot_Textur.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Schalter_Rot_Textur_0.xnb</Output>
+      <Time>2015-08-29T15:40:37.1500086+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Säulen_mit_Loch_Textur.png</Source>
+      <Name>3DModelle\Säulen_mit_Loch_Textur</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Säulen_mit_Loch_Textur.xnb</Output>
+      <Time>2015-08-29T16:50:09.4268376+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Säule mit Loch.fbx</Source>
+      <Name>3DModelle\Säule mit Loch</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Säule mit Loch.xnb</Output>
+      <Time>2015-08-29T16:50:03.600909+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\3DModelle\Sule mit Loch_0.xml</Key>
+        <Value>2015-08-29T16:50:11.4000487+02:00</Value>
+      </Dependency>
+      <Request>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Sulen_mit_Loch_Textur_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>3DModelle\Säule mit Loch.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\3DModelle\Sule mit Loch_0.xml</Output>
+      <Time>2015-08-29T16:50:03.600909+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Säulen_mit_Loch_Textur.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Sulen_mit_Loch_Textur_0.xnb</Output>
+      <Time>2015-08-29T16:50:09.4268376+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Anfangspunkt_Textur.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Anfangspunkt_Textur_0.xnb</Output>
+      <Time>2015-08-29T16:49:51.1718474+02:00</Time>
+    </Item>
+    <Item>
+      <Source>2DTexturen\LevelAuswahlRahmen.png</Source>
+      <Name>2DTexturen\LevelAuswahlRahmen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\LevelAuswahlRahmen.xnb</Output>
+      <Time>2015-08-29T17:31:07.4963848+02:00</Time>
+    </Item>
+    <Item>
+      <Source>2DTexturen\Rangliste.png</Source>
+      <Name>2DTexturen\Rangliste</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\Rangliste.xnb</Output>
+      <Time>2015-08-29T17:32:53.3097919+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

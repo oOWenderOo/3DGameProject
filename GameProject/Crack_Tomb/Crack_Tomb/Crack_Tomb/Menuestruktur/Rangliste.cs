@@ -18,6 +18,7 @@ namespace MainMenuCo
         LevelButton[] levelbuttons;
         Texture2D mouse;
         Texture2D background;
+        Texture2D ranglisteHalterung;
 
         string[] rangliste = new string[10];
         int levelnummer = 1;
@@ -70,6 +71,7 @@ namespace MainMenuCo
 
             mouse = content.Load<Texture2D>("2DTexturen/MouseZeiger");
             background = content.Load<Texture2D>("2DTexturen/Testbildhintergrund");
+            ranglisteHalterung = content.Load<Texture2D>("2DTexturen/Rangliste");
         }
 
         public override GameState Update(GameTime gameTime)
@@ -98,6 +100,7 @@ namespace MainMenuCo
             SpriteBatch.Draw(background, new Vector2(0, 0), Color.White);
             SpriteBatch.DrawString(fontText, "Rangliste", new Vector2(60, 50), Color.Black);
 
+            SpriteBatch.Draw(ranglisteHalterung, new Vector2(0, 0), Color.White);
 
             for (int i = 0; i < buttons.Length; i++)
             {

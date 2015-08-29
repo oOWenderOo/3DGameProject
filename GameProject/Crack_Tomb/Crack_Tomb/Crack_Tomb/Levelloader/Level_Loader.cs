@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using Crack_Tomb.Levelloader.Level;
 
 namespace Crack_Tomb{
 
@@ -81,62 +82,62 @@ namespace Crack_Tomb{
             switch (Level_Nummer) { 
             
                 case 0:
-                    Level_Array = new Level0().Level_Array;
-                    Licht_Start = new Level0().Licht_Start;
-                    Licht_Richtung = new Level0().Licht_Richtung;
+                    Level_Array = new Level00().Level_Array;
+                    Licht_Start = new Level00().Licht_Start;
+                    Licht_Richtung = new Level00().Licht_Richtung;
                     break;
 
                 case 1:
-                    Level_Array = new Level1().Level_Array;
-                    Licht_Start = new Level1().Licht_Start;
-                    Licht_Richtung = new Level1().Licht_Richtung;
+                    Level_Array = new Level01().Level_Array;
+                    Licht_Start = new Level01().Licht_Start;
+                    Licht_Richtung = new Level01().Licht_Richtung;
                     break;
 
                 case 2:
-                    Level_Array = new Level2().Level_Array;
-                    Licht_Start = new Level2().Licht_Start;
-                    Licht_Richtung = new Level2().Licht_Richtung;
+                    Level_Array = new Level02().Level_Array;
+                    Licht_Start = new Level02().Licht_Start;
+                    Licht_Richtung = new Level02().Licht_Richtung;
                     break;
 
                 case 3:
-                    Level_Array = new Level3().Level_Array;
-                    Licht_Start = new Level3().Licht_Start;
-                    Licht_Richtung = new Level3().Licht_Richtung;
+                    Level_Array = new Level03().Level_Array;
+                    Licht_Start = new Level03().Licht_Start;
+                    Licht_Richtung = new Level03().Licht_Richtung;
                     break;
 
                 case 4:
-                    Level_Array = new Level4().Level_Array;
-                    Licht_Start = new Level4().Licht_Start;
-                    Licht_Richtung = new Level4().Licht_Richtung;
+                    Level_Array = new Level04().Level_Array;
+                    Licht_Start = new Level04().Licht_Start;
+                    Licht_Richtung = new Level04().Licht_Richtung;
                     break;
 
                 case 5:
-                    Level_Array = new Level5().Level_Array;
-                    Licht_Start = new Level5().Licht_Start;
-                    Licht_Richtung = new Level5().Licht_Richtung;
+                    Level_Array = new Level05().Level_Array;
+                    Licht_Start = new Level05().Licht_Start;
+                    Licht_Richtung = new Level05().Licht_Richtung;
                     break;
 
                 case 6:
-                    Level_Array = new Level6().Level_Array;
-                    Licht_Start = new Level6().Licht_Start;
-                    Licht_Richtung = new Level6().Licht_Richtung;
+                    Level_Array = new Level06().Level_Array;
+                    Licht_Start = new Level06().Licht_Start;
+                    Licht_Richtung = new Level06().Licht_Richtung;
                     break;
                 case 7:
-                    Level_Array = new Level7().Level_Array;
-                    Licht_Start = new Level7().Licht_Start;
-                    Licht_Richtung = new Level7().Licht_Richtung;
+                    Level_Array = new Level07().Level_Array;
+                    Licht_Start = new Level07().Licht_Start;
+                    Licht_Richtung = new Level07().Licht_Richtung;
                     break;
 
                 case 8:
-                    Level_Array = new Level8().Level_Array;
-                    Licht_Start = new Level8().Licht_Start;
-                    Licht_Richtung = new Level8().Licht_Richtung;
+                    Level_Array = new Level08().Level_Array;
+                    Licht_Start = new Level08().Licht_Start;
+                    Licht_Richtung = new Level08().Licht_Richtung;
                     break;
 
                 case 9:
-                    Level_Array = new Level9().Level_Array;
-                    Licht_Start = new Level9().Licht_Start;
-                    Licht_Richtung = new Level9().Licht_Richtung;
+                    Level_Array = new Level09().Level_Array;
+                    Licht_Start = new Level09().Licht_Start;
+                    Licht_Richtung = new Level09().Licht_Richtung;
                     break;
 
                 case 10:
@@ -175,9 +176,9 @@ namespace Crack_Tomb{
                     break;
 
                 default:
-                    Level_Array = new Level0().Level_Array;
-                    Licht_Start = new Level0().Licht_Start;
-                    Licht_Richtung = new Level0().Licht_Richtung;
+                    Level_Array = new Level00().Level_Array;
+                    Licht_Start = new Level00().Licht_Start;
+                    Licht_Richtung = new Level00().Licht_Richtung;
                     break;
             }
         }

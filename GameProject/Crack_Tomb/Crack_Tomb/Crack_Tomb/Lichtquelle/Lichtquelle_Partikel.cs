@@ -54,7 +54,7 @@ namespace Lichtquelle
                 }
             }
 
-            if (((int)gameTime.TotalGameTime.Milliseconds) % 10 == 0)
+            if (((int)gameTime.TotalGameTime.Milliseconds) % 100 == 0)
             {
                 Vector3 newposition = position + richtung;
 
