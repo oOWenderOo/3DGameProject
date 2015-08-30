@@ -16,9 +16,11 @@ namespace Crack_Tomb.Levelloader
         Song inGameSong;
         Song gewonnenSong;
         Song verlorenSong;
+        int anzahllevel;
 
-        public SongController(ContentManager content)
+        public SongController(ContentManager content, int anzahllevel)
         {
+            this.anzahllevel = anzahllevel;
             titelscreenSong = content.Load<Song>("Audio/titelscreenSong");
             menuSong = content.Load<Song>("Audio/menuSong");
             inGameSong = content.Load<Song>("Audio/inGameSong");
@@ -30,7 +32,7 @@ namespace Crack_Tomb.Levelloader
 
         public void checkSong(GameState state, GameState oldstate)
         {
-            if (Object.ReferenceEquals(state.GetType(), new Titlescreen().GetType()))
+            if (Object.ReferenceEquals(state.GetType(), new Titlescreen(anzahllevel).GetType()))
             {
                 MediaPlayer.Play(titelscreenSong);
             }
@@ -54,9 +56,9 @@ namespace Crack_Tomb.Levelloader
                         }
                         else
                         {
-                            if (Object.ReferenceEquals(state.GetType(), new MainMenu().GetType()) || Object.ReferenceEquals(state.GetType(), new Rangliste().GetType()) || Object.ReferenceEquals(state.GetType(), new Levelauswahl().GetType()) || Object.ReferenceEquals(state.GetType(), new Credits().GetType()))
+                            if (Object.ReferenceEquals(state.GetType(), new MainMenu(anzahllevel).GetType()) || Object.ReferenceEquals(state.GetType(), new Rangliste(anzahllevel).GetType()) || Object.ReferenceEquals(state.GetType(), new Levelauswahl(anzahllevel).GetType()) || Object.ReferenceEquals(state.GetType(), new Credits(anzahllevel).GetType()))
                             {
-                                if (Object.ReferenceEquals(oldstate.GetType(), new MainMenu().GetType()) || Object.ReferenceEquals(oldstate.GetType(), new Rangliste().GetType()) || Object.ReferenceEquals(oldstate.GetType(), new Levelauswahl().GetType()) || Object.ReferenceEquals(oldstate.GetType(), new Credits().GetType()))
+                                if (Object.ReferenceEquals(oldstate.GetType(), new MainMenu(anzahllevel).GetType()) || Object.ReferenceEquals(oldstate.GetType(), new Rangliste(anzahllevel).GetType()) || Object.ReferenceEquals(oldstate.GetType(), new Levelauswahl(anzahllevel).GetType()) || Object.ReferenceEquals(oldstate.GetType(), new Credits(anzahllevel).GetType()))
                                 { }
                                 else
                                 {

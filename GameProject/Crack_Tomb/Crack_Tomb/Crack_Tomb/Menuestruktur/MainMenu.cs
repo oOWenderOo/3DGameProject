@@ -16,11 +16,13 @@ namespace MainMenuCo
         Button[] buttons = new Button[4];
         Texture2D mouse;
         Texture2D background;
+        int anzahllevel;
 
         int wartezeit;
 
-        public MainMenu()
+        public MainMenu(int anzahllevel)
         {
+            this.anzahllevel = anzahllevel;
             buttons[0] = new Button(new Vector2(60, 225), "Rangliste", "Rangliste");
             buttons[1] = new Button(new Vector2(60, 300), "Credits", "Credits");
             buttons[2] = new Button(new Vector2(60, 150), "Levelauswahl", "Levelauswahl");
@@ -54,7 +56,7 @@ namespace MainMenuCo
             for (int i = 0; i < buttons.Length; i++)
             {
                 if (buttons[i].isPressed())
-                    return buttons[i].GetState(0);
+                    return buttons[i].GetState(0, anzahllevel);
             }
 
             return this;

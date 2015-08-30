@@ -32,6 +32,8 @@ namespace Crack_Tomb.Spieler
 
         public Vector3 Update(GameTime gametime, Vector3 playerposition, ref int[,] Säulen_Array, ref Inventar inventar, ref Level_LoaderV2 levelloader)
         {
+            newposition = playerposition;
+
             //Bestimmung der neuen Position bei bestimmter Eingabe des Spielers
             if (Keyboard.GetState().IsKeyDown(Keys.W) || Keyboard.GetState().IsKeyDown(Keys.Up))
             {

@@ -21,9 +21,11 @@ namespace Crack_Tomb.Menuestruktur
         Texture2D mouse;
         Texture2D background;
         bool pausegedrückt = false;
+        int anzahllevel;
 
-        public PauseMenü(ContentManager content)
+        public PauseMenü(ContentManager content, int anzahllevel)
         {
+            this.anzahllevel = anzahllevel;
             mouse = content.Load<Texture2D>("2DTexturen/MouseZeiger");
             fontButton = content.Load<SpriteFont>("Fonts/Button");
             fontText = content.Load<SpriteFont>("Fonts/Normal");
@@ -68,7 +70,7 @@ namespace Crack_Tomb.Menuestruktur
             for (int i = 1; i < buttons.Length; i++)
             {
                 if (buttons[i].isPressed())
-                    return buttons[i].GetState(0);
+                    return buttons[i].GetState(0, anzahllevel);
             }
 
             return aktuell;

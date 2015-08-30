@@ -20,12 +20,14 @@ namespace Crack_Tomb.Menuestruktur
 
         int wartezeit;
         int levelnummer;
+        int anzahllevel;
 
         public GameOver() { }
 
-        public GameOver(int levelnummer)
+        public GameOver(int levelnummer, int anzahllevel)
         {
             this.levelnummer = levelnummer;
+            this.anzahllevel = anzahllevel;
 
             buttons[0] = new Button(new Vector2(540, 370), "MainMenu", "Zurück ins Menü");
             buttons[1] = new Button(new Vector2(60, 370), "InGame", "Level erneut starten");
@@ -59,7 +61,7 @@ namespace Crack_Tomb.Menuestruktur
             for (int i = 0; i < buttons.Length; i++)
             {
                 if (buttons[i].isPressed())
-                    return buttons[i].GetState(levelnummer);
+                    return buttons[i].GetState(levelnummer, anzahllevel);
             }
             return this;
         }

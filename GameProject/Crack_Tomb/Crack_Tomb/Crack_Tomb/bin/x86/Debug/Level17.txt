@@ -1,0 +1,11 @@
+true
+Hallo 1100
+Ralf 100
+Hans 90
+Mueller 80
+Hansen 70
+Wender 60
+Netuwi 50
+Jan 40
+Lisa 30
+Paul 20

@@ -125,6 +125,9 @@
     <Compile Include="Levelloader\Level\Level07.cs" />
     <Compile Include="Levelloader\Level\Level08.cs" />
     <Compile Include="Levelloader\Level\Level09.cs" />
+    <Compile Include="Levelloader\Level\Level16.cs" />
+    <Compile Include="Levelloader\Level\Level17.cs" />
+    <Compile Include="Levelloader\Level\Level18.cs" />
     <Compile Include="Levelloader\Level_LoaderV2.cs" />
     <Compile Include="Levelloader\Level_Loader.cs" />
     <Compile Include="Levelloader\SongController.cs" />

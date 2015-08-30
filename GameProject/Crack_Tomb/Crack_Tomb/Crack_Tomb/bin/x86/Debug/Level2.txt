@@ -6,6 +6,6 @@ Hans 90
 Mueller 80
 Hansen 70
 Wender 60
+Hallo 60
 Netuwi 50
 Jan 40
-Lisa 30

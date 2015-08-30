@@ -16,13 +16,12 @@ namespace MainMenuCo
         Button[] buttons = new Button[1];
         Texture2D mouse;
         Texture2D background;
+        int anzahllevel;
 
-        int wartezeit;
-
-        public Credits()
+        public Credits(int anzahllevel)
         {
+            this.anzahllevel = anzahllevel;
             buttons[0] = new Button(new Vector2(60, 370), "MainMenu", "Zurück");
-            wartezeit = 6;
         }
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics) 
@@ -42,16 +41,10 @@ namespace MainMenuCo
 
         public override GameState Update(GameTime gameTime)
         {
-            if (wartezeit > 0)
-            {
-                wartezeit--;
-                return this;
-            }
-
             for (int i = 0; i < buttons.Length; i++)
             {
                 if (buttons[i].isPressed())
-                    return buttons[i].GetState(0);
+                    return buttons[i].GetState(0, anzahllevel);
             }
             return this;
         }

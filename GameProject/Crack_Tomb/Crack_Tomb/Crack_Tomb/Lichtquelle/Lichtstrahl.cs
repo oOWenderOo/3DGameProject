@@ -20,7 +20,7 @@ namespace Lichtquelle
         PartikelCollider collider;
         Effect partikeleffect;
 
-        public Lichtstrahl(Model partikelmodel, Vector3 position, Vector3 richtung , int levelnummer, Player player, Effect partikeleffect)
+        public Lichtstrahl(Model partikelmodel, Vector3 position, Vector3 richtung , int levelnummer, Effect partikeleffect)
         {
             this.partikeleffect = partikeleffect;
             this.partikelmodel = partikelmodel;

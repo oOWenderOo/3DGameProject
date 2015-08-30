@@ -37,13 +37,15 @@ namespace MainMenuCo
         IngameTimer timer;
         int wartcount = 0;
         int levelnummer;
+        int anzahllevel;
 
         public InGame() { }
 
-        public InGame(int levelnummer)
+        public InGame(int levelnummer, int anzahllevel)
         {
             //Gabriels-Teil
             this.levelnummer = levelnummer;
+            this.anzahllevel = anzahllevel;
 
             //Jannicks-Teil
             levelloader = new Level_LoaderV2(levelnummer); //////////// TODO:  1 durch "LevelNummer" ersetzen die irgendwo noch herkommen muss von der Levelauswahl
@@ -65,8 +67,8 @@ namespace MainMenuCo
             //Gabriels-Teil
             player = new Player(lichtPos, content.Load<Model>("3DModelle/Spieler_mit_Hut"), levelnummer, content, ref levelloader);
             camera = new Kamera(player.position);
-            licht = new Lichtstrahl(content.Load<Model>("3DModelle/partikel"), lichtPos, lichtDir, levelnummer, player, content.Load<Effect>("Shader/PartikelEffect"));
-            pausemenü = new PauseMenü(content);
+            licht = new Lichtstrahl(content.Load<Model>("3DModelle/partikel"), lichtPos, lichtDir, levelnummer, content.Load<Effect>("Shader/PartikelEffect"));
+            pausemenü = new PauseMenü(content, anzahllevel);
 
             //Annes-Teil
             timer.setFont(content);
@@ -89,7 +91,7 @@ namespace MainMenuCo
                 MediaPlayer.Resume();
 
                 if (gewonnen)
-                    return new Gewonnen(levelnummer, punkte);
+                    return new Gewonnen(levelnummer, punkte, anzahllevel);
 
                 //Annes-Teil
                 timer.Update(gameTime);
@@ -99,7 +101,7 @@ namespace MainMenuCo
                 {
                     if (wartcount >= 30)
                     {
-                        return new GameOver(levelnummer);
+                        return new GameOver(levelnummer, anzahllevel);
                     }
                     else
                     {
@@ -118,7 +120,6 @@ namespace MainMenuCo
 
         public override void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)
         {
-
             //Jannicks-Teil
 
             effect.VertexColorEnabled = true;

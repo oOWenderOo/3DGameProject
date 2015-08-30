@@ -23,14 +23,18 @@ namespace Crack_Tomb
         SpriteBatch spriteBatch;
         SongController songController;
 
-        GameState oldstate = null;
-        GameState state = new Titlescreen();
+        int anzahllevel = 18;
+
+        GameState oldstate;
+        GameState state;
 
         public Game1()
         {
+            state = new Titlescreen(anzahllevel);
+            oldstate = null;
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            songController = new SongController(Content);
+            songController = new SongController(Content, anzahllevel);
         }
 
         /// <summary>

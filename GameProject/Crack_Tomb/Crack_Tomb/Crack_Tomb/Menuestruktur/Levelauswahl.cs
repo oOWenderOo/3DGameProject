@@ -21,10 +21,11 @@ namespace MainMenuCo
         Texture2D levelauswahlRahmen;
 
         int levelnummer = 1;
-        int anzahl_level = 15;
+        int anzahl_level;
 
-        public Levelauswahl()
+        public Levelauswahl(int anzahllevel)
         {
+            this.anzahl_level = anzahllevel;
             buttons[0] = new Button(new Vector2(60, 370), "MainMenu", "Zurück");
             buttons[1] = new Button(new Vector2(540, 370), "InGame", "Level starten");
 
@@ -39,6 +40,7 @@ namespace MainMenuCo
                 string dateiname = "Level" + (i + 1) + ".txt";
                 string line;
 
+                
                 System.IO.StreamReader file = new System.IO.StreamReader(@dateiname);
 
                 line = file.ReadLine();
@@ -93,7 +95,7 @@ namespace MainMenuCo
             for (int i = 0; i < buttons.Length; i++)
             {
                 if (buttons[i].isPressed())
-                    return buttons[i].GetState(levelnummer);
+                    return buttons[i].GetState(levelnummer, anzahl_level);
             }
 
             for (int i = 0; i < anzahl_level; i++)

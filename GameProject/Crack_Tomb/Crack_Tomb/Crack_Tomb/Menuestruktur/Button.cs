@@ -67,22 +67,22 @@ namespace MainMenuCo
             }
         }
 
-        public GameState GetState(int levelnummer)
+        public GameState GetState(int levelnummer, int anzahllevel)
         {
             if (state == "MainMenu")
-                return new MainMenu();
+                return new MainMenu(anzahllevel);
             if (state == "Rangliste")
-                return new Rangliste();
+                return new Rangliste(anzahllevel);
             if (state == "Credits")
-                return new Credits();
+                return new Credits(anzahllevel);
             if (state == "Levelauswahl")
-                return new Levelauswahl();
+                return new Levelauswahl(anzahllevel);
             if (state == "InGame")
-                return new InGame(levelnummer);
+                return new InGame(levelnummer, anzahllevel);
             if (state == "Beenden")
                 return new Beenden();
 
-            return new Titlescreen();
+            return new Titlescreen(anzahllevel);
         }
 
         public void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)

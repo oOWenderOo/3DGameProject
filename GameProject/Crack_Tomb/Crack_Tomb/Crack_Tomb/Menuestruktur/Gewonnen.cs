@@ -20,7 +20,7 @@ namespace Crack_Tomb.Menuestruktur
         Texture2D background;
         int levelnummer;
         int punkte;
-        int anzahlLevel = 15;
+        int anzahlLevel;
         string[] rangliste = new string[10];
         int[] ranglistePunkte = new int[10];
         int position = 0; //in der Rangliste
@@ -62,8 +62,9 @@ namespace Crack_Tomb.Menuestruktur
 
         public Gewonnen() { }
 
-        public Gewonnen(int levelnummer, int punkte)
+        public Gewonnen(int levelnummer, int punkte, int anzahllevel)
         {
+            this.anzahlLevel = anzahllevel;
             this.levelnummer = levelnummer;
             this.punkte = punkte;
 
@@ -135,26 +136,29 @@ namespace Crack_Tomb.Menuestruktur
                 musseintragen = true;
             }
 
-            string[] levelfrei = new string[11];
-            levelfrei[0] = "true";
-            string dateiname2 = "Level" + (levelnummer + 1) + ".txt";
-            counter = 0;
-
-            System.IO.StreamReader file2 = new System.IO.StreamReader(@dateiname2);
-
-            while ((line = file2.ReadLine()) != null)
+            if (levelnummer < anzahllevel)
             {
-                if (counter != 0)
+                string[] levelfrei = new string[11];
+                levelfrei[0] = "true";
+                string dateiname2 = "Level" + (levelnummer + 1) + ".txt";
+                counter = 0;
+
+                System.IO.StreamReader file2 = new System.IO.StreamReader(@dateiname2);
+
+                while ((line = file2.ReadLine()) != null)
                 {
-                    levelfrei[counter] = line;
+                    if (counter != 0)
+                    {
+                        levelfrei[counter] = line;
+                    }
+
+                    counter++;
                 }
 
-                counter++;
+                file2.Close();
+
+                System.IO.File.WriteAllLines(@dateiname2, levelfrei);
             }
-
-            file2.Close();
-
-            System.IO.File.WriteAllLines(@dateiname2, levelfrei);
         }
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics)
@@ -224,11 +228,11 @@ namespace Crack_Tomb.Menuestruktur
                     {
                         if (i == 2)
                         {
-                            return buttons[i].GetState(levelnummer + 1);
+                            return buttons[i].GetState(levelnummer + 1, anzahlLevel);
                         }
                         else
                         {
-                            return buttons[i].GetState(levelnummer);
+                            return buttons[i].GetState(levelnummer, anzahlLevel);
                         }
                     }
                 }

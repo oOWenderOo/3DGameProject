@@ -15,10 +15,11 @@ namespace MainMenuCo
     {
         SpriteFont fontText;
         Texture2D background;
-        int anzahllevel = 15;
+        int anzahllevel;
 
-        public Titlescreen()
+        public Titlescreen(int anzahllevel)
         {
+            this.anzahllevel = anzahllevel;
             for (int i = 1; i <= anzahllevel; i++)
             {
                 string dateiname = "Level" + i + ".txt";
@@ -39,10 +40,6 @@ namespace MainMenuCo
                     }
                 }
             }
-
-            string[] linesl = { "" };
-
-            System.IO.File.WriteAllLines(@"Level" + (anzahllevel + 1) + ".txt", linesl);
         }
 
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics) 
@@ -55,7 +52,7 @@ namespace MainMenuCo
         {
             if (Keyboard.GetState().IsKeyDown(Keys.Enter))
             {
-                return new MainMenu();
+                return new MainMenu(anzahllevel);
             }
             return this;
         }

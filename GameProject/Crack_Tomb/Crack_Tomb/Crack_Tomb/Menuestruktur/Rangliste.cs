@@ -22,10 +22,11 @@ namespace MainMenuCo
 
         string[] rangliste = new string[10];
         int levelnummer = 1;
-        int anzahlLevel = 15;
+        int anzahlLevel;
 
-        public Rangliste()
+        public Rangliste(int anzahllevel)
         {
+            this.anzahlLevel = anzahllevel;
             buttons[0] = new Button(new Vector2(60, 370), "MainMenu", "Zurück");
 
             levelbuttons = new LevelButton[anzahlLevel];
@@ -79,7 +80,7 @@ namespace MainMenuCo
             for (int i = 0; i < buttons.Length; i++)
             {
                 if (buttons[i].isPressed())
-                    return buttons[i].GetState(0);
+                    return buttons[i].GetState(0, anzahlLevel);
             }
 
             for (int i = 0; i < anzahlLevel; i++)

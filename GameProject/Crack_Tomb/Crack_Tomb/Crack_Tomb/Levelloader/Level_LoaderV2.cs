@@ -86,6 +86,15 @@ namespace Crack_Tomb.Levelloader
                 case 15:
                     level = new Level15();
                     break;
+                case 16:
+                    level = new Level16();
+                    break;
+                case 17:
+                    level = new Level17();
+                    break;
+                case 18:
+                    level = new Level18();
+                    break;
                 default:
                     level = new Level00();
                     break;
@@ -105,6 +114,23 @@ namespace Crack_Tomb.Levelloader
             anzahlMagenta = level.anzahlMagenta;
 
             Level_Array = level.Level_Array;
+
+            bool gefunden = false;
+
+            for (int i = 0; i < 41; i++)
+            {
+                for (int j = 0; j < 41; j++)
+                {
+                    if (Level_Array[i, j] == 8)
+                    {
+                        Licht_Start = new Vector3(i + 0.5f, 0, j + 0.5f);
+                        break;
+                    }
+                }
+
+                if (gefunden)
+                    break;
+            }
         }
 
         public void Array_Loader(ContentManager content)
@@ -119,7 +145,7 @@ namespace Crack_Tomb.Levelloader
             schalter_aus_model = content.Load<Model>("3DModelle/Door_Schalter");          //SCHALTER AUS
             schalter_an_model = content.Load<Model>("3DModelle/Door_Schalter_An");        //SCHALTER AN
             ziel_model = content.Load<Model>("3DModelle/Endpunkt");                       //Ziel
-            start_model = content.Load<Model>("3DModelle/Startpunktfertig");              //ANFANG
+            start_model = content.Load<Model>("3DModelle/ground");              //ANFANG
             barriereEffect = content.Load<Effect>("Shader/BarriereEffect");
         }
 
