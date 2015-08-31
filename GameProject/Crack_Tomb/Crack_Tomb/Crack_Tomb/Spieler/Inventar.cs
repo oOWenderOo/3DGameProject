@@ -22,6 +22,7 @@ namespace Crack_Tomb.Spieler
         private int[] inventar;
         SpriteFont font;
         Texture2D inventarTextur;
+        Texture2D inventarMitFarbkristallTextur;
         public bool drawFarbkristalle = false;
         SoundEffect einsetzen;
         int positionNumX = 85;
@@ -33,6 +34,7 @@ namespace Crack_Tomb.Spieler
             inventar = new int[8];
             font = content.Load<SpriteFont>("Fonts/InventarNummer");
             inventarTextur = content.Load<Texture2D>("2DTexturen/Inventar");
+            inventarMitFarbkristallTextur = content.Load<Texture2D>("2DTexturen/InventarOffen");
             einsetzen = content.Load<SoundEffect>("Audio/einsetzen");
 
             for (int i = 0; i < inventar.Length; i++)
@@ -45,25 +47,49 @@ namespace Crack_Tomb.Spieler
         {
             spritebatch.Begin();
 
-            spritebatch.Draw(inventarTextur, new Vector2(-10, 370), Color.White);
-
             if (drawFarbkristalle)
             {
+                spritebatch.Draw(inventarMitFarbkristallTextur, new Vector2(-10, 370), Color.White);
 
                 for (int i = 2; i < inventar.Length; i++)
                 {
                     string str = "" + inventar[i];
-                    spritebatch.DrawString(font, str, new Vector2(positionNumX + 80 * i, positionNumY), Color.Black);
+
+                    if (inventar[i] == 0)
+                    {
+                        spritebatch.DrawString(font, str, new Vector2(positionNumX + 175 + 43 * i, positionNumY), Color.Gray);
+                    }
+                    else
+                    {
+                        spritebatch.DrawString(font, str, new Vector2(positionNumX + 175 + 43 * i, positionNumY), Color.Black);
+                    }
                 }
             }
             else
             {
+                spritebatch.Draw(inventarTextur, new Vector2(-10, 370), Color.White);
+
                 for (int i = 0; i < 2; i++)
                 {
                     string str = "" + inventar[i];
-                    spritebatch.DrawString(font, str, new Vector2(positionNumX + 80 * i, positionNumY), Color.Black);
-                }
 
+                    if (inventar[i] == 0)
+                    {
+                        spritebatch.DrawString(font, str, new Vector2(positionNumX + 80 * i, positionNumY), Color.Gray);
+                    }
+                    else
+                    {
+                        spritebatch.DrawString(font, str, new Vector2(positionNumX + 80 * i, positionNumY), Color.Black);
+                    }
+                }
+            }
+
+            if (getNumFarbkristall() == 0)
+            {
+                spritebatch.DrawString(font, "" + getNumFarbkristall(), new Vector2(positionNumX + 80 * 2, positionNumY), Color.Gray);
+            }
+            else
+            {
                 spritebatch.DrawString(font, "" + getNumFarbkristall(), new Vector2(positionNumX + 80 * 2, positionNumY), Color.Black);
             }
 

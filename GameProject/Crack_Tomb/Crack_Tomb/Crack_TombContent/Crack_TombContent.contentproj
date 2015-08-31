@@ -343,13 +343,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2DTexturen\Inventar.png">
-      <Name>Inventar</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="2DTexturen\LevelAuswahlRahmen.png">
       <Name>LevelAuswahlRahmen</Name>
       <Importer>TextureImporter</Importer>
@@ -401,6 +394,27 @@
   <ItemGroup>
     <Compile Include="3DModelle\Wand_Kreuz.fbx">
       <Name>Wand_Kreuz</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2DTexturen\Inventar.png">
+      <Name>Inventar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2DTexturen\InventarOffen.png">
+      <Name>InventarOffen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Wand_Loch.fbx">
+      <Name>Wand_Loch</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>

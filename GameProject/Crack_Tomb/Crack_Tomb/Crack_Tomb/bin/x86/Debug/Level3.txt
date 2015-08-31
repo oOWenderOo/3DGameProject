@@ -1,6 +1,7 @@
 true
 Hallo 1210
 Hallo 1210
+Hallo 1200
 Hallo 1180
 Ralf 100
 Hans 90
@@ -8,4 +9,3 @@ Mueller 80
 Hansen 70
 Wender 60
 Netuwi 50
-Jan 40

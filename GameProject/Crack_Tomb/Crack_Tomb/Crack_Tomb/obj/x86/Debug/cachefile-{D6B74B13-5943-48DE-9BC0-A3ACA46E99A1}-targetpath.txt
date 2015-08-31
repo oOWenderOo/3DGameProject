@@ -62,3 +62,5 @@ Content\3DModelle\Wand_Normal.xnb
 Content\3DModelle\Wand_Ecke.xnb
 Content\3DModelle\Wand_Dreieck.xnb
 Content\3DModelle\Wand_Kreuz.xnb
+Content\2DTexturen\InventarOffen.xnb
+Content\3DModelle\Wand_Loch.xnb
