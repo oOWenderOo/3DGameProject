@@ -53,7 +53,7 @@ namespace Crack_Tomb.Levelloader.Level
 
         public Level02()
         {
-            minuten = 0;
+            minuten = 2;
             sekunden = 10;
             anzahlSpiegel = 1;
             anzahlSplittPrisma = 0;

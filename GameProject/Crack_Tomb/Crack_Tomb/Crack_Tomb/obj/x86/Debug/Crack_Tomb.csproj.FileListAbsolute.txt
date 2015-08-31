@@ -58,7 +58,6 @@ C:\Users\Jannick\Desktop\3DGameProject\GameProject\Crack_Tomb\Crack_Tomb\Crack_T
 C:\Users\Jannick\Desktop\3DGameProject\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\KristallEffect.xnb
 C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Spieler_mit_Hut.xnb
 C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\partikel.xnb
-C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\wand.xnb
 C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\saule_mit_loch_platz.xnb
 C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\saule_mit_halbloch_platz.xnb
 C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\kristall.xnb
@@ -114,3 +113,10 @@ C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_To
 C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Sulen_mit_Loch_Textur_0.xnb
 C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\LevelAuswahlRahmen.xnb
 C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\Rangliste.xnb
+C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Anfangspunkt_Textur.xnb
+C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Startpunktfertig.xnb
+C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Anfangspunkt_Textur_0.xnb
+C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Normal.xnb
+C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Ecke.xnb
+C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Dreieck.xnb
+C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Kreuz.xnb

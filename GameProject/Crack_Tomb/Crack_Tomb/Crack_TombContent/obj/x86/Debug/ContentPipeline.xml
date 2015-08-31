@@ -28,19 +28,6 @@
       </Dependency>
     </Item>
     <Item>
-      <Source>3DModelle\wand.fbx</Source>
-      <Name>3DModelle\wand</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\wand.xnb</Output>
-      <Time>2015-08-30T16:07:52.2824447+02:00</Time>
-      <Dependency>
-        <Key>obj\x86\Debug\3DModelle\wand_0.xml</Key>
-        <Value>2015-08-30T16:19:47.9871541+02:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
       <Source>3DModelle\saule_mit_loch_platz.fbx</Source>
       <Name>3DModelle\saule_mit_loch_platz</Name>
       <Importer>FbxImporter</Importer>
@@ -294,13 +281,6 @@
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\3DModelle\partikel_0.xml</Output>
       <Time>2015-08-30T16:07:52.2729312+02:00</Time>
-    </Item>
-    <Item>
-      <Source>3DModelle\wand.fbx</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>obj\x86\Debug\3DModelle\wand_0.xml</Output>
-      <Time>2015-08-30T16:07:52.2824447+02:00</Time>
     </Item>
     <Item>
       <Source>3DModelle\saule_mit_loch_platz.fbx</Source>
@@ -695,6 +675,132 @@
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\Rangliste.xnb</Output>
       <Time>2015-08-30T16:07:31.9240673+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Anfangspunkt_Textur.png</Source>
+      <Name>3DModelle\Anfangspunkt_Textur</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Anfangspunkt_Textur.xnb</Output>
+      <Time>2015-08-31T16:11:36.8734722+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Startpunktfertig.fbx</Source>
+      <Name>3DModelle\Startpunktfertig</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Startpunktfertig.xnb</Output>
+      <Time>2015-08-31T16:11:43.4454974+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\3DModelle\Startpunktfertig_0.xml</Key>
+        <Value>2015-08-31T16:11:56.6950972+02:00</Value>
+      </Dependency>
+      <Request>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Anfangspunkt_Textur_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>3DModelle\Startpunktfertig.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\3DModelle\Startpunktfertig_0.xml</Output>
+      <Time>2015-08-31T16:11:43.4454974+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Anfangspunkt_Textur.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Anfangspunkt_Textur_0.xnb</Output>
+      <Time>2015-08-31T16:11:36.8734722+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Wand_Normal.fbx</Source>
+      <Name>3DModelle\Wand_Normal</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Normal.xnb</Output>
+      <Time>2015-08-31T18:53:24.0983271+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\3DModelle\Wand_Normal_0.xml</Key>
+        <Value>2015-08-31T18:53:25.6511177+02:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>3DModelle\Wand_Normal.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\3DModelle\Wand_Normal_0.xml</Output>
+      <Time>2015-08-31T18:53:24.0983271+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Wand_Ecke.fbx</Source>
+      <Name>3DModelle\Wand_Ecke</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Ecke.xnb</Output>
+      <Time>2015-08-31T16:17:17.2349719+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\3DModelle\Wand_Ecke_0.xml</Key>
+        <Value>2015-08-31T16:22:01.0615036+02:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>3DModelle\Wand_Dreieck.fbx</Source>
+      <Name>3DModelle\Wand_Dreieck</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Dreieck.xnb</Output>
+      <Time>2015-08-31T16:17:51.0728229+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\3DModelle\Wand_Dreieck_0.xml</Key>
+        <Value>2015-08-31T16:22:01.176629+02:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>3DModelle\Wand_Ecke.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\3DModelle\Wand_Ecke_0.xml</Output>
+      <Time>2015-08-31T16:17:17.2349719+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Wand_Dreieck.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\3DModelle\Wand_Dreieck_0.xml</Output>
+      <Time>2015-08-31T16:17:51.0728229+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Wand_Kreuz.fbx</Source>
+      <Name>3DModelle\Wand_Kreuz</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Kreuz.xnb</Output>
+      <Time>2015-08-31T18:49:28.1950536+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\3DModelle\Wand_Kreuz_0.xml</Key>
+        <Value>2015-08-31T18:49:41.4600566+02:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>3DModelle\Wand_Kreuz.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\3DModelle\Wand_Kreuz_0.xml</Output>
+      <Time>2015-08-31T18:49:28.1950536+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

@@ -1,6 +1,5 @@
 Content\3DModelle\Spieler_mit_Hut.xnb
 Content\3DModelle\partikel.xnb
-Content\3DModelle\wand.xnb
 Content\3DModelle\saule_mit_loch_platz.xnb
 Content\3DModelle\saule_mit_halbloch_platz.xnb
 Content\3DModelle\kristall.xnb
@@ -51,6 +50,13 @@ Content\3DModelle\Säule mit Loch.xnb
 Content\3DModelle\Sulen_mit_Loch_Textur_0.xnb
 Content\2DTexturen\LevelAuswahlRahmen.xnb
 Content\2DTexturen\Rangliste.xnb
+Content\3DModelle\Anfangspunkt_Textur.xnb
+Content\3DModelle\Startpunktfertig.xnb
+Content\3DModelle\Anfangspunkt_Textur_0.xnb
+Content\3DModelle\Wand_Normal.xnb
+Content\3DModelle\Wand_Ecke.xnb
+Content\3DModelle\Wand_Dreieck.xnb
+Content\3DModelle\Wand_Kreuz.xnb
 Content\Audio\verlorenSong.wma
 Content\Audio\titelscreenSong.wma
 Content\Audio\menuSong.wma

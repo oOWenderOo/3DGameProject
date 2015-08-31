@@ -91,13 +91,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="3DModelle\wand.fbx">
-      <Name>wand</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="3DModelle\saule_mit_loch_platz.fbx">
       <Name>saule_mit_loch_platz</Name>
       <Importer>FbxImporter</Importer>
@@ -368,6 +361,48 @@
       <Name>Rangliste</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Anfangspunkt_Textur.png">
+      <Name>Anfangspunkt_Textur</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Startpunktfertig.fbx">
+      <Name>Startpunktfertig</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Wand_Normal.fbx">
+      <Name>Wand_Normal</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Wand_Ecke.fbx">
+      <Name>Wand_Ecke</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Wand_Dreieck.fbx">
+      <Name>Wand_Dreieck</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Wand_Kreuz.fbx">
+      <Name>Wand_Kreuz</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

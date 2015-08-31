@@ -29,6 +29,26 @@ namespace Crack_Tomb.Spieler
                 {
                     case 1:
                         return true;
+                    case 10:
+                        return true;
+                    case 11:
+                        return true;
+                    case 12:
+                        return true;
+                    case 13:
+                        return true;
+                    case 14:
+                        return true;
+                    case 15:
+                        return true;
+                    case 16:
+                        return true;
+                    case 17:
+                        return true;
+                    case 18:
+                        return true;
+                    case 19:
+                        return true;
                     case 2:
                         return true;
                     case 3:

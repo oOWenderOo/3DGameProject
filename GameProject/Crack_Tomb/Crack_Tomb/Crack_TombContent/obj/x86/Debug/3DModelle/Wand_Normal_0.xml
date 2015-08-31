@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Graphics="Microsoft.Xna.Framework.Content.Pipeline.Graphics" xmlns:Framework="Microsoft.Xna.Framework">
+  <Asset Type="Graphics:MeshContent">
+    <Name>Cube</Name>
+    <Identity>
+      <SourceFilename>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_TombContent\3DModelle\Wand_Normal.fbx</SourceFilename>
+      <SourceTool>FbxImporter</SourceTool>
+    </Identity>
+    <Transform>7.54979E-08 0 -1 0 -1 0 -7.54979E-08 0 0 1 0 0 0 0 0 1</Transform>
+    <Positions>0.381837 0.003695 0.562794 -1.145509 0.003696 0.562799 -1.14551 0.003696 -0.53622 0.381835 0.003695 -0.536224 0.381838 2.003695 0.562795 -1.145508 2.003696 0.562798 -1.145509 2.003696 -0.53622 0.381836 2.003695 -0.536224 -0.381836 0.003695 0.562796 -0.381838 0.003695 -0.536222 -0.381835 2.003695 0.562796 -0.381837 2.003695 -0.536222 1.14551 0.003694 0.562793 1.145508 0.003694 -0.536226 1.14551 2.003695 0.562793 1.145509 2.003695 -0.536226</Positions>
+    <Geometry>
+      <Batch>
+        <Material>#Resource1</Material>
+        <Indices>2 1 0 0 3 2 6 5 4 4 7 6 10 9 8 8 11 10 14 13 12 12 15 14 18 17 16 16 19 18 22 21 20 20 23 22 3 0 24 24 25 3 5 27 26 26 4 5 9 29 28 28 8 9 17 31 30 30 16 17 34 33 32 32 35 34 36 18 19 19 37 36 40 39 38 38 41 40 42 25 24 24 43 42</Indices>
+        <Vertices>
+          <PositionIndices>8 1 2 9 10 11 6 5 8 10 5 1 1 5 6 2 9 11 7 3 7 4 14 15 0 3 4 7 0 4 2 6 14 12 13 15 15 13 4 0 12 14 13 12</PositionIndices>
+          <Channels>
+            <VertexChannel Name="Normal0" ElementType="Framework:Vector3">-1E-06 -1 -0 -1E-06 -1 -0 -1E-06 -1 -0 -1E-06 -1 -0 1E-06 1 -0 1E-06 1 -0 1E-06 1 -0 1E-06 1 -0 3E-06 0 1 3E-06 0 1 3E-06 0 1 3E-06 0 1 -1 0 1E-06 -1 0 1E-06 -1 0 1E-06 -1 0 1E-06 -3E-06 -0 -1 -3E-06 -0 -1 -3E-06 -0 -1 -3E-06 -0 -1 0 1 0 0 1 0 0 1 0 0 1 0 -1E-06 -1 0 -1E-06 -1 0 1E-06 1 0 1E-06 1 0 3E-06 -0 1 3E-06 -0 1 -3E-06 -0 -1 -3E-06 -0 -1 1 -0 -1E-06 1 -0 -1E-06 1 -0 -1E-06 1 -0 -1E-06 -3E-06 -0 -1 -3E-06 -0 -1 2E-06 -0 1 2E-06 -0 1 2E-06 -0 1 2E-06 -0 1 -1E-06 -1 -0 -1E-06 -1 -0</VertexChannel>
+          </Channels>
+        </Vertices>
+      </Batch>
+    </Geometry>
+  </Asset>
+  <Resources>
+    <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
+      <Name>Material</Name>
+      <Identity>
+        <SourceFilename>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_TombContent\3DModelle\Wand_Normal.fbx</SourceFilename>
+        <SourceTool>FbxImporter</SourceTool>
+      </Identity>
+      <OpaqueData>
+        <Data Key="DiffuseColor" Type="Framework:Vector3">0.640000045 0.640000045 0.640000045</Data>
+        <Data Key="EmissiveColor" Type="Framework:Vector3">0 0 0</Data>
+        <Data Key="Alpha" Type="float">1</Data>
+        <Data Key="SpecularColor" Type="Framework:Vector3">0 0 0</Data>
+      </OpaqueData>
+    </Resource>
+  </Resources>
+</XnaContent>

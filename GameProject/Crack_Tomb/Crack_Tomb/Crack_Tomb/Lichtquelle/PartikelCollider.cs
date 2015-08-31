@@ -34,6 +34,36 @@ namespace Crack_Tomb.Lichtquelle
                     case 1: //Kollision Wand
                         partikel.setRichtung(new Vector3(0, 0, 0));
                         break;
+                    case 10:
+                        partikel.setRichtung(new Vector3(0, 0, 0));
+                        break;
+                    case 11:
+                        partikel.setRichtung(new Vector3(0, 0, 0));
+                        break;
+                    case 12:
+                        partikel.setRichtung(new Vector3(0, 0, 0));
+                        break;
+                    case 13:
+                        partikel.setRichtung(new Vector3(0, 0, 0));
+                        break;
+                    case 14:
+                        partikel.setRichtung(new Vector3(0, 0, 0));
+                        break;
+                    case 15:
+                        partikel.setRichtung(new Vector3(0, 0, 0));
+                        break;
+                    case 16:
+                        partikel.setRichtung(new Vector3(0, 0, 0));
+                        break;
+                    case 17:
+                        partikel.setRichtung(new Vector3(0, 0, 0));
+                        break;
+                    case 18:
+                        partikel.setRichtung(new Vector3(0, 0, 0));
+                        break;
+                    case 19:
+                        partikel.setRichtung(new Vector3(0, 0, 0));
+                        break;
                     case 2: //Wand mit Loch
                         partikel.setPosition(newposition);
                         break;
