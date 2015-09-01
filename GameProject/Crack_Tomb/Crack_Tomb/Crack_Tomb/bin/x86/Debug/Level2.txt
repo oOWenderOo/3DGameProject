@@ -1,11 +1,11 @@
 true
 Hallo 1260
+Hallo 1250
 Hallo 1070
+Hallo 980
 Hallöchen 640
 Ralf 100
 Hans 90
 Mueller 80
 Hansen 70
 Wender 60
-Hallo 60
-Netuwi 50

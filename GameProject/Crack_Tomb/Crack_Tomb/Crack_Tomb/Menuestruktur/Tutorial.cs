@@ -60,6 +60,7 @@ namespace Crack_Tomb.Menuestruktur
                     break;
                 default:
                     tutorialzeichnen = false;
+                    spielerLiest = false;
                     break;
             }
         }

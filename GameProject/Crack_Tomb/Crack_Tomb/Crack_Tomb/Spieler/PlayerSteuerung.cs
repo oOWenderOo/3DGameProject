@@ -37,22 +37,22 @@ namespace Crack_Tomb.Spieler
             //Bestimmung der neuen Position bei bestimmter Eingabe des Spielers
             if (Keyboard.GetState().IsKeyDown(Keys.W) || Keyboard.GetState().IsKeyDown(Keys.Up))
             {
-                newposition = playerposition + new Vector3(0, 0, speed * -1);
+                newposition = newposition + new Vector3(0, 0, speed * -1);
             }
 
             if (Keyboard.GetState().IsKeyDown(Keys.S) || Keyboard.GetState().IsKeyDown(Keys.Down))
             {
-                newposition = playerposition + new Vector3(0, 0, speed);
+                newposition = newposition + new Vector3(0, 0, speed);
             }
 
             if (Keyboard.GetState().IsKeyDown(Keys.A) || Keyboard.GetState().IsKeyDown(Keys.Left))
             {
-                newposition = playerposition + new Vector3(speed * -1, 0, 0);
+                newposition = newposition + new Vector3(speed * -1, 0, 0);
             }
 
             if (Keyboard.GetState().IsKeyDown(Keys.D) || Keyboard.GetState().IsKeyDown(Keys.Right))
             {
-                newposition = playerposition + new Vector3(speed, 0, 0);
+                newposition = newposition + new Vector3(speed, 0, 0);
             }
 
             //Was wird reingesetzt:

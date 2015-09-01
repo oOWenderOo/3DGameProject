@@ -34,7 +34,7 @@ namespace Crack_Tomb
             oldstate = null;
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            songController = new SongController(Content, anzahllevel);
+            
         }
 
         /// <summary>
@@ -60,6 +60,7 @@ namespace Crack_Tomb
 
             spriteBatch = new SpriteBatch(GraphicsDevice);
             state.LoadContent(Content, graphics);
+            songController = new SongController(Content, anzahllevel);
 
             // TODO: use this.Content to load your game content here
         }
@@ -94,6 +95,8 @@ namespace Crack_Tomb
 
             if (Object.ReferenceEquals(state.GetType(), new Beenden().GetType()))
                 this.Exit();
+
+            songController.Update(state);
         }
 
         /// <summary>
@@ -107,6 +110,8 @@ namespace Crack_Tomb
             GraphicsDevice.DepthStencilState = DepthStencilState.Default;
 
             state.Draw(gameTime, graphics, spriteBatch);
+
+            songController.DrawVolume(spriteBatch, gameTime, graphics);
 
             base.Draw(gameTime);
         }

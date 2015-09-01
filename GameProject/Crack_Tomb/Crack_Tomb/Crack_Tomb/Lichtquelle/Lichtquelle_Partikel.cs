@@ -20,6 +20,7 @@ namespace Lichtquelle
         Lichtquelle_Partikel vorgänger;
         Lichtquelle_Partikel nachfolger;
         public Effect effect;
+        int letzteBewegung = 0;
 
         public Lichtquelle_Partikel(Model partikelmodel, Vector3 position, Vector3 richtung, Lichtquelle_Partikel vorgänger, Lichtquelle_Partikel nachfolger, MyColor farbe, Effect effect)
         {
@@ -54,8 +55,10 @@ namespace Lichtquelle
                 }
             }
 
-            if (((int)gameTime.TotalGameTime.Milliseconds) % 100 == 0)
+            if (gameTime.TotalGameTime.Milliseconds % 100 == 0)
             {
+                int letzeBewegung = gameTime.TotalGameTime.Milliseconds;
+
                 Vector3 newposition = position + richtung;
 
                 collider.colliding(this, newposition, ref player, ref gewonnen, ref levelloader);

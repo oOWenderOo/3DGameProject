@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework.Content;
 using MainMenuCo;
 using Crack_Tomb.Menuestruktur;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework;
 
 namespace Crack_Tomb.Levelloader
 {
@@ -72,8 +73,12 @@ namespace Crack_Tomb.Levelloader
             }
         }
 
-        public void DrawVolume(SpriteBatch spritebatch)
-        { 
+        public void DrawVolume(SpriteBatch spritebatch, GameTime gametime, GraphicsDeviceManager Graphics)
+        {
+        }
+
+        public void Update(GameState state)
+        {
         }
     }
 }
