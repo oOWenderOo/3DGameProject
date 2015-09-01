@@ -64,3 +64,4 @@ Content\3DModelle\Wand_Dreieck.xnb
 Content\3DModelle\Wand_Kreuz.xnb
 Content\2DTexturen\InventarOffen.xnb
 Content\3DModelle\Wand_Loch.xnb
+Content\Fonts\TutorialFont.xnb

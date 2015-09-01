@@ -17,14 +17,16 @@ namespace Crack_Tomb.Menuestruktur
         SpriteFont fontButton;
         SpriteFont fontText;
         SpriteFont pauseFont;
-        Button[] buttons = new Button[3];
+        Button[] buttons = new Button[4];
         Texture2D mouse;
         Texture2D background;
         bool pausegedrückt = false;
         int anzahllevel;
+        int levelnummer;
 
-        public PauseMenü(ContentManager content, int anzahllevel)
+        public PauseMenü(ContentManager content, int anzahllevel, int levelnummer)
         {
+            this.levelnummer = levelnummer;
             this.anzahllevel = anzahllevel;
             mouse = content.Load<Texture2D>("2DTexturen/MouseZeiger");
             fontButton = content.Load<SpriteFont>("Fonts/Button");
@@ -32,9 +34,14 @@ namespace Crack_Tomb.Menuestruktur
             pauseFont = content.Load<SpriteFont>("Fonts/PauseFont");
             background = content.Load<Texture2D>("2DTexturen/Pausenmenü mit Hintergund(grau)");
 
-            buttons[0] = new Button(new Vector2(300, 150), "Fortsetzen", "Fortsetzen");
-            buttons[1] = new Button(new Vector2(300, 225), "Levelauswahl", "Levelauswahl");
-            buttons[2] = new Button(new Vector2(300, 300), "MainMenu", "Hauptmenü");
+            int positionY = 80;
+            int positionX = 310;
+            int abstand = 60;
+
+            buttons[0] = new Button(new Vector2(positionX, positionY + abstand * 1), "Fortsetzen", "Fortsetzen");
+            buttons[1] = new Button(new Vector2(positionX, positionY + abstand * 3), "Levelauswahl", "Levelauswahl");
+            buttons[2] = new Button(new Vector2(positionX, positionY + abstand * 4), "MainMenu", "Hauptmenü");
+            buttons[3] = new Button(new Vector2(positionX, positionY + abstand * 2), "InGame", "Level neustarten");
 
             for (int i = 0; i < buttons.Length; i++)
             {
@@ -70,7 +77,16 @@ namespace Crack_Tomb.Menuestruktur
             for (int i = 1; i < buttons.Length; i++)
             {
                 if (buttons[i].isPressed())
-                    return buttons[i].GetState(0, anzahllevel);
+                {
+                    if (i == 3)
+                    {
+                        return buttons[i].GetState(levelnummer, anzahllevel);
+                    }
+                    else
+                    {
+                        return buttons[i].GetState(0, anzahllevel);
+                    }
+                }
             }
 
             return aktuell;

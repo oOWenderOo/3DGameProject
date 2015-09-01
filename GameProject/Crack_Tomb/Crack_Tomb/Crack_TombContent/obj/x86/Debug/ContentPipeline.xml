@@ -831,6 +831,15 @@
       <Output>obj\x86\Debug\3DModelle\Wand_Loch_0.xml</Output>
       <Time>2015-08-31T19:48:26.0209253+02:00</Time>
     </Item>
+    <Item>
+      <Source>Fonts\TutorialFont.spritefont</Source>
+      <Name>Fonts\TutorialFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Fonts\TutorialFont.xnb</Output>
+      <Time>2015-09-01T14:33:01.5282344+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

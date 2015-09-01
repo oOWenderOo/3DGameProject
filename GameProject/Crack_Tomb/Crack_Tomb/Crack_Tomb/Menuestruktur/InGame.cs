@@ -32,6 +32,7 @@ namespace MainMenuCo
         int punkte;
         int minuten = 2;
         int sekunden = 0;
+        Tutorial tutorial;
 
         //Annes-Teil
         IngameTimer timer;
@@ -46,6 +47,7 @@ namespace MainMenuCo
             //Gabriels-Teil
             this.levelnummer = levelnummer;
             this.anzahllevel = anzahllevel;
+            tutorial = new Tutorial(levelnummer);
 
             //Jannicks-Teil
             levelloader = new Level_LoaderV2(levelnummer); //////////// TODO:  1 durch "LevelNummer" ersetzen die irgendwo noch herkommen muss von der Levelauswahl
@@ -68,7 +70,8 @@ namespace MainMenuCo
             player = new Player(lichtPos, content.Load<Model>("3DModelle/Spieler_mit_Hut"), levelnummer, content, ref levelloader);
             camera = new Kamera(player.position);
             licht = new Lichtstrahl(content.Load<Model>("3DModelle/partikel"), lichtPos, lichtDir, levelnummer, content.Load<Effect>("Shader/PartikelEffect"));
-            pausemenü = new PauseMenü(content, anzahllevel);
+            pausemenü = new PauseMenü(content, anzahllevel, levelnummer);
+            tutorial.LoadContent(content);
 
             //Annes-Teil
             timer.setFont(content);
@@ -82,7 +85,7 @@ namespace MainMenuCo
         {
             pausemenü.checkPause(gameTime);
 
-            if (!pausemenü.ispause)
+            if (!pausemenü.ispause && !tutorial.spielerLiest)
             {
                 //Gabriels-Teil
                 licht.Update(gameTime, ref player, ref gewonnen, ref levelloader);
@@ -113,6 +116,7 @@ namespace MainMenuCo
             }
             else
             {
+                tutorial.Update();
                 MediaPlayer.Pause();
                 return pausemenü.Update(this);
             }
@@ -152,6 +156,8 @@ namespace MainMenuCo
             {
                 pausemenü.Draw(gameTime, Graphics, SpriteBatch);
             }
+
+            tutorial.Draw(SpriteBatch);
         }
     }
 }
