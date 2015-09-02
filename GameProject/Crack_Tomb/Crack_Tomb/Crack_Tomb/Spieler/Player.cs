@@ -79,7 +79,7 @@ namespace Crack_Tomb.Spieler
 
                     effect.View = view;
                     effect.Projection = projection;
-                    effect.World = Matrix.CreateScale(0.75f) * Matrix.CreateTranslation(position);
+                    effect.World = Matrix.CreateScale(0.70f) * Matrix.CreateTranslation(position);
                 }
                 mesh.Draw();
             }
@@ -97,7 +97,7 @@ namespace Crack_Tomb.Spieler
                             spiegel.Draw(Matrix.CreateScale(0.1f) * Matrix.CreateRotationZ(3.141f / -4f) * Matrix.CreateRotationX(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1f, j + 0.5f)), view, projection);
                             break;
                         case 4:
-                            splittprisma.Draw(Matrix.CreateScale(0.175f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.9f, j + 0.5f)), view, projection);
+                            splittprisma.Draw(Matrix.CreateScale(0.175f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.8f, j + 0.5f)), view, projection);
                             break;
                         case 5:
                             foreach (ModelMesh mesh in farbkristall.Meshes)

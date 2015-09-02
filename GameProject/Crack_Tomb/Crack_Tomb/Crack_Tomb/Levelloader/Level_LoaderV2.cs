@@ -419,7 +419,7 @@ namespace Crack_Tomb.Levelloader
                         }
                     }
 
-                    effect.World = Matrix.CreateRotationY(rot) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(Licht_Start);
+                    effect.World = Matrix.CreateRotationY(rot) * Matrix.CreateScale(0.4f) * Matrix.CreateTranslation(Licht_Start);
                 }
                 mesh.Draw();
             }
@@ -430,20 +430,6 @@ namespace Crack_Tomb.Levelloader
                 {
                     switch (Level_Array[i, j])
                     {
-                        case 0: //Boden
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
-                            break;
                         case 1: //Wand-horizontal
                             foreach (ModelMesh mesh in wand_model.Meshes)
                             {
@@ -454,19 +440,6 @@ namespace Crack_Tomb.Levelloader
                                     effect.View = view;
                                     effect.Projection = projection;
                                     effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
                                 }
                                 mesh.Draw();
                             }
@@ -484,19 +457,6 @@ namespace Crack_Tomb.Levelloader
                                 }
                                 mesh.Draw();
                             }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
                             break;
                         case 11: //Wand-Kreuz
                             foreach (ModelMesh mesh in wand_kreuz_model.Meshes)
@@ -508,19 +468,6 @@ namespace Crack_Tomb.Levelloader
                                     effect.View = view;
                                     effect.Projection = projection;
                                     effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
                                 }
                                 mesh.Draw();
                             }
@@ -538,19 +485,6 @@ namespace Crack_Tomb.Levelloader
                                 }
                                 mesh.Draw();
                             }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
                             break;
                         case 13: //Wand-Ecke-links-unten
                             foreach (ModelMesh mesh in wand_ecke_model.Meshes)
@@ -562,19 +496,6 @@ namespace Crack_Tomb.Levelloader
                                     effect.View = view;
                                     effect.Projection = projection;
                                     effect.World = Matrix.CreateRotationY(-3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
                                 }
                                 mesh.Draw();
                             }
@@ -592,19 +513,6 @@ namespace Crack_Tomb.Levelloader
                                 }
                                 mesh.Draw();
                             }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
                             break;
                         case 15: //Wand-Ecke-oben-rechts
                             foreach (ModelMesh mesh in wand_ecke_model.Meshes)
@@ -616,19 +524,6 @@ namespace Crack_Tomb.Levelloader
                                     effect.View = view;
                                     effect.Projection = projection;
                                     effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
                                 }
                                 mesh.Draw();
                             }
@@ -646,19 +541,6 @@ namespace Crack_Tomb.Levelloader
                                 }
                                 mesh.Draw();
                             }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
                             break;
                         case 17: //Wand-Dreieck-oben
                             foreach (ModelMesh mesh in wand_dreieck_model.Meshes)
@@ -670,19 +552,6 @@ namespace Crack_Tomb.Levelloader
                                     effect.View = view;
                                     effect.Projection = projection;
                                     effect.World = Matrix.CreateRotationY(6.282f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
                                 }
                                 mesh.Draw();
                             }
@@ -700,19 +569,6 @@ namespace Crack_Tomb.Levelloader
                                 }
                                 mesh.Draw();
                             }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
                             break;
                         case 19: //Wand-Dreieck-unten
                             foreach (ModelMesh mesh in wand_dreieck_model.Meshes)
@@ -724,19 +580,6 @@ namespace Crack_Tomb.Levelloader
                                     effect.View = view;
                                     effect.Projection = projection;
                                     effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
                                 }
                                 mesh.Draw();
                             }
@@ -762,19 +605,6 @@ namespace Crack_Tomb.Levelloader
                                 }
                                 mesh.Draw();
                             }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
                             break;
                         case 3: //Säule
                             foreach (ModelMesh mesh in säule_model.Meshes)
@@ -786,19 +616,6 @@ namespace Crack_Tomb.Levelloader
                                     effect.View = view;
                                     effect.Projection = projection;
                                     effect.World = Matrix.CreateScale(new Vector3(1.5f, 1, 1.5f)) * Matrix.CreateScale(0.3f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
                                 }
                                 mesh.Draw();
                             }
@@ -826,19 +643,6 @@ namespace Crack_Tomb.Levelloader
                                 }
                                 mesh.Draw();
                             }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
                             break;
                         case 5000001: //Farbbarriere-Rot
                             foreach (ModelMesh mesh in barriere_model.Meshes)
@@ -860,19 +664,6 @@ namespace Crack_Tomb.Levelloader
 
                                     Matrix worldInverseTransposeMatrix = Matrix.Transpose(Matrix.Invert(mesh.ParentBone.Transform * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f))));
                                     barriereEffect.Parameters["WorldInverseTranspose"].SetValue(worldInverseTransposeMatrix);
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
                                 }
                                 mesh.Draw();
                             }
@@ -900,19 +691,6 @@ namespace Crack_Tomb.Levelloader
                                 }
                                 mesh.Draw();
                             }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
                             break;
                         case 5000100: //Farbbarriere-Grün
                             foreach (ModelMesh mesh in barriere_model.Meshes)
@@ -934,19 +712,6 @@ namespace Crack_Tomb.Levelloader
 
                                     Matrix worldInverseTransposeMatrix = Matrix.Transpose(Matrix.Invert(mesh.ParentBone.Transform * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f))));
                                     barriereEffect.Parameters["WorldInverseTranspose"].SetValue(worldInverseTransposeMatrix);
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
                                 }
                                 mesh.Draw();
                             }
@@ -974,19 +739,6 @@ namespace Crack_Tomb.Levelloader
                                 }
                                 mesh.Draw();
                             }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
                             break;
                         case 5010000: //Farbbarriere-Blau
                             foreach (ModelMesh mesh in barriere_model.Meshes)
@@ -1008,19 +760,6 @@ namespace Crack_Tomb.Levelloader
 
                                     Matrix worldInverseTransposeMatrix = Matrix.Transpose(Matrix.Invert(mesh.ParentBone.Transform * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f))));
                                     barriereEffect.Parameters["WorldInverseTranspose"].SetValue(worldInverseTransposeMatrix);
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
                                 }
                                 mesh.Draw();
                             }
@@ -1048,19 +787,6 @@ namespace Crack_Tomb.Levelloader
                                 }
                                 mesh.Draw();
                             }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
                             break;
                         case 5000011: //Farbbarriere-Rot-Gelb
                             foreach (ModelMesh mesh in barriere_model.Meshes)
@@ -1082,19 +808,6 @@ namespace Crack_Tomb.Levelloader
 
                                     Matrix worldInverseTransposeMatrix = Matrix.Transpose(Matrix.Invert(mesh.ParentBone.Transform * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f))));
                                     barriereEffect.Parameters["WorldInverseTranspose"].SetValue(worldInverseTransposeMatrix);
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
                                 }
                                 mesh.Draw();
                             }
@@ -1122,19 +835,6 @@ namespace Crack_Tomb.Levelloader
                                 }
                                 mesh.Draw();
                             }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
                             break;
                         case 5001100: //Farbbarriere-Grün-Cyan
                             foreach (ModelMesh mesh in barriere_model.Meshes)
@@ -1156,19 +856,6 @@ namespace Crack_Tomb.Levelloader
 
                                     Matrix worldInverseTransposeMatrix = Matrix.Transpose(Matrix.Invert(mesh.ParentBone.Transform * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f))));
                                     barriereEffect.Parameters["WorldInverseTranspose"].SetValue(worldInverseTransposeMatrix);
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
                                 }
                                 mesh.Draw();
                             }
@@ -1196,19 +883,6 @@ namespace Crack_Tomb.Levelloader
                                 }
                                 mesh.Draw();
                             }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
                             break;
                         case 5110000: //Farbbarriere-Blau-Magenta
                             foreach (ModelMesh mesh in barriere_model.Meshes)
@@ -1230,19 +904,6 @@ namespace Crack_Tomb.Levelloader
 
                                     Matrix worldInverseTransposeMatrix = Matrix.Transpose(Matrix.Invert(mesh.ParentBone.Transform * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f))));
                                     barriereEffect.Parameters["WorldInverseTranspose"].SetValue(worldInverseTransposeMatrix);
-                                }
-                                mesh.Draw();
-                            }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
                                 }
                                 mesh.Draw();
                             }
@@ -1270,19 +931,6 @@ namespace Crack_Tomb.Levelloader
                                 }
                                 mesh.Draw();
                             }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
                             break;
                         case 70: //Tür zu
                             foreach (ModelMesh mesh in tür_geschlossen_model.Meshes)
@@ -1293,20 +941,20 @@ namespace Crack_Tomb.Levelloader
 
                                     effect.View = view;
                                     effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
 
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
+                                    bool istNichtsOben = (Level_Array[i - 1, j] == 0 || Level_Array[i - 1, j] == 3 || (Level_Array[i - 1, j] >= 600000 && Level_Array[i - 1, j] <= 614141));
+                                    bool istNichtsUnten = (Level_Array[i + 1, j] == 0 || Level_Array[i + 1, j] == 3 || (Level_Array[i + 1, j] >= 600000 && Level_Array[i + 1, j] <= 614141));
+                                    bool istNichtsRechts = (Level_Array[i, j + 1] == 0 || Level_Array[i, j + 1] == 3 || (Level_Array[i, j + 1] >= 600000 && Level_Array[i, j + 1] <= 614141));
+                                    bool istNichtsLinks = (Level_Array[i, j - 1] == 0 || Level_Array[i, j - 1] == 3 || (Level_Array[i, j - 1] >= 600000 && Level_Array[i, j - 1] <= 614141));
 
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
+                                    if (istNichtsOben && istNichtsUnten && !istNichtsRechts && !istNichtsLinks)
+                                    {
+                                        effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.4f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.25f, j + 0.5f));
+                                    }
+                                    else
+                                    {
+                                        effect.World = Matrix.CreateScale(0.4f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.25f, j + 0.5f));
+                                    }
                                 }
                                 mesh.Draw();
                             }
@@ -1320,20 +968,20 @@ namespace Crack_Tomb.Levelloader
 
                                     effect.View = view;
                                     effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
-                                }
-                                mesh.Draw();
-                            }
 
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
+                                    bool istNichtsOben = (Level_Array[i - 1, j] == 0 || Level_Array[i - 1, j] == 3 || (Level_Array[i - 1, j] >= 600000 && Level_Array[i - 1, j] <= 614141));
+                                    bool istNichtsUnten = (Level_Array[i + 1, j] == 0 || Level_Array[i + 1, j] == 3 || (Level_Array[i + 1, j] >= 600000 && Level_Array[i + 1, j] <= 614141));
+                                    bool istNichtsRechts = (Level_Array[i, j + 1] == 0 || Level_Array[i, j + 1] == 3 || (Level_Array[i, j + 1] >= 600000 && Level_Array[i, j + 1] <= 614141));
+                                    bool istNichtsLinks = (Level_Array[i, j - 1] == 0 || Level_Array[i, j - 1] == 3 || (Level_Array[i, j - 1] >= 600000 && Level_Array[i, j - 1] <= 614141));
 
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
+                                    if (istNichtsOben && istNichtsUnten && !istNichtsRechts && !istNichtsLinks)
+                                    {
+                                        effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.4f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.25f, j + 0.5f));
+                                    }
+                                    else
+                                    {
+                                        effect.World = Matrix.CreateScale(0.4f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.25f, j + 0.5f));
+                                    }
                                 }
                                 mesh.Draw();
                             }
@@ -1351,33 +999,8 @@ namespace Crack_Tomb.Levelloader
                                 }
                                 mesh.Draw();
                             }
-
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
                             break;
                         default:
-                            foreach (ModelMesh mesh in boden_model.Meshes)
-                            {
-                                foreach (BasicEffect effect in mesh.Effects)
-                                {
-                                    effect.EnableDefaultLighting();
-
-                                    effect.View = view;
-                                    effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                                }
-                                mesh.Draw();
-                            }
                             break;
                     }
 
@@ -1392,19 +1015,19 @@ namespace Crack_Tomb.Levelloader
                                 effect.View = view;
                                 effect.Projection = projection;
 
-                                if (Level_Array[i + 1, j] == 1)
+                                if (Level_Array[i + 1, j] == 1 || (Level_Array[i + 1,j] >= 10 && Level_Array[i + 1,j] <= 19))
                                 {
                                     effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.95f, 0.5f, j + 0.5f));
                                 }
                                 else
                                 {
-                                    if (Level_Array[i - 1, j] == 1)
+                                    if (Level_Array[i - 1, j] == 1 || (Level_Array[i - 1, j] >= 10 && Level_Array[i - 1, j] <= 19))
                                     {
                                         effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.95f, 0.5f, j + 0.5f));
                                     }
                                     else
                                     {
-                                        if (Level_Array[i, j + 1] == 1)
+                                        if (Level_Array[i, j + 1] == 1 || (Level_Array[i, j + 1] >= 10 && Level_Array[i, j + 1] <= 19))
                                         {
                                             effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.95f));
                                         }
@@ -1414,19 +1037,6 @@ namespace Crack_Tomb.Levelloader
                                         }
                                     }
                                 }
-                            }
-                            mesh.Draw();
-                        }
-
-                        foreach (ModelMesh mesh in boden_model.Meshes)
-                        {
-                            foreach (BasicEffect effect in mesh.Effects)
-                            {
-                                effect.EnableDefaultLighting();
-
-                                effect.View = view;
-                                effect.Projection = projection;
-                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
                             }
                             mesh.Draw();
                         }
@@ -1443,19 +1053,19 @@ namespace Crack_Tomb.Levelloader
                                 effect.View = view;
                                 effect.Projection = projection;
 
-                                if (Level_Array[i + 1, j] == 1)
+                                if (Level_Array[i + 1, j] == 1 || (Level_Array[i + 1, j] >= 10 && Level_Array[i + 1, j] <= 19))
                                 {
                                     effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.95f, 0.5f, j + 0.5f));
                                 }
                                 else
                                 {
-                                    if (Level_Array[i - 1, j] == 1)
+                                    if (Level_Array[i - 1, j] == 1 || (Level_Array[i - 1, j] >= 10 && Level_Array[i - 1, j] <= 19))
                                     {
                                         effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.95f, 0.5f, j + 0.5f));
                                     }
                                     else
                                     {
-                                        if (Level_Array[i, j + 1] == 1)
+                                        if (Level_Array[i, j + 1] == 1 || (Level_Array[i, j + 1] >= 10 && Level_Array[i, j + 1] <= 19))
                                         {
                                             effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.95f));
                                         }
@@ -1468,19 +1078,19 @@ namespace Crack_Tomb.Levelloader
                             }
                             mesh.Draw();
                         }
+                    }
 
-                        foreach (ModelMesh mesh in boden_model.Meshes)
+                    foreach (ModelMesh mesh in boden_model.Meshes)
+                    {
+                        foreach (BasicEffect effect in mesh.Effects)
                         {
-                            foreach (BasicEffect effect in mesh.Effects)
-                            {
-                                effect.EnableDefaultLighting();
+                            effect.EnableDefaultLighting();
 
-                                effect.View = view;
-                                effect.Projection = projection;
-                                effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
-                            }
-                            mesh.Draw();
+                            effect.View = view;
+                            effect.Projection = projection;
+                            effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(0.5f + i, 0f, 0.5f + j));
                         }
+                        mesh.Draw();
                     }
                 }
             }

@@ -15,10 +15,10 @@ namespace MainMenuCo
         SpriteFont fontButton;
         SpriteFont fontText;
         Button[] buttons = new Button[1];
-        LevelButton[] levelbuttons;
         Texture2D mouse;
         Texture2D background;
         Texture2D ranglisteHalterung;
+        TriggerButton[] trigger = new TriggerButton[2];
 
         string[] rangliste = new string[10];
         int levelnummer = 1;
@@ -29,26 +29,11 @@ namespace MainMenuCo
             this.anzahlLevel = anzahllevel;
             buttons[0] = new Button(new Vector2(60, 370), "MainMenu", "Zurück");
 
-            levelbuttons = new LevelButton[anzahlLevel];
+            int positionX = 300;
+            int positionY = 30;
 
-            int help = 0;
-            int help2 = 0;
-
-            for (int i = 0; i < anzahlLevel; i++)
-            {
-                string text = "";
-                text = text + (i + 1);
-
-                if (i % 5 == 0)
-                {
-                    help += 55;
-                    help2 = 0;
-                }
-
-                levelbuttons[i] = new LevelButton(i + 1, new Vector2(300 + help2, 100 + help), text, true);
-
-                help2 += 55;
-            }
+            trigger[0] = new TriggerButton(new Vector2(positionX, positionY), "Zurück");
+            trigger[1] = new TriggerButton(new Vector2(positionX + 200, positionY), "Weiter");
 
             checkRangliste(1);
         }
@@ -64,11 +49,11 @@ namespace MainMenuCo
                 buttons[i].SetFont(fontButton);
             }
 
-            for (int i = 0; i < anzahlLevel; i++)
-            {
-                levelbuttons[i].SetTexture(content.Load<Texture2D>("2DTexturen/levelbutton"));
-                levelbuttons[i].SetFont(fontButton);
-            }
+            trigger[0].SetTexture(content.Load<Texture2D>("2DTexturen/Pfeil_links"));
+            trigger[0].SetFont(fontButton);
+
+            trigger[1].SetTexture(content.Load<Texture2D>("2DTexturen/Pfeil_rechts"));
+            trigger[1].SetFont(fontButton);
 
             mouse = content.Load<Texture2D>("2DTexturen/MouseZeiger");
             background = content.Load<Texture2D>("2DTexturen/Testbildhintergrund");
@@ -83,13 +68,32 @@ namespace MainMenuCo
                     return buttons[i].GetState(0, anzahlLevel);
             }
 
-            for (int i = 0; i < anzahlLevel; i++)
+            if (trigger[0].isPressed())
             {
-                if (levelbuttons[i].isPressed() && levelbuttons[i].getFreigeschaltet() == true)
+                if (levelnummer == 1)
                 {
-                    levelnummer = levelbuttons[i].getLevelnummer();
-                    checkRangliste(levelnummer);
+                    levelnummer = anzahlLevel;
                 }
+                else
+                {
+                    levelnummer--;
+                }
+
+                checkRangliste(levelnummer);
+            }
+
+            if (trigger[1].isPressed())
+            {
+                if (levelnummer == anzahlLevel)
+                {
+                    levelnummer = 1;
+                }
+                else
+                {
+                    levelnummer++;
+                }
+
+                checkRangliste(levelnummer);
             }
 
             return this;
@@ -108,15 +112,17 @@ namespace MainMenuCo
                 buttons[i].Draw(gameTime, Graphics, SpriteBatch);
             }
 
-            for (int i = 0; i < anzahlLevel; i++)
+            for (int i = 0; i < trigger.Length; i++)
             {
-                levelbuttons[i].Draw(gameTime, Graphics, SpriteBatch, levelnummer);
+                trigger[i].Draw(gameTime, Graphics, SpriteBatch);
             }
             
             for (int i = 0; i < rangliste.Length; i++)
             {
                 SpriteBatch.DrawString(fontText, rangliste[i], new Vector2(0, 30 * i), Color.Black);
             }
+
+            SpriteBatch.DrawString(fontText, "Level: " + levelnummer, new Vector2(400, 100), Color.Black);
 
             SpriteBatch.Draw(mouse, new Vector2(Mouse.GetState().X, Mouse.GetState().Y), Color.White);
 

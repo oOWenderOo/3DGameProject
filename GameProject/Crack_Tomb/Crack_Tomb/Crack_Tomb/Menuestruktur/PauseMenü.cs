@@ -41,11 +41,11 @@ namespace Crack_Tomb.Menuestruktur
             buttons[0] = new Button(new Vector2(positionX, positionY + abstand * 1), "Fortsetzen", "Fortsetzen");
             buttons[1] = new Button(new Vector2(positionX, positionY + abstand * 3), "Levelauswahl", "Levelauswahl");
             buttons[2] = new Button(new Vector2(positionX, positionY + abstand * 4), "MainMenu", "Hauptmenü");
-            buttons[3] = new Button(new Vector2(positionX, positionY + abstand * 2), "InGame", "Level neustarten");
+            buttons[3] = new Button(new Vector2(positionX, positionY + abstand * 2), "InGame", "Neustart");
 
             for (int i = 0; i < buttons.Length; i++)
             {
-                buttons[i].SetTexture(content.Load<Texture2D>("2DTexturen/Pausemenubutton"));
+                buttons[i].SetTexture(content.Load<Texture2D>("2DTexturen/Pausenmenubutton"));
                 buttons[i].SetFont(fontButton);
             }
         }

@@ -20,7 +20,7 @@ namespace Lichtquelle
         Lichtquelle_Partikel vorgänger;
         Lichtquelle_Partikel nachfolger;
         public Effect effect;
-        int letzteBewegung = 0;
+        bool horizontal;
 
         public Lichtquelle_Partikel(Model partikelmodel, Vector3 position, Vector3 richtung, Lichtquelle_Partikel vorgänger, Lichtquelle_Partikel nachfolger, MyColor farbe, Effect effect)
         {
@@ -84,10 +84,34 @@ namespace Lichtquelle
                 {
                     part.Effect = effect;
 
-                    if(richtung == new Vector3(0, 0, 1) || richtung == new Vector3(0, 0, -1)) 
-                        effect.Parameters["World"].SetValue(Matrix.CreateScale(0.1f, 0.1f, 1) * Matrix.CreateTranslation(position + new Vector3(0, 1f, 0)));
+                    float rot = 0;
+
+                    if (richtung != new Vector3(0, 0, 0))
+                    {
+                        if (richtung == new Vector3(0, 0, 1) || richtung == new Vector3(0, 0, -1))
+                        {
+                            rot = 0;
+                            horizontal = true;
+                        }
+                        else
+                        {
+                            rot = 3.141f / 2f;
+                            horizontal = false;
+                        }
+                    }
                     else
-                        effect.Parameters["World"].SetValue(Matrix.CreateScale(0.1f, 0.1f, 1) * Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(position + new Vector3(0, 1f, 0)));
+                    {
+                        if (horizontal)
+                        {
+                            rot = 0;
+                        }
+                        else
+                        {
+                            rot = 3.141f / 2f;
+                        }
+                    }
+
+                    effect.Parameters["World"].SetValue(Matrix.CreateScale(0.09f, 0.09f, 1) * Matrix.CreateRotationY(rot) * Matrix.CreateTranslation(position + new Vector3(0, 1f, 0)));
                     
                     
                     effect.Parameters["View"].SetValue(view);

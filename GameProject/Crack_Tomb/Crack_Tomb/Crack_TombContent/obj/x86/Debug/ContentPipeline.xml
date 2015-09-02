@@ -186,7 +186,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\Inventar.xnb</Output>
-      <Time>2015-08-31T19:13:29.9423492+02:00</Time>
+      <Time>2015-09-02T18:30:37.8410186+02:00</Time>
     </Item>
     <Item>
       <Source>2DTexturen\Score.png</Source>
@@ -196,15 +196,6 @@
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\Score.xnb</Output>
       <Time>2015-08-30T16:07:31.9270704+02:00</Time>
-    </Item>
-    <Item>
-      <Source>2DTexturen\Pausemenubutton.png</Source>
-      <Name>2DTexturen\Pausemenubutton</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\Pausemenubutton.xnb</Output>
-      <Time>2015-08-30T16:07:31.9200637+02:00</Time>
     </Item>
     <Item>
       <Source>2DTexturen\MouseZeiger.png</Source>
@@ -249,7 +240,7 @@
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Shader\PartikelEffect.xnb</Output>
-      <Time>2015-09-02T15:39:03.251899+02:00</Time>
+      <Time>2015-09-02T18:34:08.650053+02:00</Time>
     </Item>
     <Item>
       <Source>Shader\KristallEffect.fx</Source>
@@ -730,10 +721,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Normal.xnb</Output>
-      <Time>2015-09-02T14:29:51.6507992+02:00</Time>
+      <Time>2015-09-02T21:34:59.9294606+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\3DModelle\Wand_Normal_0.xml</Key>
-        <Value>2015-09-02T14:30:04.9364586+02:00</Value>
+        <Value>2015-09-02T21:35:02.4549658+02:00</Value>
       </Dependency>
       <Request>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Textur_0.xnb</Request>
     </Item>
@@ -742,7 +733,7 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\3DModelle\Wand_Normal_0.xml</Output>
-      <Time>2015-09-02T14:29:51.6507992+02:00</Time>
+      <Time>2015-09-02T21:34:59.9294606+02:00</Time>
     </Item>
     <Item>
       <Source>3DModelle\Wand_Ecke.fbx</Source>
@@ -751,10 +742,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Ecke.xnb</Output>
-      <Time>2015-09-02T14:29:35.1195628+02:00</Time>
+      <Time>2015-09-02T21:40:16.5696698+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\3DModelle\Wand_Ecke_0.xml</Key>
-        <Value>2015-09-02T14:30:05.2223467+02:00</Value>
+        <Value>2015-09-02T21:40:18.6037316+02:00</Value>
       </Dependency>
       <Request>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Textur_0.xnb</Request>
     </Item>
@@ -765,10 +756,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Dreieck.xnb</Output>
-      <Time>2015-09-02T14:29:28.8943997+02:00</Time>
+      <Time>2015-09-02T21:34:44.3876647+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\3DModelle\Wand_Dreieck_0.xml</Key>
-        <Value>2015-09-02T14:30:05.2704053+02:00</Value>
+        <Value>2015-09-02T21:35:02.6501526+02:00</Value>
       </Dependency>
       <Request>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Textur_0.xnb</Request>
     </Item>
@@ -777,14 +768,14 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\3DModelle\Wand_Ecke_0.xml</Output>
-      <Time>2015-09-02T14:29:35.1195628+02:00</Time>
+      <Time>2015-09-02T21:40:16.5696698+02:00</Time>
     </Item>
     <Item>
       <Source>3DModelle\Wand_Dreieck.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\3DModelle\Wand_Dreieck_0.xml</Output>
-      <Time>2015-09-02T14:29:28.8943997+02:00</Time>
+      <Time>2015-09-02T21:34:44.3876647+02:00</Time>
     </Item>
     <Item>
       <Source>3DModelle\Wand_Kreuz.fbx</Source>
@@ -793,10 +784,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Kreuz.xnb</Output>
-      <Time>2015-09-02T14:29:06.622652+02:00</Time>
+      <Time>2015-09-02T21:34:26.4623189+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\3DModelle\Wand_Kreuz_0.xml</Key>
-        <Value>2015-09-02T14:30:05.3723324+02:00</Value>
+        <Value>2015-09-02T21:35:02.7582562+02:00</Value>
       </Dependency>
       <Request>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Textur_0.xnb</Request>
     </Item>
@@ -805,7 +796,7 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\3DModelle\Wand_Kreuz_0.xml</Output>
-      <Time>2015-09-02T14:29:06.622652+02:00</Time>
+      <Time>2015-09-02T21:34:26.4623189+02:00</Time>
     </Item>
     <Item>
       <Source>2DTexturen\InventarOffen.png</Source>
@@ -814,7 +805,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\InventarOffen.xnb</Output>
-      <Time>2015-08-31T19:13:39.0625568+02:00</Time>
+      <Time>2015-09-02T18:30:52.9919313+02:00</Time>
     </Item>
     <Item>
       <Source>3DModelle\Wand_Loch.fbx</Source>
@@ -823,10 +814,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Loch.xnb</Output>
-      <Time>2015-09-02T14:29:42.4364483+02:00</Time>
+      <Time>2015-09-02T21:34:54.7684849+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\3DModelle\Wand_Loch_0.xml</Key>
-        <Value>2015-09-02T14:30:05.3222844+02:00</Value>
+        <Value>2015-09-02T21:35:02.7082115+02:00</Value>
       </Dependency>
       <Request>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Textur_0.xnb</Request>
     </Item>
@@ -835,7 +826,7 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\3DModelle\Wand_Loch_0.xml</Output>
-      <Time>2015-09-02T14:29:42.4364483+02:00</Time>
+      <Time>2015-09-02T21:34:54.7684849+02:00</Time>
     </Item>
     <Item>
       <Source>Fonts\TutorialFont.spritefont</Source>
@@ -853,7 +844,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Textur.xnb</Output>
-      <Time>2015-09-02T15:54:39.7821246+02:00</Time>
+      <Time>2015-09-02T21:34:20.7167015+02:00</Time>
     </Item>
     <Item>
       <Source>3DModelle\Wand_Textur.png</Source>
@@ -869,7 +860,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Wand_Textur_0.xnb</Output>
-      <Time>2015-09-02T15:54:39.7821246+02:00</Time>
+      <Time>2015-09-02T21:34:20.7167015+02:00</Time>
     </Item>
     <Item>
       <Source>3DModelle\Splittprisma_Textur.png</Source>
@@ -903,7 +894,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Tür_Textur.xnb</Output>
-      <Time>2015-09-02T15:51:33.3546126+02:00</Time>
+      <Time>2015-09-02T22:07:08.5911984+02:00</Time>
     </Item>
     <Item>
       <Source>3DModelle\Tür_offen.fbx</Source>
@@ -912,10 +903,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Tür_offen.xnb</Output>
-      <Time>2015-09-02T15:51:16.2229219+02:00</Time>
+      <Time>2015-09-02T22:07:03.1965378+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\3DModelle\Tr_offen_0.xml</Key>
-        <Value>2015-09-02T15:52:07.4554949+02:00</Value>
+        <Value>2015-09-02T22:07:10.6735819+02:00</Value>
       </Dependency>
       <Request>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Tr_Textur_0.xnb</Request>
     </Item>
@@ -926,10 +917,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Tür_geschlossen.xnb</Output>
-      <Time>2015-09-02T15:51:22.7181069+02:00</Time>
+      <Time>2015-09-02T22:06:56.0021843+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\3DModelle\Tr_geschlossen_0.xml</Key>
-        <Value>2015-09-02T15:52:07.5942171+02:00</Value>
+        <Value>2015-09-02T22:07:10.8258161+02:00</Value>
       </Dependency>
       <Request>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Tr_Textur_0.xnb</Request>
     </Item>
@@ -938,7 +929,7 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\3DModelle\Tr_offen_0.xml</Output>
-      <Time>2015-09-02T15:51:16.2229219+02:00</Time>
+      <Time>2015-09-02T22:07:03.1965378+02:00</Time>
     </Item>
     <Item>
       <Source>3DModelle\Tür_Textur.png</Source>
@@ -954,14 +945,41 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Tr_Textur_0.xnb</Output>
-      <Time>2015-09-02T15:51:33.3546126+02:00</Time>
+      <Time>2015-09-02T22:07:08.5911984+02:00</Time>
     </Item>
     <Item>
       <Source>3DModelle\Tür_geschlossen.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\3DModelle\Tr_geschlossen_0.xml</Output>
-      <Time>2015-09-02T15:51:22.7181069+02:00</Time>
+      <Time>2015-09-02T22:06:56.0021843+02:00</Time>
+    </Item>
+    <Item>
+      <Source>2DTexturen\Pfeil_links.png</Source>
+      <Name>2DTexturen\Pfeil_links</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\Pfeil_links.xnb</Output>
+      <Time>2015-09-02T21:24:43.3574158+02:00</Time>
+    </Item>
+    <Item>
+      <Source>2DTexturen\Pfeil_rechts.png</Source>
+      <Name>2DTexturen\Pfeil_rechts</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\Pfeil_rechts.xnb</Output>
+      <Time>2015-09-02T21:24:47.8948333+02:00</Time>
+    </Item>
+    <Item>
+      <Source>2DTexturen\Pausenmenubutton.png</Source>
+      <Name>2DTexturen\Pausenmenubutton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\Pausenmenubutton.xnb</Output>
+      <Time>2015-09-02T22:19:42.252749+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

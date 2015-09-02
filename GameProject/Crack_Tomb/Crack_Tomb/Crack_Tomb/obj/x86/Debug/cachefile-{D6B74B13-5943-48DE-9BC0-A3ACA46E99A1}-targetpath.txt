@@ -15,7 +15,6 @@ Content\2DTexturen\Timer.xnb
 Content\2DTexturen\button.xnb
 Content\2DTexturen\Inventar.xnb
 Content\2DTexturen\Score.xnb
-Content\2DTexturen\Pausemenubutton.xnb
 Content\2DTexturen\MouseZeiger.xnb
 Content\2DTexturen\Pausenmenü mit Hintergund(grau).xnb
 Content\3DModelle\Spiegel.xnb
@@ -73,3 +72,6 @@ Content\3DModelle\Tür_Textur.xnb
 Content\3DModelle\Tür_offen.xnb
 Content\3DModelle\Tür_geschlossen.xnb
 Content\3DModelle\Tr_Textur_0.xnb
+Content\2DTexturen\Pfeil_links.xnb
+Content\2DTexturen\Pfeil_rechts.xnb
+Content\2DTexturen\Pausenmenubutton.xnb

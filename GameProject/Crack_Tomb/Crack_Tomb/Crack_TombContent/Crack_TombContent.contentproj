@@ -112,13 +112,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2DTexturen\Pausemenubutton.png">
-      <Name>Pausemenubutton</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="2DTexturen\MouseZeiger.png">
       <Name>MouseZeiger</Name>
       <Importer>TextureImporter</Importer>
@@ -378,20 +371,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2DTexturen\Inventar.png">
-      <Name>Inventar</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="2DTexturen\InventarOffen.png">
-      <Name>InventarOffen</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="3DModelle\Wand_Loch.fbx">
       <Name>Wand_Loch</Name>
       <Importer>FbxImporter</Importer>
@@ -410,13 +389,6 @@
       <Name>Wand_Textur</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="3DModelle\Wand_Kreuz.fbx">
-      <Name>Wand_Kreuz</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -457,6 +429,48 @@
   <ItemGroup>
     <Compile Include="3DModelle\Tür_Textur.png">
       <Name>Tür_Textur</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2DTexturen\Inventar.png">
+      <Name>Inventar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2DTexturen\InventarOffen.png">
+      <Name>InventarOffen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2DTexturen\Pfeil_links.png">
+      <Name>Pfeil_links</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2DTexturen\Pfeil_rechts.png">
+      <Name>Pfeil_rechts</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Wand_Kreuz.fbx">
+      <Name>Wand_Kreuz</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2DTexturen\Pausenmenubutton.png">
+      <Name>Pausenmenubutton</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

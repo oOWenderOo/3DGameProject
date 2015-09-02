@@ -35,25 +35,37 @@ namespace Crack_Tomb.Spieler
             newposition = playerposition;
 
             //Bestimmung der neuen Position bei bestimmter Eingabe des Spielers
-            if (Keyboard.GetState().IsKeyDown(Keys.W) || Keyboard.GetState().IsKeyDown(Keys.Up))
+            bool nachOben = Keyboard.GetState().IsKeyDown(Keys.W) || Keyboard.GetState().IsKeyDown(Keys.Up);
+            bool nachUnten = Keyboard.GetState().IsKeyDown(Keys.S) || Keyboard.GetState().IsKeyDown(Keys.Down);
+            bool nachRechts = Keyboard.GetState().IsKeyDown(Keys.D) || Keyboard.GetState().IsKeyDown(Keys.Right);
+            bool nachLinks = Keyboard.GetState().IsKeyDown(Keys.A) || Keyboard.GetState().IsKeyDown(Keys.Left);
+
+            Vector3 bewegung = new Vector3(0, 0, 0);
+
+            if (nachOben)
             {
-                newposition = newposition + new Vector3(0, 0, speed * -1);
+                bewegung += (new Vector3(0, 0, -1));
             }
 
-            if (Keyboard.GetState().IsKeyDown(Keys.S) || Keyboard.GetState().IsKeyDown(Keys.Down))
+            if (nachUnten)
             {
-                newposition = newposition + new Vector3(0, 0, speed);
+                bewegung += (new Vector3(0, 0, 1));
             }
 
-            if (Keyboard.GetState().IsKeyDown(Keys.A) || Keyboard.GetState().IsKeyDown(Keys.Left))
+            if (nachLinks)
             {
-                newposition = newposition + new Vector3(speed * -1, 0, 0);
+                bewegung += (new Vector3(-1, 0, 0));
             }
 
-            if (Keyboard.GetState().IsKeyDown(Keys.D) || Keyboard.GetState().IsKeyDown(Keys.Right))
+            if (nachRechts)
             {
-                newposition = newposition + new Vector3(speed, 0, 0);
+                bewegung += (new Vector3(1, 0, 0));
             }
+
+            if(bewegung.X != 0 || bewegung.Y != 0 || bewegung.Z != 0)
+                bewegung.Normalize();
+
+            newposition += (bewegung * speed);
 
             //Was wird reingesetzt:
             //nichts = 0, Säule = 1, Spiegel links unten nach rechts oben = 2, Spiegel rechts unten nach links oben = 3, Splittprisma = 4
