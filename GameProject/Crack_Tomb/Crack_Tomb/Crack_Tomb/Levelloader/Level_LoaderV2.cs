@@ -210,135 +210,149 @@ namespace Crack_Tomb.Levelloader
                         }
                         else
                         {
-                            //Randfälle //muss noch getestet werden
+                            //Randfälle
                             if (i == 0 && j == 0)
                             {
                                 Level_Array[i, j] = 12;
                             }
                             else
                             {
-                                if (j == 41 && i == 41)
+                                if (j == 40 && i == 40)
                                 {
                                     Level_Array[i, j] = 14;
                                 }
                                 else
                                 {
-                                    if (i == 41)
+                                    if (i == 0 && j == 40)
                                     {
-                                        bool istNichtsOben = (Level_Array[i - 1, j] == 0 || Level_Array[i - 1, j] == 2 || (Level_Array[i - 1, j] >= 600000 && Level_Array[i - 1, j] <= 614141));
-                                        bool istNichtsRechts = (Level_Array[i, j + 1] == 0 || Level_Array[i, j + 1] == 2 || (Level_Array[i, j + 1] >= 600000 && Level_Array[i, j + 1] <= 614141));
-                                        bool istNichtsLinks = (Level_Array[i, j - 1] == 0 || Level_Array[i, j - 1] == 2 || (Level_Array[i, j - 1] >= 600000 && Level_Array[i, j - 1] <= 614141));
-
-                                        if (istNichtsOben && !istNichtsLinks && !istNichtsRechts)
-                                        {
-                                            Level_Array[i, j] = 10;
-                                        }
-                                        else
-                                        {
-                                            if (!istNichtsOben && !istNichtsLinks && !istNichtsRechts)
-                                            {
-                                                Level_Array[i, j] = 17;
-                                            }
-                                            else
-                                            {
-                                                if (!istNichtsOben && !istNichtsLinks && istNichtsRechts)
-                                                {
-                                                    Level_Array[i, j] = 15;
-                                                }
-                                                else
-                                                {
-                                                    if (!istNichtsOben && istNichtsLinks && !istNichtsRechts)
-                                                    {
-                                                        Level_Array[i, j] = 14;
-                                                    }
-                                                }
-                                            }
-                                        }
+                                        Level_Array[i, j] = 15;
                                     }
                                     else
                                     {
-                                        if (i == 0)
+                                        if (j == 0 && i == 40)
                                         {
-                                            bool istNichtsUnten = (Level_Array[i + 1, j] == 0 || Level_Array[i + 1, j] == 2 || (Level_Array[i + 1, j] >= 600000 && Level_Array[i + 1, j] <= 614141));
-                                            bool istNichtsRechts = (Level_Array[i, j + 1] == 0 || Level_Array[i, j + 1] == 2 || (Level_Array[i, j + 1] >= 600000 && Level_Array[i, j + 1] <= 614141));
-                                            bool istNichtsLinks = (Level_Array[i, j - 1] == 0 || Level_Array[i, j - 1] == 2 || (Level_Array[i, j - 1] >= 600000 && Level_Array[i, j - 1] <= 614141));
-
-                                            if (istNichtsUnten && !istNichtsLinks && !istNichtsRechts)
-                                            {
-                                                Level_Array[i, j] = 10;
-                                            }
-                                            else
-                                            {
-                                                if (!istNichtsUnten && !istNichtsLinks && !istNichtsRechts)
-                                                {
-                                                    Level_Array[i, j] = 16;
-                                                }
-                                                else
-                                                {
-                                                    if (!istNichtsUnten && !istNichtsLinks && istNichtsRechts)
-                                                    {
-                                                        Level_Array[i, j] = 15;
-                                                    }
-                                                    else
-                                                    {
-                                                        if (!istNichtsUnten && istNichtsLinks && !istNichtsRechts)
-                                                        {
-                                                            Level_Array[i, j] = 12;
-                                                        }
-                                                    }
-                                                }
-                                            }
+                                            Level_Array[i, j] = 13;
                                         }
                                         else
                                         {
-                                            if (j == 0)
+                                            if (i == 40)
                                             {
-                                                bool istNichtsOben = (Level_Array[i - 1, j] == 0 || Level_Array[i - 1, j] == 3 || (Level_Array[i - 1, j] >= 600000 && Level_Array[i - 1, j] <= 614141));
-                                                bool istNichtsUnten = (Level_Array[i + 1, j] == 0 || Level_Array[i + 1, j] == 3 || (Level_Array[i + 1, j] >= 600000 && Level_Array[i + 1, j] <= 614141));
-                                                bool istNichtsRechts = (Level_Array[i, j + 1] == 0 || Level_Array[i, j + 1] == 3 || (Level_Array[i, j + 1] >= 600000 && Level_Array[i, j + 1] <= 614141));
+                                                bool istNichtsOben = (Level_Array[i - 1, j] == 0 || Level_Array[i - 1, j] == 2 || (Level_Array[i - 1, j] >= 600000 && Level_Array[i - 1, j] <= 614141));
+                                                bool istNichtsRechts = (Level_Array[i, j + 1] == 0 || Level_Array[i, j + 1] == 2 || (Level_Array[i, j + 1] >= 600000 && Level_Array[i, j + 1] <= 614141));
+                                                bool istNichtsLinks = (Level_Array[i, j - 1] == 0 || Level_Array[i, j - 1] == 2 || (Level_Array[i, j - 1] >= 600000 && Level_Array[i, j - 1] <= 614141));
 
-                                                if (!istNichtsOben && !istNichtsRechts && istNichtsUnten)
+                                                if (istNichtsOben && !istNichtsLinks && !istNichtsRechts)
                                                 {
-                                                    Level_Array[i, j] = 13;
+                                                    Level_Array[i, j] = 10;
                                                 }
                                                 else
                                                 {
-                                                    if (!istNichtsOben && !istNichtsRechts && !istNichtsUnten)
-                                                    {
-                                                        Level_Array[i, j] = 19;
-                                                    }
-                                                    else
-                                                    {
-                                                        if (istNichtsOben && !istNichtsRechts && !istNichtsUnten)
-                                                        {
-                                                            Level_Array[i, j] = 12;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                            else
-                                            {
-                                                if (j == 41)
-                                                {
-                                                    bool istNichtsOben = (Level_Array[i - 1, j] == 0 || Level_Array[i - 1, j] == 3 || (Level_Array[i - 1, j] >= 600000 && Level_Array[i - 1, j] <= 614141));
-                                                    bool istNichtsUnten = (Level_Array[i + 1, j] == 0 || Level_Array[i + 1, j] == 3 || (Level_Array[i + 1, j] >= 600000 && Level_Array[i + 1, j] <= 614141));
-                                                    bool istNichtsLinks = (Level_Array[i, j - 1] == 0 || Level_Array[i, j - 1] == 3 || (Level_Array[i, j - 1] >= 600000 && Level_Array[i, j - 1] <= 614141));
-
-                                                    if (!istNichtsOben && !istNichtsUnten && !istNichtsLinks)
+                                                    if (!istNichtsOben && !istNichtsLinks && !istNichtsRechts)
                                                     {
                                                         Level_Array[i, j] = 18;
                                                     }
                                                     else
                                                     {
-                                                        if (istNichtsOben && !istNichtsUnten && !istNichtsLinks)
+                                                        if (!istNichtsOben && !istNichtsLinks && istNichtsRechts)
                                                         {
-                                                            Level_Array[i, j] = 12;
+                                                            Level_Array[i, j] = 14;
                                                         }
                                                         else
                                                         {
-                                                            if (!istNichtsOben && istNichtsUnten && !istNichtsLinks)
+                                                            if (!istNichtsOben && istNichtsLinks && !istNichtsRechts)
+                                                            {
+                                                                Level_Array[i, j] = 13;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            else
+                                            {
+                                                if (i == 0)
+                                                {
+                                                    bool istNichtsUnten = (Level_Array[i + 1, j] == 0 || Level_Array[i + 1, j] == 2 || (Level_Array[i + 1, j] >= 600000 && Level_Array[i + 1, j] <= 614141));
+                                                    bool istNichtsRechts = (Level_Array[i, j + 1] == 0 || Level_Array[i, j + 1] == 2 || (Level_Array[i, j + 1] >= 600000 && Level_Array[i, j + 1] <= 614141));
+                                                    bool istNichtsLinks = (Level_Array[i, j - 1] == 0 || Level_Array[i, j - 1] == 2 || (Level_Array[i, j - 1] >= 600000 && Level_Array[i, j - 1] <= 614141));
+
+                                                    if (istNichtsUnten && !istNichtsLinks && !istNichtsRechts)
+                                                    {
+                                                        Level_Array[i, j] = 10;
+                                                    }
+                                                    else
+                                                    {
+                                                        if (!istNichtsUnten && !istNichtsLinks && !istNichtsRechts)
+                                                        {
+                                                            Level_Array[i, j] = 16;
+                                                        }
+                                                        else
+                                                        {
+                                                            if (!istNichtsUnten && !istNichtsLinks && istNichtsRechts)
                                                             {
                                                                 Level_Array[i, j] = 15;
+                                                            }
+                                                            else
+                                                            {
+                                                                if (!istNichtsUnten && istNichtsLinks && !istNichtsRechts)
+                                                                {
+                                                                    Level_Array[i, j] = 12;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    if (j == 0)
+                                                    {
+                                                        bool istNichtsOben = (Level_Array[i - 1, j] == 0 || Level_Array[i - 1, j] == 3 || (Level_Array[i - 1, j] >= 600000 && Level_Array[i - 1, j] <= 614141));
+                                                        bool istNichtsUnten = (Level_Array[i + 1, j] == 0 || Level_Array[i + 1, j] == 3 || (Level_Array[i + 1, j] >= 600000 && Level_Array[i + 1, j] <= 614141));
+                                                        bool istNichtsRechts = (Level_Array[i, j + 1] == 0 || Level_Array[i, j + 1] == 3 || (Level_Array[i, j + 1] >= 600000 && Level_Array[i, j + 1] <= 614141));
+
+                                                        if (!istNichtsOben && !istNichtsRechts && istNichtsUnten)
+                                                        {
+                                                            Level_Array[i, j] = 13;
+                                                        }
+                                                        else
+                                                        {
+                                                            if (!istNichtsOben && !istNichtsRechts && !istNichtsUnten)
+                                                            {
+                                                                Level_Array[i, j] = 19;
+                                                            }
+                                                            else
+                                                            {
+                                                                if (istNichtsOben && !istNichtsRechts && !istNichtsUnten)
+                                                                {
+                                                                    Level_Array[i, j] = 12;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        if (j == 40)
+                                                        {
+                                                            bool istNichtsOben = (Level_Array[i - 1, j] == 0 || Level_Array[i - 1, j] == 3 || (Level_Array[i - 1, j] >= 600000 && Level_Array[i - 1, j] <= 614141));
+                                                            bool istNichtsUnten = (Level_Array[i + 1, j] == 0 || Level_Array[i + 1, j] == 3 || (Level_Array[i + 1, j] >= 600000 && Level_Array[i + 1, j] <= 614141));
+                                                            bool istNichtsLinks = (Level_Array[i, j - 1] == 0 || Level_Array[i, j - 1] == 3 || (Level_Array[i, j - 1] >= 600000 && Level_Array[i, j - 1] <= 614141));
+
+                                                            if (!istNichtsOben && !istNichtsUnten && !istNichtsLinks)
+                                                            {
+                                                                Level_Array[i, j] = 17;
+                                                            }
+                                                            else
+                                                            {
+                                                                if (istNichtsOben && !istNichtsUnten && !istNichtsLinks)
+                                                                {
+                                                                    Level_Array[i, j] = 15;
+                                                                }
+                                                                else
+                                                                {
+                                                                    if (!istNichtsOben && istNichtsUnten && !istNichtsLinks)
+                                                                    {
+                                                                        Level_Array[i, j] = 14;
+                                                                    }
+                                                                }
                                                             }
                                                         }
                                                     }
@@ -410,9 +424,9 @@ namespace Crack_Tomb.Levelloader
                 mesh.Draw();
             }
 
-            for (int i = 0; i < 40; i++)
+            for (int i = 0; i < 41; i++)
             {
-                for (int j = 0; j < 40; j++)
+                for (int j = 0; j < 41; j++)
                 {
                     switch (Level_Array[i, j])
                     {

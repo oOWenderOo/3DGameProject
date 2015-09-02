@@ -1,4 +1,4 @@
-false
+true
 Ralf 100
 Hans 90
 Mueller 80
