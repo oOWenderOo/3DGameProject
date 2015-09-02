@@ -16,6 +16,7 @@
           <PositionIndices>8 1 2 9 10 11 6 5 8 10 5 1 1 5 6 2 9 11 7 3 7 4 14 15 0 3 4 7 0 4 2 6 14 12 13 15 15 13 4 0 12 14 13 12</PositionIndices>
           <Channels>
             <VertexChannel Name="Normal0" ElementType="Framework:Vector3">-1E-06 -1 -0 -1E-06 -1 -0 -1E-06 -1 -0 -1E-06 -1 -0 1E-06 1 -0 1E-06 1 -0 1E-06 1 -0 1E-06 1 -0 3E-06 0 1 3E-06 0 1 3E-06 0 1 3E-06 0 1 -1 0 1E-06 -1 0 1E-06 -1 0 1E-06 -1 0 1E-06 -3E-06 -0 -1 -3E-06 -0 -1 -3E-06 -0 -1 -3E-06 -0 -1 0 1 0 0 1 0 0 1 0 0 1 0 -1E-06 -1 0 -1E-06 -1 0 1E-06 1 0 1E-06 1 0 3E-06 -0 1 3E-06 -0 1 -3E-06 -0 -1 -3E-06 -0 -1 1 -0 -1E-06 1 -0 -1E-06 1 -0 -1E-06 1 -0 -1E-06 -3E-06 -0 -1 -3E-06 -0 -1 2E-06 -0 1 2E-06 -0 1 2E-06 -0 1 2E-06 -0 1 -1E-06 -1 -0 -1E-06 -1 -0</VertexChannel>
+            <VertexChannel Name="TextureCoordinate0" ElementType="Framework:Vector2">0.806718 0.213571 0.806718 0.293056 0.909509 0.293056 0.909509 0.213571 0.702665 0.968742 0.702665 0.886726 0.639245 0.886726 0.639245 0.968742 0.226026 0.702154 0.226026 0.237848 0.043292 0.237847 0.043292 0.702154 0.799038 0.702772 0.799038 0.237724 0.595217 0.237724 0.595217 0.702772 0.408017 0.702009 0.408017 0.235491 0.225712 0.235491 0.225711 0.702009 0.766085 0.886726 0.766085 0.968742 0.829505 0.968742 0.829505 0.886727 0.806718 0.134086 0.909509 0.134086 0.766085 0.968742 0.766085 0.886726 0.40876 0.702155 0.40876 0.237848 0.590322 0.702009 0.590323 0.235491 0.594535 0.237492 0.594535 0.702147 0.800453 0.702147 0.800453 0.237492 0.043406 0.235491 0.043406 0.702009 0.40876 0.237848 0.40876 0.702155 0.591494 0.702155 0.591494 0.237849 0.909509 0.0546 0.806718 0.054601</VertexChannel>
           </Channels>
         </Vertices>
       </Batch>
@@ -23,7 +24,7 @@
   </Asset>
   <Resources>
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
-      <Name>Material</Name>
+      <Name>Material__Wand_Textur_png</Name>
       <Identity>
         <SourceFilename>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_TombContent\3DModelle\Wand_Normal.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
@@ -34,6 +35,17 @@
         <Data Key="Alpha" Type="float">1</Data>
         <Data Key="SpecularColor" Type="Framework:Vector3">0 0 0</Data>
       </OpaqueData>
+      <Textures>
+        <Texture Key="Texture">
+          <OpaqueData>
+            <Data Key="TextureCoordinate">TextureCoordinate0</Data>
+          </OpaqueData>
+          <Reference>#External1</Reference>
+        </Texture>
+      </Textures>
     </Resource>
   </Resources>
+  <ExternalReferences>
+    <ExternalReference ID="#External1" TargetType="Graphics:TextureContent">..\..\..\..\3DModelle\Wand_Textur.png</ExternalReference>
+  </ExternalReferences>
 </XnaContent>

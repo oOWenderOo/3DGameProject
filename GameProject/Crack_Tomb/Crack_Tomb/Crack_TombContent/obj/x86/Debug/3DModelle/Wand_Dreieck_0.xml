@@ -16,6 +16,7 @@
           <PositionIndices>8 1 2 9 10 11 6 5 8 10 5 1 1 5 6 2 9 11 7 3 7 4 14 15 0 3 11 10 10 8 18 19 2 6 11 9 14 12 13 15 3 7 15 13 4 0 12 14 0 3 13 12 16 17 19 18 19 17 16 18 0 4 17 16</PositionIndices>
           <Channels>
             <VertexChannel Name="Normal0" ElementType="Framework:Vector3">-1E-06 -1 0 -1E-06 -1 0 -1E-06 -1 0 -1E-06 -1 0 1E-06 1 0 1E-06 1 0 1E-06 1 0 1E-06 1 0 1E-06 0 1 1E-06 0 1 1E-06 0 1 1E-06 0 1 -1 1E-06 0 -1 1E-06 0 -1 1E-06 0 -1 1E-06 0 -1E-06 -0 -1 -1E-06 -0 -1 -1E-06 -0 -1 -1E-06 -0 -1 0 1 0 0 1 0 0 1 0 0 1 0 -1E-06 -1 0 -1E-06 -1 0 0 1 0 0 1 0 -1 0 1E-06 -1 0 1E-06 -1 0 1E-06 -1 0 1E-06 -0 -0 -1 -0 -0 -1 -0 -0 -1 -0 -0 -1 1 -0 -0 1 -0 -0 1 -0 -0 1 -0 -0 -0 -0 -1 -0 -0 -1 -0 -0 -1 -0 -0 -1 0 -0 1 0 -0 1 0 -0 1 0 -0 1 -0 -1 -0 -0 -1 -0 -0 -1 -0 -0 -1 -0 1E-06 -0 1 1E-06 -0 1 1E-06 -0 1 1E-06 -0 1 0 1 -0 0 1 -0 -1E-06 -1 -0 -1E-06 -1 -0 1 -0 -0 1 -0 -0 1 -0 -0 1 -0 -0</VertexChannel>
+            <VertexChannel Name="TextureCoordinate0" ElementType="Framework:Vector2">0.395212 0.896154 0.395212 0.962061 0.477017 0.962061 0.477017 0.896154 0.238972 0.830247 0.320777 0.830247 0.320777 0.76434 0.238972 0.764339 0.231378 0.698883 0.231378 0.230766 0.043659 0.230766 0.043658 0.698882 0.797863 0.697671 0.797864 0.231119 0.597409 0.231118 0.597409 0.697671 0.41276 0.699021 0.412761 0.234015 0.227865 0.234015 0.227864 0.699021 0.320777 0.896154 0.238972 0.896154 0.238972 0.962061 0.320777 0.962061 0.395212 0.830247 0.477017 0.830247 0.320777 0.830247 0.238972 0.830247 0.412806 0.230651 0.412806 0.698768 0.597612 0.698768 0.597612 0.230651 0.597656 0.699021 0.597657 0.234015 0.412761 0.234015 0.41276 0.699021 0.597795 0.231119 0.597795 0.697671 0.79825 0.697671 0.79825 0.231119 0.227864 0.699021 0.227865 0.234015 0.042969 0.234014 0.042968 0.699021 0.230172 0.230885 0.230172 0.698594 0.044571 0.698594 0.04457 0.230885 0.395212 0.830247 0.477017 0.830247 0.477017 0.76434 0.395212 0.76434 0.798044 0.698582 0.798045 0.23203 0.599028 0.23203 0.599027 0.698582 0.164537 0.830247 0.164537 0.896154 0.320777 0.830247 0.320777 0.896154 0.594336 0.698613 0.594336 0.230904 0.415256 0.230903 0.415256 0.698613</VertexChannel>
           </Channels>
         </Vertices>
       </Batch>
@@ -23,7 +24,7 @@
   </Asset>
   <Resources>
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
-      <Name>Material</Name>
+      <Name>Material__Wand_Textur_png</Name>
       <Identity>
         <SourceFilename>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_TombContent\3DModelle\Wand_Dreieck.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
@@ -34,6 +35,17 @@
         <Data Key="Alpha" Type="float">1</Data>
         <Data Key="SpecularColor" Type="Framework:Vector3">0 0 0</Data>
       </OpaqueData>
+      <Textures>
+        <Texture Key="Texture">
+          <OpaqueData>
+            <Data Key="TextureCoordinate">TextureCoordinate0</Data>
+          </OpaqueData>
+          <Reference>#External1</Reference>
+        </Texture>
+      </Textures>
     </Resource>
   </Resources>
+  <ExternalReferences>
+    <ExternalReference ID="#External1" TargetType="Graphics:TextureContent">..\..\..\..\3DModelle\Wand_Textur.png</ExternalReference>
+  </ExternalReferences>
 </XnaContent>

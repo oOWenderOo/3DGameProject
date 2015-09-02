@@ -63,13 +63,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="3DModelle\partikel.fbx">
-      <Name>partikel</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="2DTexturen\levelbutton.png">
       <Name>levelbutton</Name>
       <Importer>TextureImporter</Importer>
@@ -142,13 +135,6 @@
   <ItemGroup>
     <Compile Include="3DModelle\kristall.fbx">
       <Name>kristall</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="3DModelle\Splittprisma.fbx">
-      <Name>Splittprisma</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>
@@ -392,13 +378,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="3DModelle\Wand_Kreuz.fbx">
-      <Name>Wand_Kreuz</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="2DTexturen\Inventar.png">
       <Name>Inventar</Name>
       <Importer>TextureImporter</Importer>
@@ -424,6 +403,62 @@
       <Name>TutorialFont</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Wand_Textur.png">
+      <Name>Wand_Textur</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Wand_Kreuz.fbx">
+      <Name>Wand_Kreuz</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Splittprisma_Textur.png">
+      <Name>Splittprisma_Textur</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Splittprisma.fbx">
+      <Name>Splittprisma</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\partikel.fbx">
+      <Name>partikel</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Tür_offen.fbx">
+      <Name>Tür_offen</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Tür_geschlossen.fbx">
+      <Name>Tür_geschlossen</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Tür_Textur.png">
+      <Name>Tür_Textur</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

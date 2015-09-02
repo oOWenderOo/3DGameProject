@@ -9,11 +9,11 @@ FBXHeaderExtension:  {
 	CreationTimeStamp:  {
 		Version: 1000
 		Year: 2015
-		Month: 08
-		Day: 31
-		Hour: 16
-		Minute: 06
-		Second: 04
+		Month: 09
+		Day: 01
+		Hour: 00
+		Minute: 46
+		Second: 41
 		Millisecond: 0
 	}
 	Creator: "FBX SDK/FBX Plugins build 20070228"
@@ -21,7 +21,7 @@ FBXHeaderExtension:  {
 		FlagPLE: 0
 	}
 }
-CreationTime: "2015-08-31 16:06:04:000"
+CreationTime: "2015-09-01 00:46:41:000"
 Creator: "Blender version 2.70 (sub 0)"
 
 ; Object definitions
@@ -29,7 +29,7 @@ Creator: "Blender version 2.70 (sub 0)"
 
 Definitions:  {
 	Version: 100
-	Count: 11
+	Count: 13
 	ObjectType: "Model" {
 		Count: 9
 	}
@@ -37,6 +37,12 @@ Definitions:  {
 		Count: 1
 	}
 	ObjectType: "Material" {
+		Count: 1
+	}
+	ObjectType: "Texture" {
+		Count: 1
+	}
+	ObjectType: "Video" {
 		Count: 1
 	}
 	ObjectType: "Pose" {
@@ -258,6 +264,33 @@ Objects:  {
 			ReferenceInformationType: "Direct"
 			Smoothing: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 		}
+		LayerElementUV: 0 {
+			Version: 101
+			Name: "UVMap"
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "IndexToDirect"
+			UV: 0.599028,0.767970,0.320777,0.103846,0.230172,0.301406,0.395212,0.235660,0.412806,0.301232,0.238972,0.235661,
+			    0.164537,0.169753,0.597409,0.768882,0.597795,0.768881,0.230172,0.769115,0.477017,0.169753,0.227864,0.300979,
+			    0.238972,0.037939,0.238972,0.169753,0.320777,0.169753,0.597656,0.300979,0.477017,0.103846,0.320777,0.037939,
+			    0.797864,0.768881,0.798250,0.302329,0.320777,0.235660,0.320777,0.103846,0.395212,0.103846,0.597612,0.301232,
+			    0.231378,0.769234,0.477017,0.037939,0.597657,0.765985,0.798250,0.768881,0.412761,0.765985,0.042969,0.765986,
+			    0.320777,0.169753,0.597409,0.302329,0.042968,0.300979,0.415256,0.301387,0.594336,0.769096,0.597795,0.302329,
+			    0.798045,0.767970,0.412806,0.769349,0.238972,0.103846,0.594336,0.301387,0.597612,0.769349,0.395212,0.037939,
+			    0.477017,0.235660,0.797863,0.302329,0.044570,0.769115,0.599027,0.301418,0.043659,0.769234,0.231378,0.301117,
+			    0.798044,0.301418,0.415256,0.769097,0.044571,0.301406,0.043658,0.301118,0.164537,0.103846,0.227865,0.765985,
+			    0.395212,0.169753,0.412760,0.300979
+			UVIndex: 22,41,25,16,13,30,20,5,47,24,46,51,43,18,7,31,55,28,53,11,1,38,12,17,54,22,16,10,38,1,30,13,37,4,23,40,15,26,28,55,8,35,19,27,11,53,29,32,9,2,50,44,54,10,42,3,48,36,0,45,38,13,6,52,
+			         22,54,14,21,39,34,49,33
+		}
+		LayerElementTexture: 0 {
+			Version: 101
+			Name: "UVMap"
+			MappingInformationType: "AllSame"
+			ReferenceInformationType: "IndexToDirect"
+			BlendMode: "Translucent"
+			TextureAlpha: 1
+			TextureId: 0
+		}
 		LayerElementMaterial: 0 {
 			Version: 101
 			Name: ""
@@ -273,6 +306,10 @@ Objects:  {
 			}
 			LayerElement:  {
 				Type: "LayerElementSmoothing"
+				TypedIndex: 0
+			}
+			LayerElement:  {
+				Type: "LayerElementUV"
 				TypedIndex: 0
 			}
 			LayerElement:  {
@@ -1363,7 +1400,7 @@ Objects:  {
 		AudioColor: 0,1,0
 		CameraOrthoZoom: 1
 	}
-	Material: "Material::Material", "" {
+	Material: "Material::Material__Wand_Textur_png", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -1392,6 +1429,56 @@ Objects:  {
 			Property: "Opacity", "double", "",1.0
 			Property: "Reflectivity", "double", "",0
 		}
+	}
+	Video: "Video::Wand_Textur_png", "Clip" {
+		Type: "Clip"
+		Properties60:  {
+			Property: "FrameRate", "double", "",0
+			Property: "LastFrame", "int", "",0
+			Property: "Width", "int", "",0
+			Property: "Height", "int", "",0
+			Property: "Path", "charptr", "", "Wand_Textur.png"
+			Property: "StartFrame", "int", "",0
+			Property: "StopFrame", "int", "",0
+			Property: "PlaySpeed", "double", "",1
+			Property: "Offset", "KTime", "",0
+			Property: "InterlaceMode", "enum", "",0
+			Property: "FreeRunning", "bool", "",0
+			Property: "Loop", "bool", "",0
+			Property: "AccessMode", "enum", "",0
+		}
+		UseMipMap: 0
+		Filename: "Wand_Textur.png"
+		RelativeFilename: "Wand_Textur.png"
+	}
+	Texture: "Texture::Wand_Textur_png", "TextureVideoClip" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::Wand_Textur_png"
+		Properties60:  {
+			Property: "Translation", "Vector", "A+",0,0,0
+			Property: "Rotation", "Vector", "A+",0,0,0
+			Property: "Scaling", "Vector", "A+",1,1,1
+			Property: "Texture alpha", "Number", "A+",0
+			Property: "TextureTypeUse", "enum", "",0
+			Property: "CurrentTextureBlendMode", "enum", "",1
+			Property: "UseMaterial", "bool", "",0
+			Property: "UseMipMap", "bool", "",0
+			Property: "CurrentMappingType", "enum", "",0
+			Property: "UVSwap", "bool", "",0
+			Property: "WrapModeU", "enum", "",0
+			Property: "WrapModeV", "enum", "",0
+			Property: "TextureRotationPivot", "Vector3D", "",0,0,0
+			Property: "TextureScalingPivot", "Vector3D", "",0,0,0
+			Property: "VideoProperty", "object", ""
+		}
+		Media: "Video::Wand_Textur_png"
+		FileName: "Wand_Textur.png"
+		RelativeFilename: "Wand_Textur.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
 	}
 	Pose: "Pose::BIND_POSES", "BindPose" {
 		Type: "BindPose"
@@ -1440,7 +1527,11 @@ Relations:  {
 	}
 	Model: "Model::Camera Switcher", "CameraSwitcher" {
 	}
-	Material: "Material::Material", "" {
+	Material: "Material::Material__Wand_Textur_png", "" {
+	}
+	Texture: "Texture::Wand_Textur_png", "TextureVideoClip" {
+	}
+	Video: "Video::Wand_Textur_png", "Clip" {
 	}
 }
 
@@ -1449,7 +1540,9 @@ Relations:  {
 
 Connections:  {
 	Connect: "OO", "Model::Cube", "Model::Scene"
-	Connect: "OO", "Material::Material", "Model::Cube"
+	Connect: "OO", "Material::Material__Wand_Textur_png", "Model::Cube"
+	Connect: "OO", "Texture::Wand_Textur_png", "Model::Cube"
+	Connect: "OO", "Video::Wand_Textur_png", "Texture::Wand_Textur_png"
 }
 ;Takes and animation section
 ;----------------------------------------------------

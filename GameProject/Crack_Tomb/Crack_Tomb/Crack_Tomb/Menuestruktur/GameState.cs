@@ -14,6 +14,6 @@ namespace MainMenuCo
 
         public abstract GameState Update(GameTime gameTime);
 
-        public abstract void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch );
+        public abstract void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch);
     }
 }

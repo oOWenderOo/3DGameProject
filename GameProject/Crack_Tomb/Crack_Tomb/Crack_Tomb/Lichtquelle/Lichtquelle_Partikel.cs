@@ -83,7 +83,13 @@ namespace Lichtquelle
                 foreach (ModelMeshPart part in mesh.MeshParts)
                 {
                     part.Effect = effect;
-                    effect.Parameters["World"].SetValue(Matrix.CreateTranslation(position + new Vector3(0, 0.5f, 0)));
+
+                    if(richtung == new Vector3(0, 0, 1) || richtung == new Vector3(0, 0, -1)) 
+                        effect.Parameters["World"].SetValue(Matrix.CreateScale(0.1f, 0.1f, 1) * Matrix.CreateTranslation(position + new Vector3(0, 1f, 0)));
+                    else
+                        effect.Parameters["World"].SetValue(Matrix.CreateScale(0.1f, 0.1f, 1) * Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(position + new Vector3(0, 1f, 0)));
+                    
+                    
                     effect.Parameters["View"].SetValue(view);
                     effect.Parameters["Projection"].SetValue(projection);
 

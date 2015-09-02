@@ -55,14 +55,15 @@ namespace Crack_Tomb.Menuestruktur
                     tutorialtext[22] = "";
                     tutorialtext[23] = "";
                     tutorialtext[24] = "";
-
-                    seitenzahl = tutorialtext.Length / 5;
                     break;
                 default:
                     tutorialzeichnen = false;
                     spielerLiest = false;
                     break;
             }
+
+            if(tutorialzeichnen)
+                seitenzahl = tutorialtext.Length / 5;
         }
 
         public void LoadContent(ContentManager content)

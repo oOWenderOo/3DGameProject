@@ -375,11 +375,11 @@ namespace Crack_Tomb.Levelloader
             wand_kreuz_model = content.Load<Model>("3DModelle/Wand_Kreuz");               //WAND-KREUZ
             wand_dreieck_model = content.Load<Model>("3DModelle/Wand_Dreieck");           //WAND-DREIECK
             säule_model = content.Load<Model>("3DModelle/Säule mit Loch");                //SÄULE
-            loch_model = content.Load<Model>("3DModelle/Wand_Loch");           //WAND MIT LOCH
+            loch_model = content.Load<Model>("3DModelle/Wand_Loch");                      //WAND MIT LOCH
             boden_model = content.Load<Model>("3DModelle/ground");                        //BODEN
             barriere_model = content.Load<Model>("3DModelle/Farbbarrieren");              //BARRIERE
-            tür_geschlossen_model = content.Load<Model>("3DModelle/boden");               //OFFENE TÜR
-            tür_offen_model = content.Load<Model>("3DModelle/ground");                    //GESCHLOSSENE TÜR
+            tür_geschlossen_model = content.Load<Model>("3DModelle/Tür_geschlossen");     //OFFENE TÜR
+            tür_offen_model = content.Load<Model>("3DModelle/Tür_offen");                 //GESCHLOSSENE TÜR
             schalter_aus_model = content.Load<Model>("3DModelle/Door_Schalter");          //SCHALTER AUS
             schalter_an_model = content.Load<Model>("3DModelle/Door_Schalter_An");        //SCHALTER AN
             ziel_model = content.Load<Model>("3DModelle/Endpunkt");                       //Ziel
@@ -785,7 +785,7 @@ namespace Crack_Tomb.Levelloader
 
                                     effect.View = view;
                                     effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.3f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.5f));
+                                    effect.World = Matrix.CreateScale(new Vector3(1.5f, 1, 1.5f)) * Matrix.CreateScale(0.3f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
                                 }
                                 mesh.Draw();
                             }

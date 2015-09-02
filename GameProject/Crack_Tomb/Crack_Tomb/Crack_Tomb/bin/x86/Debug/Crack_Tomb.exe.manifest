@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Crack_Tomb.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
+  <asmv1:assemblyIdentity name="Crack_Tomb.exe" version="1.0.0.5" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
   <description asmv2:iconFile="Levelloader\Game.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -63,14 +63,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Crack_Tomb.exe" size="249856">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Crack_Tomb.exe" size="250880">
       <assemblyIdentity name="Crack_Tomb" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>++9Va4dNo6RbnSs41PlQ40JURiA=</dsig:DigestValue>
+        <dsig:DigestValue>hoN8bGHyQ5Mlek5ITj0KLBl3wlQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -308,13 +308,13 @@
       <dsig:DigestValue>eIBbgd760hEgVSCXk9z5fvvhxLA=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\3DModelle\partikel.xnb" size="54534">
+  <file name="Content\3DModelle\partikel.xnb" size="6434">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>qGRAHQDYUo9nZZHHFWEAuevSMPQ=</dsig:DigestValue>
+      <dsig:DigestValue>knNPxdospxn1acA20WX/0uugIXE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\3DModelle\Säule mit Loch.xnb" size="466317">
@@ -416,13 +416,31 @@
       <dsig:DigestValue>XdUVPaNbpT7sVNMZhWKr92o+KgA=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\3DModelle\Splittprisma.xnb" size="11442">
+  <file name="Content\3DModelle\Splittprisma.xnb" size="50647">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>wImC6CNDHXW8h9/E5F28CtFPjQc=</dsig:DigestValue>
+      <dsig:DigestValue>6rf1n0Q2Z7x5hkDgByGvke7Sr30=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\3DModelle\Splittprisma_Textur.xnb" size="1048763">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>a2bdZNauKdDqLYTt8p9DHGqrqyQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\3DModelle\Splittprisma_Textur_0.xnb" size="349775">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+pGCxlge//3kRzxUu3HZY2wMYi8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\3DModelle\Startpunktfertig.xnb" size="121433">
@@ -443,49 +461,103 @@
       <dsig:DigestValue>nn9Byz6ficsXb9ERn09AwEIm6ZA=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\3DModelle\Wand_Dreieck.xnb" size="2826">
+  <file name="Content\3DModelle\Tr_Textur_0.xnb" size="174999">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>quuv3YV9TDLDGmthn679I4NxYNo=</dsig:DigestValue>
+      <dsig:DigestValue>7v9o+lPVmugJATiW3ZuPYH3o2kk=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\3DModelle\Wand_Ecke.xnb" size="2346">
+  <file name="Content\3DModelle\Tür_geschlossen.xnb" size="4181">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>fLwo6ozDxVjSvNtp23gDzrx8IjQ=</dsig:DigestValue>
+      <dsig:DigestValue>UaUkSIPqLxMkxTy2PKmkRSGuX4E=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\3DModelle\Wand_Kreuz.xnb" size="3162">
+  <file name="Content\3DModelle\Tür_offen.xnb" size="3901">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>+ibxFgu/W/PZAas/UOXLAabsyIc=</dsig:DigestValue>
+      <dsig:DigestValue>rijshwJxN8ThZBuDoggzw+muIYw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\3DModelle\Wand_Loch.xnb" size="5250">
+  <file name="Content\3DModelle\Tür_Textur.xnb" size="1048763">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>jfwQ4wPhQZsEc2vp31fZMtVbfNE=</dsig:DigestValue>
+      <dsig:DigestValue>2J71luGZdr7FbWbBtJqSCuSU81w=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\3DModelle\Wand_Normal.xnb" size="2298">
+  <file name="Content\3DModelle\Wand_Dreieck.xnb" size="3367">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>AQEs3Negb2V9F9o2HMM8oJv7sEk=</dsig:DigestValue>
+      <dsig:DigestValue>oq0w0oP/XI3pvIpl0LTphvsuuwc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\3DModelle\Wand_Ecke.xnb" size="2743">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/ZG5LbCKJTOhL5GE4qPClPSOBlQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\3DModelle\Wand_Kreuz.xnb" size="4087">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>f18GT7XUBsNDIH7mHRASFN6q+gE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\3DModelle\Wand_Loch.xnb" size="11675">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ulWJj55yVw8mEACoTwFjEiaLuEU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\3DModelle\Wand_Normal.xnb" size="2679">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Ij1MA7HXkTZV+vRV6mCyIlJEgoc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\3DModelle\Wand_Textur.xnb" size="1048763">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>sBw3rOBPzH/0WFz6S6mUe2GoyUs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\3DModelle\Wand_Textur_0.xnb" size="174999">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MpCO8k7YeBwCs/n0yxMMu2r+Kts=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Audio\einsetzen.xnb" size="95965">
@@ -674,7 +746,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>U1m9ArOBSav1JaNFsQJbNddBm3k=</dsig:DigestValue>
+      <dsig:DigestValue>D8o72ZhY023+ASixxVDT8Jgt+Sw=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Levelloader\Game.ico" size="4286">
