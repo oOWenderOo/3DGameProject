@@ -70,7 +70,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>D3/WgZ65MZePT038dlOUksAxVaM=</dsig:DigestValue>
+        <dsig:DigestValue>hBvTx28RRA1WZqO+pe85/xSPNAc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -101,13 +101,13 @@
       <dsig:DigestValue>yYbQRiFNWwsEeTqYWwKn4UoOAfc=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\2DTexturen\LevelAuswahlRahmen.xnb" size="891127">
+  <file name="Content\2DTexturen\LevelAuswahlRahmen.xnb" size="1280187">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>rkgRAV19QT+FCruvZo68OK4SYbI=</dsig:DigestValue>
+      <dsig:DigestValue>zVoRTMXOrYptrHWJjwvWtQ3+OXU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\2DTexturen\levelbutton.xnb" size="10187">
@@ -164,13 +164,13 @@
       <dsig:DigestValue>dN79LUghbaJp0/g2wH26R7Dipos=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\2DTexturen\Rangliste.xnb" size="4456987">
+  <file name="Content\2DTexturen\Rangliste.xnb" size="900187">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>YsCgjpgxvvyVQ3dVwt3xRiQHa+0=</dsig:DigestValue>
+      <dsig:DigestValue>tfM0hvM1cgeWbFPDBynGLwAunUs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\2DTexturen\Score.xnb" size="32187">

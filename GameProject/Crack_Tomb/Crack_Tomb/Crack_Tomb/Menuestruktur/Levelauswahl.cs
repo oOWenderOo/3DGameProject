@@ -26,8 +26,8 @@ namespace MainMenuCo
         public Levelauswahl(int anzahllevel)
         {
             this.anzahl_level = anzahllevel;
-            buttons[0] = new Button(new Vector2(60, 370), "MainMenu", "Zurück");
-            buttons[1] = new Button(new Vector2(540, 370), "InGame", "Level starten");
+            buttons[0] = new Button(new Vector2(60, 380), "MainMenu", "Zurück");
+            buttons[1] = new Button(new Vector2(540, 380), "InGame", "Level starten");
 
             levelbuttons = new LevelButton[anzahl_level];
             int help = 0;
@@ -40,14 +40,13 @@ namespace MainMenuCo
                 string dateiname = "Level" + (i + 1) + ".txt";
                 string line;
 
-                
                 System.IO.StreamReader file = new System.IO.StreamReader(@dateiname);
 
                 line = file.ReadLine();
 
                 file.Close();
 
-                if (i % 8 == 0)
+                if (i % 11 == 0)
                 {
                     help += 55;
                     help2 = 0;
@@ -55,11 +54,11 @@ namespace MainMenuCo
 
                 if (line == "true")
                 {
-                    levelbuttons[i] = new LevelButton(i + 1, new Vector2(300 + help2, 100 + help), text, true);
+                    levelbuttons[i] = new LevelButton(i + 1, new Vector2(100 + help2, 40 + help), text, true);
                 }
                 else
                 {
-                    levelbuttons[i] = new LevelButton(i + 1, new Vector2(300 + help2, 100 + help), text, false);
+                    levelbuttons[i] = new LevelButton(i + 1, new Vector2(100 + help2, 40 + help), text, false);
                 }
 
                 help2 += 55;
@@ -111,9 +110,8 @@ namespace MainMenuCo
         {
             SpriteBatch.Begin();
             SpriteBatch.Draw(background, new Vector2(0, 0), Color.White);
-            SpriteBatch.DrawString(fontText, "Levelauswahl", new Vector2(60, 50), Color.Black);
 
-            SpriteBatch.Draw(levelauswahlRahmen, new Vector2(350, 10), Color.White);
+            SpriteBatch.Draw(levelauswahlRahmen, new Vector2(5, 0), Color.White);
 
             for (int i = 0; i < buttons.Length; i++)
             {

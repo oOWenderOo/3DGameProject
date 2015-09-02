@@ -322,20 +322,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2DTexturen\LevelAuswahlRahmen.png">
-      <Name>LevelAuswahlRahmen</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="2DTexturen\Rangliste.png">
-      <Name>Rangliste</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="3DModelle\Anfangspunkt_Textur.png">
       <Name>Anfangspunkt_Textur</Name>
       <Importer>TextureImporter</Importer>
@@ -471,6 +457,20 @@
   <ItemGroup>
     <Compile Include="2DTexturen\Pausenmenubutton.png">
       <Name>Pausenmenubutton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2DTexturen\LevelAuswahlRahmen.png">
+      <Name>LevelAuswahlRahmen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2DTexturen\Rangliste.png">
+      <Name>Rangliste</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

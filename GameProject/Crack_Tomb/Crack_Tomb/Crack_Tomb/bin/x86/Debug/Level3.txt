@@ -1,11 +1,11 @@
 true
-Hallo 1210
-Hallo 1210
-Hallo 1200
-Hallo 1180
-Ralf 100
-Hans 90
-Mueller 80
-Hansen 70
-Wender 60
-Netuwi 50
+Hallo 1170
+------ 100
+------ 90
+------ 80
+------ 70
+------ 60
+------ 50
+------ 40
+------ 30
+------ 20

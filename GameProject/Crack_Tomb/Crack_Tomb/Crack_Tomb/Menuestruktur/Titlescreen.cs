@@ -28,13 +28,13 @@ namespace MainMenuCo
                 {
                     if (i == 1)
                     {
-                        string[] lines = { "true", "Ralf 100", "Hans 90", "Mueller 80", "Hansen 70", "Wender 60", "Netuwi 50", "Jan 40", "Lisa 30", "Paul 20", "Patrick 10" };
+                        string[] lines = { "true", "------ 100", "------ 90", "------ 80", "------ 70", "------ 60", "------ 50", "------ 40", "------ 30", "------ 20", "------ 10" };
 
                         System.IO.File.WriteAllLines(@dateiname, lines);
                     }
                     else
                     {
-                        string[] lines = { "false", "Ralf 100", "Hans 90", "Mueller 80", "Hansen 70", "Wender 60", "Netuwi 50", "Jan 40", "Lisa 30", "Paul 20", "Patrick 10" };
+                        string[] lines = { "false", "------ 100", "------ 90", "------ 80", "------ 70", "------ 60", "------ 50", "------ 40", "------ 30", "------ 20", "------ 10" };
 
                         System.IO.File.WriteAllLines(@dateiname, lines);
                     }

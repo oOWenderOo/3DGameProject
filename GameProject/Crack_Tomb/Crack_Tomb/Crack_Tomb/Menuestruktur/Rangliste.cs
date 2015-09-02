@@ -29,11 +29,11 @@ namespace MainMenuCo
             this.anzahlLevel = anzahllevel;
             buttons[0] = new Button(new Vector2(60, 370), "MainMenu", "Zurück");
 
-            int positionX = 300;
-            int positionY = 30;
+            int positionX = 320;
+            int positionY = 20;
 
             trigger[0] = new TriggerButton(new Vector2(positionX, positionY), "Zurück");
-            trigger[1] = new TriggerButton(new Vector2(positionX + 200, positionY), "Weiter");
+            trigger[1] = new TriggerButton(new Vector2(positionX + 300, positionY), "Weiter");
 
             checkRangliste(1);
         }
@@ -103,9 +103,8 @@ namespace MainMenuCo
         {
             SpriteBatch.Begin();
             SpriteBatch.Draw(background, new Vector2(0, 0), Color.White);
-            SpriteBatch.DrawString(fontText, "Rangliste", new Vector2(60, 50), Color.Black);
 
-            SpriteBatch.Draw(ranglisteHalterung, new Vector2(0, 0), Color.White);
+            SpriteBatch.Draw(ranglisteHalterung, new Vector2(300, 0), Color.White);
 
             for (int i = 0; i < buttons.Length; i++)
             {
@@ -119,10 +118,13 @@ namespace MainMenuCo
             
             for (int i = 0; i < rangliste.Length; i++)
             {
-                SpriteBatch.DrawString(fontText, rangliste[i], new Vector2(0, 30 * i), Color.Black);
+                SpriteBatch.DrawString(fontText, "" + (i + 1) + ".", new Vector2(380, 120 + 30 * i), Color.Black);
+                SpriteBatch.DrawString(fontText, rangliste[i], new Vector2(430, 120 + 30 * i), Color.Black);
             }
 
-            SpriteBatch.DrawString(fontText, "Level: " + levelnummer, new Vector2(400, 100), Color.Black);
+            SpriteBatch.DrawString(fontText, "" + levelnummer, new Vector2(510, 10), Color.Black);
+
+            SpriteBatch.DrawString(fontText, "Rangliste", new Vector2(460, 60), Color.Black);
 
             SpriteBatch.Draw(mouse, new Vector2(Mouse.GetState().X, Mouse.GetState().Y), Color.White);
 
