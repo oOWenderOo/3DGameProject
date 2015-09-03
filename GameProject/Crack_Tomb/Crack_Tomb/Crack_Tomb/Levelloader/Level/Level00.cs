@@ -54,7 +54,6 @@ namespace Crack_Tomb.Levelloader.Level
         {
             minuten = 2;
             sekunden = 10;
-            Licht_Start = new Vector3(0, 0, 0);
             Licht_Richtung = new Vector3(0, 0, 0);
             anzahlSpiegel = 0;
             anzahlSplittPrisma = 0;

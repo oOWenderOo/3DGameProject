@@ -67,7 +67,7 @@ namespace MainMenuCo
             levelloader.Array_Loader(content);
 
             //Gabriels-Teil
-            player = new Player(lichtPos, content.Load<Model>("3DModelle/Spieler_mit_Hut"), levelnummer, content, ref levelloader);
+            player = new Player(lichtPos - lichtDir, content.Load<Model>("3DModelle/Spieler_mit_Hut"), levelnummer, content, ref levelloader);
             camera = new Kamera(player.position);
             licht = new Lichtstrahl(content.Load<Model>("3DModelle/partikel"), lichtPos, lichtDir, levelnummer, content.Load<Effect>("Shader/PartikelEffect"));
             pausemenü = new PauseMenü(content, anzahllevel, levelnummer);

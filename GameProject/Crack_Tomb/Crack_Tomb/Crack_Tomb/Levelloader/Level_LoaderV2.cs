@@ -95,6 +95,72 @@ namespace Crack_Tomb.Levelloader
                 case 18:
                     level = new Level18();
                     break;
+                case 19:
+                    level = new Level19();
+                    break;
+                case 20:
+                    level = new Level20();
+                    break;
+                case 21:
+                    level = new Level21();
+                    break;
+                case 22:
+                    level = new Level22();
+                    break;
+                case 23:
+                    level = new Level23();
+                    break;
+                case 24:
+                    level = new Level24();
+                    break;
+                case 25:
+                    level = new Level25();
+                    break;
+                case 26:
+                    level = new Level26();
+                    break;
+                case 27:
+                    level = new Level27();
+                    break;
+                case 28:
+                    level = new Level28();
+                    break;
+                case 29:
+                    level = new Level29();
+                    break;
+                case 30:
+                    level = new Level30();
+                    break;
+                case 31:
+                    level = new Level31();
+                    break;
+                case 32:
+                    level = new Level32();
+                    break;
+                case 33:
+                    level = new Level33();
+                    break;
+                case 34:
+                    level = new Level34();
+                    break;
+                case 35:
+                    level = new Level35();
+                    break;
+                case 36:
+                    level = new Level36();
+                    break;
+                case 37:
+                    level = new Level37();
+                    break;
+                case 38:
+                    level = new Level38();
+                    break;
+                case 39:
+                    level = new Level39();
+                    break;
+                case 40:
+                    level = new Level40();
+                    break;
                 default:
                     level = new Level00();
                     break;
@@ -389,41 +455,6 @@ namespace Crack_Tomb.Levelloader
 
         public void Draw(GraphicsDevice graphicdevice, Matrix view, Matrix projection)
         {
-            foreach (ModelMesh mesh in start_model.Meshes)
-            {
-                foreach (BasicEffect effect in mesh.Effects)
-                {
-                    effect.EnableDefaultLighting();
-
-                    effect.View = view;
-                    effect.Projection = projection;
-
-                    float rot = 0;
-
-                    if (Licht_Richtung.X == -1)
-                    {
-                        rot = -3.141f / 2f;
-                    }
-                    else
-                    {
-                        if (Licht_Richtung.X == 1)
-                        {
-                            rot = 3.141f / 2f;
-                        }
-                        else
-                        {
-                            if (Licht_Richtung.Z == -1)
-                            {
-                                rot = 6.282f / 2f;
-                            }
-                        }
-                    }
-
-                    effect.World = Matrix.CreateRotationY(rot) * Matrix.CreateScale(0.4f) * Matrix.CreateTranslation(Licht_Start);
-                }
-                mesh.Draw();
-            }
-
             for (int i = 0; i < 41; i++)
             {
                 for (int j = 0; j < 41; j++)
@@ -982,6 +1013,42 @@ namespace Crack_Tomb.Levelloader
                                     {
                                         effect.World = Matrix.CreateScale(0.4f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.25f, j + 0.5f));
                                     }
+                                }
+                                mesh.Draw();
+                            }
+                            break;
+                        case 8:
+                            foreach (ModelMesh mesh in start_model.Meshes)
+                            {
+                                foreach (BasicEffect effect in mesh.Effects)
+                                {
+                                    effect.EnableDefaultLighting();
+
+                                    effect.View = view;
+                                    effect.Projection = projection;
+
+                                    float rot = 0;
+
+                                    if (Licht_Richtung.X == -1)
+                                    {
+                                        rot = -3.141f / 2f;
+                                    }
+                                    else
+                                    {
+                                        if (Licht_Richtung.X == 1)
+                                        {
+                                            rot = 3.141f / 2f;
+                                        }
+                                        else
+                                        {
+                                            if (Licht_Richtung.Z == -1)
+                                            {
+                                                rot = 6.282f / 2f;
+                                            }
+                                        }
+                                    }
+
+                                    effect.World = Matrix.CreateRotationY(rot) * Matrix.CreateScale(0.4f) * Matrix.CreateTranslation(Licht_Start);
                                 }
                                 mesh.Draw();
                             }

@@ -55,6 +55,9 @@ namespace Crack_Tomb.Spieler
                         return true;
                     case 70:
                         return true;
+                    case 8:
+                        return true;
+                        break;
                     case 9:
                         return true;
                     default:

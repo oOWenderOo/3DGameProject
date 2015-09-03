@@ -23,7 +23,7 @@ namespace Crack_Tomb
         SpriteBatch spriteBatch;
         SongController songController;
 
-        int anzahllevel = 18;
+        int anzahllevel = 40;
 
         GameState oldstate;
         GameState state;

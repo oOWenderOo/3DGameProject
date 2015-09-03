@@ -63,7 +63,6 @@ namespace Crack_Tomb.Levelloader.Level
             anzahlBlue = 0;
             anzahlMagenta = 0;
 
-            Licht_Start = new Vector3(28.5f, 0, 21.5f);
             Licht_Richtung = new Vector3(-1, 0, 0);
 
             Level_Array = My_Level_Array;
