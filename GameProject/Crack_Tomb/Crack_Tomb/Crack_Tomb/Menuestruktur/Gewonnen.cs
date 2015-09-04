@@ -18,6 +18,7 @@ namespace Crack_Tomb.Menuestruktur
         Button[] buttons;
         Texture2D mouse;
         Texture2D background;
+        Texture2D ranglisteHalterung;
         int levelnummer;
         int punkte;
         int anzahlLevel;
@@ -26,6 +27,8 @@ namespace Crack_Tomb.Menuestruktur
         int position = 0; //in der Rangliste
         bool musseintragen = false;
         string EingabeName = "Hallo";
+        int ranglistePositionX = 460;
+        int ranglistePosiitonY = 60;
 
         bool isGedrücktA = false,
              isGedrücktÄ = false,
@@ -173,6 +176,7 @@ namespace Crack_Tomb.Menuestruktur
             }
             mouse = content.Load<Texture2D>("2DTexturen/MouseZeiger");
             background = content.Load<Texture2D>("2DTexturen/Testbildhintergrund");
+            ranglisteHalterung = content.Load<Texture2D>("2DTexturen/Rangliste");
         }
 
         public override GameState Update(GameTime gameTime)
@@ -247,6 +251,8 @@ namespace Crack_Tomb.Menuestruktur
             SpriteBatch.Draw(background, new Vector2(0, 0), Color.White);
             SpriteBatch.DrawString(fontText, "Du hast gewonnen!", new Vector2(300, 100), Color.Green);
 
+            SpriteBatch.Draw(ranglisteHalterung, new Vector2(300, 0), Color.White);
+
             if (!musseintragen)
             {
                 for (int i = 0; i < buttons.Length; i++)
@@ -257,9 +263,11 @@ namespace Crack_Tomb.Menuestruktur
             
             for (int i = 0; i < rangliste.Length; i++)
             {
+                SpriteBatch.DrawString(fontText, (i + 1) + ".", new Vector2(ranglistePositionX - 80, ranglistePosiitonY + 60 + 30 * i), Color.Black);
+
                 if (rangliste[i] != "")
                 {
-                    SpriteBatch.DrawString(fontText, rangliste[i], new Vector2(0, 30 * i), Color.Black);
+                    SpriteBatch.DrawString(fontText, rangliste[i], new Vector2(ranglistePositionX - 30, ranglistePosiitonY + 60 + 30 * i), Color.Black);
                 }
             }
 
@@ -267,11 +275,11 @@ namespace Crack_Tomb.Menuestruktur
             {
                 if (((int)gameTime.TotalGameTime.Milliseconds) % 800 >= 0 && ((int)gameTime.TotalGameTime.Milliseconds) % 800 <= 400)
                 {
-                    SpriteBatch.DrawString(fontText, EingabeName, new Vector2(0, 30 * position), Color.Red);
+                    SpriteBatch.DrawString(fontText, EingabeName, new Vector2(ranglistePositionX - 30, ranglistePosiitonY + 60 + 30 * position), Color.Red);
                 }
                 else
                 {
-                    SpriteBatch.DrawString(fontText, EingabeName + "_", new Vector2(0, 30 * position), Color.Red);
+                    SpriteBatch.DrawString(fontText, EingabeName + "_", new Vector2(ranglistePositionX - 30, ranglistePosiitonY + 60 + 30 * position), Color.Red);
                 }
             }
 

@@ -118,7 +118,7 @@ namespace MainMenuCo
             
             for (int i = 0; i < rangliste.Length; i++)
             {
-                SpriteBatch.DrawString(fontText, "" + (i + 1) + ".", new Vector2(380, 120 + 30 * i), Color.Black);
+                SpriteBatch.DrawString(fontText, (i + 1) + ".", new Vector2(380, 120 + 30 * i), Color.Black);
                 SpriteBatch.DrawString(fontText, rangliste[i], new Vector2(430, 120 + 30 * i), Color.Black);
             }
 

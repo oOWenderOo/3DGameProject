@@ -1084,23 +1084,23 @@ namespace Crack_Tomb.Levelloader
 
                                 if (Level_Array[i + 1, j] == 1 || (Level_Array[i + 1,j] >= 10 && Level_Array[i + 1,j] <= 19))
                                 {
-                                    effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.95f, 0.5f, j + 0.5f));
+                                    effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 1.3f, 0.5f, j + 0.5f));
                                 }
                                 else
                                 {
                                     if (Level_Array[i - 1, j] == 1 || (Level_Array[i - 1, j] >= 10 && Level_Array[i - 1, j] <= 19))
                                     {
-                                        effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.95f, 0.5f, j + 0.5f));
+                                        effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.3f, 0.5f, j + 0.5f));
                                     }
                                     else
                                     {
                                         if (Level_Array[i, j + 1] == 1 || (Level_Array[i, j + 1] >= 10 && Level_Array[i, j + 1] <= 19))
                                         {
-                                            effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.95f));
+                                            effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 1.2f));
                                         }
                                         else
                                         {
-                                            effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j - 0.95f));
+                                            effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j - 0.3f));
                                         }
                                     }
                                 }
@@ -1122,23 +1122,23 @@ namespace Crack_Tomb.Levelloader
 
                                 if (Level_Array[i + 1, j] == 1 || (Level_Array[i + 1, j] >= 10 && Level_Array[i + 1, j] <= 19))
                                 {
-                                    effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.95f, 0.5f, j + 0.5f));
+                                    effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 1.3f, 0.5f, j + 0.5f));
                                 }
                                 else
                                 {
                                     if (Level_Array[i - 1, j] == 1 || (Level_Array[i - 1, j] >= 10 && Level_Array[i - 1, j] <= 19))
                                     {
-                                        effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.95f, 0.5f, j + 0.5f));
+                                        effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.3f, 0.5f, j + 0.5f));
                                     }
                                     else
                                     {
                                         if (Level_Array[i, j + 1] == 1 || (Level_Array[i, j + 1] >= 10 && Level_Array[i, j + 1] <= 19))
                                         {
-                                            effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 0.95f));
+                                            effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 1.2f));
                                         }
                                         else
                                         {
-                                            effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j - 0.95f));
+                                            effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j - 0.3f));
                                         }
                                     }
                                 }

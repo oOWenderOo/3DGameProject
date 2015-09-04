@@ -55,20 +55,17 @@ namespace Lichtquelle
                 }
             }
 
-            if (gameTime.TotalGameTime.Milliseconds % 100 == 0)
-            {
-                int letzeBewegung = gameTime.TotalGameTime.Milliseconds;
+            if (richtung == new Vector3(0, 0, 1) || richtung == new Vector3(0, 0, -1))
+                horizontal = true;
 
-                Vector3 newposition = position + richtung;
+            if (richtung == new Vector3(1, 0, 0) || richtung == new Vector3(-1, 0, 0))
+                horizontal = false;
+            
+            int letzeBewegung = gameTime.TotalGameTime.Milliseconds;
 
-                collider.colliding(this, newposition, ref player, ref gewonnen, ref levelloader);
-            }
-            else
-            {
-                Vector3 newposition = position;
+            Vector3 newposition = position + richtung;
 
-                collider.colliding(this, newposition, ref player, ref gewonnen, ref levelloader);
-            }
+            collider.colliding(this, newposition, ref player, ref gewonnen, ref levelloader);
         }
 
         public void Draw(GameTime gameTime, Matrix view, Matrix projection)

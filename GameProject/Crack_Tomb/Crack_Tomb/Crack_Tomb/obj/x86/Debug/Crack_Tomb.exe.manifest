@@ -63,14 +63,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Crack_Tomb.exe" size="242688">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Crack_Tomb.exe" size="270336">
       <assemblyIdentity name="Crack_Tomb" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>80dW9kCEpIFeApj9s5I1NNBBqPU=</dsig:DigestValue>
+        <dsig:DigestValue>a3LBd8SWFy2QDppl/k/NwuEri6s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -746,7 +746,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>rNSG/KMV4HxTqTF0NC5O5uZ0e5k=</dsig:DigestValue>
+      <dsig:DigestValue>oDq2dkx0RFTGTynKvi949Hv9lwM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Shader\KristallEffect.xnb" size="4288">
