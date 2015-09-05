@@ -25,8 +25,8 @@ namespace Crack_Tomb.Spieler
         Texture2D inventarMitFarbkristallTextur;
         public bool drawFarbkristalle = false;
         SoundEffect einsetzen;
-        int positionNumX = 85;
-        int positionNumY = 420;
+        int positionNumX = 75;
+        int positionNumY = 430;
 
         //Erzeugen eines Inventars
         public Inventar(ContentManager content)

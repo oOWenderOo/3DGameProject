@@ -19,20 +19,20 @@ namespace Crack_Tomb{
 
         public MyColor(int hcolor) {
             mycolor = hcolor;
-            if (mycolor == 000000) color = Color.White;              //White
+            if (mycolor == 000000) color = Color.White;                        //White
             else if (mycolor == 000001) color = new Color(1f, 0f, 0f);         //Red
             else if (mycolor == 000010) color = new Color(1f, 1f, 0f);         //Yellow
             else if (mycolor == 000100) color = new Color(0f, 1f, 0f);         //Green
             else if (mycolor == 001000) color = new Color(0f, 1f, 1f);         //Cyan
             else if (mycolor == 010000) color = new Color(0f, 0f, 1f);         //Blue
             else if (mycolor == 100000) color = new Color(1f, 0f, 1f);         //Magenta
-            else if (mycolor == 000011) color = new Color(1f, 0.5f, 0f);      //Red-Yellow
-            else if (mycolor == 000110) color = new Color(0.5f, 1f, 0f);      //Green-Yellow
-            else if (mycolor == 001100) color = new Color(0f, 1f, 0.5f);      //Green-Cyan
-            else if (mycolor == 011000) color = new Color(0f, 0.5f, 1f);      //Blue-Cyan
-            else if (mycolor == 110000) color = new Color(0.5f, 0f, 1f);      //Blue-Magenta
-            else if (mycolor == 100001) color = new Color(1f, 0f, 0.5f);      //Red-Magenta
-            else color = new Color(1, 1, 1);                                //Black
+            else if (mycolor == 000011) color = new Color(1f, 0.5f, 0f);       //Red-Yellow
+            else if (mycolor == 000110) color = new Color(0.5f, 1f, 0f);       //Green-Yellow
+            else if (mycolor == 001100) color = new Color(0f, 1f, 0.5f);       //Green-Cyan
+            else if (mycolor == 011000) color = new Color(0f, 0.5f, 1f);       //Blue-Cyan
+            else if (mycolor == 110000) color = new Color(0.5f, 0f, 1f);       //Blue-Magenta
+            else if (mycolor == 100001) color = new Color(1f, 0f, 0.5f);       //Red-Magenta
+            else color = new Color(1, 1, 1);                                   //Black
         }
 
         static public int mixColor(MyColor RayColor, MyColor ObjectColor){               //RayColor kann 12 Farbwerte + Schwarz/Weiss annehmen, Objectcolor nur 6 + S/W  (da es nur 6 farbige Kristalle gibt)

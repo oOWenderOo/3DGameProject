@@ -981,6 +981,15 @@
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\Pausenmenubutton.xnb</Output>
       <Time>2015-09-02T22:19:42.252749+02:00</Time>
     </Item>
+    <Item>
+      <Source>2DTexturen\Tutorialrahmen.png</Source>
+      <Name>2DTexturen\Tutorialrahmen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\Tutorialrahmen.xnb</Output>
+      <Time>2015-09-04T21:25:41.2144987+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

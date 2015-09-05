@@ -188,7 +188,7 @@ namespace Crack_Tomb.Menuestruktur
                     isGedrücktBack = true;
                 }
 
-                if (EingabeName.Length <= 25)
+                if (EingabeName.Length <= 10)
                 {
                     eingabeKontrolle();
                 }

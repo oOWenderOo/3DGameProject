@@ -54,16 +54,16 @@ namespace Crack_Tomb.Levelloader.Level
         {
             minuten = 2;
             sekunden = 10;
-            anzahlSpiegel = 12;
-            anzahlSplittPrisma = 0;
-            anzahlRed = 3;
-            anzahlYellow = 1;
-            anzahlGreen = 1;
+            anzahlSpiegel = 0;
+            anzahlSplittPrisma = 1;
+            anzahlRed = 0;
+            anzahlYellow = 0;
+            anzahlGreen = 0;
             anzahlCyan = 0;
-            anzahlBlue = 1;
+            anzahlBlue = 0;
             anzahlMagenta = 0;
 
-            Licht_Richtung = new Vector3(-1, 0, 0);
+            Licht_Richtung = new Vector3(0, 0, -1);
 
             Level_Array = My_Level_Array;
         }
