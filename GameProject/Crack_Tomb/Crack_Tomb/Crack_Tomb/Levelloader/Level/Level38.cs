@@ -54,7 +54,7 @@ namespace Crack_Tomb.Levelloader.Level
         {
             minuten = 2;
             sekunden = 10;
-            anzahlSpiegel = 5;
+            anzahlSpiegel = 8;
             anzahlSplittPrisma = 1;
             anzahlRed = 2;
             anzahlYellow = 4;

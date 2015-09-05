@@ -68,7 +68,7 @@ namespace Crack_Tomb.Spieler
             inventar.setFatbkristallMagenta(levelloader.anzahlMagenta);
         }
 
-        public void Draw(Matrix view, Matrix projection, SpriteBatch spritebatch)
+        public void Draw(Matrix view, Matrix projection, SpriteBatch spritebatch, bool isMapActive)
         {
             //Spieler wird sichtbar gemacht
             foreach (ModelMesh mesh in spielermodel.Meshes)
@@ -207,7 +207,8 @@ namespace Crack_Tomb.Spieler
                 }
             }
 
-            inventar.Draw(spritebatch);
+            if(!isMapActive)
+                inventar.Draw(spritebatch);
         }
 
         public int[,] getSäulenArray()

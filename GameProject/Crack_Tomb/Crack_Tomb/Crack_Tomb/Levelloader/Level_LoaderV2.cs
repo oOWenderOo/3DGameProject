@@ -470,7 +470,7 @@ namespace Crack_Tomb.Levelloader
 
                                     effect.View = view;
                                     effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
+                                    effect.World = Matrix.CreateScale(0.5f, 1, 0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
                                 }
                                 mesh.Draw();
                             }
@@ -484,7 +484,7 @@ namespace Crack_Tomb.Levelloader
 
                                     effect.View = view;
                                     effect.Projection = projection;
-                                    effect.World = Matrix.CreateRotationY(3.141f/2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
+                                    effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f, 1, 0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
                                 }
                                 mesh.Draw();
                             }
@@ -498,7 +498,7 @@ namespace Crack_Tomb.Levelloader
 
                                     effect.View = view;
                                     effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
+                                    effect.World = Matrix.CreateScale(0.5f, 1, 0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
                                 }
                                 mesh.Draw();
                             }
@@ -512,7 +512,7 @@ namespace Crack_Tomb.Levelloader
 
                                     effect.View = view;
                                     effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
+                                    effect.World = Matrix.CreateScale(0.5f, 1, 0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
                                 }
                                 mesh.Draw();
                             }
@@ -526,7 +526,7 @@ namespace Crack_Tomb.Levelloader
 
                                     effect.View = view;
                                     effect.Projection = projection;
-                                    effect.World = Matrix.CreateRotationY(-3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
+                                    effect.World = Matrix.CreateRotationY(-3.141f / 2f) * Matrix.CreateScale(0.5f, 1, 0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
                                 }
                                 mesh.Draw();
                             }
@@ -540,7 +540,7 @@ namespace Crack_Tomb.Levelloader
 
                                     effect.View = view;
                                     effect.Projection = projection;
-                                    effect.World = Matrix.CreateRotationY(6.282f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
+                                    effect.World = Matrix.CreateRotationY(6.282f / 2f) * Matrix.CreateScale(0.5f, 1, 0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
                                 }
                                 mesh.Draw();
                             }
@@ -554,7 +554,7 @@ namespace Crack_Tomb.Levelloader
 
                                     effect.View = view;
                                     effect.Projection = projection;
-                                    effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
+                                    effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f, 1, 0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
                                 }
                                 mesh.Draw();
                             }
@@ -568,7 +568,7 @@ namespace Crack_Tomb.Levelloader
 
                                     effect.View = view;
                                     effect.Projection = projection;
-                                    effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
+                                    effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f, 1, 0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
                                 }
                                 mesh.Draw();
                             }
@@ -582,7 +582,7 @@ namespace Crack_Tomb.Levelloader
 
                                     effect.View = view;
                                     effect.Projection = projection;
-                                    effect.World = Matrix.CreateRotationY(6.282f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
+                                    effect.World = Matrix.CreateRotationY(6.282f / 2f) * Matrix.CreateScale(0.5f, 1, 0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
                                 }
                                 mesh.Draw();
                             }
@@ -596,7 +596,7 @@ namespace Crack_Tomb.Levelloader
 
                                     effect.View = view;
                                     effect.Projection = projection;
-                                    effect.World = Matrix.CreateRotationY(-3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
+                                    effect.World = Matrix.CreateRotationY(-3.141f / 2f) * Matrix.CreateScale(0.5f, 1, 0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
                                 }
                                 mesh.Draw();
                             }
@@ -610,7 +610,7 @@ namespace Crack_Tomb.Levelloader
 
                                     effect.View = view;
                                     effect.Projection = projection;
-                                    effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
+                                    effect.World = Matrix.CreateScale(0.5f, 1, 0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
                                 }
                                 mesh.Draw();
                             }
@@ -627,11 +627,11 @@ namespace Crack_Tomb.Levelloader
 
                                     if (Level_Array[i, j + 1] == 1 || Level_Array[i, j + 1] == 2 || (Level_Array[i, j + 1] >= 10 && Level_Array[i, j + 1] <= 19))
                                     {
-                                        effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
+                                        effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f,1,0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
                                     }
                                     else
                                     {
-                                        effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
+                                        effect.World = Matrix.CreateScale(0.5f, 1, 0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f));
                                     }
                                 }
                                 mesh.Draw();
@@ -659,11 +659,11 @@ namespace Crack_Tomb.Levelloader
                                     part.Effect = barriereEffect;
                                     if (Level_Array[i + 1, j] == 1 || Level_Array[i + 1, j] == 2 || (Level_Array[i + 1, j] >= 10 && Level_Array[i + 1, j] <= 19))
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     else
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     barriereEffect.Parameters["View"].SetValue(view);
                                     barriereEffect.Parameters["Projection"].SetValue(projection);
@@ -683,11 +683,11 @@ namespace Crack_Tomb.Levelloader
                                     part.Effect = barriereEffect;
                                     if (Level_Array[i + 1, j] == 1 || Level_Array[i + 1, j] == 2 || (Level_Array[i + 1, j] >= 10 && Level_Array[i + 1, j] <= 19))
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     else
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     barriereEffect.Parameters["View"].SetValue(view);
                                     barriereEffect.Parameters["Projection"].SetValue(projection);
@@ -707,11 +707,11 @@ namespace Crack_Tomb.Levelloader
                                     part.Effect = barriereEffect;
                                     if (Level_Array[i + 1, j] == 1 || Level_Array[i + 1, j] == 2 || (Level_Array[i + 1, j] >= 10 && Level_Array[i + 1, j] <= 19))
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     else
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     barriereEffect.Parameters["View"].SetValue(view);
                                     barriereEffect.Parameters["Projection"].SetValue(projection);
@@ -731,11 +731,11 @@ namespace Crack_Tomb.Levelloader
                                     part.Effect = barriereEffect;
                                     if (Level_Array[i + 1, j] == 1 || Level_Array[i + 1, j] == 2 || (Level_Array[i + 1, j] >= 10 && Level_Array[i + 1, j] <= 19))
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     else
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     barriereEffect.Parameters["View"].SetValue(view);
                                     barriereEffect.Parameters["Projection"].SetValue(projection);
@@ -755,11 +755,11 @@ namespace Crack_Tomb.Levelloader
                                     part.Effect = barriereEffect;
                                     if (Level_Array[i + 1, j] == 1 || Level_Array[i + 1, j] == 2 || (Level_Array[i + 1, j] >= 10 && Level_Array[i + 1, j] <= 19))
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     else
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     barriereEffect.Parameters["View"].SetValue(view);
                                     barriereEffect.Parameters["Projection"].SetValue(projection);
@@ -779,11 +779,11 @@ namespace Crack_Tomb.Levelloader
                                     part.Effect = barriereEffect;
                                     if (Level_Array[i + 1, j] == 1 || Level_Array[i + 1, j] == 2 || (Level_Array[i + 1, j] >= 10 && Level_Array[i + 1, j] <= 19))
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     else
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     barriereEffect.Parameters["View"].SetValue(view);
                                     barriereEffect.Parameters["Projection"].SetValue(projection);
@@ -803,11 +803,11 @@ namespace Crack_Tomb.Levelloader
                                     part.Effect = barriereEffect;
                                     if (Level_Array[i + 1, j] == 1 || Level_Array[i + 1, j] == 2 || (Level_Array[i + 1, j] >= 10 && Level_Array[i + 1, j] <= 19))
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     else
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     barriereEffect.Parameters["View"].SetValue(view);
                                     barriereEffect.Parameters["Projection"].SetValue(projection);
@@ -827,11 +827,11 @@ namespace Crack_Tomb.Levelloader
                                     part.Effect = barriereEffect;
                                     if (Level_Array[i + 1, j] == 1 || Level_Array[i + 1, j] == 2 || (Level_Array[i + 1, j] >= 10 && Level_Array[i + 1, j] <= 19))
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     else
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     barriereEffect.Parameters["View"].SetValue(view);
                                     barriereEffect.Parameters["Projection"].SetValue(projection);
@@ -851,11 +851,11 @@ namespace Crack_Tomb.Levelloader
                                     part.Effect = barriereEffect;
                                     if (Level_Array[i + 1, j] == 1 || Level_Array[i + 1, j] == 2 || (Level_Array[i + 1, j] >= 10 && Level_Array[i + 1, j] <= 19))
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     else
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     barriereEffect.Parameters["View"].SetValue(view);
                                     barriereEffect.Parameters["Projection"].SetValue(projection);
@@ -875,11 +875,11 @@ namespace Crack_Tomb.Levelloader
                                     part.Effect = barriereEffect;
                                     if (Level_Array[i + 1, j] == 1 || Level_Array[i + 1, j] == 2 || (Level_Array[i + 1, j] >= 10 && Level_Array[i + 1, j] <= 19))
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     else
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     barriereEffect.Parameters["View"].SetValue(view);
                                     barriereEffect.Parameters["Projection"].SetValue(projection);
@@ -899,11 +899,11 @@ namespace Crack_Tomb.Levelloader
                                     part.Effect = barriereEffect;
                                     if (Level_Array[i + 1, j] == 1 || Level_Array[i + 1, j] == 2 || (Level_Array[i + 1, j] >= 10 && Level_Array[i + 1, j] <= 19))
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     else
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     barriereEffect.Parameters["View"].SetValue(view);
                                     barriereEffect.Parameters["Projection"].SetValue(projection);
@@ -923,11 +923,11 @@ namespace Crack_Tomb.Levelloader
                                     part.Effect = barriereEffect;
                                     if (Level_Array[i + 1, j] == 1 || Level_Array[i + 1, j] == 2 || (Level_Array[i + 1, j] >= 10 && Level_Array[i + 1, j] <= 19))
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     else
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     barriereEffect.Parameters["View"].SetValue(view);
                                     barriereEffect.Parameters["Projection"].SetValue(projection);
@@ -947,11 +947,11 @@ namespace Crack_Tomb.Levelloader
                                     part.Effect = barriereEffect;
                                     if (Level_Array[i + 1, j] == 1 || Level_Array[i + 1, j] == 2 || (Level_Array[i + 1, j] >= 10 && Level_Array[i + 1, j] <= 19))
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f/2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateRotationY(3.141f/2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     else
                                     {
-                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 0, j + 0.5f)));
+                                        barriereEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     }
                                     barriereEffect.Parameters["View"].SetValue(view);
                                     barriereEffect.Parameters["Projection"].SetValue(projection);
@@ -980,11 +980,11 @@ namespace Crack_Tomb.Levelloader
 
                                     if (istNichtsOben && istNichtsUnten && !istNichtsRechts && !istNichtsLinks)
                                     {
-                                        effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.4f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.25f, j + 0.5f));
+                                        effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f, 1.25f, 0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.25f, j + 0.5f));
                                     }
                                     else
                                     {
-                                        effect.World = Matrix.CreateScale(0.4f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.25f, j + 0.5f));
+                                        effect.World = Matrix.CreateScale(0.5f, 1.25f, 0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.25f, j + 0.5f));
                                     }
                                 }
                                 mesh.Draw();
@@ -1007,11 +1007,11 @@ namespace Crack_Tomb.Levelloader
 
                                     if (istNichtsOben && istNichtsUnten && !istNichtsRechts && !istNichtsLinks)
                                     {
-                                        effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.4f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.25f, j + 0.5f));
+                                        effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f, 1.25f, 0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.25f, j + 0.5f));
                                     }
                                     else
                                     {
-                                        effect.World = Matrix.CreateScale(0.4f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.25f, j + 0.5f));
+                                        effect.World = Matrix.CreateScale(0.5f, 1.25f, 0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.25f, j + 0.5f));
                                     }
                                 }
                                 mesh.Draw();
@@ -1084,23 +1084,23 @@ namespace Crack_Tomb.Levelloader
 
                                 if (Level_Array[i + 1, j] == 1 || (Level_Array[i + 1,j] >= 10 && Level_Array[i + 1,j] <= 19))
                                 {
-                                    effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 1.3f, 0.5f, j + 0.5f));
+                                    effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 1.3f, 1f, j + 0.5f));
                                 }
                                 else
                                 {
                                     if (Level_Array[i - 1, j] == 1 || (Level_Array[i - 1, j] >= 10 && Level_Array[i - 1, j] <= 19))
                                     {
-                                        effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.3f, 0.5f, j + 0.5f));
+                                        effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.3f, 1f, j + 0.5f));
                                     }
                                     else
                                     {
                                         if (Level_Array[i, j + 1] == 1 || (Level_Array[i, j + 1] >= 10 && Level_Array[i, j + 1] <= 19))
                                         {
-                                            effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 1.2f));
+                                            effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1f, j + 1.2f));
                                         }
                                         else
                                         {
-                                            effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j - 0.3f));
+                                            effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1f, j - 0.3f));
                                         }
                                     }
                                 }
@@ -1122,23 +1122,23 @@ namespace Crack_Tomb.Levelloader
 
                                 if (Level_Array[i + 1, j] == 1 || (Level_Array[i + 1, j] >= 10 && Level_Array[i + 1, j] <= 19))
                                 {
-                                    effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 1.3f, 0.5f, j + 0.5f));
+                                    effect.World = Matrix.CreateRotationY(3.141f / -2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 1.3f, 1f, j + 0.5f));
                                 }
                                 else
                                 {
                                     if (Level_Array[i - 1, j] == 1 || (Level_Array[i - 1, j] >= 10 && Level_Array[i - 1, j] <= 19))
                                     {
-                                        effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.3f, 0.5f, j + 0.5f));
+                                        effect.World = Matrix.CreateRotationY(3.141f / 2f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i - 0.3f, 1f, j + 0.5f));
                                     }
                                     else
                                     {
                                         if (Level_Array[i, j + 1] == 1 || (Level_Array[i, j + 1] >= 10 && Level_Array[i, j + 1] <= 19))
                                         {
-                                            effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j + 1.2f));
+                                            effect.World = Matrix.CreateRotationY(3.141f) * Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1f, j + 1.2f));
                                         }
                                         else
                                         {
-                                            effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.5f, j - 0.3f));
+                                            effect.World = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1f, j - 0.3f));
                                         }
                                     }
                                 }

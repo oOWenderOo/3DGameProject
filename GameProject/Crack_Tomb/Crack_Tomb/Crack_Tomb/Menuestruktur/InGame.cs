@@ -141,7 +141,7 @@ namespace MainMenuCo
 
             //Gabriels-Teil
             licht.Draw(gameTime, camera.view, camera.projection);
-            player.Draw(camera.view, camera.projection, SpriteBatch);
+            player.Draw(camera.view, camera.projection, SpriteBatch, camera.getMapActive());
 
             //Annes-Teil
             timer.Draw(gameTime, Graphics, SpriteBatch);

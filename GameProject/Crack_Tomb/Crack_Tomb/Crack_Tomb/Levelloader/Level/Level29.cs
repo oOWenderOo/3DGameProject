@@ -52,16 +52,16 @@ namespace Crack_Tomb.Levelloader.Level
 
         public Level29()
         {
-            minuten = 2;
+            minuten = 6;
             sekunden = 10;
-            anzahlSpiegel = 12;
+            anzahlSpiegel = 4;
             anzahlSplittPrisma = 0;
-            anzahlRed = 3;
-            anzahlYellow = 1;
-            anzahlGreen = 1;
-            anzahlCyan = 0;
-            anzahlBlue = 1;
-            anzahlMagenta = 0;
+            anzahlRed = 2;
+            anzahlYellow = 2;
+            anzahlGreen = 4;
+            anzahlCyan = 4;
+            anzahlBlue = 4;
+            anzahlMagenta = 3;
 
             Licht_Richtung = new Vector3(-1, 0, 0);
 
