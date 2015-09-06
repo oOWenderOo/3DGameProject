@@ -49,7 +49,7 @@ namespace Crack_Tomb.Spieler
 
             if (drawFarbkristalle)
             {
-                spritebatch.Draw(inventarMitFarbkristallTextur, new Vector2(-10, 370), Color.White);
+                spritebatch.Draw(inventarMitFarbkristallTextur, new Vector2(-6, 363), Color.White);
 
                 for (int i = 2; i < inventar.Length; i++)
                 {
@@ -67,7 +67,7 @@ namespace Crack_Tomb.Spieler
             }
             else
             {
-                spritebatch.Draw(inventarTextur, new Vector2(-10, 370), Color.White);
+                spritebatch.Draw(inventarTextur, new Vector2(-6, 363), Color.White);
 
                 for (int i = 0; i < 2; i++)
                 {

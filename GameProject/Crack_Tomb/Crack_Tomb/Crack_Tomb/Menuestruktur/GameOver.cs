@@ -29,8 +29,8 @@ namespace Crack_Tomb.Menuestruktur
             this.levelnummer = levelnummer;
             this.anzahllevel = anzahllevel;
 
-            buttons[0] = new Button(new Vector2(540, 370), "MainMenu", "Zurück ins Menü");
-            buttons[1] = new Button(new Vector2(60, 370), "InGame", "Level neu starten");
+            buttons[0] = new Button(new Vector2(60, 275), "MainMenu", "Zurück ins Menü");
+            buttons[1] = new Button(new Vector2(60, 200), "InGame", "Level neu starten");
 
             wartezeit = 10;
         }
@@ -45,8 +45,9 @@ namespace Crack_Tomb.Menuestruktur
                 buttons[i].SetTexture(content.Load<Texture2D>("2DTexturen/button"));
                 buttons[i].SetFont(fontButton);
             }
+
             mouse = content.Load<Texture2D>("2DTexturen/MouseZeiger");
-            background = content.Load<Texture2D>("2DTexturen/Testbildhintergrund");
+            background = content.Load<Texture2D>("2DTexturen/Hintergrund");
         }
 
         public override GameState Update(GameTime gameTime)
@@ -70,7 +71,7 @@ namespace Crack_Tomb.Menuestruktur
         {
             SpriteBatch.Begin();
             SpriteBatch.Draw(background, new Vector2(0, 0), Color.White);
-            SpriteBatch.DrawString(fontText, "Du hast verloren!", new Vector2(300, 100), Color.Red);
+            SpriteBatch.DrawString(fontText, "Du hast verloren!", new Vector2(400, 77), Color.Red);
 
             for (int i = 0; i < buttons.Length; i++)
             {

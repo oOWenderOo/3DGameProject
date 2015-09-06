@@ -17,16 +17,19 @@ namespace MainMenuCo
         Texture2D mouse;
         Texture2D background;
         int anzahllevel;
+        int buttonsPositionX = 60;
+        int buttonsPositionY = 120;
+        int buttonsAbstand = 75;
 
         int wartezeit;
 
         public MainMenu(int anzahllevel)
         {
             this.anzahllevel = anzahllevel;
-            buttons[0] = new Button(new Vector2(60, 225), "Rangliste", "Rangliste");
-            buttons[1] = new Button(new Vector2(60, 300), "Credits", "Credits");
-            buttons[2] = new Button(new Vector2(60, 150), "Levelauswahl", "Levelauswahl");
-            buttons[3] = new Button(new Vector2(60, 375), "Beenden", "Spiel beenden");
+            buttons[0] = new Button(new Vector2(buttonsPositionX, buttonsPositionY + buttonsAbstand * 1), "Rangliste", "Rangliste");
+            buttons[1] = new Button(new Vector2(buttonsPositionX, buttonsPositionY + buttonsAbstand * 2), "Credits", "Credits");
+            buttons[2] = new Button(new Vector2(buttonsPositionX, buttonsPositionY + buttonsAbstand * 0), "Levelauswahl", "Levelauswahl");
+            buttons[3] = new Button(new Vector2(buttonsPositionX, buttonsPositionY + buttonsAbstand * 3), "Beenden", "Spiel beenden");
 
             wartezeit = 6;
         }
@@ -42,7 +45,7 @@ namespace MainMenuCo
                 buttons[i].SetFont(fontButton);
             }
             mouse = content.Load<Texture2D>("2DTexturen/MouseZeiger");
-            background = content.Load<Texture2D>("2DTexturen/Testbildhintergrund");
+            background = content.Load<Texture2D>("2DTexturen/Hintergrund");
         }
 
         public override GameState Update(GameTime gameTime)
@@ -68,8 +71,6 @@ namespace MainMenuCo
         {
             SpriteBatch.Begin();
             SpriteBatch.Draw(background, new Vector2(0, 0), Color.White);
-            SpriteBatch.DrawString(fontText, "Hauptmenü", new Vector2( 60, 50), Color.Black);
-            
 
             for (int i = 0; i < buttons.Length; i++)
             {

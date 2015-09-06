@@ -91,10 +91,10 @@ namespace Crack_Tomb.Spieler
                     switch (Säulen_Array[i, j])
                     {
                         case 2:
-                            spiegel.Draw(Matrix.CreateScale(0.1f) * Matrix.CreateRotationZ(3.141f / 4f) * Matrix.CreateRotationX(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1f, j + 0.5f)), view, projection);
+                            spiegel.Draw(Matrix.CreateScale(0.04f) * Matrix.CreateRotationZ(3.141f / 4f) * Matrix.CreateRotationX(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1f, j + 0.5f)), view, projection);
                             break;
                         case 3:
-                            spiegel.Draw(Matrix.CreateScale(0.1f) * Matrix.CreateRotationZ(3.141f / -4f) * Matrix.CreateRotationX(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1f, j + 0.5f)), view, projection);
+                            spiegel.Draw(Matrix.CreateScale(0.04f) * Matrix.CreateRotationZ(3.141f / -4f) * Matrix.CreateRotationX(3.141f / 2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1f, j + 0.5f)), view, projection);
                             break;
                         case 4:
                             splittprisma.Draw(Matrix.CreateScale(0.175f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 0.8f, j + 0.5f)), view, projection);
@@ -105,7 +105,7 @@ namespace Crack_Tomb.Spieler
                                 foreach (ModelMeshPart part in mesh.MeshParts)
                                 {
                                     part.Effect = kristalleffect;
-                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i, 0, j)));
+                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateScale(0.2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     kristalleffect.Parameters["View"].SetValue(view);
                                     kristalleffect.Parameters["Projection"].SetValue(projection);
                                     kristalleffect.Parameters["AmbientColor"].SetValue(new Vector4(1, 0, 0, 1));
@@ -122,7 +122,7 @@ namespace Crack_Tomb.Spieler
                                 foreach (ModelMeshPart part in mesh.MeshParts)
                                 {
                                     part.Effect = kristalleffect;
-                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i, 0, j)));
+                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateScale(0.2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     kristalleffect.Parameters["View"].SetValue(view);
                                     kristalleffect.Parameters["Projection"].SetValue(projection);
                                     kristalleffect.Parameters["AmbientColor"].SetValue(new Vector4(1, 1, 0, 1));
@@ -139,7 +139,7 @@ namespace Crack_Tomb.Spieler
                                 foreach (ModelMeshPart part in mesh.MeshParts)
                                 {
                                     part.Effect = kristalleffect;
-                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i, 0, j)));
+                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateScale(0.2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     kristalleffect.Parameters["View"].SetValue(view);
                                     kristalleffect.Parameters["Projection"].SetValue(projection);
                                     kristalleffect.Parameters["AmbientColor"].SetValue(new Vector4(0, 1, 0, 1));
@@ -156,7 +156,7 @@ namespace Crack_Tomb.Spieler
                                 foreach (ModelMeshPart part in mesh.MeshParts)
                                 {
                                     part.Effect = kristalleffect;
-                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i, 0, j)));
+                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateScale(0.2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     kristalleffect.Parameters["View"].SetValue(view);
                                     kristalleffect.Parameters["Projection"].SetValue(projection);
                                     kristalleffect.Parameters["AmbientColor"].SetValue(new Vector4(0, 1, 1, 1));
@@ -173,7 +173,7 @@ namespace Crack_Tomb.Spieler
                                 foreach (ModelMeshPart part in mesh.MeshParts)
                                 {
                                     part.Effect = kristalleffect;
-                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i, 0, j)));
+                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateScale(0.2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     kristalleffect.Parameters["View"].SetValue(view);
                                     kristalleffect.Parameters["Projection"].SetValue(projection);
                                     kristalleffect.Parameters["AmbientColor"].SetValue(new Vector4(0, 0, 1, 1));
@@ -190,7 +190,7 @@ namespace Crack_Tomb.Spieler
                                 foreach (ModelMeshPart part in mesh.MeshParts)
                                 {
                                     part.Effect = kristalleffect;
-                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateTranslation(new Vector3(i, 0, j)));
+                                    kristalleffect.Parameters["World"].SetValue(Matrix.CreateScale(0.2f) * Matrix.CreateTranslation(new Vector3(i + 0.5f, 1, j + 0.5f)));
                                     kristalleffect.Parameters["View"].SetValue(view);
                                     kristalleffect.Parameters["Projection"].SetValue(projection);
                                     kristalleffect.Parameters["AmbientColor"].SetValue(new Vector4(1, 0, 1, 1));

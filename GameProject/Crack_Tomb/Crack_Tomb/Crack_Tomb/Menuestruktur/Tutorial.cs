@@ -37,7 +37,7 @@ namespace Crack_Tomb.Menuestruktur
                     tutorialtext[0] = "Willkommen bei CrackTomb!";
                     tutorialtext[1] = "";
                     tutorialtext[2] = "In diesem Spiel dreht sich";
-                    tutorialtext[3] = "alles um Hans. Hans ist ein";
+                    tutorialtext[3] = "alles um Frank. Hans ist ein";
                     tutorialtext[4] = "Rentner, welcher im Krieg";
                     //Seite 2
                     tutorialtext[5] = "gedient hat. Jedoch wurde ihm";
@@ -52,7 +52,7 @@ namespace Crack_Tomb.Menuestruktur
                     tutorialtext[13] = "";
                     tutorialtext[14] = "";
                     //Seite 4
-                    tutorialtext[15] = "Nun kommt dein Part. Hans";
+                    tutorialtext[15] = "Nun kommt dein Part. Frank";
                     tutorialtext[16] = "ist Rentner und kann einiges";
                     tutorialtext[17] = "nicht mehr allein tun. Daher";
                     tutorialtext[18] = "übernimmst du die Kontrolle";
@@ -64,7 +64,7 @@ namespace Crack_Tomb.Menuestruktur
                     tutorialtext[23] = "";
                     tutorialtext[24] = "";
                     //Seite 6
-                    tutorialtext[25] = "Alle Grabstätten die Hans";
+                    tutorialtext[25] = "Alle Grabstätten die Frank";
                     tutorialtext[26] = "aufsucht, haben einen";
                     tutorialtext[27] = "ähnlichen Mechanismus.";
                     tutorialtext[28] = "Um an die Schätze der Grab-";
@@ -112,7 +112,7 @@ namespace Crack_Tomb.Menuestruktur
                     //Seite 1        /                            /
                     tutorialtext[0] = "Willkommen zurück!";
                     tutorialtext[1] = "";
-                    tutorialtext[2] = "Da Hans immer noch nicht";
+                    tutorialtext[2] = "Da Frank immer noch nicht";
                     tutorialtext[3] = "genug Gold ergattern konnte,";
                     tutorialtext[4] = "muss er weiter Schätze jagen.";
                     //Seite 2
@@ -124,7 +124,7 @@ namespace Crack_Tomb.Menuestruktur
                     //Seite 3
                     tutorialtext[10] = "die Wand zu führen. Versuche";
                     tutorialtext[11] = "es in diesem Level und hilf";
-                    tutorialtext[12] = "Hans somit seinen Lebens-";
+                    tutorialtext[12] = "Frank somit seinen Lebens-";
                     tutorialtext[13] = "unterhalt zu verdienen.";
                     tutorialtext[14] = "";
                     break;
@@ -135,7 +135,7 @@ namespace Crack_Tomb.Menuestruktur
                     tutorialtext[0] = "Erneut willkommen!";
                     tutorialtext[1] = "";
                     tutorialtext[2] = "Ich denke du merkst, dass";
-                    tutorialtext[3] = "Hans mehr Geld braucht als";
+                    tutorialtext[3] = "Frank mehr Geld braucht als";
                     tutorialtext[4] = "andere Rentner und, dass es";
                     //Seite 2
                     tutorialtext[5] = "immer noch nicht ausreicht.";
@@ -166,12 +166,12 @@ namespace Crack_Tomb.Menuestruktur
                     tutorialtext[26] = "schließt du die Farbkristall-";
                     tutorialtext[27] = "auswahl. Bedenke, dass es";
                     tutorialtext[28] = "spezielle Mischverhältnisse";
-                    tutorialtext[29] = "gibt. Diese findest du immer";
+                    tutorialtext[29] = "gibt. Finde diese heraus";
                     //Seite 7
-                    tutorialtext[30] = "im Pausemenü auf der rechten";
-                    tutorialtext[31] = "Seite. Versuche nun die Farb-";
-                    tutorialtext[32] = "barriere überwinden und das";
-                    tutorialtext[33] = "Level damit zu lösen.";
+                    tutorialtext[30] = "und merke sie dir.";
+                    tutorialtext[31] = "Versuche nun die Farb-";
+                    tutorialtext[32] = "barriere zu überwinden und";
+                    tutorialtext[33] = "das Level damit zu lösen.";
                     tutorialtext[34] = "";
                     break;
                 case 13:
@@ -180,7 +180,7 @@ namespace Crack_Tomb.Menuestruktur
                     //Seite 1        /                            /
                     tutorialtext[0] = "Hallo!";
                     tutorialtext[1] = "";
-                    tutorialtext[2] = "Hans hat scheinbar immer noch";
+                    tutorialtext[2] = "Frank hat scheinbar immer noch";
                     tutorialtext[3] = "nicht genug Geld. Nicht wahr?";
                     tutorialtext[4] = "Lassen wir nun das Thema.";
                     //Seite 2
@@ -214,7 +214,7 @@ namespace Crack_Tomb.Menuestruktur
                     //Seite 1        /                            /
                     tutorialtext[0] = "Ein letztes mal hallo!";
                     tutorialtext[1] = "";
-                    tutorialtext[2] = "Da Hans sein Geld scheinbar";
+                    tutorialtext[2] = "Da Frank sein Geld scheinbar";
                     tutorialtext[3] = "verschleudert, hilf ihm bis";
                     tutorialtext[4] = "das Spiel beendet ist.";
                     //Seite 2

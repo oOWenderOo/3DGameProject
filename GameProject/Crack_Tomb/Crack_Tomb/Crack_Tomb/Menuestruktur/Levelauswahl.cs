@@ -85,7 +85,7 @@ namespace MainMenuCo
             }
 
             mouse = content.Load<Texture2D>("2DTexturen/MouseZeiger");
-            background = content.Load<Texture2D>("2DTexturen/Testbildhintergrund");
+            background = content.Load<Texture2D>("2DTexturen/Hintergrund");
             levelauswahlRahmen = content.Load<Texture2D>("2DTexturen/LevelAuswahlRahmen");
         }
 

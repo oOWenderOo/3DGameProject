@@ -9,7 +9,6 @@ Content\3DModelle\Boden.xnb
 Content\3DModelle\ground.xnb
 Content\3DModelle\Farbbarrieren.xnb
 Content\Fonts\Normal.xnb
-Content\2DTexturen\Testbildhintergrund.xnb
 Content\2DTexturen\levelbutton.xnb
 Content\2DTexturen\Timer.xnb
 Content\2DTexturen\button.xnb
@@ -77,3 +76,7 @@ Content\2DTexturen\Pfeil_rechts.xnb
 Content\2DTexturen\Pausenmenubutton.xnb
 Content\2DTexturen\Tutorialrahmen.xnb
 Content\2DTexturen\Titel.xnb
+Content\Audio\Tür.xnb
+Content\Fonts\CreditsFont.xnb
+Content\2DTexturen\Hintergrund.xnb
+Content\Fonts\RanglisteLevelnummerFont.xnb

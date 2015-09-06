@@ -12,6 +12,7 @@ using Lichtquelle;
 using Crack_Tomb.Menuestruktur;
 using Crack_Tomb.Levelloader;
 using Microsoft.Xna.Framework.Media;
+using Microsoft.Xna.Framework.Audio;
 
 namespace MainMenuCo
 {
@@ -69,7 +70,7 @@ namespace MainMenuCo
             //Gabriels-Teil
             player = new Player(lichtPos - lichtDir, content.Load<Model>("3DModelle/Spieler_mit_Hut"), levelnummer, content, ref levelloader);
             camera = new Kamera(player.position);
-            licht = new Lichtstrahl(content.Load<Model>("3DModelle/partikel"), lichtPos, lichtDir, levelnummer, content.Load<Effect>("Shader/PartikelEffect"));
+            licht = new Lichtstrahl(content.Load<Model>("3DModelle/partikel"), lichtPos, lichtDir, levelnummer, content.Load<Effect>("Shader/PartikelEffect"), content.Load<SoundEffect>("Audio/Tür"));
             pausemenü = new PauseMenü(content, anzahllevel, levelnummer);
             tutorial.LoadContent(content);
 

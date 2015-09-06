@@ -8,6 +8,7 @@ using Crack_Tomb.Lichtquelle;
 using Crack_Tomb.Spieler;
 using Crack_Tomb;
 using Crack_Tomb.Levelloader;
+using Microsoft.Xna.Framework.Audio;
 
 namespace Lichtquelle
 {
@@ -20,7 +21,7 @@ namespace Lichtquelle
         PartikelCollider collider;
         Effect partikeleffect;
 
-        public Lichtstrahl(Model partikelmodel, Vector3 position, Vector3 richtung , int levelnummer, Effect partikeleffect)
+        public Lichtstrahl(Model partikelmodel, Vector3 position, Vector3 richtung , int levelnummer, Effect partikeleffect, SoundEffect türöffnet)
         {
             this.partikeleffect = partikeleffect;
             this.partikelmodel = partikelmodel;
@@ -28,7 +29,7 @@ namespace Lichtquelle
             this.richtung = richtung;
 
             p = new Lichtquelle_Partikel(partikelmodel, position, richtung, null, null, new MyColor(000000), partikeleffect);
-            collider = new PartikelCollider();
+            collider = new PartikelCollider(türöffnet);
         }
 
         public void Update(GameTime gameTime, ref Player player, ref bool gewonnen, ref Level_LoaderV2 levelloader)

@@ -75,16 +75,16 @@ namespace Crack_Tomb.Menuestruktur
             {
                 buttons = new Button[3];
 
-                buttons[0] = new Button(new Vector2(540, 370), "MainMenu", "Zurück ins Menü");
-                buttons[1] = new Button(new Vector2(300, 370), "InGame", "Level neu starten");
-                buttons[2] = new Button(new Vector2(60, 370), "InGame", "Nächstes Level");
+                buttons[0] = new Button(new Vector2(60, 275), "MainMenu", "Zurück ins Menü");
+                buttons[1] = new Button(new Vector2(60, 200), "InGame", "Level neu starten");
+                buttons[2] = new Button(new Vector2(60, 125), "InGame", "Nächstes Level");
             }
             else
             {
                 buttons = new Button[2];
 
-                buttons[0] = new Button(new Vector2(540, 370), "MainMenu", "Zurück ins Menü");
-                buttons[1] = new Button(new Vector2(300, 370), "InGame", "Level neu starten");
+                buttons[0] = new Button(new Vector2(60, 275), "MainMenu", "Zurück ins Menü");
+                buttons[1] = new Button(new Vector2(60, 200), "InGame", "Level neu starten");
             }
             int counter = 0;
             string line;
@@ -175,7 +175,7 @@ namespace Crack_Tomb.Menuestruktur
                 buttons[i].SetFont(fontButton);
             }
             mouse = content.Load<Texture2D>("2DTexturen/MouseZeiger");
-            background = content.Load<Texture2D>("2DTexturen/Testbildhintergrund");
+            background = content.Load<Texture2D>("2DTexturen/Hintergrund");
             ranglisteHalterung = content.Load<Texture2D>("2DTexturen/Rangliste");
         }
 
@@ -249,7 +249,6 @@ namespace Crack_Tomb.Menuestruktur
         {
             SpriteBatch.Begin();
             SpriteBatch.Draw(background, new Vector2(0, 0), Color.White);
-            SpriteBatch.DrawString(fontText, "Du hast gewonnen!", new Vector2(300, 100), Color.Green);
 
             SpriteBatch.Draw(ranglisteHalterung, new Vector2(300, 0), Color.White);
 

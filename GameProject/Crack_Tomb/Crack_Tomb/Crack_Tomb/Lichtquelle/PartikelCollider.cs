@@ -7,6 +7,7 @@ using Lichtquelle;
 using Crack_Tomb.Spieler;
 using Crack_Tomb.Menuestruktur;
 using Crack_Tomb.Levelloader;
+using Microsoft.Xna.Framework.Audio;
 
 namespace Crack_Tomb.Lichtquelle
 {
@@ -14,9 +15,11 @@ namespace Crack_Tomb.Lichtquelle
     {
         int arrayposition_x;
         int arrayposition_y;
+        SoundEffect türöffnet;
 
-        public PartikelCollider()
+        public PartikelCollider(SoundEffect türöffnet)
         {
+            this.türöffnet = türöffnet;
         }
 
         //Kollisionsabfrage mit Spieler und Umgebung
@@ -393,6 +396,7 @@ namespace Crack_Tomb.Lichtquelle
 
                     if (levelloader.Level_Array[y, x] == 70)
                     {
+                        türöffnet.Play();
                         levelloader.Level_Array[y, x] = 71;
                     }
 

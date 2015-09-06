@@ -46,7 +46,7 @@ namespace MainMenuCo
         public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics) 
         {
             fontText = content.Load<SpriteFont>("Fonts/Normal");
-            background = content.Load<Texture2D>("2DTexturen/Testbildhintergrund");
+            background = content.Load<Texture2D>("2DTexturen/Hintergrund");
             titel = content.Load<Texture2D>("2DTexturen/Titel");
         }
 

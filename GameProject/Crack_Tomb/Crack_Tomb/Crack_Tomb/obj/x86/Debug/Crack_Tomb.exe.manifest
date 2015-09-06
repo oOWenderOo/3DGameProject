@@ -63,14 +63,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Crack_Tomb.exe" size="366592">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Crack_Tomb.exe" size="409088">
       <assemblyIdentity name="Crack_Tomb" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Uh0bW7S97Rmz1ZxLypBgQ69x84Q=</dsig:DigestValue>
+        <dsig:DigestValue>RGvqmVGxyCW6ckjQJeAkWnDdaHE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -81,6 +81,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>/33DZzzR70gC5B4hElnZWKy25rw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\2DTexturen\Hintergrund.xnb" size="1945067">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>gVNrYXBCR1GTyI5KO3nLBFqTOPc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\2DTexturen\Inventar.xnb" size="375387">
@@ -180,15 +189,6 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>GxOhh9CuFFoLL5K1m9QhOczIGeo=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\2DTexturen\Testbildhintergrund.xnb" size="1865875">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>JdAiSDYhvnAEoss9SJVsuGLE+d4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\2DTexturen\Timer.xnb" size="30387">
@@ -677,13 +677,13 @@
       <dsig:DigestValue>wsJvYkVs1aY6WjtUHA21ThBrw+8=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\Audio\titelscreenSong.wma" size="5678007">
+  <file name="Content\Audio\titelscreenSong.wma" size="1955639">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>f2W3G8mvuouJHhm/GHK6VGKbr4A=</dsig:DigestValue>
+      <dsig:DigestValue>2LsQA4SuInuQSgRxHFUL+YQI2Ns=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Audio\titelscreenSong.xnb" size="133">
@@ -692,7 +692,16 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>2ZxLZ1dSXKxrm4oDJ7IJieupk10=</dsig:DigestValue>
+      <dsig:DigestValue>YGz+gE5EFjapCMtS95d8JYQdn0I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Audio\Tür.xnb" size="709461">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>uJ5AR08rTePI/cD17NBNM1JIiRQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Audio\verlorenSong.wma" size="5490099">
@@ -722,6 +731,15 @@
       <dsig:DigestValue>IefR16m/0RHVPmKFjmMQbe9dpVE=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Content\Fonts\CreditsFont.xnb" size="21488">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>XW0Vt4ZV+PUNzrc2bEa+TDFOcps=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Content\Fonts\InventarNummer.xnb" size="37360">
     <hash>
       <dsig:Transforms>
@@ -747,6 +765,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>SJqShCwK6Qxvvd3H4WzaK8/90/I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Fonts\RanglisteLevelnummerFont.xnb" size="37360">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9XNxsb0KCuSzhic7Fdt4e2DkaOM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Fonts\TutorialFont.xnb" size="17392">

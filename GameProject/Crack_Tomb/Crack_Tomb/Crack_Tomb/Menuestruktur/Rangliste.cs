@@ -14,6 +14,7 @@ namespace MainMenuCo
     {
         SpriteFont fontButton;
         SpriteFont fontText;
+        SpriteFont levelnummerFont;
         Button[] buttons = new Button[1];
         Texture2D mouse;
         Texture2D background;
@@ -42,6 +43,7 @@ namespace MainMenuCo
         {
             fontButton = content.Load<SpriteFont>("Fonts/Button");
             fontText = content.Load<SpriteFont>("Fonts/Normal");
+            levelnummerFont = content.Load<SpriteFont>("Fonts/RanglisteLevelnummerFont");
 
             for (int i = 0; i < buttons.Length; i++)
             {
@@ -56,7 +58,7 @@ namespace MainMenuCo
             trigger[1].SetFont(fontButton);
 
             mouse = content.Load<Texture2D>("2DTexturen/MouseZeiger");
-            background = content.Load<Texture2D>("2DTexturen/Testbildhintergrund");
+            background = content.Load<Texture2D>("2DTexturen/Hintergrund");
             ranglisteHalterung = content.Load<Texture2D>("2DTexturen/Rangliste");
         }
 
@@ -122,7 +124,7 @@ namespace MainMenuCo
                 SpriteBatch.DrawString(fontText, rangliste[i], new Vector2(430, 120 + 30 * i), Color.Black);
             }
 
-            SpriteBatch.DrawString(fontText, "" + levelnummer, new Vector2(510, 10), Color.Black);
+            SpriteBatch.DrawString(levelnummerFont, "" + levelnummer, new Vector2(510, 15), Color.Black);
 
             SpriteBatch.DrawString(fontText, "Rangliste", new Vector2(460, 60), Color.Black);
 
