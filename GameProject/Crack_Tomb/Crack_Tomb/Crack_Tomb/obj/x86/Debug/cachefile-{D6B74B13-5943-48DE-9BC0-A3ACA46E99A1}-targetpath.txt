@@ -80,3 +80,4 @@ Content\Audio\Tür.xnb
 Content\Fonts\CreditsFont.xnb
 Content\2DTexturen\Hintergrund.xnb
 Content\Fonts\RanglisteLevelnummerFont.xnb
+Content\2DTexturen\CreditsFläche.xnb

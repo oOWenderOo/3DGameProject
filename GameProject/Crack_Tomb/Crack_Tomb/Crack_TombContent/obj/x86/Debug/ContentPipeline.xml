@@ -1026,6 +1026,15 @@
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Fonts\RanglisteLevelnummerFont.xnb</Output>
       <Time>2015-09-06T19:40:30.8654058+02:00</Time>
     </Item>
+    <Item>
+      <Source>2DTexturen\CreditsFläche.png</Source>
+      <Name>2DTexturen\CreditsFläche</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\CreditsFläche.xnb</Output>
+      <Time>2015-09-06T20:50:55.6944822+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
