@@ -98,13 +98,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2DTexturen\button.png">
-      <Name>button</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="2DTexturen\Score.png">
       <Name>Score</Name>
       <Importer>TextureImporter</Importer>
@@ -427,13 +420,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2DTexturen\InventarOffen.png">
-      <Name>InventarOffen</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="2DTexturen\Pfeil_links.png">
       <Name>Pfeil_links</Name>
       <Importer>TextureImporter</Importer>
@@ -478,6 +464,27 @@
   <ItemGroup>
     <Compile Include="2DTexturen\Tutorialrahmen.png">
       <Name>Tutorialrahmen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2DTexturen\InventarOffen.png">
+      <Name>InventarOffen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2DTexturen\button.png">
+      <Name>button</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2DTexturen\Titel.png">
+      <Name>Titel</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

@@ -15,6 +15,7 @@ namespace MainMenuCo
     {
         SpriteFont fontText;
         Texture2D background;
+        Texture2D titel;
         int anzahllevel;
 
         public Titlescreen(int anzahllevel)
@@ -46,6 +47,7 @@ namespace MainMenuCo
         {
             fontText = content.Load<SpriteFont>("Fonts/Normal");
             background = content.Load<Texture2D>("2DTexturen/Testbildhintergrund");
+            titel = content.Load<Texture2D>("2DTexturen/Titel");
         }
 
         public override GameState Update(GameTime gameTime)
@@ -61,7 +63,13 @@ namespace MainMenuCo
         {
             spriteBatch.Begin();
             spriteBatch.Draw(background, new Vector2(0, 0), Color.White);
-            spriteBatch.DrawString(fontText, "~ Press Enter ~",new Vector2(280, 350), Color.Black);
+            spriteBatch.Draw(titel, new Vector2(40, 100), Color.White);
+            
+            if (((int)gameTime.TotalGameTime.Milliseconds) % 800 >= 0 && ((int)gameTime.TotalGameTime.Milliseconds) % 800 <= 400)
+            {
+                spriteBatch.DrawString(fontText, "~ Enter drücken ~", new Vector2(270, 350), Color.Black);
+            }
+
             spriteBatch.End();
         }
     }

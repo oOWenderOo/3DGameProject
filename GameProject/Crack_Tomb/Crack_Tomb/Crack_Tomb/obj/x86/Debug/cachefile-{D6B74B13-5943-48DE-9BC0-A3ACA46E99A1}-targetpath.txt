@@ -76,3 +76,4 @@ Content\2DTexturen\Pfeil_links.xnb
 Content\2DTexturen\Pfeil_rechts.xnb
 Content\2DTexturen\Pausenmenubutton.xnb
 Content\2DTexturen\Tutorialrahmen.xnb
+Content\2DTexturen\Titel.xnb

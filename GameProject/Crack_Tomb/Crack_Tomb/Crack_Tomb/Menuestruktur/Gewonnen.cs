@@ -76,7 +76,7 @@ namespace Crack_Tomb.Menuestruktur
                 buttons = new Button[3];
 
                 buttons[0] = new Button(new Vector2(540, 370), "MainMenu", "Zurück ins Menü");
-                buttons[1] = new Button(new Vector2(300, 370), "InGame", "Level erneut starten");
+                buttons[1] = new Button(new Vector2(300, 370), "InGame", "Level neu starten");
                 buttons[2] = new Button(new Vector2(60, 370), "InGame", "Nächstes Level");
             }
             else
@@ -84,7 +84,7 @@ namespace Crack_Tomb.Menuestruktur
                 buttons = new Button[2];
 
                 buttons[0] = new Button(new Vector2(540, 370), "MainMenu", "Zurück ins Menü");
-                buttons[1] = new Button(new Vector2(300, 370), "InGame", "Level erneut starten");
+                buttons[1] = new Button(new Vector2(300, 370), "InGame", "Level neu starten");
             }
             int counter = 0;
             string line;

@@ -9,7 +9,7 @@ Inhaltverzeichnis:
 Führe die setup.exe aus und folge den Anweisungen während der Installation.
 Jede erforderliche Software (falls nicht vorhanden) wird automatisch installiert.
 Nach der Installation wird CrackTomb automatisch gestartet.
-Ein erneutes ausführen ist problemlos, da eine Desktopverknüpfung automatisch
+Ein erneutes Ausführen ist problemlos, da eine Desktopverknüpfung automatisch
 erzeugt wird.
 
 

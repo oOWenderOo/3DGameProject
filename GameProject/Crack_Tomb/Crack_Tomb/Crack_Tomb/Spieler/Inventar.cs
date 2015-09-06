@@ -57,11 +57,11 @@ namespace Crack_Tomb.Spieler
 
                     if (inventar[i] == 0)
                     {
-                        spritebatch.DrawString(font, str, new Vector2(positionNumX + 175 + 43 * i, positionNumY), Color.Gray);
+                        spritebatch.DrawString(font, str, new Vector2(positionNumX + 180 + 43 * i, positionNumY - 15), Color.Gray);
                     }
                     else
                     {
-                        spritebatch.DrawString(font, str, new Vector2(positionNumX + 175 + 43 * i, positionNumY), Color.Black);
+                        spritebatch.DrawString(font, str, new Vector2(positionNumX + 180 + 43 * i, positionNumY - 15), Color.Black);
                     }
                 }
             }
