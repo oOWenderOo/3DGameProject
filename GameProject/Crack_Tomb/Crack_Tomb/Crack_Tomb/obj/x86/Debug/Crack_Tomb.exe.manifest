@@ -63,14 +63,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Crack_Tomb.exe" size="339456">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Crack_Tomb.exe" size="346112">
       <assemblyIdentity name="Crack_Tomb" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>/DD74y2PcIuicCndBVkhx9GyvR8=</dsig:DigestValue>
+        <dsig:DigestValue>afGwpRTXC8kgTz1rkDfSqVQd9Js=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
