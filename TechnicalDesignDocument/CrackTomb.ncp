@@ -1,0 +1,882 @@
+<Project>
+  <Name>CrackTomb</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Klassendiagramm</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Game1</Name>
+        <Access>Public</Access>
+        <Location left="95" top="59" />
+        <Size width="162" height="247" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int anzahllevel</Member>
+        <Member type="Field">GameState state</Member>
+        <Member type="Field">GameState oldstate</Member>
+        <Member type="Field">SongController songController</Member>
+        <Member type="Field">GraphicsDeviceManager graphics</Member>
+        <Member type="Field">SpriteBatch spriteBatch</Member>
+        <Member type="Method">protected override void LoadContent()</Member>
+        <Member type="Method">protected override void Update(GameTime gameTime)</Member>
+        <Member type="Method">protected override void Draw(GameTime gameTime)</Member>
+        <Member type="Constructor">public Game1()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SongController</Name>
+        <Access>Public</Access>
+        <Location left="343" top="59" />
+        <Size width="162" height="213" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int anzahllevel</Member>
+        <Member type="Field">Song titelscreenSong</Member>
+        <Member type="Field">Song menuSong</Member>
+        <Member type="Field">Song inGameSong</Member>
+        <Member type="Field">Song gewonnenSong</Member>
+        <Member type="Field">Song verlorenSong</Member>
+        <Member type="Constructor">public SongController(ContentManager content, int anzahllevel)</Member>
+        <Member type="Method">public void checkSong(Gamestate state, Gamestate oldstate)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>GameState</Name>
+        <Access>Public</Access>
+        <Location left="273" top="307" />
+        <Size width="506" height="216" />
+        <Collapsed>True</Collapsed>
+        <Member type="Method">public abstract void LoadContent(ContentManager Contetn, GraphicsDeviceManager Graphics)</Member>
+        <Member type="Method">public abstract Gamestate Update(GameTime gameTime)</Member>
+        <Member type="Method">public abstract void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Beenden</Name>
+        <Access>Public</Access>
+        <Location left="40" top="438" />
+        <Size width="162" height="145" />
+        <Collapsed>True</Collapsed>
+        <Member type="Constructor">public Beenden()</Member>
+        <Member type="Method">public override GameState Update(GameTime gametime)</Member>
+        <Member type="Method">public override void LoadContent(ContentManager Content, GraphicsDeviceManager Graphics)</Member>
+        <Member type="Method">public void Draw(GameTime gamTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Credits</Name>
+        <Access>Public</Access>
+        <Location left="40" top="500" />
+        <Size width="162" height="383" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">SpriteFont fontButton</Member>
+        <Member type="Field">SpriteFont fontText</Member>
+        <Member type="Field">SpriteFont creditsFont</Member>
+        <Member type="Field">Button[] buttons</Member>
+        <Member type="Field">TriggerButton[] trigger</Member>
+        <Member type="Field">Textrue2D mouse</Member>
+        <Member type="Field">Textrue2D background</Member>
+        <Member type="Field">Textrue2D creidtsFläche</Member>
+        <Member type="Field">int anzahllevel</Member>
+        <Member type="Field">int creditsPositionX</Member>
+        <Member type="Field">int creditsPositionY</Member>
+        <Member type="Field">int anfang</Member>
+        <Member type="Field">int ende</Member>
+        <Member type="Field">string[] creditsText</Member>
+        <Member type="Constructor">public Credits(int anzahllevel)</Member>
+        <Member type="Method">public override void LoadContent(ContentManager contetn, GraphicsDeviceManager Graphics)</Member>
+        <Member type="Method">public override GameState Update(GameTime gameTime)</Member>
+        <Member type="Method">public override void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>GameOver</Name>
+        <Access>Public</Access>
+        <Location left="40" top="564" />
+        <Size width="162" height="281" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">SpriteFont fontButton</Member>
+        <Member type="Field">SpriteFont fontText</Member>
+        <Member type="Field">Button[] buttons</Member>
+        <Member type="Field">Textrue2D mouse</Member>
+        <Member type="Field">Textrue2D background</Member>
+        <Member type="Field">int levelnummer</Member>
+        <Member type="Field">int anzahllevel</Member>
+        <Member type="Constructor">public GameOver()</Member>
+        <Member type="Constructor">public GameOver(int levelnummer, int anzahllevel)</Member>
+        <Member type="Method">public override void LoadContetn(ContentManager content, GraphicsDeviceManager Graphics)</Member>
+        <Member type="Method">public override void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)</Member>
+        <Member type="Method">public override GameState Update(GameTime gameTime)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Gewonnen</Name>
+        <Access>Public</Access>
+        <Location left="40" top="376" />
+        <Size width="162" height="468" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">SpriteFont fontButton</Member>
+        <Member type="Field">SpriteFont fontText</Member>
+        <Member type="Field">Button[] buttons</Member>
+        <Member type="Field">Texture2D mouse</Member>
+        <Member type="Field">Texture2D background</Member>
+        <Member type="Field">Textrue2D ranglistenHalterung</Member>
+        <Member type="Field">int levelnummer</Member>
+        <Member type="Field">int punkte</Member>
+        <Member type="Field">int anzahllevel</Member>
+        <Member type="Field">string[] rangliste</Member>
+        <Member type="Field">int[] ranglistePunkte</Member>
+        <Member type="Field">int position</Member>
+        <Member type="Field">bool musseintragen</Member>
+        <Member type="Field">string EingabeName</Member>
+        <Member type="Field">int ranglistePositionX</Member>
+        <Member type="Field">int RanglistePositionY</Member>
+        <Member type="Field">bool[] isGedrücktTaste</Member>
+        <Member type="Method">public override void LoadContent()</Member>
+        <Member type="Method">public override Gamestate Update(GameTime gameTime)</Member>
+        <Member type="Constructor">public Gewonnen()</Member>
+        <Member type="Constructor">public Gewonnen(int levelnummer, int punkte, int anzahllevel)</Member>
+        <Member type="Method">public override void Draw(GameTime gamTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)</Member>
+        <Member type="Method">private void eingabeKontrolle()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>InGame</Name>
+        <Access>Public</Access>
+        <Location left="156" top="635" />
+        <Size width="162" height="502" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">BasicEffect effect</Member>
+        <Member type="Field">Level_Loader levelloader</Member>
+        <Member type="Field">Kamera camera</Member>
+        <Member type="Field">public GraphicsDevice graphicsdevice</Member>
+        <Member type="Field">Lichtstrahl licht</Member>
+        <Member type="Field">Vector3 lichtPos</Member>
+        <Member type="Field">Vector3 lichtDir</Member>
+        <Member type="Field">Player player</Member>
+        <Member type="Field">PauseMenü pausemenü</Member>
+        <Member type="Field">bool gewonnen</Member>
+        <Member type="Field">Textrue2D score</Member>
+        <Member type="Field">SpriteFont schriftartScore</Member>
+        <Member type="Field">int punkte</Member>
+        <Member type="Field">int minuten</Member>
+        <Member type="Field">int sekunden</Member>
+        <Member type="Field">Tutorial tutorial</Member>
+        <Member type="Field">IngameTimer timer</Member>
+        <Member type="Field">int wartcount</Member>
+        <Member type="Field">int levelnummer</Member>
+        <Member type="Field">int anzahllevel</Member>
+        <Member type="Constructor">public InGame()</Member>
+        <Member type="Constructor">public InGame(int levelnummer, int anzahllevel)</Member>
+        <Member type="Method">public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics)</Member>
+        <Member type="Method">public override GameState Update(GameTime gameTime)</Member>
+        <Member type="Method">public override void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Levelauswahl</Name>
+        <Access>Public</Access>
+        <Location left="262" top="376" />
+        <Size width="162" height="298" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">SpriteFont fontButton</Member>
+        <Member type="Field">SpriteFont fontText</Member>
+        <Member type="Field">Button[] buttons</Member>
+        <Member type="Field">LevelButton[] levelbuttons</Member>
+        <Member type="Field">Texture2D mouse</Member>
+        <Member type="Field">Texture2D background</Member>
+        <Member type="Field">Textrue2D levelauswahlRahmen</Member>
+        <Member type="Field">int levelnummer</Member>
+        <Member type="Field">int anzahllevel</Member>
+        <Member type="Constructor">public Levelauswahl(int anzahllevel)</Member>
+        <Member type="Method">public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics)</Member>
+        <Member type="Method">public override GameState Update(GameTime gameTime)</Member>
+        <Member type="Method">public override void Draw(GameTime gamTime, GraphicsDeviceManager GRaphics, SpriteBatch SpriteBatch)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MainMenu</Name>
+        <Access>Public</Access>
+        <Location left="262" top="438" />
+        <Size width="162" height="298" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">SpriteFont fontButton</Member>
+        <Member type="Field">SpriteFont fontText</Member>
+        <Member type="Field">Button[] buttons</Member>
+        <Member type="Field">Texture2D mouse</Member>
+        <Member type="Field">Texture2D background</Member>
+        <Member type="Field">int anzahllevel</Member>
+        <Member type="Field">int buttonsPositionX</Member>
+        <Member type="Field">int buttonsPositionY</Member>
+        <Member type="Field">int buttonsAbstand</Member>
+        <Member type="Method">public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics)</Member>
+        <Member type="Method">public void Draw(GameTime gamTime, GraphicsDeviceManger Graphics, SpriteBarch SpriteBatch)</Member>
+        <Member type="Method">public override GameState Update(GameTime gameTime)</Member>
+        <Member type="Constructor">public MainMenu(int anzahllevel)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Rangliste</Name>
+        <Access>Public</Access>
+        <Location left="262" top="500" />
+        <Size width="162" height="349" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">SpriteFont fontButton</Member>
+        <Member type="Field">SpriteFont fontText</Member>
+        <Member type="Field">SpriteFont levelnummerFont</Member>
+        <Member type="Field">Button[] buttons</Member>
+        <Member type="Field">Texture2D mouse</Member>
+        <Member type="Field">Texture2D background</Member>
+        <Member type="Field">Texture2D ranglisteHalterung</Member>
+        <Member type="Field">TriggerButton[] trigger</Member>
+        <Member type="Field">string[] rangliste</Member>
+        <Member type="Field">int levelnummer</Member>
+        <Member type="Field">int anzahllevel</Member>
+        <Member type="Constructor">public Rangliste(int anzahllevel)</Member>
+        <Member type="Method">public override void LoadContent(ContentManager content, GraphicsDeviceManager Graphics)</Member>
+        <Member type="Method">public override GameState Update(GameTime gameTime)</Member>
+        <Member type="Method">public override void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)</Member>
+        <Member type="Method">public void checkRangliste(int levelnummer)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Titelscreen</Name>
+        <Access>Public</Access>
+        <Location left="262" top="564" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">SpriteFont fontText</Member>
+        <Member type="Field">Tetrue2D background</Member>
+        <Member type="Field">Texture2D titel</Member>
+        <Member type="Field">int anzhallevel</Member>
+        <Member type="Constructor">public Titelscreen(int anzahllevel)</Member>
+        <Member type="Method">public override void LoadContent(ContetnManager content, GraphicsDeviceManager Graphics)</Member>
+        <Member type="Method">public override GameState Update(GameTime gameTime)</Member>
+        <Member type="Method">public override void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>TriggerButton</Name>
+        <Access>Public</Access>
+        <Location left="540" top="376" />
+        <Size width="162" height="247" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">Vector2 position</Member>
+        <Member type="Field">Texture2D texture</Member>
+        <Member type="Field">string text</Member>
+        <Member type="Field">SpriteFont font</Member>
+        <Member type="Field">bool isgedrückt</Member>
+        <Member type="Constructor">public TriggerButton(Vector2 position, string text)</Member>
+        <Member type="Method">public void setFont(SpriteFont font)</Member>
+        <Member type="Method">public void setTexture(Texture2D texture)</Member>
+        <Member type="Method">public bool isPressed()</Member>
+        <Member type="Method">public void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Button</Name>
+        <Access>Public</Access>
+        <Location left="540" top="449" />
+        <Size width="162" height="281" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">Vector2 position</Member>
+        <Member type="Field">Texture2D texture</Member>
+        <Member type="Field">string state</Member>
+        <Member type="Field">string text</Member>
+        <Member type="Field">SpriteFont font</Member>
+        <Member type="Field">bool isgedrückt</Member>
+        <Member type="Constructor">public Button(Vector2 position, string state, string text)</Member>
+        <Member type="Method">public void setFont(SpriteFont font)</Member>
+        <Member type="Method">public void setTexture(Texture2D texture)</Member>
+        <Member type="Method">public bool isPressed()</Member>
+        <Member type="Method">public GameState GetState(int levelnummer, int anzahllevel)</Member>
+        <Member type="Method">public void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>LevelButton</Name>
+        <Access>Public</Access>
+        <Location left="540" top="518" />
+        <Size width="162" height="298" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">Vector2 position</Member>
+        <Member type="Field">Texture2D texture</Member>
+        <Member type="Field">string text</Member>
+        <Member type="Field">SpriteFont font</Member>
+        <Member type="Field">int levelnummer</Member>
+        <Member type="Field">bool freigeschaltet</Member>
+        <Member type="Constructor">public LevelButton(int levelnummer, Vector2 position, string text, bool freigeschaltet)</Member>
+        <Member type="Method">public bool getFreigeschaltet()</Member>
+        <Member type="Method">public void setFont(SpriteFont font)</Member>
+        <Member type="Method">public void setTexture(Texture2D texture)</Member>
+        <Member type="Method">public bool isPressed()</Member>
+        <Member type="Method">public int getLevelnummer()</Member>
+        <Member type="Method">public void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch, int levelnummer)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PauseMenü</Name>
+        <Access>Public</Access>
+        <Location left="431" top="635" />
+        <Size width="162" height="315" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">public bool ispause</Member>
+        <Member type="Field">SpriteFont fontButton</Member>
+        <Member type="Field">SpriteFont fontText</Member>
+        <Member type="Field">SpriteFont pauseFont</Member>
+        <Member type="Field">Button[] buttons</Member>
+        <Member type="Field">Texture2D mouse</Member>
+        <Member type="Field">Textrue2D background</Member>
+        <Member type="Field">bool pausegedrückt</Member>
+        <Member type="Field">int anzhallevel</Member>
+        <Member type="Field">int levelnummer</Member>
+        <Member type="Constructor">public PauseMenü(ContentManager content, int anzahllevel, int levelnummer)</Member>
+        <Member type="Method">public void checkPause(GameTime gametime)</Member>
+        <Member type="Method">public GameState Update(GameState aktuell)</Member>
+        <Member type="Method">public void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Tutorial</Name>
+        <Access>Public</Access>
+        <Location left="431" top="700" />
+        <Size width="162" height="366" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">public bool spielerLiest</Member>
+        <Member type="Field">string[] tutorialtext</Member>
+        <Member type="Field">bool tutorialzeichnen</Member>
+        <Member type="Field">SpriteFont font</Member>
+        <Member type="Field">int anfang</Member>
+        <Member type="Field">int ende</Member>
+        <Member type="Field">int seitenzahl</Member>
+        <Member type="Field">int seite</Member>
+        <Member type="Field">bool isgedrücktD</Member>
+        <Member type="Field">bool isgedrücktA</Member>
+        <Member type="Field">Texture2D tutorialRahmen</Member>
+        <Member type="Field">int tutorialPositionX</Member>
+        <Member type="Field">int tutorialPositionY</Member>
+        <Member type="Constructor">public Tutorial(int levelnummer)</Member>
+        <Member type="Method">public void LoadContent(ContentManager content)</Member>
+        <Member type="Method">public void Update()</Member>
+        <Member type="Method">public void Draw(SpriteBatch spritebatch)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>IngameTimer</Name>
+        <Access>Public</Access>
+        <Location left="431" top="963" />
+        <Size width="162" height="298" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">SpriteFont font</Member>
+        <Member type="Field">string Timetext</Member>
+        <Member type="Field">string MinutesText</Member>
+        <Member type="Field">string SecondsText</Member>
+        <Member type="Field">private Vector2 position</Member>
+        <Member type="Field">int minutes</Member>
+        <Member type="Field">float seconds</Member>
+        <Member type="Field">Texture2D timertextur</Member>
+        <Member type="Constructor">public IngameTimer(int startMinute, float startSeconds)</Member>
+        <Member type="Method">public void Update(GameTime gameTime)</Member>
+        <Member type="Method">public void setFont(ContentManager content)</Member>
+        <Member type="Method">public void setTexture(ContentManager content)</Member>
+        <Member type="Method">public void Draw(GameTime gameTime, GraphicsDeviceManager Graphics, SpriteBatch spriteBatch)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Player</Name>
+        <Access>Public</Access>
+        <Location left="431" top="761" />
+        <Size width="162" height="315" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">public Vector3 position</Member>
+        <Member type="Field">Model spielermodel</Member>
+        <Member type="Field">Model spiegel</Member>
+        <Member type="Field">Model splittprisma</Member>
+        <Member type="Field">Model farbkristall</Member>
+        <Member type="Field">Inventar inventar</Member>
+        <Member type="Field">PlayerSteuerung playersteuerung</Member>
+        <Member type="Field">int[,] Säulen_Array</Member>
+        <Member type="Field">Effect kristalleffect</Member>
+        <Member type="Constructor">public Player(Vector3 startposition, Model spielermodel, int LevelNumme, ContentManager content, ref Level_Loader levelloader)</Member>
+        <Member type="Method">public void Update(GameTime gametime, ref Level_Loader levelloader, bool isMapActive)</Member>
+        <Member type="Method">public void setInventar(ref Level_Loader levelloader)</Member>
+        <Member type="Method">public int[,] getSäulenArray()</Member>
+        <Member type="Method">public void Draw(Matrix view, Matrix projection, SpriteBatch spritebatch, bool isMapActive)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PlayerSteuerung</Name>
+        <Access>Public</Access>
+        <Location left="704" top="761" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">Vector3 newpositon</Member>
+        <Member type="Field">PlayerCollider playercollider</Member>
+        <Member type="Field">public float speed</Member>
+        <Member type="Field">bool[] isgedrücktTaste</Member>
+        <Member type="Field">SoundEffect farbristallkramen</Member>
+        <Member type="Field">SoundEffect herausnehmen</Member>
+        <Member type="Method">public Vector3 Update(GameTime gametime, Vector3 playerposition, ref int[,] Säulen_Array, ref Inventar inventar, ref Level_LoaderV2 levelloader)</Member>
+        <Member type="Constructor">public PlayerSteuerung(int LevelNummer, ref int[,] Säulen_Array, SoundEffect farbkristallkramen, SoundEffect herausnehmen)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PlayerCollider</Name>
+        <Access>Public</Access>
+        <Location left="972" top="761" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int arraypoition_x</Member>
+        <Member type="Field">int arrayposition_y</Member>
+        <Member type="Method">public bool IsColliding(Vector3 currentposition, Vector3 newposition, ref Level_LoaderV2 levelloader)</Member>
+        <Member type="Constructor">public PlayerCollider()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Inventar</Name>
+        <Access>Public</Access>
+        <Location left="704" top="829" />
+        <Size width="162" height="264" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">private int[] inventar</Member>
+        <Member type="Field">SpriteFont font</Member>
+        <Member type="Field">Textrue2D inventarTextur</Member>
+        <Member type="Field">Textrue2D inventarMitFarbkristallTextur</Member>
+        <Member type="Field">public bool drawFarbkristalle</Member>
+        <Member type="Field">int positionNumX</Member>
+        <Member type="Field">int positionNumY</Member>
+        <Member type="Constructor">public Inventar(ContentManager content)</Member>
+        <Member type="Method">public void Draw(SpriteBatch spritebatch)</Member>
+        <Member type="Method">public void setSpiegel(int anzahl)</Member>
+        <Member type="Method">public void setSplittPrisma(int anzahl)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>LevelLoader</Name>
+        <Access>Public</Access>
+        <Location left="431" top="1026" />
+        <Size width="162" height="281" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int Level_Nummer</Member>
+        <Member type="Field">Model[] model</Member>
+        <Member type="Field">Effect barriereEffect</Member>
+        <Member type="Field">public Vector3 Licht_Start</Member>
+        <Member type="Field">public Vector Licht_Richtung</Member>
+        <Member type="Field">public int minuten</Member>
+        <Member type="Field">public int sekunden</Member>
+        <Member type="Field">public int[] inventar</Member>
+        <Member type="Field">public int[,] Level_Array</Member>
+        <Member type="Constructor">public LevelLoader(int Level_Nummer)</Member>
+        <Member type="Method">public void Array_Loader(ContentManager content)</Member>
+        <Member type="Method">public void Draw(GraphicsDevice graphicdevice, Matrix view, Matrix projection)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Lichtstrahl</Name>
+        <Access>Public</Access>
+        <Location left="431" top="901" />
+        <Size width="162" height="264" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">Lichtquelle_Partikel p</Member>
+        <Member type="Field">Lichtquelle_Partikel newp</Member>
+        <Member type="Field">Vector3 position</Member>
+        <Member type="Field">Vector3 richtung</Member>
+        <Member type="Field">Model partikelmodel</Member>
+        <Member type="Field">PartikelCollider collider</Member>
+        <Member type="Field">Effect partikeleffect</Member>
+        <Member type="Constructor">public Lichtstrahl(Model partikelmodel, Vector3 position, Vector3 richtung, int levelnummer, Effect partikeleffect, SoundEffect türöffnet)</Member>
+        <Member type="Method">public void Update(GameTime gameTime, ref Player player, ref bool gewonnen, ref Level_LoaderV2 levelloader)</Member>
+        <Member type="Method">public void Draw(GameTime gameTime, Matrix view, Matrix projection)</Member>
+        <Member type="Method">private double dist(Vector3 a, Vector3 b)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Kamera</Name>
+        <Access>Public</Access>
+        <Location left="431" top="829" />
+        <Size width="162" height="230" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">public Matrix view</Member>
+        <Member type="Field">public Matrix projection</Member>
+        <Member type="Field">Vector3 playerposition</Member>
+        <Member type="Field">bool isgedrücktM</Member>
+        <Member type="Field">bool mapActive</Member>
+        <Member type="Field">Vector3 mapPosition</Member>
+        <Member type="Constructor">public Kamera(Vector3 playerposition)</Member>
+        <Member type="Method">public void Update(Vector3 playerposition)</Member>
+        <Member type="Method">public bool getMapActive()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Lichtquelle_Partikel</Name>
+        <Access>Public</Access>
+        <Location left="704" top="901" />
+        <Size width="162" height="264" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">MyColor farbe</Member>
+        <Member type="Field">Vector3 position</Member>
+        <Member type="Field">Vector3 richtung</Member>
+        <Member type="Field">Model partikelmodel</Member>
+        <Member type="Field">Lichtquelle_Partikel vorgänger</Member>
+        <Member type="Field">Lichtquelle_Partikel nachfolger</Member>
+        <Member type="Field">public Effect effect</Member>
+        <Member type="Field">bool horizontal</Member>
+        <Member type="Constructor">public Lichtquelle_Partikel(Model partikelmodel, Vector3 position, Vector3 richtung, Lichtquelle_Partikel vorgänger, Lichtquelle_Partikel nachfolger, MyColor farbe, Effect effect)</Member>
+        <Member type="Method">public void Update(GameTime gameTime, PartikelCollider collider, ref Player player, ref bool gewonnen, ref Level_LoaderV2 levelloader)</Member>
+        <Member type="Method">public void Draw(GameTime gameTime, Matrix view, Matrix projection)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PartikelCollider</Name>
+        <Access>Public</Access>
+        <Location left="704" top="963" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int arrayposition_x</Member>
+        <Member type="Field">int arrayposition_y</Member>
+        <Member type="Field">SoundEffect türöffnet</Member>
+        <Member type="Constructor">public PartikelCollider(SoundEffect türöffnet)</Member>
+        <Member type="Method">public void colliding(Lichtquelle_Partikel partikel, Vector3 newposition, ref Player player, ref bool gewonnen, ref Level_LoaderV2 levelloader)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MyColor</Name>
+        <Access>Public</Access>
+        <Location left="972" top="901" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">public int mycolor</Member>
+        <Member type="Field">public Color color</Member>
+        <Member type="Constructor">public MyColor(int hcolor)</Member>
+        <Member type="Method">public static int mixColor(MyColor RayColor, MyColor ObjectColor)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ALevel</Name>
+        <Access>Public</Access>
+        <Location left="704" top="1026" />
+        <Size width="162" height="298" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">public int minuten</Member>
+        <Member type="Field">public int sekunden</Member>
+        <Member type="Field">public int anzahlSpiegel</Member>
+        <Member type="Field">public int anzahlSplittPrisma</Member>
+        <Member type="Field">public int anzahlRed</Member>
+        <Member type="Field">public int anzahlYellow</Member>
+        <Member type="Field">public int anzahlYellow</Member>
+        <Member type="Field">public int anzahlGreen</Member>
+        <Member type="Field">public int anzahlCyan</Member>
+        <Member type="Field">public int anzahlBlue</Member>
+        <Member type="Field">public int anzahlMagenta</Member>
+        <Member type="Field">public Vector3 Licht_Richtung</Member>
+        <Member type="Field">public int[,] Level_Array</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Level01</Name>
+        <Access>Public</Access>
+        <Location left="972" top="1026" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int[,] My_Level_Array</Member>
+        <Member type="Constructor">public Level01()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Level02</Name>
+        <Access>Public</Access>
+        <Location left="972" top="1084" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int[,] My_Level_Array</Member>
+        <Member type="Constructor">public Level02()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Level03</Name>
+        <Access>Public</Access>
+        <Location left="972" top="1146" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int[,] My_Level_Array</Member>
+        <Member type="Constructor">public Level03()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Level40</Name>
+        <Access>Public</Access>
+        <Location left="972" top="1281" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int[,] My_Level_Array</Member>
+        <Member type="Constructor">public Level40()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Generalization" first="4" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="3" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="5" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="6" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="7" second="2">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="8" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="9" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="10" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="11" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="2" second="13">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="12">
+        <Label>besitzt</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="14">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="18" second="19">
+        <Label>besitzt</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="19" second="20">
+        <Label>besitzt</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="18" second="21">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="23" second="25">
+        <Label>besitzt</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="23" second="26">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="25" second="27">
+        <Label>besitzt</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="22" second="28">
+        <Label>lädt</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Generalization" first="29" second="28">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="30" second="28">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="31" second="28">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>919</X>
+          <Y>1135</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>891</X>
+          <Y>1048</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="32" second="28">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>925</X>
+          <Y>1306</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>914</X>
+          <Y>1048</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="7" second="15">
+        <Label>besitzt</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>405</X>
+          <Y>659</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="7" second="16">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>343</X>
+          <Y>659</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="7" second="17">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>343</X>
+          <Y>659</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="7" second="18">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>343</X>
+          <Y>659</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>406</X>
+          <Y>778</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="7" second="24">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>343</X>
+          <Y>659</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="7" second="23">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>343</X>
+          <Y>659</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="7" second="22">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>343</X>
+          <Y>659</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>406</X>
+          <Y>1049</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="2">
+        <Label>besitzt</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>2</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="1">
+        <Label>besitzt</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

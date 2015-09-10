@@ -37,7 +37,7 @@ namespace Crack_Tomb.Menuestruktur
                     tutorialtext[0] = "Willkommen bei CrackTomb!";
                     tutorialtext[1] = "";
                     tutorialtext[2] = "In diesem Spiel dreht sich";
-                    tutorialtext[3] = "alles um Frank. Hans ist ein";
+                    tutorialtext[3] = "alles um Frank. Frank ist ein";
                     tutorialtext[4] = "Rentner, welcher im Krieg";
                     //Seite 2
                     tutorialtext[5] = "gedient hat. Jedoch wurde ihm";

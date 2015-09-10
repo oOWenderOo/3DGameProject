@@ -39,7 +39,7 @@ namespace Crack_Tomb.Levelloader
                 MediaPlayer.Play(titelscreenSong);
             }
             else
-            {
+            { 
                 if (Object.ReferenceEquals(state.GetType(), new Gewonnen().GetType()))
                 {
                     MediaPlayer.Play(gewonnenSong);
