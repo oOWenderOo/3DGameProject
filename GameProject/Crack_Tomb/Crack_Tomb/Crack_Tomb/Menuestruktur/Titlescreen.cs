@@ -47,7 +47,7 @@ namespace MainMenuCo
         {
             fontText = content.Load<SpriteFont>("Fonts/Normal");
             background = content.Load<Texture2D>("2DTexturen/Hintergrund");
-            titel = content.Load<Texture2D>("2DTexturen/Titel");
+            titel = content.Load<Texture2D>("2DTexturen/Titelbild Crack Tomb");
         }
 
         public override GameState Update(GameTime gameTime)
@@ -63,11 +63,11 @@ namespace MainMenuCo
         {
             spriteBatch.Begin();
             spriteBatch.Draw(background, new Vector2(0, 0), Color.White);
-            spriteBatch.Draw(titel, new Vector2(40, 100), Color.White);
+            spriteBatch.Draw(titel, new Vector2(0, 0), Color.White);
             
             if (((int)gameTime.TotalGameTime.Milliseconds) % 800 >= 0 && ((int)gameTime.TotalGameTime.Milliseconds) % 800 <= 400)
             {
-                spriteBatch.DrawString(fontText, "~ Enter drücken ~", new Vector2(270, 350), Color.Black);
+                spriteBatch.DrawString(fontText, "~ Enter drücken ~", new Vector2(270, 290), Color.Blue);
             }
 
             spriteBatch.End();

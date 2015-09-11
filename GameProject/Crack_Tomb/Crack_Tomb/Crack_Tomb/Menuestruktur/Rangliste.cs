@@ -24,13 +24,15 @@ namespace MainMenuCo
         string[] rangliste = new string[10];
         int levelnummer = 1;
         int anzahlLevel;
+        int ranglistePositionX = 460;
+        int ranglistePositionY = 60;
 
         public Rangliste(int anzahllevel)
         {
             this.anzahlLevel = anzahllevel;
             buttons[0] = new Button(new Vector2(60, 370), "MainMenu", "Zurück");
 
-            int positionX = 320;
+            int positionX = 310;
             int positionY = 20;
 
             trigger[0] = new TriggerButton(new Vector2(positionX, positionY), "Zurück");
@@ -120,13 +122,13 @@ namespace MainMenuCo
             
             for (int i = 0; i < rangliste.Length; i++)
             {
-                SpriteBatch.DrawString(fontText, (i + 1) + ".", new Vector2(380, 120 + 30 * i), Color.Black);
-                SpriteBatch.DrawString(fontText, rangliste[i], new Vector2(430, 120 + 30 * i), Color.Black);
+                SpriteBatch.DrawString(fontText, (i + 1) + ".", new Vector2(ranglistePositionX - 100, ranglistePositionY + 50 + 30 * i), Color.Black);
+                SpriteBatch.DrawString(fontText, rangliste[i], new Vector2(ranglistePositionX - 50, ranglistePositionY + 50 + 30 * i), Color.Black);
             }
 
-            SpriteBatch.DrawString(levelnummerFont, "" + levelnummer, new Vector2(510, 15), Color.Black);
+            SpriteBatch.DrawString(levelnummerFont, "" + levelnummer, new Vector2(ranglistePositionX + 30, ranglistePositionY - 57), Color.Black);
 
-            SpriteBatch.DrawString(fontText, "Rangliste", new Vector2(460, 60), Color.Black);
+            SpriteBatch.DrawString(fontText, "Rangliste", new Vector2(ranglistePositionX - 10, ranglistePositionY - 10), Color.Black);
 
             SpriteBatch.Draw(mouse, new Vector2(Mouse.GetState().X, Mouse.GetState().Y), Color.White);
 

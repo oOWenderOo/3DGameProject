@@ -16,6 +16,7 @@ namespace MainMenuCo
         Button[] buttons = new Button[4];
         Texture2D mouse;
         Texture2D background;
+        Texture2D titel;
         int anzahllevel;
         int buttonsPositionX = 60;
         int buttonsPositionY = 120;
@@ -46,6 +47,7 @@ namespace MainMenuCo
             }
             mouse = content.Load<Texture2D>("2DTexturen/MouseZeiger");
             background = content.Load<Texture2D>("2DTexturen/Hintergrund");
+            titel = content.Load<Texture2D>("2DTexturen/Crack Tomb Name_small");
         }
 
         public override GameState Update(GameTime gameTime)
@@ -71,6 +73,7 @@ namespace MainMenuCo
         {
             SpriteBatch.Begin();
             SpriteBatch.Draw(background, new Vector2(0, 0), Color.White);
+            SpriteBatch.Draw(titel, new Vector2(480, 80), Color.White);
 
             for (int i = 0; i < buttons.Length; i++)
             {

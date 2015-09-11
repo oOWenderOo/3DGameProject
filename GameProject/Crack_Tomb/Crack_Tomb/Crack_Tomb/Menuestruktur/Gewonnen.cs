@@ -262,11 +262,11 @@ namespace Crack_Tomb.Menuestruktur
             
             for (int i = 0; i < rangliste.Length; i++)
             {
-                SpriteBatch.DrawString(fontText, (i + 1) + ".", new Vector2(ranglistePositionX - 80, ranglistePosiitonY + 60 + 30 * i), Color.Black);
+                SpriteBatch.DrawString(fontText, (i + 1) + ".", new Vector2(ranglistePositionX - 100, ranglistePosiitonY + 50 + 30 * i), Color.Black);
 
                 if (rangliste[i] != "")
                 {
-                    SpriteBatch.DrawString(fontText, rangliste[i], new Vector2(ranglistePositionX - 30, ranglistePosiitonY + 60 + 30 * i), Color.Black);
+                    SpriteBatch.DrawString(fontText, rangliste[i], new Vector2(ranglistePositionX - 50, ranglistePosiitonY + 50 + 30 * i), Color.Black);
                 }
             }
 
@@ -274,11 +274,11 @@ namespace Crack_Tomb.Menuestruktur
             {
                 if (((int)gameTime.TotalGameTime.Milliseconds) % 800 >= 0 && ((int)gameTime.TotalGameTime.Milliseconds) % 800 <= 400)
                 {
-                    SpriteBatch.DrawString(fontText, EingabeName, new Vector2(ranglistePositionX - 30, ranglistePosiitonY + 60 + 30 * position), Color.Red);
+                    SpriteBatch.DrawString(fontText, EingabeName, new Vector2(ranglistePositionX - 50, ranglistePosiitonY + 50 + 30 * position), Color.Red);
                 }
                 else
                 {
-                    SpriteBatch.DrawString(fontText, EingabeName + "_", new Vector2(ranglistePositionX - 30, ranglistePosiitonY + 60 + 30 * position), Color.Red);
+                    SpriteBatch.DrawString(fontText, EingabeName + "_", new Vector2(ranglistePositionX - 50, ranglistePosiitonY + 50 + 30 * position), Color.Red);
                 }
             }
 

@@ -2,19 +2,6 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>3DModelle\Spieler_mit_Hut.fbx</Source>
-      <Name>3DModelle\Spieler_mit_Hut</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Spieler_mit_Hut.xnb</Output>
-      <Time>2015-08-30T16:07:52.2499199+02:00</Time>
-      <Dependency>
-        <Key>obj\x86\Debug\3DModelle\Spieler_mit_Hut_0.xml</Key>
-        <Value>2015-08-30T16:19:47.8220109+02:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
       <Source>3DModelle\partikel.fbx</Source>
       <Name>3DModelle\partikel</Name>
       <Importer>FbxImporter</Importer>
@@ -250,13 +237,6 @@
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\Shader\BarriereEffect.xnb</Output>
       <Time>2015-09-03T21:13:51.5870313+02:00</Time>
-    </Item>
-    <Item>
-      <Source>3DModelle\Spieler_mit_Hut.fbx</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>obj\x86\Debug\3DModelle\Spieler_mit_Hut_0.xml</Output>
-      <Time>2015-08-30T16:07:52.2499199+02:00</Time>
     </Item>
     <Item>
       <Source>3DModelle\partikel.fbx</Source>
@@ -657,7 +637,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\Rangliste.xnb</Output>
-      <Time>2015-09-02T23:11:27.0048846+02:00</Time>
+      <Time>2015-09-11T16:54:51.5568204+02:00</Time>
     </Item>
     <Item>
       <Source>3DModelle\Anfangspunkt_Textur.png</Source>
@@ -1034,6 +1014,70 @@
       <Options>None</Options>
       <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\CreditsFläche.xnb</Output>
       <Time>2015-09-06T20:50:55.6944822+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Charakter-Textur.png</Source>
+      <Name>3DModelle\Charakter-Textur</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Charakter-Textur.xnb</Output>
+      <Time>2015-09-11T16:46:20.179445+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Player.fbx</Source>
+      <Name>3DModelle\Player</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Player.xnb</Output>
+      <Time>2015-09-11T16:45:59.4321065+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\3DModelle\Player_0.xml</Key>
+        <Value>2015-09-11T16:46:25.8793425+02:00</Value>
+      </Dependency>
+      <Request>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Charakter-Textur_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>3DModelle\Player.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\3DModelle\Player_0.xml</Output>
+      <Time>2015-09-11T16:45:59.4321065+02:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModelle\Charakter-Textur.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\3DModelle\Charakter-Textur_0.xnb</Output>
+      <Time>2015-09-11T16:46:20.179445+02:00</Time>
+    </Item>
+    <Item>
+      <Source>2DTexturen\Titelbild Crack Tomb.png</Source>
+      <Name>2DTexturen\Titelbild Crack Tomb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\Titelbild Crack Tomb.xnb</Output>
+      <Time>2015-09-11T17:06:34.8673176+02:00</Time>
+    </Item>
+    <Item>
+      <Source>2DTexturen\Crack Tomb Name_small.png</Source>
+      <Name>2DTexturen\Crack Tomb Name_small</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gabriel\Desktop\3DGameProject.git\trunk\GameProject\Crack_Tomb\Crack_Tomb\Crack_Tomb\bin\x86\Debug\Content\2DTexturen\Crack Tomb Name_small.xnb</Output>
+      <Time>2015-09-11T17:10:33.9690989+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

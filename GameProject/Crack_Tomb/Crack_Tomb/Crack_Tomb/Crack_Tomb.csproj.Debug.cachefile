@@ -1,4 +1,3 @@
-Content\3DModelle\Spieler_mit_Hut.xnb
 Content\3DModelle\partikel.xnb
 Content\3DModelle\saule_mit_loch_platz.xnb
 Content\3DModelle\saule_mit_halbloch_platz.xnb
@@ -76,6 +75,11 @@ Content\Fonts\CreditsFont.xnb
 Content\2DTexturen\Hintergrund.xnb
 Content\Fonts\RanglisteLevelnummerFont.xnb
 Content\2DTexturen\CreditsFläche.xnb
+Content\3DModelle\Charakter-Textur.xnb
+Content\3DModelle\Player.xnb
+Content\3DModelle\Charakter-Textur_0.xnb
+Content\2DTexturen\Titelbild Crack Tomb.xnb
+Content\2DTexturen\Crack Tomb Name_small.xnb
 Content\Audio\verlorenSong.wma
 Content\Audio\titelscreenSong.wma
 Content\Audio\menuSong.wma

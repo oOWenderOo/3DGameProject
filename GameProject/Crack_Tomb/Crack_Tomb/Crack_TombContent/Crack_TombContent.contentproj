@@ -49,13 +49,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="3DModelle\Spieler_mit_Hut.fbx">
-      <Name>Spieler_mit_Hut</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="2DTexturen\levelbutton.png">
       <Name>levelbutton</Name>
       <Importer>TextureImporter</Importer>
@@ -513,6 +506,34 @@
   <ItemGroup>
     <Compile Include="2DTexturen\CreditsFläche.png">
       <Name>CreditsFläche</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Player.fbx">
+      <Name>Player</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DModelle\Charakter-Textur.png">
+      <Name>Charakter-Textur</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2DTexturen\Titelbild Crack Tomb.png">
+      <Name>Titelbild Crack Tomb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2DTexturen\Crack Tomb Name_small.png">
+      <Name>Crack Tomb Name_small</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

@@ -70,7 +70,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>TuUo3Euq7kjMO353745019Ea1Uw=</dsig:DigestValue>
+        <dsig:DigestValue>RtqbJcxElFM7oGoHsPZGeWqS2FY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -81,6 +81,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>/33DZzzR70gC5B4hElnZWKy25rw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\2DTexturen\Crack Tomb Name_small.xnb" size="35187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>mBnv27K3HKK4PTYb7XeEe/vGF8s=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\2DTexturen\CreditsFläche.xnb" size="640187">
@@ -182,13 +191,13 @@
       <dsig:DigestValue>dN79LUghbaJp0/g2wH26R7Dipos=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\2DTexturen\Rangliste.xnb" size="900187">
+  <file name="Content\2DTexturen\Rangliste.xnb" size="781819">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>tfM0hvM1cgeWbFPDBynGLwAunUs=</dsig:DigestValue>
+      <dsig:DigestValue>8q+W3iNjpp0dZzQ/7fo9JhHfnHI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\2DTexturen\Score.xnb" size="32187">
@@ -216,6 +225,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>n7UgWEX1Jba8yc7DyofzJp5rqDo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\2DTexturen\Titelbild Crack Tomb.xnb" size="1945067">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Vw/KOXnSNztf3nKlLMFPCTAUVYo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\2DTexturen\Tutorialrahmen.xnb" size="221983">
@@ -270,6 +288,24 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>Z5n5XgSannQVj9GzzgAafhZzHwU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\3DModelle\Charakter-Textur.xnb" size="1048763">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lTvCe+hFj+XauhaoV1o1UH9uvw4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\3DModelle\Charakter-Textur_0.xnb" size="174999">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YW3ymdg3uteKoYcdFcw0Fp8TMM8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\3DModelle\Door_Schalter.xnb" size="30597">
@@ -362,6 +398,15 @@
       <dsig:DigestValue>knNPxdospxn1acA20WX/0uugIXE=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Content\3DModelle\Player.xnb" size="8270992">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>2/dGzzWGFkiqagVciqJ1gTU6LfU=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Content\3DModelle\Säule mit Loch.xnb" size="466317">
     <hash>
       <dsig:Transforms>
@@ -450,15 +495,6 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>K8ZE+4OMR+aZnOlsHQQw6e9ap3c=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\3DModelle\Spieler_mit_Hut.xnb" size="72586">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>XdUVPaNbpT7sVNMZhWKr92o+KgA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\3DModelle\Splittprisma.xnb" size="50647">
