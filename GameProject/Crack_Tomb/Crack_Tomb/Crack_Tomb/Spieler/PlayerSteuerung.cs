@@ -30,7 +30,7 @@ namespace Crack_Tomb.Spieler
             playercollider = new PlayerCollider();
         }
 
-        public Vector3 Update(GameTime gametime, Vector3 playerposition, ref int[,] Säulen_Array, ref Inventar inventar, ref Level_LoaderV2 levelloader)
+        public Vector3 Update(GameTime gametime, Vector3 playerposition, ref int[,] Säulen_Array, ref Inventar inventar, ref Level_LoaderV2 levelloader, ref float playerRotation)
         {
             newposition = playerposition;
 
@@ -45,21 +45,45 @@ namespace Crack_Tomb.Spieler
             if (nachOben)
             {
                 bewegung += (new Vector3(0, 0, -1));
+                playerRotation = 0;
             }
 
             if (nachUnten)
             {
                 bewegung += (new Vector3(0, 0, 1));
+                playerRotation = 6.282f/2f;
             }
 
             if (nachLinks)
             {
                 bewegung += (new Vector3(-1, 0, 0));
+                playerRotation = 3.141f/2f;
             }
 
             if (nachRechts)
             {
                 bewegung += (new Vector3(1, 0, 0));
+                playerRotation = -3.141f / 2f;
+            }
+
+            if (nachLinks && nachOben)
+            {
+                playerRotation = 3.141f / 4f;
+            }
+
+            if (nachRechts && nachOben)
+            {
+                playerRotation = -3.141f / 4f;
+            }
+
+            if (nachLinks && nachUnten)
+            {
+                playerRotation = 3.141f / 4f + 3.141f / 2f;
+            }
+
+            if (nachRechts && nachUnten)
+            {
+                playerRotation = -3.141f / 4f - 3.141f / 2f;
             }
 
             if(bewegung.X != 0 || bewegung.Y != 0 || bewegung.Z != 0)

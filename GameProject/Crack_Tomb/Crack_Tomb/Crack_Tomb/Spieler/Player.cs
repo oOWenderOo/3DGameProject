@@ -20,6 +20,7 @@ namespace Crack_Tomb.Spieler
         PlayerSteuerung playersteuerung;
         int[,] Säulen_Array = new int[41, 41];
         Effect kristalleffect;
+        float rot = 0;
 
         public Player(Vector3 startposition, Model spielermodel, int LevelNummer, ContentManager content, ref Level_LoaderV2 levelloader)
         {
@@ -53,7 +54,7 @@ namespace Crack_Tomb.Spieler
         {
             //Steuerung des Spielers
             if(!isMapActive)
-                position = playersteuerung.Update(gametime, position, ref Säulen_Array, ref inventar, ref levelloader);
+                position = playersteuerung.Update(gametime, position, ref Säulen_Array, ref inventar, ref levelloader, ref rot);
         }
 
         public void setInventar(ref Level_LoaderV2 levelloader)
@@ -79,7 +80,7 @@ namespace Crack_Tomb.Spieler
 
                     effect.View = view;
                     effect.Projection = projection;
-                    effect.World = Matrix.CreateScale(0.70f) * Matrix.CreateTranslation(position);
+                    effect.World = Matrix.CreateRotationY(rot) * Matrix.CreateScale(0.5f) * Matrix.CreateScale(0.70f) * Matrix.CreateTranslation(position);
                 }
                 mesh.Draw();
             }
